@@ -58,7 +58,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     portrait: {fileID: 0}
-    spritePortrait: {fileID: 0}
+    spritePortrait: {fileID: 21300000, guid: 2418354150f764349bd6af36ce9a1a1b, type: 3}
     alternatePortraits: []
     spritePortraits: []
   - id: 2
@@ -66,7 +66,7 @@ MonoBehaviour:
     - title: Name
       value: Cacey
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Pictures
       value: '[]'
       type: 3
@@ -74,13 +74,17 @@ MonoBehaviour:
     - title: Description
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: IsPlayer
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Cacey
+      type: 0
+      typeString: CustomFieldType_Text
     portrait: {fileID: 0}
-    spritePortrait: {fileID: 0}
+    spritePortrait: {fileID: 21300000, guid: b5ca36a6491cd6a4abf6623324c8bd9b, type: 3}
     alternatePortraits: []
     spritePortraits: []
   - id: 3
@@ -1293,11 +1297,11 @@ MonoBehaviour:
       - title: Title
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: 2
         type: 5
@@ -1309,15 +1313,15 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: Hello [var=Actor], how are you?
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
-        value: Camera(Closeup,speaker,1)
+        value: Zoom2D(speaker,7,1)
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 5
       isRoot: 0
       isGroup: 0
@@ -1345,7 +1349,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 28
+        x: 30.127663
         y: 70
         width: 160
         height: 30
@@ -1376,7 +1380,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: 'ClearSubtitleText(all);
+
+          Zoom2D(,7,0.5)'
         type: 0
         typeString: 
       conversationID: 5
@@ -1400,8 +1406,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 28
-        y: 120
+        x: 28.000015
+        y: 118.93617
         width: 160
         height: 30
     - id: 3
@@ -1431,7 +1437,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: 'ClearSubtitleText(all);
+
+          Zoom2D(,7,0.5)'
         type: 0
         typeString: 
       conversationID: 5
@@ -1455,8 +1463,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 204
-        y: 119
+        x: 202.93617
+        y: 117.93617
         width: 160
         height: 30
     - id: 4
@@ -1486,7 +1494,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: Zoom2D(,7)
         type: 0
         typeString: 
       conversationID: 5
@@ -1500,7 +1508,7 @@ MonoBehaviour:
       - originConversationID: 5
         originDialogueID: 4
         destinationConversationID: 5
-        destinationDialogueID: 6
+        destinationDialogueID: 7
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -1510,7 +1518,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 28
+        x: 29.063835
         y: 170
         width: 160
         height: 30
@@ -1541,7 +1549,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: Zoom2D(,7)
         type: 0
         typeString: 
       conversationID: 5
@@ -1565,7 +1573,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 204
+        x: 203.99998
         y: 169
         width: 160
         height: 30
@@ -1596,6 +1604,120 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
+        value: ClearSubtitleText(all)
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 203.06381
+        y: 229
+        width: 160
+        height: 30
+    - id: 7
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Oh, look a talking crate...
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 'Zoom2D(Crate View,11,1);
+
+          {{default}};
+
+          ClearSubtitleText(all)'
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 7
+        destinationConversationID: 5
+        destinationDialogueID: 8
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 30.063828
+        y: 228
+        width: 160
+        height: 30
+    - id: 8
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Huh yea, werid... ill go check it out.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 'ClearSubtitleText(all);
+
+          Zoom2D(original,10,0.5);'
+        type: 0
+        typeString: 
+      - title: Response Menu Sequence
         value: 
         type: 0
         typeString: 
@@ -1614,13 +1736,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 111
-        y: 234
+        x: 30.063828
+        y: 278
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 0, y: 52.127655}
+    canvasZoom: 0.94000006
   syncInfo:
     syncActors: 0
     syncItems: 0
