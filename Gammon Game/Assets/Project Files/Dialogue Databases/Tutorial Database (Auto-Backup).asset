@@ -1198,11 +1198,11 @@ MonoBehaviour:
     - title: Title
       value: Gammon Opening Cutscene
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Description
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Actor
       value: 1
       type: 5
@@ -1213,14 +1213,14 @@ MonoBehaviour:
       typeString: CustomFieldType_Actor
     overrideSettings:
       useOverrides: 0
-      overrideSubtitleSettings: 0
+      overrideSubtitleSettings: 1
       showNPCSubtitlesDuringLine: 1
-      showNPCSubtitlesWithResponses: 1
+      showNPCSubtitlesWithResponses: 0
       showPCSubtitlesDuringLine: 0
       skipPCSubtitleAfterResponseMenu: 0
       subtitleCharsPerSecond: 30
-      minSubtitleSeconds: 2
-      continueButton: 0
+      minSubtitleSeconds: 0.5
+      continueButton: 1
       overrideSequenceSettings: 0
       defaultSequence: 
       defaultPlayerSequence: 
@@ -1264,7 +1264,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: Delay({{end}})
+        value: 
         type: 0
         typeString: 
       conversationID: 5
@@ -1336,12 +1336,6 @@ MonoBehaviour:
         destinationDialogueID: 2
         isConnector: 0
         priority: 2
-      - originConversationID: 5
-        originDialogueID: 1
-        destinationConversationID: 5
-        destinationDialogueID: 3
-        isConnector: 0
-        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -1380,9 +1374,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'ClearSubtitleText(all);
-
-          Zoom2D(,7,0.5)'
+        value: Zoom2D(,7,0.5);
         type: 0
         typeString: 
       conversationID: 5
@@ -1406,65 +1398,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 28.000015
-        y: 120
-        width: 160
-        height: 30
-    - id: 3
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: I feel like shit.
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 'ClearSubtitleText(all);
-
-          Zoom2D(,7,0.5)'
-        type: 0
-        typeString: 
-      conversationID: 5
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 5
-        originDialogueID: 3
-        destinationConversationID: 5
-        destinationDialogueID: 5
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 202.93617
-        y: 117.93617
+        x: 29.063843
+        y: 118.93617
         width: 160
         height: 30
     - id: 4
@@ -1522,110 +1457,6 @@ MonoBehaviour:
         y: 170
         width: 160
         height: 30
-    - id: 5
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: Were you on 'cloud 9' all night again? [em1]Winks[/em1]
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: Zoom2D(,7)
-        type: 0
-        typeString: 
-      conversationID: 5
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 5
-        originDialogueID: 5
-        destinationConversationID: 5
-        destinationDialogueID: 6
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 203.99998
-        y: 169
-        width: 160
-        height: 30
-    - id: 6
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: '[em1]Grumble[/em1]'
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: ClearSubtitleText(all)
-        type: 0
-        typeString: 
-      conversationID: 5
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 203.06381
-        y: 229
-        width: 160
-        height: 30
     - id: 7
       fields:
       - title: Title
@@ -1655,9 +1486,7 @@ MonoBehaviour:
       - title: Sequence
         value: 'Zoom2D(Crate View,11,1);
 
-          {{default}};
-
-          ClearSubtitleText(all)'
+          {{default}}'
         type: 0
         typeString: 
       conversationID: 5
@@ -1712,9 +1541,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'ClearSubtitleText(all);
-
-          Zoom2D(original,10,0.5);'
+        value: Zoom2D(original,10,0.5);
         type: 0
         typeString: 
       - title: Response Menu Sequence
@@ -1741,8 +1568,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 52.127655}
-    canvasZoom: 0.94000006
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.8200002
   syncInfo:
     syncActors: 0
     syncItems: 0
