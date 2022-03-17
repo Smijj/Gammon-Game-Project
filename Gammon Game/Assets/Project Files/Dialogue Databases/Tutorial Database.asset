@@ -1248,11 +1248,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: 1
         type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 2
         type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -1260,11 +1260,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Hello [var=Actor], how are you?
+        value: 
         type: 0
         typeString: 
       - title: Sequence
-        value: Delay(4);
+        value: 
         type: 0
         typeString: 
       conversationID: 5
@@ -1278,7 +1278,7 @@ MonoBehaviour:
       - originConversationID: 5
         originDialogueID: 0
         destinationConversationID: 5
-        destinationDialogueID: 2
+        destinationDialogueID: 9
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -1343,8 +1343,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30.283356
-        y: 70.1557
+        x: 29.048775
+        y: 136.00935
         width: 160
         height: 30
     - id: 4
@@ -1398,8 +1398,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30.283348
-        y: 121.21953
+        x: 29.048775
+        y: 187.07318
         width: 160
         height: 30
     - id: 7
@@ -1455,8 +1455,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 31.28334
-        y: 173.12196
+        x: 29.048775
+        y: 238.97563
         width: 160
         height: 30
     - id: 8
@@ -1508,8 +1508,63 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 31.28334
-        y: 223.12195
+        x: 29.048775
+        y: 288.9756
+        width: 160
+        height: 30
+    - id: 9
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Hello [var=Actor], how are you?
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 9
+        destinationConversationID: 5
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 31.4878
+        y: 74.87805
         width: 160
         height: 30
     entryGroups: []

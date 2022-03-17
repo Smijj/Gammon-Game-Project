@@ -127,6 +127,7 @@ PlayerSettings:
   vulkanEnableSetSRGBWrite: 0
   vulkanEnablePreTransform: 0
   vulkanEnableLateAcquireNextImage: 0
+  vulkanEnableCommandBufferRecycling: 1
   m_SupportedAspectRatios:
     4:3: 1
     5:4: 1
@@ -462,7 +463,9 @@ PlayerSettings:
   switchPlayerConnectionEnabled: 1
   switchUseNewStyleFilepaths: 0
   switchUseMicroSleepForYield: 1
+  switchEnableRamDiskSupport: 0
   switchMicroSleepForYieldTime: 25
+  switchRamDiskSpaceSize: 12
   ps4NPAgeRating: 12
   ps4NPTitleSecret: 
   ps4NPTrophyPackPath: 
@@ -559,8 +562,8 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
-    1: TMP_PRESENT;USE_PHYSICS2D
-    14: TMP_PRESENT;USE_PHYSICS2D
+    1: TMP_PRESENT;USE_PHYSICS2D;USE_TIMELINE
+    14: TMP_PRESENT;USE_PHYSICS2D;USE_TIMELINE
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
