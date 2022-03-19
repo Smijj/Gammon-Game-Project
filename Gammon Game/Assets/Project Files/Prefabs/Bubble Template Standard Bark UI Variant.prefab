@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11431372, guid: d5a18ab9ec93e0d4284d6fbae4f557e0, type: 3}
       propertyPath: m_PresetInfoIsWorld
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11445092, guid: d5a18ab9ec93e0d4284d6fbae4f557e0, type: 3}
       propertyPath: m_FontData.m_MaxSize
