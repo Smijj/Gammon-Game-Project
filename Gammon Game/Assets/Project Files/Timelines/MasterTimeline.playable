@@ -201,8 +201,8 @@ MonoBehaviour:
   template:
     conversant: {fileID: 0}
     conversation: Tut Convo 01
-    jumpToSpecificEntry: 0
-    entryID: 0
+    jumpToSpecificEntry: 1
+    entryID: 21
   conversant:
     exposedName: 
     defaultValue: {fileID: 0}

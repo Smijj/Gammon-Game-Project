@@ -2134,7 +2134,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 27.67115
+        x: 28.890663
         y: 573.05115
         width: 160
         height: 30
@@ -2199,7 +2199,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 27.67115
+        x: 26.405327
         y: 620.4597
         width: 160
         height: 30
@@ -2231,7 +2231,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: HidePanel(2);
+        value: HidePanel(0, portrait);
         type: 0
         typeString: 
       conversationID: 5
@@ -2255,8 +2255,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 27.431541
-        y: 750.3605
+        x: 27.477852
+        y: 794.65027
         width: 160
         height: 30
     - id: 24
@@ -2310,8 +2310,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 28.60801
-        y: 799.2616
+        x: 26.168983
+        y: 844.7709
         width: 160
         height: 30
     - id: 25
@@ -2341,7 +2341,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: SetPanel(Ellios,0)
+        value: 
         type: 0
         typeString: 
       conversationID: 5
@@ -2365,7 +2365,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 25.925827
+        x: 27.19165
         y: 679.1807
         width: 160
         height: 30
@@ -2399,15 +2399,20 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'HidePanel(0);
+        value: 'HidePanel(0,portrait);
 
-          HidePanel(1);
+          HidePanel(1,portrait);
+
+
+
 
           SetContinueMode(false);
 
           Delay({{end}})->Message(Done);
 
-          SetContinueMode(true)@Message(Done);'
+          SetContinueMode(true)@Message(Done);
+
+'
         type: 0
         typeString: 
       - title: Response Menu Sequence
@@ -2429,13 +2434,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 28.60801
-        y: 849.2616
+        x: 27.388496
+        y: 893.5514
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 494.66388}
-    canvasZoom: 0.8500001
+    canvasScrollPosition: {x: 0, y: 459.12054}
+    canvasZoom: 0.79000014
   - id: 6
     fields:
     - title: Title
