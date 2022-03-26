@@ -3238,7 +3238,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Unlocked recipes can be found in \nyour GAMMON LUANCHER, the companion
+        value: "Unlocked recipes can be found in \nyour GAMMON LANCHER, the companion
           app, and in the PAUSE menu."
         type: 0
         typeString: 
@@ -3298,7 +3298,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'SendMessage(SetBackground, PlainAchievement, _GameManager);
+        value: 'SendMessage(SetBackground, Inside, _GameManager);
 
           Fade(in,0.5);'
         type: 0
@@ -4217,7 +4217,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 69.72002, y: 357.06265}
+    canvasScrollPosition: {x: 193.35625, y: 0}
     canvasZoom: 0.55000037
   syncInfo:
     syncActors: 0
