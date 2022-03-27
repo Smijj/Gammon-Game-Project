@@ -34,7 +34,7 @@ MonoBehaviour:
     conversant: {fileID: 0}
     conversation: Tut Convo 01
     jumpToSpecificEntry: 1
-    entryID: 77
+    entryID: 0
   conversant:
     exposedName: 
     defaultValue: {fileID: 0}
