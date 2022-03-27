@@ -161,6 +161,32 @@ MonoBehaviour:
     spritePortrait: {fileID: 0}
     alternatePortraits: []
     spritePortraits: []
+  - id: 6
+    fields:
+    - title: Name
+      value: Andre
+      type: 0
+      typeString: 
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Andre
+      type: 0
+      typeString: 
+    portrait: {fileID: 0}
+    spritePortrait: {fileID: 21300000, guid: ac192878612d94b47981ce96b809a203, type: 3}
+    alternatePortraits: []
+    spritePortraits: []
   items: []
   locations:
   - id: 1
@@ -1299,9 +1325,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'Fade(in, 1);
+        value: 'Fade(in, 0.5);
 
-'
+          {{default}}'
         type: 0
         typeString: 
       conversationID: 5
@@ -1644,7 +1670,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: Delay({{end}});
+        value: 
         type: 0
         typeString: 
       - title: EventGuid
@@ -1662,7 +1688,7 @@ MonoBehaviour:
       - originConversationID: 5
         originDialogueID: 19
         destinationConversationID: 5
-        destinationDialogueID: 20
+        destinationDialogueID: 65
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -1672,7 +1698,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 111.375885
+        x: 109.813385
         y: 473.1739
         width: 160
         height: 30
@@ -1699,15 +1725,18 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 
+        value: "You wowed Cacey's expectations! \nYou're HIRED! Time to get to know
+          this palm tree in a two-piece."
         type: 0
         typeString: 
       - title: Sequence
-        value: 'SetDialoguePanel(false,immediate);
+        value: 'SendMessage(IncreaseCharacterRelationship, Cacey, _GameManager);
 
-          Timeline(play, Achievement);
 
-          Fade(stay,0.5);'
+          Fade(in,
+          0.5);
+
+          {{default}}'
         type: 0
         typeString: 
       conversationID: 5
@@ -1721,7 +1750,7 @@ MonoBehaviour:
       - originConversationID: 5
         originDialogueID: 20
         destinationConversationID: 5
-        destinationDialogueID: 21
+        destinationDialogueID: 64
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -1732,7 +1761,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 111.25321
-        y: 523.1738
+        y: 579.4238
         width: 160
         height: 30
     - id: 21
@@ -1763,14 +1792,13 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'SetDialoguePanel(true);
+        value: 'SendMessage(SetBackground, Inside, _GameManager);
 
-          SetContinueMode(true);
 
-          SetPanel(Ellios,
-          2);
+          Fade(in,
+          0.5);
 
-          OpenPanel(2, unfocus);'
+          {{default}}'
         type: 0
         typeString: 
       - title: Response Menu Sequence
@@ -1863,7 +1891,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 444.35913
+        x: 445.92163
         y: 74.00966
         width: 160
         height: 30
@@ -1895,7 +1923,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: HidePanel(0, portrait);
+        value: 'Fade(in, 0.5);
+
+          {{default}}'
         type: 0
         typeString: 
       conversationID: 5
@@ -1919,8 +1949,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 445.43164
-        y: 186.55643
+        x: 446.1176
+        y: 231.77316
         width: 160
         height: 30
     - id: 24
@@ -1974,8 +2004,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 442.75287
-        y: 236.67712
+        x: 445.00134
+        y: 280.46527
         width: 160
         height: 30
     - id: 25
@@ -2019,7 +2049,7 @@ MonoBehaviour:
       - originConversationID: 5
         originDialogueID: 25
         destinationConversationID: 5
-        destinationDialogueID: 23
+        destinationDialogueID: 66
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -2063,15 +2093,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'HidePanel(0,portrait);
-
-          HidePanel(1,portrait);
-
-          HidePanel(2,portrait);
-
-
-          SendMessage(SetBackground,
-          MenuDex, _GameManager);'
+        value: SendMessage(GiveItem, MenuDex, _GameManager);
         type: 0
         typeString: 
       - title: Response Menu Sequence
@@ -2099,8 +2121,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 445.3423
-        y: 285.45773
+        x: 447.59076
+        y: 329.24588
         width: 160
         height: 30
     - id: 27
@@ -2155,8 +2177,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 443.9724
-        y: 334.2382
+        x: 446.2209
+        y: 378.02634
         width: 160
         height: 30
     - id: 28
@@ -2190,12 +2212,12 @@ MonoBehaviour:
         value: 'Fade(stay,0.5)->Message(Done);
 
 
+          SendMessage(HideAchievement,,_GameManager)@Message(Done);
+
           SetDialoguePanel(false,immediate)@Message(Done);
 
 
-          Continue()@Message(Done);
-
-          Fade(in,0.5)@Message(Done);'
+          Continue()@Message(Done);'
         type: 0
         typeString: 
       conversationID: 5
@@ -2219,8 +2241,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 445.34232
-        y: 385.45767
+        x: 447.5908
+        y: 429.24582
         width: 160
         height: 30
     - id: 29
@@ -2250,7 +2272,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'Fade(stay, 1)->Message(Done);
+        value: 'Fade(stay, 0.5)->Message(Done);
 
           Continue()@Message(Done);'
         type: 0
@@ -2308,7 +2330,16 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: SendMessage(SetBackground, Kitchen, _GameManager);
+        value: 'SendMessage(SetBackground, Kitchen, _GameManager);
+
+          SetDialoguePanel(true);
+
+          SetContinueMode(true);
+
+
+          Fade(in,0.5);
+
+          {{default}}'
         type: 0
         typeString: 
       conversationID: 5
@@ -2365,21 +2396,14 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 'SendMessage(SetBackground, Transformation, _GameManager);
+        value: 'Fade(in,0.5);
+
+          SendMessage(SetBackground, ST_Transformation,
+          _GameManager);
+
 
           Fade(stay,0.5)@1.5->Message(Done);
 
-
-          SendMessage(SetBackground,
-          Inside, _GameManager)@Message(Done);
-
-
-          SetDialoguePanel(true,immediate)@Message(Done);
-
-          SetContinueMode(true)@Message(Done);
-
-
-          Fade(in,0.5)@Message(Done);
 
           Continue()@Message(Done);'
         type: 0
@@ -2405,8 +2429,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 445.3423
-        y: 435.45773
+        x: 642.0636
+        y: 194.62088
         width: 160
         height: 30
     - id: 32
@@ -2959,7 +2983,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'Fade(stay, 1)->Message(Done);
+        value: 'Fade(stay, 0.5)->Message(Done);
 
           Continue()@Message(Done);'
         type: 0
@@ -3016,10 +3040,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'SendMessage(SetBackground, PlainAchievement, _GameManager);
+        value: 'SendMessage(GiveItem, SmashBurger, _GameManager);
 
           Fade(in,
-          0.5);'
+          0.5);
+
+          {{default}}'
         type: 0
         typeString: 
       conversationID: 5
@@ -3146,7 +3172,7 @@ MonoBehaviour:
       - originConversationID: 5
         originDialogueID: 44
         destinationConversationID: 5
-        destinationDialogueID: 45
+        destinationDialogueID: 67
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -3187,7 +3213,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: 'Fade(in, 0.5);
+
+          SendMessage(IncreaseCharacterRelationship,
+          Ellios, _GameManager);
+
+          {{default}}'
         type: 0
         typeString: 
       conversationID: 5
@@ -3212,7 +3243,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 1220.2513
-        y: 173.12909
+        y: 224.69164
         width: 160
         height: 30
     - id: 46
@@ -3268,7 +3299,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 1220.2513
-        y: 223.12909
+        y: 274.69165
         width: 160
         height: 30
     - id: 47
@@ -3300,7 +3331,9 @@ MonoBehaviour:
       - title: Sequence
         value: 'SendMessage(SetBackground, Inside, _GameManager);
 
-          Fade(in,0.5);'
+          Fade(in,0.5);
+
+          {{default}}'
         type: 0
         typeString: 
       conversationID: 5
@@ -3411,7 +3444,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'Fade(stay, 1)->Message(Done);
+        value: 'Fade(stay, 0.5)->Message(Done);
+
+          SendMessage(HideAchievement,,_GameManager)@Message(Done);
 
           Continue()@Message(Done);'
         type: 0
@@ -3438,7 +3473,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 1220.2513
-        y: 273.12915
+        y: 324.69168
         width: 160
         height: 30
     - id: 50
@@ -4180,6 +4215,63 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 'Fade(stay, 0.5)->Message(Done);
+
+          Continue()@Message(Done);'
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 63
+        destinationConversationID: 5
+        destinationDialogueID: 68
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1444.132
+        y: 769.3978
+        width: 160
+        height: 30
+    - id: 64
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
         value: -1
         type: 5
         typeString: CustomFieldType_Actor
@@ -4192,7 +4284,1458 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'Fade(stay, 1)->Message(Done);
+        value: 'Fade(stay, 0.5)->Message(Done);
+
+
+          SendMessage(HideAchievement,,_GameManager)@Message(Done);
+
+          Continue()@Message(Done);'
+        type: 0
+        typeString: 
+      - title: Response Menu Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 64
+        destinationConversationID: 5
+        destinationDialogueID: 21
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 111.25321
+        y: 627.7845
+        width: 160
+        height: 30
+    - id: 65
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 'Fade(stay, 0.5)->Message(Done);
+
+          Continue()@Message(Done);'
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 65
+        destinationConversationID: 5
+        destinationDialogueID: 20
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 109.813385
+        y: 523.1739
+        width: 160
+        height: 30
+    - id: 66
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: Fade
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 'Fade(stay, 0.5)->Message(Done);
+
+          Continue()@Message(Done);'
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 66
+        destinationConversationID: 5
+        destinationDialogueID: 23
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 443.77557
+        y: 178.77141
+        width: 160
+        height: 30
+    - id: 67
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 'Fade(stay, 0.5)->Message(Done);
+
+          SendMessage(HideAchievement,,_GameManager)@Message(Done);
+
+          Continue()@Message(Done);'
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 67
+        destinationConversationID: 5
+        destinationDialogueID: 45
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1220.2513
+        y: 173.12909
+        width: 160
+        height: 30
+    - id: 68
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 'Our Menu!
+
+          Have a look around the Dex. Get familiar. When
+          you''re ready, I''ll run you through my menu.  '
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 'SendMessage(SetBackground, Menu, _GameManager);
+
+          Fade(in,0.5);
+
+          {{default}}'
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 68
+        destinationConversationID: 5
+        destinationDialogueID: 69
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1647.7683
+        y: 21.21605
+        width: 160
+        height: 30
+    - id: 69
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 2
+        type: 0
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 0
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: This is the Main Menu.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 69
+        destinationConversationID: 5
+        destinationDialogueID: 70
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1647.7683
+        y: 71.21605
+        width: 160
+        height: 30
+    - id: 70
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 2
+        type: 0
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 0
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: This is the Stats Menu
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: SendMessage(SetBackground, Stats, _GameManager);
+        type: 0
+        typeString: 
+      - title: Response Menu Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 70
+        destinationConversationID: 5
+        destinationDialogueID: 71
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1647.7683
+        y: 121.21605
+        width: 160
+        height: 30
+    - id: 71
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 2
+        type: 0
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 0
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "This is the Meals Menu.\nWe run things a la carte around here. 'By
+          the cards' as they say around Sol. \nBright, vibrant cards depicting the
+          Gammon  dimensions finest gastronomical delicacies.  \n"
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: SendMessage(SetBackground, Meals, _GameManager);
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 71
+        destinationConversationID: 5
+        destinationDialogueID: 72
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1646.0442
+        y: 171.21605
+        width: 160
+        height: 30
+    - id: 72
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "We're keeping it easy for these space cadets at the moment with a
+          simple choice of 12 items. \nLet's take a look in RECIPES and pick the
+          Lunch menu.\n"
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 72
+        destinationConversationID: 5
+        destinationDialogueID: 73
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1647.7683
+        y: 221.21605
+        width: 160
+        height: 30
+    - id: 73
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Display available recipes in a grid. Search by name, ingredient, or
+          sort by component type or suite.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: SendMessage(SetBackground, Recipes1, _GameManager);
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 73
+        destinationConversationID: 5
+        destinationDialogueID: 74
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1647.7683
+        y: 270.07968
+        width: 160
+        height: 30
+    - id: 74
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "Thanks to you helping out earlier, Chef was able to prep a few more
+          portions. We have twice the stock to sell now. \n"
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 74
+        destinationConversationID: 5
+        destinationDialogueID: 75
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1648.9048
+        y: 321.21606
+        width: 160
+        height: 30
+    - id: 75
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: '[em1]You go through a mini Recipe Menu tutorial[/em1]'
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 75
+        destinationConversationID: 5
+        destinationDialogueID: 76
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1648.9048
+        y: 371.21606
+        width: 160
+        height: 30
+    - id: 76
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: '[em1]Recipe tutorial finished (This section needs some clarity)[/em1]'
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: SendMessage(SetBackground, Recipes2, _GameManager);
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 76
+        destinationConversationID: 5
+        destinationDialogueID: 77
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1648.9048
+        y: 421.21606
+        width: 160
+        height: 30
+    - id: 77
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "Lunch service is on. Game time. \nWalk the floor and get used to
+          the place."
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: SendMessage(SetBackground, Inside, _GameManager);
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 77
+        destinationConversationID: 5
+        destinationDialogueID: 80
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1648.9048
+        y: 471.21606
+        width: 160
+        height: 30
+    - id: 78
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 5
+        type: 0
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 0
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 'Fade(in,0.5);
+
+          SendMessage(SetBackground, ST_AndreInto1,
+          _GameManager);
+
+
+          Fade(stay,0.5)@1.5->Message(Done);
+
+
+          Continue()@Message(Done);'
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 78
+        destinationConversationID: 5
+        destinationDialogueID: 79
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1850.2747
+        y: 265.0517
+        width: 160
+        height: 30
+    - id: 79
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 5
+        type: 0
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 0
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 'Fade(in,0.5);
+
+          SendMessage(SetBackground, ST_AndreInto2,
+          _GameManager);
+
+
+          Fade(stay,0.5)@1.5->Message(Done);
+
+
+          Continue()@Message(Done);'
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 79
+        destinationConversationID: 5
+        destinationDialogueID: 91
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1850.2747
+        y: 213.55917
+        width: 160
+        height: 30
+    - id: 80
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 'Fade(stay,0.5)->Message(Done);
+
+
+          SetDialoguePanel(false,immediate)@Message(Done);
+
+
+          Continue()@Message(Done);'
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 80
+        destinationConversationID: 5
+        destinationDialogueID: 78
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1648.9048
+        y: 521.21606
+        width: 160
+        height: 30
+    - id: 81
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "Since you\u2019re so quick on your feet, Prove it!!\nThings work
+          a bit differently during service. The menu's set, the prep is what it is.
+          \nAnd I run a tight ship."
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 81
+        destinationConversationID: 5
+        destinationDialogueID: 82
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 2041.9313
+        y: 76.74733
+        width: 160
+        height: 30
+    - id: 82
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: '[em1]Insert Action Phase[em1]'
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 'SendMessage(SetBackground, ActionPhase, _GameManager);
+
+'
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 82
+        destinationConversationID: 5
+        destinationDialogueID: 83
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 2041.9313
+        y: 126.74733
+        width: 160
+        height: 30
+    - id: 83
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 'Fade(stay, 0.5)->Message(Done);
+
+          Continue()@Message(Done);'
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 83
+        destinationConversationID: 5
+        destinationDialogueID: 84
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 2041.9313
+        y: 176.74733
+        width: 160
+        height: 30
+    - id: 84
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "*Hmph*...\n A bit more banter would be nice..."
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 'SendMessage(SetBackground, Inside, _GameManager);
+
+          Fade(in,0.5);
+
+          {{default}}'
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 84
+        destinationConversationID: 5
+        destinationDialogueID: 85
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 2041.9313
+        y: 226.74733
+        width: 160
+        height: 30
+    - id: 85
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Excuse my brother. He has a critical eye for these things. Chat up
+          some customers to learn more about them.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 85
+        destinationConversationID: 5
+        destinationDialogueID: 86
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 2041.9313
+        y: 276.74738
+        width: 160
+        height: 30
+    - id: 86
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 'If you too are done. We just had a big table sit at 10, the corner
+          booth.
+
+          Let''s have a bit more razzle dazzle at dinner time.'
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 86
+        destinationConversationID: 5
+        destinationDialogueID: 87
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 2041.9313
+        y: 326.7473
+        width: 160
+        height: 30
+    - id: 87
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Great work out there. Andre will handle the rest of the tables for
+          the afternoon, so we can focus on preparing dishes, and tidy up the space.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 87
+        destinationConversationID: 5
+        destinationDialogueID: 88
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 2041.9313
+        y: 376.7473
+        width: 160
+        height: 30
+    - id: 88
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Check the PLANNER app in your Menu Dex, so we can assign some tasks
+          until dinner. Don't forget to take a grab a snack on your break, or pour
+          yourself a coffee.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 88
+        destinationConversationID: 5
+        destinationDialogueID: 90
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 2041.9313
+        y: 426.7473
+        width: 160
+        height: 30
+    - id: 89
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 'Fade(stay, 0.5)->Message(Done);
 
           Continue()@Message(Done);'
         type: 0
@@ -4212,13 +5755,133 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1444.132
-        y: 769.3978
+        x: 2043.8544
+        y: 530.5935
+        width: 160
+        height: 30
+    - id: 90
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Ahh finally the tutorial is over ;-;
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 90
+        destinationConversationID: 5
+        destinationDialogueID: 89
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 2041.9313
+        y: 476.7473
+        width: 160
+        height: 30
+    - id: 91
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Sorry about that.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 'SendMessage(SetBackground, Inside, _GameManager);
+
+          SetDialoguePanel(true,
+          immediate);
+
+          SetContinueMode(true);
+
+
+          Fade(in,0.5);
+
+          {{default}}'
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 91
+        destinationConversationID: 5
+        destinationDialogueID: 81
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 2041.3193
+        y: 20.275543
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 193.35625, y: 0}
-    canvasZoom: 0.55000037
+    canvasScrollPosition: {x: 469.433, y: 0}
+    canvasZoom: 0.6399999
   syncInfo:
     syncActors: 0
     syncItems: 0
