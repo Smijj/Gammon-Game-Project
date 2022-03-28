@@ -49,8 +49,8 @@ namespace GameManagement {
 
             //if (!bgImage.sprite) bgImage.sprite = spriteDict["None"];
 
-            if (achievementBackdrop.activeSelf) achievementBackdrop.SetActive(false);
-            if (itemBackdrop.activeSelf) itemBackdrop.SetActive(false);
+            if (achievementBackdrop && achievementBackdrop.activeSelf) achievementBackdrop.SetActive(false);
+            if (itemBackdrop && itemBackdrop.activeSelf) itemBackdrop.SetActive(false);
         }
 
         

@@ -18,7 +18,10 @@ public class GameManager : MonoBehaviour
     #endregion
 
 
+    private void Awake() {
+        // If there isnt already an instance (following the Singleton pattern) then:
+        CheckSingleton();
+    }
 
 
-    
 }
