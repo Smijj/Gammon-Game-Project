@@ -47,7 +47,7 @@ namespace GameManagement {
 
             //GetSubPanels(2f);
 
-            if (!bgImage.sprite) bgImage.sprite = spriteDict["DefaultBG"];
+            //if (!bgImage.sprite) bgImage.sprite = spriteDict["None"];
 
             if (achievementBackdrop.activeSelf) achievementBackdrop.SetActive(false);
             if (itemBackdrop.activeSelf) itemBackdrop.SetActive(false);
