@@ -17,16 +17,20 @@ namespace Character {
         [HideInInspector]
         public Vector3 lastPoint;
 
-        private Vector3 targetPosition;
-
+        //private Vector3 targetPosition;
+        //private Tile targetTile;
 
         [Header("Grid Stuff")]
         public Grid grid;
         public Tilemap map;
-        public Vector3 mousePos;
-        public Vector3Int cellPos;
-        public Vector3 cellPosCenter;
+        private Vector3 mousePos;
+        private Vector3Int targetNodePos;
+        private Vector3 targetNodeCenter;
+        private Vector3 currentPos;
 
+
+        private List<PathNode> openList;
+        private HashSet<PathNode> closedList;
 
         #region Unity Functions
 
@@ -72,14 +76,18 @@ namespace Character {
             }
         }
         
-        public void AutoPath(Vector3 _worldPos) {
-            cellPos = grid.WorldToCell(_worldPos);
-            cellPosCenter = grid.GetCellCenterWorld(cellPos);
 
-            if (map.HasTile(cellPos)) {
-                if (!ColliderCheck(cellPosCenter)) {
-                    targetPosition = cellPosCenter;
-                    Debug.Log("Moving to cell: " + cellPos);
+
+        public void AutoPath(Vector3 _worldPos) {
+            targetNodePos = grid.WorldToCell(_worldPos);
+            targetNodeCenter = grid.GetCellCenterWorld(targetNodePos);
+
+            if (map.HasTile(targetNodePos)) {
+                if (!ColliderCheck(targetNodeCenter)) {
+                    FindPath(currentPos, targetNodeCenter);
+
+
+                    Debug.Log("Moving to cell: " + targetNodePos);
                 }
                 else {
                     Debug.Log("Cannot Move to this Position.");
@@ -91,6 +99,47 @@ namespace Character {
 
 
         #region Private Functions
+
+        // Finds a path using an A* algorithm
+        private void FindPath(Vector3 _startPos, Vector3 _targetPos) {
+            // Sets the start and destination nodes
+            PathNode startNode = new PathNode(_startPos);
+            PathNode targetNode = new PathNode(_targetPos);
+
+            // Inits the lists containing nodes-to-search and nodes that have already been searched
+            openList = new List<PathNode> { startNode };
+            closedList = new HashSet<PathNode>();
+
+            // The core loop that the algorithm will execute in 
+            while (openList.Count > 0) {
+                PathNode currentNode = openList[0];
+                
+                // Finds the node with the smallest fCost in the openList of nodes and sets it as the current node
+                for (int i = 1; i < openList.Count; i++) {
+                    if (openList[i].fCost < currentNode.fCost || openList[i].fCost == currentNode.fCost && openList[i].fCost < currentNode.hCost) {
+                        currentNode = openList[i];
+                    }
+                }
+
+                openList.Remove(currentNode);
+                closedList.Add(currentNode);
+
+                // Found path
+                if (currentNode == targetNode) {
+                    return;
+                }
+
+                // Explore nodes surrounding the currentNode.
+
+            }
+
+        }
+
+
+        private float CalculateDistance(Vector3 _worldPos1, Vector3 _worldPos2) {
+            return Vector3.Distance(_worldPos1, _worldPos2);
+        }
+
 
 
         /// <summary>
