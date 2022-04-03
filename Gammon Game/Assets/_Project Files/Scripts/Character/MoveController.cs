@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 
 namespace Character {
-    public class Movement : MonoBehaviour
+    public class MoveController : MonoBehaviour
     {
         [Header("Movement Settings")]
         public float moveSpeed = 7f;
@@ -27,24 +27,15 @@ namespace Character {
         public Vector3Int cellPos;
         public Vector3 cellPosCenter;
 
-        private Camera cam;
-
 
         #region Unity Functions
 
         private void OnEnable() {
-            cam = Camera.main;
-
             movePoint = transform.position;
             lastPoint = transform.position;
         }
 
         private void Update() {
-
-            if (Input.GetMouseButtonDown(0)) {
-                MouseClick();
-            }
-            
 
         }
 
@@ -80,15 +71,9 @@ namespace Character {
                 isMoving = false;
             }
         }
-
-        #endregion
-
-
-        #region Private Functions
-
-        private void MouseClick() {
-            mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-            cellPos = grid.WorldToCell(mousePos);
+        
+        public void AutoPath(Vector3 _worldPos) {
+            cellPos = grid.WorldToCell(_worldPos);
             cellPosCenter = grid.GetCellCenterWorld(cellPos);
 
             if (map.HasTile(cellPos)) {
@@ -101,6 +86,12 @@ namespace Character {
                 }
             }
         }
+
+        #endregion
+
+
+        #region Private Functions
+
 
         /// <summary>
         /// Used to check for colliders at a target position. 
