@@ -13,21 +13,18 @@ namespace Character {
 
         public bool isMoving = false;
         
-        private Vector3 movePoint;
         [HideInInspector]
         public Vector3 lastPoint;
+        [HideInInspector]
+        public Vector3 movePoint;
 
-        //private Vector3 targetPosition;
-        //private Tile targetTile;
 
         [Header("Grid Stuff")]
         public Grid grid;
         public Tilemap map;
-        private Vector3 mousePos;
-        private Vector3Int targetNodePos;
-        private Vector3 targetNodeCenter;
-        private Vector3 currentPos;
 
+        private Vector3Int targetNodePos;
+        private Vector3Int currentNodePos;
 
         private List<PathNode> openList;
         private HashSet<PathNode> closedList;
@@ -37,6 +34,7 @@ namespace Character {
         private void OnEnable() {
             movePoint = transform.position;
             lastPoint = transform.position;
+            currentNodePos = grid.WorldToCell(transform.position);
         }
 
         private void Update() {
@@ -48,24 +46,24 @@ namespace Character {
 
         #region Public Functions
 
-        public void IncrementXPosition(float _xinput) {
-            if (!ColliderCheck(movePoint + new Vector3(_xinput * moveDistance, 0, 0))) {
-                lastPoint = transform.position;
-                movePoint += new Vector3(_xinput * moveDistance, 0, 0);
-                isMoving = true;
-            }
-        }
-        public void IncrementYPosition(float _yinput) {
-            if (!ColliderCheck(movePoint + new Vector3(0, _yinput * moveDistance, 0))) {
-                lastPoint = transform.position;
-                movePoint += new Vector3(0, _yinput * moveDistance, 0);
-                isMoving = true;
-            }
-        }
+        public void IncrementXPosition(float _xInput) {
+            currentNodePos = grid.WorldToCell(transform.position);
+            Vector3Int targetNode = currentNodePos + new Vector3Int((int)_xInput, 0, 0);
+            if (NodeColliderCheck(targetNode)) return;
 
-        public void SetTargetPosition(Vector3 _movePoint) {
-            movePoint = _movePoint;
-        } 
+            lastPoint = transform.position;
+            movePoint = grid.GetCellCenterWorld(targetNode);
+            isMoving = true;
+        }
+        public void IncrementYPosition(float _yInput) {
+            currentNodePos = grid.WorldToCell(transform.position);
+            Vector3Int targetNode = currentNodePos + new Vector3Int(0, (int)_yInput, 0);
+            if (NodeColliderCheck(targetNode)) return;
+
+            lastPoint = transform.position;
+            movePoint = grid.GetCellCenterWorld(targetNode);
+            isMoving = true;
+        }
 
         public void Move() {
             if (transform.position != movePoint) {
@@ -80,11 +78,10 @@ namespace Character {
 
         public void AutoPath(Vector3 _worldPos) {
             targetNodePos = grid.WorldToCell(_worldPos);
-            targetNodeCenter = grid.GetCellCenterWorld(targetNodePos);
 
             if (map.HasTile(targetNodePos)) {
-                if (!ColliderCheck(targetNodeCenter)) {
-                    FindPath(currentPos, targetNodeCenter);
+                if (!NodeColliderCheck(targetNodePos)) {
+                    FindPath(currentNodePos, targetNodePos);
 
 
                     Debug.Log("Moving to cell: " + targetNodePos);
@@ -101,7 +98,7 @@ namespace Character {
         #region Private Functions
 
         // Finds a path using an A* algorithm
-        private void FindPath(Vector3 _startPos, Vector3 _targetPos) {
+        private void FindPath(Vector3Int _startPos, Vector3Int _targetPos) {
             // Sets the start and destination nodes
             PathNode startNode = new PathNode(_startPos);
             PathNode targetNode = new PathNode(_targetPos);
@@ -145,10 +142,12 @@ namespace Character {
         /// <summary>
         /// Used to check for colliders at a target position. 
         /// </summary>
-        /// <param name="_TargetPos"></param>
+        /// <param name="_targetNode"></param>
         /// <returns>True if there is a collider on the layer "WhatStopsMovement" at the target position. Otherwise returns false.</returns>
-        private bool ColliderCheck(Vector3 _TargetPos) {
-            if (Physics2D.OverlapCircle(_TargetPos, 0.2f, WhatStopsMovement)) {
+        private bool NodeColliderCheck(Vector3Int _targetNode) {
+            Vector3 checkPos = grid.GetCellCenterWorld(_targetNode);
+
+            if (Physics2D.OverlapCircle(checkPos, 0.2f, WhatStopsMovement)) {
                 return true;
             }
             return false;

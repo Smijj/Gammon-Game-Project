@@ -7,12 +7,14 @@ namespace Character {
     {
         private MoveController move;
 
-        [HideInInspector]
-        public Vector2 input;
+        private Vector2 input;
         private Vector2 lastInput;
 
-        public Animator anim;
+        
+
+        //public Animator anim;
         private Camera cam;
+
 
         private void Start() {
             cam = Camera.main;
@@ -54,10 +56,10 @@ namespace Character {
                 // e.g. the player moves to the right but presses the left key while their moving to move back.
                 // lastInput.x = 1, input.x = -1, thus the if statement triggers and the targetPoint becomes the lastPoint.
                 if (lastInput.x != 0 && input.x != 0 && input.x != lastInput.x) {
-                    move.SetTargetPosition(move.lastPoint);
+                    move.movePoint = move.lastPoint;
                 } 
                 else if (lastInput.y != 0 && input.y != 0 && input.y != lastInput.y) {
-                    move.SetTargetPosition(move.lastPoint);
+                    move.movePoint = move.lastPoint;
                 }
             }
         }
