@@ -4,20 +4,22 @@ using UnityEngine;
 
 public class PathNode
 {
-    private Vector3 worldPos;
+    public Vector3 worldPos;
+    public Vector3Int gridPos;
+    public PathNode parent;
 
-    public float gCost;
-    public float hCost;
-    public float fCost {
+    public int gCost = 0;
+    public int hCost = 0;
+    public int fCost {
         get {
             return gCost + hCost;
         }
     }
 
-    public PathNode nodeParent;
 
-    public PathNode(Vector3 _worldPos) {
+    public PathNode(Vector3 _worldPos, Vector3Int _gridPos) {
         worldPos = _worldPos;
+        gridPos = _gridPos;
     }
 
     public override string ToString() {

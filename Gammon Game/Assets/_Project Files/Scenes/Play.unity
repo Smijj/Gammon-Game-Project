@@ -5663,6 +5663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48603a0453515eb4999a062ca39392c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useDiagonalMovement: 1
 --- !u!4 &2041774710
 Transform:
   m_ObjectHideFlags: 0
@@ -5696,7 +5697,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   isMoving: 0
+  activePath: 0
   lastPoint: {x: 0, y: 0, z: 0}
+  movePoint: {x: 0, y: 0, z: 0}
   grid: {fileID: 1958857716}
   map: {fileID: 1499858431}
 --- !u!61 &2041774713
