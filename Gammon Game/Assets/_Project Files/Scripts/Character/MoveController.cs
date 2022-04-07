@@ -22,9 +22,11 @@ namespace Character {
         public Vector3 movePoint;
 
 
-        [Header("Grid Stuff")]
+        [Header("Pathfinding Settings")]
         public Grid grid;
         public Tilemap map;
+        
+        public bool pathDiagonally;
 
         private Vector3Int targetNodePos;
         private Vector3Int currentNodePos;
@@ -216,6 +218,24 @@ namespace Character {
 
         private List<PathNode> GetNeighbours(PathNode _node) {
             List<PathNode> neighbours = new List<PathNode>();
+            
+            if(pathDiagonally) {
+                //find only directly adjacent neighbours
+                // for through a 3x3 block around the current node.
+            for (int x = -1; x <= 1; x++) {
+                for (int y = -1; y <= 1; y++) {
+                    // When the for loop is looking at the center node, skip it.
+                    if (x==-1 && y==-1 || x==1 && y==-1 || x == 0 && y == 0 || x==-1 && y==1 || x==1 && y==1) continue;
+
+                    Vector3Int checkNode = _node.gridPos + new Vector3Int(x, y, 0);
+
+                    if (map.HasTile(checkNode)) {
+                        neighbours.Add(new PathNode(grid.GetCellCenterWorld(checkNode), checkNode));
+                    }
+                }
+            }
+            }
+            else {
 
             // for through a 3x3 block around the current node.
             for (int x = -1; x <= 1; x++) {
@@ -229,6 +249,7 @@ namespace Character {
                         neighbours.Add(new PathNode(grid.GetCellCenterWorld(checkNode), checkNode));
                     }
                 }
+            }
             }
 
             return neighbours;
