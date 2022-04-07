@@ -54,10 +54,10 @@ namespace Character {
                     }
                 }
             }else {
-                move.Move();
                 if (Mathf.Abs(input.normalized.magnitude) > 0) {
                     move.activePath = false;
                 }
+
                 // For cancelling a movement operation. Since the player cannot input anything while the object is
                 // moving to the target position, i added these 2 if statements to cancel that movement and return
                 // the player object to the last position it was at.

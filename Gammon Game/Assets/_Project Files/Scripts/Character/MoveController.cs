@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 
 namespace Character {
+    using Pathfinding;
+
     public class MoveController : MonoBehaviour
     {
         [Header("Movement Settings")]
@@ -53,9 +55,14 @@ namespace Character {
                     } else {
                         activePath = false;
                     }
-                } else {
+                } 
+                else {
                     Move();
                 }
+            } 
+            else {
+                if (isMoving)
+                    Move();
             }
         }
 
@@ -101,7 +108,6 @@ namespace Character {
                 // Moves the gameobject to the target position.
                 transform.position = Vector3.MoveTowards(transform.position, movePoint, moveSpeed * Time.deltaTime);
             } else {
-                print("Arrived");
                 isMoving = false;
             }
         }
@@ -116,7 +122,7 @@ namespace Character {
                 if (!NodeColliderCheck(targetNodePos)) {
                     if (activePath) activePath = false;
                     FindPath(currentNodePos, targetNodePos);
-                    Debug.Log("Moving to cell: " + targetNodePos);
+                    //Debug.Log("Moving to cell: " + targetNodePos);
                 }
                 else {
                     Debug.Log("Cannot Move to this Position.");
@@ -156,7 +162,7 @@ namespace Character {
 
                 // Found path
                 if (currentNode.gridPos == targetNode.gridPos) {
-                    print("Found target Node.");
+                    //print("Found target Node.");
                     //print("Openset Size: " + openSet.Count);
                     movementPath = RetracePath(startNode, currentNode);
                     activePath = true;
