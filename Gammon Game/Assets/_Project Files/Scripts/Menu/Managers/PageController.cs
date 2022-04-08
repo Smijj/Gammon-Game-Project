@@ -9,11 +9,12 @@ namespace Menu {
         None,
         Loading,
         Menu,
-        Settings,
-        Stats,
-        Recipes,
         Meals,
         Planner,
+        Recipes,
+        Settings,
+        Orders,
+        Stats,
         Contacts,
     }
 

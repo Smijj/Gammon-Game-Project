@@ -209,9 +209,7 @@ namespace Character {
 
             path.Reverse();
 
-            //foreach (PathNode node in path) {
-            //    StartCoroutine(SpawnSphere(node.worldPos, 1.5f));
-            //}
+            // Show path visually
 
             return path;
         }
