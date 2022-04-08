@@ -2119,8 +2119,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2003055315, guid: c56924373e4087d4c875f80deec2c63b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c56924373e4087d4c875f80deec2c63b, type: 3}
+--- !u!114 &749218443 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5510229275656468263, guid: c56924373e4087d4c875f80deec2c63b, type: 3}
+  m_PrefabInstance: {fileID: 749218442}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 606b05e4af32069459e6b093d33854ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &961216388
 GameObject:
   m_ObjectHideFlags: 0
@@ -2232,7 +2244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7629d14ea61fad42813fe74f676d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 2003055315}
+  data: {fileID: 749218443}
   page: {fileID: 642058227}
 --- !u!4 &1180123335
 Transform:
@@ -6069,17 +6081,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2003055315 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2003055315, guid: c56924373e4087d4c875f80deec2c63b, type: 3}
-  m_PrefabInstance: {fileID: 749218442}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 606b05e4af32069459e6b093d33854ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2009195636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6173,13 +6174,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3954125022610954175, guid: 3ee223208c5405e42addfb9f8e853914, type: 3}
       propertyPath: m_Name
-      value: Overlay Menu Controller
+      value: _PageManager
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3954125022610954164, guid: 3ee223208c5405e42addfb9f8e853914, type: 3}
-    - {fileID: 3283321758839068908, guid: 3ee223208c5405e42addfb9f8e853914, type: 3}
-    - {fileID: 4276064326970266509, guid: 3ee223208c5405e42addfb9f8e853914, type: 3}
-    - {fileID: 502287519, guid: 3ee223208c5405e42addfb9f8e853914, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ee223208c5405e42addfb9f8e853914, type: 3}
 --- !u!1 &2041774708
 GameObject:

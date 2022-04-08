@@ -29,7 +29,7 @@ namespace Menu {
 				if (enteryPage != PageType.None) {
 					TurnPageOn(enteryPage);
 				}
-                menusController = GetComponent<MenuButtonsController>();
+                menuManager = GetComponent<MenuManager>();
 				DontDestroyOnLoad(this);
 			} else {
 				Destroy(this);
@@ -47,7 +47,7 @@ namespace Menu {
 		private Hashtable m_Pages;
 
         [HideInInspector]
-        public MenuButtonsController menusController;
+        public MenuManager menuManager;
 
 
 		#region Unity Function

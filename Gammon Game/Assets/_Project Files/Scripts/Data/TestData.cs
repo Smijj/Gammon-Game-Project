@@ -29,6 +29,9 @@ namespace Data {
             if (Input.GetKeyDown(KeyCode.L)) {
                 page.TurnPageOn(PageType.Loading);
             }
+            if (Input.GetKeyDown(KeyCode.P)) {
+                page.TurnPageOn(PageType.Menu);
+            }
 
         }
 #endif

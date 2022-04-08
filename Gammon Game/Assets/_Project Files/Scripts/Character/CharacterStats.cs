@@ -39,12 +39,12 @@ namespace Character {
         //[HideInInspector]
         public bool isStunned = false;
 
-        [SerializeField]
+        /*[SerializeField]
         private int poisonStacks = 0;
         [SerializeField]
         private int slowStacks = 0;
         [SerializeField]
-        private int stunStacks = 0;
+        private int stunStacks = 0;*/
 
         public bool isDashing = false;
         public bool isAttacking = false;
