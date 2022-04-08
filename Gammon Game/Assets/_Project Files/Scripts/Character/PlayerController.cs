@@ -19,6 +19,11 @@ namespace Character {
         private void Start() {
             cam = Camera.main;
             move = GetComponent<MoveController>();
+
+            if (useDiagonalMovement)
+                move.pathDiagonally = true;
+            else
+                move.pathDiagonally = false;
         }
 
         private void Update() {
