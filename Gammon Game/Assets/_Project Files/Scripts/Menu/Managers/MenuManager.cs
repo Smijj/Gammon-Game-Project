@@ -13,7 +13,7 @@ namespace Menu {
         #region General
 
         public void General_ClosePage() {
-            PageController.singleton.TurnPageOff(PageController.activePage);
+            PageManager.singleton.TurnPageOff(PageManager.activePage);
         }
 
         #endregion
@@ -44,31 +44,31 @@ namespace Menu {
         #region Menu Buttons        
 
         public void Menu_Meals() {
-            PageController.singleton.TurnPageOff(PageType.Menu, PageType.Meals);
+            PageManager.singleton.TurnPageOff(PageType.Menu, PageType.Meals);
         }
 
         public void Menu_Planner() {
-            PageController.singleton.TurnPageOff(PageType.Menu, PageType.Planner);
+            PageManager.singleton.TurnPageOff(PageType.Menu, PageType.Planner);
         }
 
         public void Menu_Recipes() {
-            PageController.singleton.TurnPageOff(PageType.Menu, PageType.Recipes);
+            PageManager.singleton.TurnPageOff(PageType.Menu, PageType.Recipes);
         }
 
         public void Menu_Settings() {
-            PageController.singleton.TurnPageOff(PageType.Menu, PageType.Settings);
+            PageManager.singleton.TurnPageOff(PageType.Menu, PageType.Settings);
         }
         
         public void Menu_Orders() {
-            PageController.singleton.TurnPageOff(PageType.Menu, PageType.Orders);
+            PageManager.singleton.TurnPageOff(PageType.Menu, PageType.Orders);
         }
 
         public void Menu_Stats() {
-            PageController.singleton.TurnPageOff(PageType.Menu, PageType.Stats);
+            PageManager.singleton.TurnPageOff(PageType.Menu, PageType.Stats);
         }
 
         public void Menu_Contacts() {
-            PageController.singleton.TurnPageOff(PageType.Menu, PageType.Settings);
+            PageManager.singleton.TurnPageOff(PageType.Menu, PageType.Settings);
         }
 
         public void Menu_Save() {
@@ -76,7 +76,7 @@ namespace Menu {
         }
 
         public void Menu_Back() {
-            PageController.singleton.TurnPageOff(PageController.activePage, PageType.Menu);
+            PageManager.singleton.TurnPageOff(PageManager.activePage, PageType.Menu);
         }
 
         #endregion

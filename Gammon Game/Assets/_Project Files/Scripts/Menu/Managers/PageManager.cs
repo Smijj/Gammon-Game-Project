@@ -18,10 +18,10 @@ namespace Menu {
         Contacts,
     }
 
-    public class PageController : MonoBehaviour
+    public class PageManager : MonoBehaviour
     {
 		#region Singleton
-		public static PageController singleton;
+		public static PageManager singleton;
 		private void CheckSingleton() {
 			if (!singleton) {
 				singleton = this;

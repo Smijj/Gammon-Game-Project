@@ -42,7 +42,7 @@ namespace GameManagement {
             SceneManager.sceneLoaded -= OnLevelFinishedLoading;
         }
         private void OnLevelFinishedLoading(Scene _scene, LoadSceneMode _mode) {
-            PageController.singleton.TurnPageOff(PageController.activePage);
+            PageManager.singleton.TurnPageOff(PageManager.activePage);
 
             //if (_scene.name == "Play") InitGame();
             currentScene = _scene;

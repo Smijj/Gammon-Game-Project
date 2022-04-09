@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Data {
-    public class DataController : MonoBehaviour
+    public class DataManager : MonoBehaviour
     {
         private static readonly string DATA_SCORE = "score";
         private static readonly string DATA_HIGHSCORE = "highscore";
