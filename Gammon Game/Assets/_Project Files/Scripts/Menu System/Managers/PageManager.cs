@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Menu {
+namespace MenuSystem {
     using GameManagement;
     public enum PageType {
         None,

@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Tilemaps;
 
-namespace Character {
+namespace CharacterSystems {
     using Pathfinding;
 
     public class MoveController : MonoBehaviour
@@ -13,9 +14,9 @@ namespace Character {
         public int moveDistance = 1;
         public LayerMask WhatStopsMovement;
 
-        public bool isMoving = false;
-        public bool activePath = false;
-        
+        public bool useDiagonalMovement = true;
+        public bool moveOnMouseRelease = true;
+
         [HideInInspector]
         public Vector3 lastPoint;
         [HideInInspector]
@@ -25,17 +26,23 @@ namespace Character {
         [Header("Pathfinding Settings")]
         public Grid grid;
         public Tilemap map;
-        
-        public bool pathDiagonally = true;
+
+        public GameObject pathHighlightPrefab;
+        private List<GameObject> pathHighlightList = new List<GameObject>();
 
         private Vector3Int targetNodePos;
         private Vector3Int currentNodePos;
 
         private List<PathNode> openSet;
         private List<PathNode> closedSet;
-        
         private List<PathNode> movementPath;
 
+
+        [Header("Debug")]
+        public bool isMoving = false;
+        public bool activePath = false;
+        public bool pathFound = false;
+        
 
         #region Unity Functions
 
@@ -55,7 +62,9 @@ namespace Character {
                         movementPath.RemoveAt(0);
                         isMoving = true;
                     } else {
+                        ClearPathHighlight();
                         activePath = false;
+                        pathFound = false;
                     }
                 } 
                 else {
@@ -113,21 +122,33 @@ namespace Character {
                 isMoving = false;
             }
         }
-        
 
 
+        private Vector3Int targetPosTemp;
+        private Vector3Int currentPosTemp;
         public void AutoPath(Vector3 _worldPos) {
             targetNodePos = grid.WorldToCell(_worldPos);
             currentNodePos = grid.WorldToCell(transform.position);
+            
+            // if the targetnode or the current node have changed, the path is different and no longer found
+            if (targetNodePos != targetPosTemp | currentNodePos != currentPosTemp) {
+                pathFound = false;
+            }
 
-            if (map.HasTile(targetNodePos)) {
-                if (!NodeColliderCheck(targetNodePos)) {
-                    if (activePath) activePath = false;
-                    FindPath(currentNodePos, targetNodePos);
-                    //Debug.Log("Moving to cell: " + targetNodePos);
-                }
-                else {
-                    Debug.Log("Cannot Move to this Position.");
+            // This if statement is here to prevent this code from being called repeatedly for no reason
+            if (!pathFound) {
+                targetPosTemp = targetNodePos;
+                currentPosTemp = currentNodePos;
+
+                if (map.HasTile(targetNodePos)) {
+                    if (!NodeColliderCheck(targetNodePos)) {
+                        if (activePath) activePath = false;
+                        FindPath(currentNodePos, targetNodePos);
+                        //Debug.Log("Moving to cell: " + targetNodePos);
+                    }
+                    else {
+                        Debug.Log("Cannot Move to this Position.");
+                    }
                 }
             }
         }
@@ -167,7 +188,7 @@ namespace Character {
                     //print("Found target Node.");
                     //print("Openset Size: " + openSet.Count);
                     movementPath = RetracePath(startNode, currentNode);
-                    activePath = true;
+                    pathFound = true;
                     return;
                 }
 
@@ -196,6 +217,9 @@ namespace Character {
             }
             // Prints if a path could not be found and the while loop is exited
             Debug.Log("Could not find a path, or the exceeded the search limit.");
+            pathFound = false;
+            // BUG: This isnt working for some reason.
+            ClearPathHighlight();   
         }
 
         private List<PathNode> RetracePath(PathNode _startNode, PathNode _endNode) {
@@ -210,14 +234,32 @@ namespace Character {
             path.Reverse();
 
             // Show path visually
+            HighlightPath(path);
 
             return path;
         }
 
+        private void HighlightPath(List<PathNode> _path) {
+            ClearPathHighlight();
+            foreach (PathNode node in _path) {
+                pathHighlightList.Add(Instantiate(pathHighlightPrefab, node.worldPos, Quaternion.identity));
+            }
+        }
+
+        private void ClearPathHighlight() {
+            if (pathHighlightList.Count > 0) {
+                foreach (GameObject item in pathHighlightList) {
+                    Destroy(item);
+                }
+                pathHighlightList.Clear();
+            }
+        }
+
+
         private List<PathNode> GetNeighbours(PathNode _node) {
             List<PathNode> neighbours = new List<PathNode>();
             
-            if(pathDiagonally) { 
+            if(useDiagonalMovement) { 
                 // for through a 3x3 block around the current node.
                 for (int x = -1; x <= 1; x++) {
                     for (int y = -1; y <= 1; y++) {

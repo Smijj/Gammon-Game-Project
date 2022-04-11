@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Data {
+namespace GameManagement {
     public class DataManager : MonoBehaviour
     {
         private static readonly string DATA_SCORE = "score";

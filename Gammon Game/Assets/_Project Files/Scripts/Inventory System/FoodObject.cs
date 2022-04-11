@@ -16,16 +16,15 @@ namespace InventorySystem {
     {
         [Header("Basic Information")]
         public new string name;
-        public DishType dishType;
-        [Min(0)]
-        public int dishValue;
-        
-
         public Sprite foodSprite;
+        [Min(0)]
+        public int dishValue = 0;
+        
+        public DishType dishType;
+        public Sprite dishTypeSprite;
+        
         
         [TextArea(5, 10)]
         public string description;
-
-
     }
 }

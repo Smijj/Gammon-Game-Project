@@ -2373,7 +2373,7 @@ GameObject:
   - component: {fileID: 1499858427}
   - component: {fileID: 1499858429}
   - component: {fileID: 1499858428}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tilemap_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6976,6 +6976,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3694268764000664274, guid: 3ee223208c5405e42addfb9f8e853914, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3694786908320067898, guid: 3ee223208c5405e42addfb9f8e853914, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -8509,7 +8513,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48603a0453515eb4999a062ca39392c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useDiagonalMovement: 1
 --- !u!4 &2041774710
 Transform:
   m_ObjectHideFlags: 0
@@ -8543,13 +8546,16 @@ MonoBehaviour:
   WhatStopsMovement:
     serializedVersion: 2
     m_Bits: 64
-  isMoving: 0
-  activePath: 0
+  useDiagonalMovement: 1
+  moveOnMouseRelease: 1
   lastPoint: {x: 0, y: 0, z: 0}
   movePoint: {x: 0, y: 0, z: 0}
   grid: {fileID: 1958857716}
   map: {fileID: 1499858431}
-  pathDiagonally: 0
+  pathHighlightPrefab: {fileID: 8705688121449926182, guid: 2b390426a4d37024a90c9e652948c02f, type: 3}
+  isMoving: 0
+  activePath: 0
+  pathFound: 0
 --- !u!61 &2041774713
 BoxCollider2D:
   m_ObjectHideFlags: 0

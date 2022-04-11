@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-namespace Menu {
+namespace MenuSystem {
     public class SliderValueDisplay : MonoBehaviour
     {
         public TMP_InputField text;

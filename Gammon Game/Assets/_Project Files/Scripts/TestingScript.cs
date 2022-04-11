@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-using Data;
-using Menu;
+using GameManagement;
+using MenuSystem;
 
 public class TestingScript: MonoBehaviour
 {

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace GameManagement {
-    using Menu;
+    using MenuSystem;
 
     public class GameManager : MonoBehaviour
     {
@@ -56,13 +56,13 @@ namespace GameManagement {
         public static void PauseGame() {
             isPaused = true;
             Time.timeScale = 0;
-            //Debug.Log("Pause Game");
+            Debug.Log("Pause Game");
         }
 
         public static void UnpauseGame() {
             isPaused = false;
             Time.timeScale = 1;
-            //Debug.Log("Unpause Game");
+            Debug.Log("Unpause Game");
         }
 
         #endregion

@@ -2,15 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Character {
+namespace CharacterSystems {
     public class PlayerController : MonoBehaviour
     {
         private MoveController move;
 
         private Vector2 input;
         private Vector2 lastInput;
-
-        public bool useDiagonalMovement = true;
 
         //public Animator anim;
         private Camera cam;
@@ -19,17 +17,17 @@ namespace Character {
         private void Start() {
             cam = Camera.main;
             move = GetComponent<MoveController>();
-
-            if (useDiagonalMovement)
-                move.pathDiagonally = true;
-            else
-                move.pathDiagonally = false;
         }
 
         private void Update() {
 
-            if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1)) {
+            if (Input.GetMouseButton(0) || Input.GetMouseButton(1)) {
                 move.AutoPath(cam.ScreenToWorldPoint(Input.mousePosition));
+            }
+            if (Input.GetMouseButtonUp(0) || Input.GetMouseButtonUp(1)) {
+                if(move.pathFound) {
+                    move.activePath = true;
+                }
             }
 
 
@@ -41,7 +39,7 @@ namespace Character {
                 if (lastInput.x != 0) lastInput.x = 0;
                 if (lastInput.y != 0) lastInput.y = 0;
 
-                if (useDiagonalMovement) {
+                if (move.useDiagonalMovement) {
                     if (Mathf.Abs(input.normalized.magnitude) > 0) {
                         move.IncrementPosition(input);
                         lastInput = input;

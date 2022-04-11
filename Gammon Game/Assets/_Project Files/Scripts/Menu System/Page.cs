@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-    namespace Menu {
+    namespace MenuSystem {
         public class Page : MonoBehaviour {
 
             public static readonly string FLAG_ON = "On";

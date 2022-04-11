@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-namespace Character {
+namespace CharacterSystems {
     using GameManagement;
 
     public enum Effect {
