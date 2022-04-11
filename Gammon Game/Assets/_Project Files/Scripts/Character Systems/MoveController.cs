@@ -6,6 +6,7 @@ using UnityEngine.Tilemaps;
 
 namespace CharacterSystems {
     using Pathfinding;
+    using GameManagement;
 
     public class MoveController : MonoBehaviour
     {
@@ -53,27 +54,29 @@ namespace CharacterSystems {
         }
 
         private void Update() {
-            if (activePath) {
-                if(!isMoving) {
-                    if (movementPath.Count > 0) {
-                        movePoint = movementPath[0].worldPos;
-                        lastPoint = transform.position;
+            if (!GameManager.isPaused) {
+                if (activePath) {
+                    if(!isMoving) {
+                        if (movementPath.Count > 0) {
+                            movePoint = movementPath[0].worldPos;
+                            lastPoint = transform.position;
 
-                        movementPath.RemoveAt(0);
-                        isMoving = true;
-                    } else {
-                        ClearPathHighlight();
-                        activePath = false;
-                        pathFound = false;
+                            movementPath.RemoveAt(0);
+                            isMoving = true;
+                        } else {
+                            ClearPathHighlight();
+                            activePath = false;
+                            pathFound = false;
+                        }
+                    } 
+                    else {
+                        Move();
                     }
                 } 
                 else {
-                    Move();
+                    if (isMoving)
+                        Move();
                 }
-            } 
-            else {
-                if (isMoving)
-                    Move();
             }
         }
 
@@ -127,27 +130,29 @@ namespace CharacterSystems {
         private Vector3Int targetPosTemp;
         private Vector3Int currentPosTemp;
         public void AutoPath(Vector3 _worldPos) {
-            targetNodePos = grid.WorldToCell(_worldPos);
-            currentNodePos = grid.WorldToCell(transform.position);
+            if (!GameManager.isPaused) {
+                targetNodePos = grid.WorldToCell(_worldPos);
+                currentNodePos = grid.WorldToCell(transform.position);
             
-            // if the targetnode or the current node have changed, the path is different and no longer found
-            if (targetNodePos != targetPosTemp | currentNodePos != currentPosTemp) {
-                pathFound = false;
-            }
+                // if the targetnode or the current node have changed, the path is different and no longer found
+                if (targetNodePos != targetPosTemp | currentNodePos != currentPosTemp) {
+                    pathFound = false;
+                }
 
-            // This if statement is here to prevent this code from being called repeatedly for no reason
-            if (!pathFound) {
-                targetPosTemp = targetNodePos;
-                currentPosTemp = currentNodePos;
+                // This if statement is here to prevent this code from being called repeatedly for no reason
+                if (!pathFound) {
+                    targetPosTemp = targetNodePos;
+                    currentPosTemp = currentNodePos;
 
-                if (map.HasTile(targetNodePos)) {
-                    if (!NodeColliderCheck(targetNodePos)) {
-                        if (activePath) activePath = false;
-                        FindPath(currentNodePos, targetNodePos);
-                        //Debug.Log("Moving to cell: " + targetNodePos);
-                    }
-                    else {
-                        Debug.Log("Cannot Move to this Position.");
+                    if (map.HasTile(targetNodePos)) {
+                        if (!NodeColliderCheck(targetNodePos)) {
+                            if (activePath) activePath = false;
+                            FindPath(currentNodePos, targetNodePos);
+                            //Debug.Log("Moving to cell: " + targetNodePos);
+                        }
+                        else {
+                            Debug.Log("Cannot Move to this Position.");
+                        }
                     }
                 }
             }
