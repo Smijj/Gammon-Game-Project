@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Chips
   m_EditorClassIdentifier: 
   name: Chips
-  foodSprite: {fileID: 0}
+  foodSprite: {fileID: 4215388985286845756, guid: bc25e3068de41d6449c8c713a0025a72, type: 3}
   dishValue: 1
   dishType: 0
   dishTypeSprite: {fileID: 0}

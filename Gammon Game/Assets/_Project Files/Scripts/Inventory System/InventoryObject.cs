@@ -12,7 +12,7 @@ namespace InventorySystem {
 
         #region Public Functions
 
-        public bool AddItem(FoodObject _foodItem) {
+        public bool AddItem(RecipeObject _foodItem) {
             if (CheckForItem(_foodItem)) {
                 Debug.Log("Save Failed, item is already in the inventory or is a placeholder.");
                 return false;            
@@ -22,7 +22,7 @@ namespace InventorySystem {
             return true;
         }
 
-        public bool CheckForItem(FoodObject _foodItem) {
+        public bool CheckForItem(RecipeObject _foodItem) {
             for (int i = 0; i < Container.Count; i++) {
                 if (Container[i].foodItem == _foodItem) {
                     return true;
@@ -49,8 +49,8 @@ namespace InventorySystem {
 
     [System.Serializable]
     public class InventoryItem {
-        public FoodObject foodItem;
-        public InventoryItem(FoodObject _foodItem) {
+        public RecipeObject foodItem;
+        public InventoryItem(RecipeObject _foodItem) {
             foodItem = _foodItem;
         }
 

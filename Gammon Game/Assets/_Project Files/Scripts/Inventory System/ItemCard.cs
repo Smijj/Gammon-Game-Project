@@ -7,11 +7,12 @@ using TMPro;
 namespace InventorySystem {
     public class ItemCard : MonoBehaviour
     {
-        public FoodObject foodItem;
+        public RecipeObject foodItem;
 
         public Image foodSprite;
         public Image dishTypeSprite;
         public TextMeshProUGUI foodValueText;
+        public TextMeshProUGUI foodQuantityText;
 
         private void Start() {
             UpdateItemCard();

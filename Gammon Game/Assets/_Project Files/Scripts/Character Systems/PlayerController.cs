@@ -8,7 +8,6 @@ namespace CharacterSystems {
         private MoveController move;
 
         private Vector2 input;
-        private Vector2 lastInput;
 
         //public Animator anim;
         private Camera cam;
@@ -21,56 +20,38 @@ namespace CharacterSystems {
 
         private void Update() {
 
+            // Get input for mouse movement
             if (Input.GetMouseButton(0) || Input.GetMouseButton(1)) {
                 move.AutoPath(cam.ScreenToWorldPoint(Input.mousePosition));
             }
             if (Input.GetMouseButtonUp(0) || Input.GetMouseButtonUp(1)) {
-                if(move.pathFound) {
-                    move.activePath = true;
-                }
+                move.SetActivePath(true);
             }
 
-
+            // get input for WASD movement
             input.x = Input.GetAxisRaw("Horizontal");
             input.y = Input.GetAxisRaw("Vertical");
 
-
             if (!move.isMoving) {
-                if (lastInput.x != 0) lastInput.x = 0;
-                if (lastInput.y != 0) lastInput.y = 0;
-
                 if (move.useDiagonalMovement) {
                     if (Mathf.Abs(input.normalized.magnitude) > 0) {
                         move.IncrementPosition(input);
-                        lastInput = input;
                     }
                 } else {
                     // Moving on the x-axis
                     if (Mathf.Abs(input.x) == 1f) {
                         move.IncrementXPosition(input.x);
-                        lastInput.x = input.x;
                     }
                     // Moving on the y-axis
                     else if (Mathf.Abs(input.y) == 1f) {
                         move.IncrementYPosition(input.y);
-                        lastInput.y = input.y;
                     }
                 }
             }else {
+                // Cancels pathing if there is any input
                 if (Mathf.Abs(input.normalized.magnitude) > 0) {
-                    move.activePath = false;
+                    move.SetActivePath(false);
                 }
-
-                // For cancelling a movement operation. Since the player cannot input anything while the object is
-                // moving to the target position, i added these 2 if statements to cancel that movement and return
-                // the player object to the last position it was at.
-                // e.g. the player moves to the right but presses the left key while their moving to move back.
-                // lastInput.x = 1, input.x = -1, thus the if statement triggers and the targetPoint becomes the lastPoint.
-                //if (lastInput.x != 0 && input.x != 0 && input.x != lastInput.x) {
-                //    move.movePoint = move.lastPoint;
-                //} else if (lastInput.y != 0 && input.y != 0 && input.y != lastInput.y) {
-                //    move.movePoint = move.lastPoint;
-                //}
             }
         }
     }

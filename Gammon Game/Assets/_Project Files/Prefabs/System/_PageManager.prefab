@@ -2641,7 +2641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bfaec9721617c446bedc6d7f0f15492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foodInventory: {fileID: 11400000, guid: da130db725766664ea8ffb4403a5ee46, type: 2}
+  recipeInventory: {fileID: 11400000, guid: da130db725766664ea8ffb4403a5ee46, type: 2}
   preloadInv: {fileID: 11400000, guid: a2c8f1ecfd0eac0409a444811f03d7bf, type: 2}
   itemCards: []
 --- !u!114 &2979563393302904761
@@ -2657,17 +2657,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 25
-    m_Right: 25
-    m_Top: 25
+    m_Left: 15
+    m_Right: 15
+    m_Top: 40
     m_Bottom: 25
   m_ChildAlignment: 3
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 125, y: 125}
-  m_Spacing: {x: 25, y: 25}
+  m_CellSize: {x: 170, y: 170}
+  m_Spacing: {x: 40, y: 40}
   m_Constraint: 1
-  m_ConstraintCount: 4
+  m_ConstraintCount: 3
 --- !u!222 &6244501373287214712
 CanvasRenderer:
   m_ObjectHideFlags: 0

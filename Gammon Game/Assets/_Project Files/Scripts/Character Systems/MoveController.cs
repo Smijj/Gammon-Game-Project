@@ -39,10 +39,9 @@ namespace CharacterSystems {
         private List<PathNode> movementPath;
 
 
-        [Header("Debug")]
-        public bool isMoving = false;
-        public bool activePath = false;
-        public bool pathFound = false;
+        public bool isMoving { get; private set; } = false;
+        private bool activePath = false;
+        private bool pathFound = false;
         
 
         #region Unity Functions
@@ -70,12 +69,12 @@ namespace CharacterSystems {
                         }
                     } 
                     else {
-                        Move();
+                        Move(movePoint);
                     }
                 } 
                 else {
                     if (isMoving)
-                        Move();
+                        Move(movePoint);
                 }
             }
         }
@@ -85,6 +84,7 @@ namespace CharacterSystems {
 
         #region Public Functions
 
+        // This function is used for diagonal movement
         public void IncrementPosition(Vector3 _input) {
             currentNodePos = grid.WorldToCell(transform.position);
             Vector3Int targetNode = currentNodePos + new Vector3Int((int)_input.x, (int)_input.y, 0);
@@ -98,6 +98,7 @@ namespace CharacterSystems {
             isMoving = true;
         }
 
+        // These two functions are used for non-diagonal movement
         public void IncrementXPosition(float _xInput) {
             currentNodePos = grid.WorldToCell(transform.position);
             Vector3Int targetNode = currentNodePos + new Vector3Int((int)_xInput, 0, 0);
@@ -117,10 +118,25 @@ namespace CharacterSystems {
             isMoving = true;
         }
 
-        public void Move() {
-            if (transform.position != movePoint) {
+        /// <summary>
+        /// If a path exists, will set the activePath bool to the _setActivePath variable passed through
+        /// </summary>
+        /// <param name="_setActivePath"></param>
+        public void SetActivePath(bool _setActivePath = true) {
+            if (pathFound) {
+                activePath = _setActivePath;
+                if (_setActivePath == false)
+                    ClearPathHighlight();
+                } else {
+                ClearPathHighlight();
+            }
+        }
+
+        // Moves this gameObject to the movePoint
+        public void Move(Vector3 _movePoint) {
+            if (transform.position != _movePoint) {
                 // Moves the gameobject to the target position.
-                transform.position = Vector3.MoveTowards(transform.position, movePoint, moveSpeed * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position, _movePoint, moveSpeed * Time.deltaTime);
             } else {
                 isMoving = false;
             }
@@ -223,8 +239,7 @@ namespace CharacterSystems {
             // Prints if a path could not be found and the while loop is exited
             Debug.Log("Could not find a path, or the exceeded the search limit.");
             pathFound = false;
-            // BUG: This isnt working for some reason.
-            ClearPathHighlight();   
+            movementPath.Clear();            
         }
 
         private List<PathNode> RetracePath(PathNode _startNode, PathNode _endNode) {

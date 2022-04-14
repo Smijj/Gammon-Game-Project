@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95b2c2b7a203aea45a04dea7f1e25fe4, type: 3}
-  m_Name: Smash Burger
+  m_Name: Donut
   m_EditorClassIdentifier: 
-  name: Smash Burger
-  foodSprite: {fileID: 2670044322212791033, guid: 8fccabdd2f802bb47b8f8874d8730316, type: 3}
-  dishValue: 3
-  dishType: 1
+  name: Donut
+  foodSprite: {fileID: 5302949064078312947, guid: bc25e3068de41d6449c8c713a0025a72, type: 3}
+  dishValue: 2
+  dishType: 2
   dishTypeSprite: {fileID: 0}
   description: 

@@ -20,3 +20,5 @@ MonoBehaviour:
   - foodItem: {fileID: 11400000, guid: 5392bf06a25d8af4c880c9c052478e8a, type: 2}
   - foodItem: {fileID: 11400000, guid: ea403f1b3831b524a954d63a8eea9c3e, type: 2}
   - foodItem: {fileID: 11400000, guid: 03ae0eb51cabf28468b0d8d4fe1c76c2, type: 2}
+  - foodItem: {fileID: 11400000, guid: be82d9913f7979c4e9758227c3c8de43, type: 2}
+  - foodItem: {fileID: 11400000, guid: e1a2ddb652d619040b962b54fb8863ce, type: 2}

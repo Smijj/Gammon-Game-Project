@@ -9,11 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95b2c2b7a203aea45a04dea7f1e25fe4, type: 3}
-  m_Name: Pudding
+  m_Script: {fileID: 11500000, guid: 4dd1c34b553411845bedd45d90a094ef, type: 3}
+  m_Name: Recipe Inventory
   m_EditorClassIdentifier: 
-  name: Pudding
-  dishType: 2
-  dishValue: 4
-  foodSprite: {fileID: 0}
-  description: 
+  foodCard: {fileID: 3185455305599675709, guid: 582ba27d7f6211e46b8b810667a465f2, type: 3}
+  Container: []
