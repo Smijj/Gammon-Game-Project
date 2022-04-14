@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Coke
   dishType: 3
-  description: 
+  description: Is bad for you.
   dishValue: 1
   quantity: 12
   unlocked: 0

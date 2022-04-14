@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Bread
   dishType: 0
-  description: 
+  description: Mmm yeasty.
   dishValue: 1
   quantity: 5
   unlocked: 0

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Smash Burger
   dishType: 1
-  description: 
+  description: Got everythin yo.
   dishValue: 3
   quantity: 3
   unlocked: 0

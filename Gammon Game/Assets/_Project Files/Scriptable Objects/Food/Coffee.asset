@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Iced Coffee
   dishType: 3
-  description: 
+  description: BZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ!
   dishValue: 3
   quantity: 5
   unlocked: 0

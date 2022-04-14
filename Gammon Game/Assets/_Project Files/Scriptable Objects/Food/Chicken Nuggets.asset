@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Chicken Nuggets
   dishType: 1
-  description: 
+  description: NUGGETTSSSSS
   dishValue: 3
   quantity: 7
   unlocked: 0

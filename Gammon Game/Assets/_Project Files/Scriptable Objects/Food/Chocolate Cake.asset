@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Chocolate Cake
   dishType: 2
-  description: 
+  description: Chocolate! CHOCOLATE!!
   dishValue: 4
   quantity: 1
   unlocked: 0

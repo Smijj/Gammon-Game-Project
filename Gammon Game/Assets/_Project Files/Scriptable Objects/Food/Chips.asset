@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Chips
   dishType: 0
-  description: 
+  description: Much chip very salty.
   dishValue: 1
   quantity: 2
   unlocked: 0

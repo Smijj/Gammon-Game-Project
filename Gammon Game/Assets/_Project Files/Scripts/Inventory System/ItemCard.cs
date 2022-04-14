@@ -37,8 +37,11 @@ namespace InventorySystem {
         }
 
         public void OnPointerDown(PointerEventData eventData) {
-            //UpdateItemCard(displayItemCard, foodItem);
-            throw new System.NotImplementedException();
+            if(foodItem) {
+                if (!displayItemCard)
+                    displayItemCard = GameObject.FindGameObjectWithTag("ItemDisplayPanel").GetComponent<ItemCard>();
+                UpdateItemCard(displayItemCard, foodItem);
+            }
         }
     }
 }
