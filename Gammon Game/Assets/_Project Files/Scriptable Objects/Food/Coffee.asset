@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Coffee
   m_EditorClassIdentifier: 
   name: Iced Coffee
-  foodSprite: {fileID: -713787805359891087, guid: bc25e3068de41d6449c8c713a0025a72, type: 3}
-  dishValue: 3
   dishType: 3
-  dishTypeSprite: {fileID: 0}
   description: 
+  dishValue: 3
+  quantity: 5
+  unlocked: 0
+  foodSprite: {fileID: -713787805359891087, guid: bc25e3068de41d6449c8c713a0025a72, type: 3}
+  dishTypeSprite: {fileID: 0}

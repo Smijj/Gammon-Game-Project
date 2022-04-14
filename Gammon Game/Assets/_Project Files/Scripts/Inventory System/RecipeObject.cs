@@ -16,23 +16,30 @@ namespace InventorySystem {
     {
         [Header("Basic Information")]
         public new string name;
-        public Sprite foodSprite;
+        public DishType dishType;
+        [TextArea(3, 10)]
+        public string description;
+        
+        [Header("Stats")]
         [Min(0)]
         public int dishValue = 0;
-        public DishType dishType;
+        public int quantity = 0;
+        public bool unlocked = false;
+
+        [Header("Sprites")]
+        public Sprite foodSprite;
         public Sprite dishTypeSprite;
-        [TextArea(5, 10)]
-        public string description;
 
 
-        public int quantity { get; private set; } = 0;
-        public bool unlocked { get; private set; } = false;
 
-        public void AddQuantity(int _value) {
-            quantity += _value;
-        }
-        public void SetUnlocked(bool _value) {
-            unlocked = _value; 
-        }
+        //public int quantity { get; private set; } = 0;
+        //public bool unlocked { get; private set; } = false;
+
+        //public void AddQuantity(int _value) {
+        //    quantity += _value;
+        //}
+        //public void SetUnlocked(bool _value) {
+        //    unlocked = _value; 
+        //}
     }
 }

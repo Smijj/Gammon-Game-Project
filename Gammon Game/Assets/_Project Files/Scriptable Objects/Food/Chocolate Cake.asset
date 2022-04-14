@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Chocolate Cake
   m_EditorClassIdentifier: 
   name: Chocolate Cake
-  foodSprite: {fileID: -1675048598109021600, guid: 8fccabdd2f802bb47b8f8874d8730316, type: 3}
-  dishValue: 4
   dishType: 2
-  dishTypeSprite: {fileID: 0}
   description: 
+  dishValue: 4
+  quantity: 1
+  unlocked: 0
+  foodSprite: {fileID: -1675048598109021600, guid: 8fccabdd2f802bb47b8f8874d8730316, type: 3}
+  dishTypeSprite: {fileID: 0}

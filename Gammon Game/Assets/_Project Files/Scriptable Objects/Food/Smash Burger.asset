@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Smash Burger
   m_EditorClassIdentifier: 
   name: Smash Burger
-  foodSprite: {fileID: 2670044322212791033, guid: 8fccabdd2f802bb47b8f8874d8730316, type: 3}
-  dishValue: 3
   dishType: 1
-  dishTypeSprite: {fileID: 0}
   description: 
+  dishValue: 3
+  quantity: 3
+  unlocked: 0
+  foodSprite: {fileID: 2670044322212791033, guid: 8fccabdd2f802bb47b8f8874d8730316, type: 3}
+  dishTypeSprite: {fileID: 0}
