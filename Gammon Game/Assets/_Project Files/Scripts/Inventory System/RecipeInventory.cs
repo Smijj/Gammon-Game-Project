@@ -9,36 +9,13 @@ namespace InventorySystem {
         public InventoryObject recipeInventory;
         public InventoryObject preloadInv;
         
-        [Header("Inv Settings")]
-        private GridLayoutGroup gridGroup;
-        private RectTransform invRect;
-
-        [SerializeField]
-        private float invWidth = 0;
-        [SerializeField]
-        private float invHeight = 0;
-
         [SerializeField]
         private List<GameObject> itemCards;
 
 
         private void Start() {
             // If there is an inventory in the preloadInv var, this will preload the inventory with that. Otherwise will pass through null.
-            InstantiateInventory(preloadInv ? preloadInv : null);
-
-            gridGroup = GetComponent<GridLayoutGroup>();
-            invRect = GetComponent<RectTransform>();
-
-            
-        }
-
-        private void Update() {
-
-            // TODO. Not Working yet. 
-            //if (invWidth != invRect.rect.width || invHeight != invRect.rect.height) {
-            //    invWidth = invRect.rect.width;
-            //    invHeight = invRect.rect.height;
-            //}
+            InstantiateInventory(preloadInv ? preloadInv : null);            
         }
 
 

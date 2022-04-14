@@ -28,17 +28,24 @@ using UnityEngine;
 
             #region Public Functions
 
-            public void Animate(bool _on) {
-                if (useAnimation) {
-                    m_Animator.SetBool("on", _on);              // Uses the animator object to trigger the on state based on the parameter that comes in.
+            public void Animate(bool _on, bool _forceStopAnimation = false) { 
+                if (useAnimation && !_forceStopAnimation) {
+                    
+                    if (m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Rest")) {
+                        if (!_on)
+                            m_Animator.SetTrigger("offAnim");   // Triggers the off animation 
+                        else
+                            m_Animator.SetBool("on", _on);      // Uses the animator object to trigger the on state based on the parameter that comes in.
+                    } else {
+                        m_Animator.SetBool("on", _on);          // Uses the animator object to trigger the on state based on the parameter that comes in.
+                    }
 
                     // Use Coroutine to handle animation state
                     StopCoroutine("AwaitAnimation");         // Stop existing Coroutines before starting a new one to avoid multiple running simultaneously 
                     StartCoroutine("AwaitAnimation", _on);
                 } else {
-                    if (!_on) {
+                    if (!_on)
                         gameObject.SetActive(false);
-                    }
                 }
             }
 
