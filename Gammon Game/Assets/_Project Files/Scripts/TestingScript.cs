@@ -2,35 +2,46 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-using GameManagement;
+using Data;
 using MenuSystem;
 
 public class TestingScript: MonoBehaviour
 {
     public DataManager data;
     public PageManager page;
+    public StatsManager stats;
 
     #region Unity Functions
 
 #if UNITY_EDITOR
     private void Update() {
+        // testing player prefs
         if (Input.GetKeyDown(KeyCode.R)) {
             TestAddScore(1);
         }
-            
         if (Input.GetKeyDown(KeyCode.T)) {
             TestAddScore(-1);
         }
-            
         if (Input.GetKeyDown(KeyCode.Space)) {
             TestResetScore();
         }
 
+        // Testing page system
         if (Input.GetKeyDown(KeyCode.L)) {
             page.TurnPageOn(PageType.Loading);
         }
         if (Input.GetKeyDown(KeyCode.P)) {
             page.TurnPageOn(PageType.Menu);
+        }
+
+        // Testing Stats exp system
+        if (Input.GetKeyDown(KeyCode.M)) {
+            stats.AddExp("Fitness", 15);
+            Debug.Log("Adding 15 Exp.");
+        }
+        if (Input.GetKeyDown(KeyCode.N)) {
+            stats.AddExp("Fitness", -15);
+            Debug.Log("Subtracting 15 Exp.");
         }
 
     }

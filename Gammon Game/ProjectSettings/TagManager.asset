@@ -8,6 +8,7 @@ TagManager:
   - SubPanel1
   - SubPanel2
   - ItemDisplayPanel
+  - StatDisplayPanel
   layers:
   - Default
   - TransparentFX
