@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dd1c34b553411845bedd45d90a094ef, type: 3}
   m_Name: Recipe Inventory
   m_EditorClassIdentifier: 
-  foodCard: {fileID: 3185455305599675709, guid: 582ba27d7f6211e46b8b810667a465f2, type: 3}
+  recipeCard: {fileID: 3185455305599675709, guid: 582ba27d7f6211e46b8b810667a465f2, type: 3}
   Container: []

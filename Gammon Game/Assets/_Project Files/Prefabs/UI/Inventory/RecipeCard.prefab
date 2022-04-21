@@ -298,7 +298,7 @@ GameObject:
   - component: {fileID: 2708010955147051873}
   - component: {fileID: 6014491397014785103}
   m_Layer: 0
-  m_Name: ItemCard
+  m_Name: RecipeCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

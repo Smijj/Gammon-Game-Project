@@ -29,17 +29,5 @@ namespace InventorySystem {
         [Header("Sprites")]
         public Sprite foodSprite;
         public Sprite dishTypeSprite;
-
-
-
-        //public int quantity { get; private set; } = 0;
-        //public bool unlocked { get; private set; } = false;
-
-        //public void AddQuantity(int _value) {
-        //    quantity += _value;
-        //}
-        //public void SetUnlocked(bool _value) {
-        //    unlocked = _value; 
-        //}
     }
 }

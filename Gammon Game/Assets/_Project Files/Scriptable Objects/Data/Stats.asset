@@ -25,7 +25,7 @@ MonoBehaviour:
     level: 6
     exp: 10
     expLimit: 500
-    description: 
+    description: This is your style.
   - name: Fitness
     level: 5
     exp: 15
@@ -54,5 +54,5 @@ MonoBehaviour:
   - name: Something
     level: 0
     exp: 0
-    expLimit: 500
+    expLimit: 100
     description: New Stat

@@ -60,9 +60,9 @@ MonoBehaviour:
     exp: 0
     expLimit: 0
     description: 
-  expBar: {fileID: 4684194066334100464}
   itemName: {fileID: 7467580775554074510}
   itemExp: {fileID: 7875492781676145393}
+  expBar: {fileID: 4684194066334100464}
   itemDescText: {fileID: 0}
 --- !u!114 &1388451889170941568
 MonoBehaviour:
@@ -395,7 +395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.9245283, g: 0.8910031, b: 0.11774653, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -470,7 +470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.46226418, g: 0.46226418, b: 0.46226418, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:

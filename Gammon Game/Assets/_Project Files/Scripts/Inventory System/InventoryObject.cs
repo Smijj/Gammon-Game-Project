@@ -7,24 +7,24 @@ namespace InventorySystem {
     [CreateAssetMenu(fileName = "New Inventory", menuName = "Inventory System/New Inventory")]
     public class InventoryObject : ScriptableObject
     {
-        public GameObject foodCard;
+        public GameObject recipeCard;
         public List<InventoryItem> Container = new List<InventoryItem>();
 
         #region Public Functions
 
-        public bool AddItem(RecipeObject _foodItem) {
-            if (CheckForItem(_foodItem)) {
+        public bool AddItem(RecipeObject _recipe) {
+            if (CheckForItem(_recipe)) {
                 Debug.Log("Save Failed, item is already in the inventory or is a placeholder.");
                 return false;            
             }
             Debug.Log("Saved!");
-            Container.Add(new InventoryItem(_foodItem));
+            Container.Add(new InventoryItem(_recipe));
             return true;
         }
 
-        public bool CheckForItem(RecipeObject _foodItem) {
+        public bool CheckForItem(RecipeObject _recipe) {
             for (int i = 0; i < Container.Count; i++) {
-                if (Container[i].foodItem == _foodItem) {
+                if (Container[i].recipe == _recipe) {
                     return true;
                 }
             }
@@ -49,9 +49,9 @@ namespace InventorySystem {
 
     [System.Serializable]
     public class InventoryItem {
-        public RecipeObject foodItem;
-        public InventoryItem(RecipeObject _foodItem) {
-            foodItem = _foodItem;
+        public RecipeObject recipe;
+        public InventoryItem(RecipeObject _recipe) {
+            recipe = _recipe;
         }
 
     }
