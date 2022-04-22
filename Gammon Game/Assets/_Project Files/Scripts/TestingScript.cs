@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using GameManagement;
 using Data;
 using MenuSystem;
 
@@ -44,6 +45,13 @@ public class TestingScript: MonoBehaviour
             Debug.Log("Subtracting 15 Exp.");
         }
 
+        // Testing Pausing
+        if (Input.GetKeyDown(KeyCode.V)) {
+            GameManager.PauseGame();
+        }
+        if (Input.GetKeyDown(KeyCode.B)) {
+            GameManager.UnpauseGame();
+        }
     }
 #endif
 

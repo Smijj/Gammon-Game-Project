@@ -7,6 +7,7 @@ namespace CharacterSystems {
     {
         private MoveController move;
 
+        [SerializeField]
         private Vector2 input;
 
         //public Animator anim;

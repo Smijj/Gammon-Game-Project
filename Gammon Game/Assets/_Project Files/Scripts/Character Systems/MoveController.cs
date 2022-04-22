@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.Tilemaps;
 
 namespace CharacterSystems {
@@ -18,9 +17,9 @@ namespace CharacterSystems {
         public bool useDiagonalMovement = true;
         public bool moveOnMouseRelease = true;
 
-        [HideInInspector]
+        //[HideInInspector]
         public Vector3 lastPoint;
-        [HideInInspector]
+        //[HideInInspector]
         public Vector3 movePoint;
 
 
@@ -38,9 +37,11 @@ namespace CharacterSystems {
         private List<PathNode> closedSet;
         private List<PathNode> movementPath;
 
-
-        public bool isMoving { get; private set; } = false;
+        // { get; private set; }
+        public bool isMoving  = false;
+        [SerializeField]
         private bool activePath = false;
+        [SerializeField]
         private bool pathFound = false;
         
 
@@ -73,8 +74,9 @@ namespace CharacterSystems {
                     }
                 } 
                 else {
-                    if (isMoving)
+                    if (isMoving) {
                         Move(movePoint);
+                    }
                 }
             }
         }
