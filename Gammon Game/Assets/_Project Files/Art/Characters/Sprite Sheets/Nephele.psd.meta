@@ -1,0 +1,1200 @@
+fileFormatVersion: 2
+guid: 09689a4f99880894b94bd52e1077b831
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4054468364209245737
+    second: Sprite Sheet 2 (1)_0
+  - first:
+      213: 5191988178803619417
+    second: Sprite Sheet 2 (1)_1
+  - first:
+      213: 8990244881211204399
+    second: Sprite Sheet 2 (1)_2
+  - first:
+      213: 256779651700055254
+    second: Sprite Sheet 2 (1)_3
+  - first:
+      213: -4749382162297412015
+    second: Sprite Sheet 2 (1)_4
+  - first:
+      213: 605798182321310085
+    second: Sprite Sheet 2 (1)_5
+  - first:
+      213: 7667083854089023304
+    second: Sprite Sheet 2 (1)_6
+  - first:
+      213: -4253369690939022001
+    second: Sprite Sheet 2 (1)_7
+  - first:
+      213: 6245399773907878150
+    second: Sprite Sheet 2 (1)_8
+  - first:
+      213: 6723193196217631226
+    second: Sprite Sheet 2 (1)_9
+  - first:
+      213: -5423807918859142405
+    second: Sprite Sheet 2 (1)_10
+  - first:
+      213: 4967330712257271688
+    second: Sprite Sheet 2 (1)_11
+  - first:
+      213: -1603702489773672817
+    second: Sprite Sheet 2 (1)_12
+  - first:
+      213: 6643558412726849152
+    second: Sprite Sheet 2 (1)_13
+  - first:
+      213: -750054649229068486
+    second: Sprite Sheet 2 (1)_14
+  - first:
+      213: 1227301311356987586
+    second: Sprite Sheet 2 (1)_15
+  - first:
+      213: -2581751947018178300
+    second: Sprite Sheet 2 (1)_16
+  - first:
+      213: 7976829151363405638
+    second: Sprite Sheet 2 (1)_17
+  - first:
+      213: 1504675684628637093
+    second: Sprite Sheet 2 (1)_18
+  - first:
+      213: 1657681428426489348
+    second: Sprite Sheet 2 (1)_19
+  - first:
+      213: 5223680754756708266
+    second: Sprite Sheet 2 (1)_20
+  - first:
+      213: -5076371900378774326
+    second: Sprite Sheet 2 (1)_21
+  - first:
+      213: -8785097180247212114
+    second: Sprite Sheet 2 (1)_22
+  - first:
+      213: -7511767438100290032
+    second: Sprite Sheet 2 (1)_23
+  - first:
+      213: -6137539047474933461
+    second: Sprite Sheet 2 (1)_24
+  - first:
+      213: 531600973834758596
+    second: Sprite Sheet 2 (1)_25
+  - first:
+      213: 7803507231703774605
+    second: Sprite Sheet 2 (1)_26
+  - first:
+      213: 4012115091433987942
+    second: Sprite Sheet 2 (1)_27
+  - first:
+      213: -93384461449979684
+    second: Sprite Sheet 2 (1)_28
+  - first:
+      213: 8952914821339041877
+    second: Sprite Sheet 2 (1)_29
+  - first:
+      213: -2551561318353068000
+    second: Sprite Sheet 2 (1)_30
+  - first:
+      213: 971802940061245776
+    second: Sprite Sheet 2 (1)_31
+  - first:
+      213: -8698555081720244810
+    second: Sprite Sheet 2 (1)_32
+  - first:
+      213: 7747096760468326633
+    second: Sprite Sheet 2 (1)_38
+  - first:
+      213: -7892394722113755290
+    second: Sprite Sheet 2 (1)_39
+  - first:
+      213: 5580965425016627243
+    second: Sprite Sheet 2 (1)_40
+  - first:
+      213: -2886919809278891422
+    second: Sprite Sheet 2 (1)_47
+  - first:
+      213: 1851769598820875801
+    second: Sprite Sheet 2 (1)_49
+  - first:
+      213: 8997018577970870413
+    second: Sprite Sheet 2 (1)_33
+  - first:
+      213: -4288614888537159973
+    second: Sprite Sheet 2 (1)_34
+  - first:
+      213: -3442182037192028260
+    second: Nephele_Walk_Front_0
+  - first:
+      213: 875248710560007691
+    second: Nephele_Walk_Right_0
+  - first:
+      213: -6494368110416967804
+    second: Nephele_Walk_Back_0
+  - first:
+      213: 8050966871458943657
+    second: Nephele_Walk_Left_0
+  - first:
+      213: -7561076500183784841
+    second: Nephele_4
+  - first:
+      213: -4112481819656776207
+    second: Nephele_5
+  - first:
+      213: 5936578994628494249
+    second: Nephele_6
+  - first:
+      213: -2109266223938724349
+    second: Nephele_7
+  - first:
+      213: -1419973428025903458
+    second: Nephele_Walk_Front_1
+  - first:
+      213: 4222317109105057011
+    second: Nephele_Walk_Right_1
+  - first:
+      213: 5574972241592957668
+    second: Nephele_Walk_Back_1
+  - first:
+      213: -1277226109790680294
+    second: Nephele_Walk_Left_1
+  - first:
+      213: -2525323236890411510
+    second: Nephele_12
+  - first:
+      213: 7577060003589657152
+    second: Nephele_13
+  - first:
+      213: 5231350306450300041
+    second: Nephele_14
+  - first:
+      213: -749870791383467193
+    second: Nephele_15
+  - first:
+      213: -2091310797515617643
+    second: Nephele_Walk_Front_2
+  - first:
+      213: -1002136854947599613
+    second: Nephele_Walk_Right_2
+  - first:
+      213: -7273778358405747285
+    second: Nephele_Walk_Back_2
+  - first:
+      213: -3999232485906828435
+    second: Nephele_Walk_Left_2
+  - first:
+      213: 6236243534061030388
+    second: Nephele_20
+  - first:
+      213: 942542629562477055
+    second: Nephele_21
+  - first:
+      213: 1902301580456987817
+    second: Nephele_22
+  - first:
+      213: 3773182432960884972
+    second: Nephele_23
+  - first:
+      213: 3112647759682084991
+    second: Nephele_24
+  - first:
+      213: -3286399977183211859
+    second: Nephele_25
+  - first:
+      213: 5095658921149797586
+    second: Nephele_26
+  - first:
+      213: 6340784794055582593
+    second: Nephele_27
+  - first:
+      213: 6730822512800425802
+    second: Nephele_28
+  - first:
+      213: -3946385492056275266
+    second: Nephele_29
+  - first:
+      213: 783702055829280882
+    second: Nephele_30
+  - first:
+      213: -1064936105190858454
+    second: Nephele_31
+  - first:
+      213: -9013135258565042652
+    second: Nephele_32
+  - first:
+      213: 6168754996396739435
+    second: Nephele_38
+  - first:
+      213: -5744248231292891525
+    second: Nephele_39
+  - first:
+      213: -7906294745147241610
+    second: Nephele_40
+  - first:
+      213: -5637690796369860286
+    second: Nephele_47
+  - first:
+      213: 8646466233984543821
+    second: Nephele_33
+  - first:
+      213: 8642188774241028468
+    second: Nephele_34
+  - first:
+      213: -223532674153091342
+    second: Nephele_35
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Nephele_Walk_Front_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 331
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f40f4bca9ea30d0800000000000000
+      internalID: -3442182037192028260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_Walk_Right_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 331
+        width: 29
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b064c03a012852c00800000000000000
+      internalID: 875248710560007691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_Walk_Back_0
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 331
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487c8f9bc9e5fd5a0800000000000000
+      internalID: -6494368110416967804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_Walk_Left_0
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 331
+        width: 29
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a29fb7b6b7cabf60800000000000000
+      internalID: 8050966871458943657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_4
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 334
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772edfebbf8a11790800000000000000
+      internalID: -7561076500183784841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_5
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 334
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f51b1ae2978de6c0800000000000000
+      internalID: -4112481819656776207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_6
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 334
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a380eb6427f26250800000000000000
+      internalID: 5936578994628494249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_7
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 334
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e17617b816ab2e0800000000000000
+      internalID: -2109266223938724349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_Walk_Front_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 271
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e96b508c0bd3b4ce0800000000000000
+      internalID: -1419973428025903458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_Walk_Right_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 271
+        width: 29
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fcd2493a0fa89a30800000000000000
+      internalID: 4222317109105057011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_Walk_Back_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 271
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eabfcc57b74e5d40800000000000000
+      internalID: 5574972241592957668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_Walk_Left_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 271
+        width: 29
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b8214ce91664ee0800000000000000
+      internalID: -1277226109790680294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_12
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 271
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e7b1255ef34fcd0800000000000000
+      internalID: -2525323236890411510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_13
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 271
+        width: 29
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04218c3adef172960800000000000000
+      internalID: 7577060003589657152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_14
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 271
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98cd997036d799840800000000000000
+      internalID: 5231350306450300041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_15
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 271
+        width: 29
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74bb52cfc7ce795f0800000000000000
+      internalID: -749870791383467193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_Walk_Front_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 211
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a842fe8eb2af2e0800000000000000
+      internalID: -2091310797515617643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_Walk_Right_2
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 211
+        width: 29
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b658807d1b712f0800000000000000
+      internalID: -1002136854947599613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_Walk_Back_2
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 211
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad2d440f195e0b90800000000000000
+      internalID: -7273778358405747285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_Walk_Left_2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 211
+        width: 29
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d63325f2e3fdf78c0800000000000000
+      internalID: -3999232485906828435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_20
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 211
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fbc88404769b8650800000000000000
+      internalID: 6236243534061030388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_21
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 211
+        width: 29
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9ebbc1785941d00800000000000000
+      internalID: 942542629562477055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_22
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 211
+        width: 29
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac8dc66535566a10800000000000000
+      internalID: 1902301580456987817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_23
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 151
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0b06d7e690d5430800000000000000
+      internalID: 3773182432960884972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_24
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 151
+        width: 29
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7024ca55a8523b20800000000000000
+      internalID: 3112647759682084991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_25
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 151
+        width: 29
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae842202ac5462d0800000000000000
+      internalID: -3286399977183211859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_26
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 154
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d41fa37aca67b640800000000000000
+      internalID: 5095658921149797586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_27
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 152
+        width: 29
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 183a1eedc2efef750800000000000000
+      internalID: 6340784794055582593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_28
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 154
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47eba9f96fa86d50800000000000000
+      internalID: 6730822512800425802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_29
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 152
+        width: 29
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb60b37cd4f9b39c0800000000000000
+      internalID: -3946385492056275266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_30
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 91
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27892771ed440ea00800000000000000
+      internalID: 783702055829280882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_31
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 91
+        width: 29
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a216c9d21469831f0800000000000000
+      internalID: -1064936105190858454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_32
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 91
+        width: 29
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e9ea86c39eae280800000000000000
+      internalID: -9013135258565042652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_38
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 31
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6bc4aa5cf1db9550800000000000000
+      internalID: 6168754996396739435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_39
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 31
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e0f100ba45840b0800000000000000
+      internalID: -5744248231292891525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_40
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 31
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b06f191d2374290800000000000000
+      internalID: -7906294745147241610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_47
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 23
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249a2e82716e2c1b0800000000000000
+      internalID: -5637690796369860286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_33
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 74
+        width: 44
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4cee079a3b6ef770800000000000000
+      internalID: 8646466233984543821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_34
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 71
+        width: 48
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4794182e6e83fe770800000000000000
+      internalID: 8642188774241028468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephele_35
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 74
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe6969973ad5ecf0800000000000000
+      internalID: -223532674153091342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
