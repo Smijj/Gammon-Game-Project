@@ -7,6 +7,8 @@ TagManager:
   - SubPanel0
   - SubPanel1
   - SubPanel2
+  - StatInfoPanel
+  - RecipeInfoPanel
   layers:
   - Default
   - TransparentFX
@@ -14,7 +16,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - StopsMovement
   - 
   - 
   - 

@@ -1,0 +1,984 @@
+fileFormatVersion: 2
+guid: bc25e3068de41d6449c8c713a0025a72
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9093947906573962613
+    second: PixelFood02_Burger1
+  - first:
+      213: 6382821453933064904
+    second: PixelFood02_Burger2
+  - first:
+      213: -1836945219377311712
+    second: PixelFood02_Burger3
+  - first:
+      213: -1409293240712053801
+    second: PixelFood02_Burger4
+  - first:
+      213: 4215388985286845756
+    second: PixelFood02_Chips
+  - first:
+      213: -6671677901723110907
+    second: PixelFood02__5
+  - first:
+      213: -5188440897402726138
+    second: PixelFood02_Burger5
+  - first:
+      213: -8494296515886516168
+    second: PixelFood02_Burger6
+  - first:
+      213: 5722492294970755097
+    second: PixelFood02_Burger7
+  - first:
+      213: 8234493718188836605
+    second: PixelFood02_Burger8
+  - first:
+      213: 6081642447024418348
+    second: PixelFood02_Coke
+  - first:
+      213: -8832357728199029695
+    second: PixelFood02_Nuggets
+  - first:
+      213: -1720695592171462991
+    second: PixelFood02_ChickenLeg
+  - first:
+      213: -3683918767360670892
+    second: PixelFood02__13
+  - first:
+      213: 5991507666620176505
+    second: PixelFood02__14
+  - first:
+      213: -8043002394883070600
+    second: PixelFood02_Burger9
+  - first:
+      213: 5176774942094849345
+    second: PixelFood02_Chips2
+  - first:
+      213: 7690250972024827919
+    second: PixelFood02__17
+  - first:
+      213: 410957691355508383
+    second: PixelFood02__18
+  - first:
+      213: 8520238925078689951
+    second: PixelFood02__19
+  - first:
+      213: -508684797243623231
+    second: PixelFood02__20
+  - first:
+      213: -1111310023268292834
+    second: PixelFood02__21
+  - first:
+      213: -5383138320929281374
+    second: PixelFood02_Coke2
+  - first:
+      213: 800650106760973937
+    second: PixelFood02__23
+  - first:
+      213: 5302949064078312947
+    second: PixelFood02_Donut1
+  - first:
+      213: 4290328461681917638
+    second: PixelFood02_Donut2
+  - first:
+      213: -6672404411246242906
+    second: PixelFood02_Donut3
+  - first:
+      213: -6255949217249804452
+    second: PixelFood02_Donut4
+  - first:
+      213: -8761653067783922441
+    second: PixelFood02__28
+  - first:
+      213: -6284976580895778788
+    second: PixelFood02__29
+  - first:
+      213: 512224681333716564
+    second: PixelFood02__30
+  - first:
+      213: 8777091413262964369
+    second: PixelFood02__31
+  - first:
+      213: -3298028623274083189
+    second: PixelFood02__32
+  - first:
+      213: 1594757036185213066
+    second: PixelFood02__33
+  - first:
+      213: -713787805359891087
+    second: PixelFood02_Coffee
+  - first:
+      213: 7680147465461292558
+    second: PixelFood02__35
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PixelFood02_Burger1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 368
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8270ce8f8ecbc180800000000000000
+      internalID: -9093947906573962613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02_Burger2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 368
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c23c627b46549850800000000000000
+      internalID: 6382821453933064904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02_Burger3
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 368
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 020d9273e0cd186e0800000000000000
+      internalID: -1836945219377311712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02_Burger4
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 368
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dbbffaa34f217ce0800000000000000
+      internalID: -1409293240712053801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02_Chips
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 369
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c35ed12b2f1108a30800000000000000
+      internalID: 4215388985286845756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02__5
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 368
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50278f3eb407963a0800000000000000
+      internalID: -6671677901723110907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02_Burger5
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 296
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 609933c4e74fef7b0800000000000000
+      internalID: -5188440897402726138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02_Burger6
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 296
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838feb1d2523e1a80800000000000000
+      internalID: -8494296515886516168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02_Burger7
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 296
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91844a75c606a6f40800000000000000
+      internalID: 5722492294970755097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02_Burger8
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 296
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df6c4d1986cc64270800000000000000
+      internalID: 8234493718188836605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02_Coke
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 296
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ee3d96595566450800000000000000
+      internalID: 6081642447024418348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02_Nuggets
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 296
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c458921792d6580800000000000000
+      internalID: -8832357728199029695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02_ChickenLeg
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 224
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be1a0eb97cde18e0800000000000000
+      internalID: -1720695592171462991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02__13
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 224
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453821a366710ecc0800000000000000
+      internalID: -3683918767360670892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02__14
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 224
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 978dce97a7c162350800000000000000
+      internalID: 5991507666620176505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02_Burger9
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 224
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 875e06d7fe3816090800000000000000
+      internalID: -8043002394883070600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02_Chips2
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 224
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 145f4b1d16997d740800000000000000
+      internalID: 5176774942094849345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02__17
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 224
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00742da38249ba60800000000000000
+      internalID: 7690250972024827919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02__18
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 152
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ea5fac7d304b500800000000000000
+      internalID: 410957691355508383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02__19
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 152
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9875c20928fd3670800000000000000
+      internalID: 8520238925078689951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02__20
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 152
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c8f6ad3fd9c0f8f0800000000000000
+      internalID: -508684797243623231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02__21
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 152
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1723cbfb65d390f0800000000000000
+      internalID: -1111310023268292834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02_Coke2
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 152
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aaa73cd7304b45b0800000000000000
+      internalID: -5383138320929281374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02__23
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 152
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ecdd2b70b7c1b00800000000000000
+      internalID: 800650106760973937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02_Donut1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 80
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f5c06ad31cd79940800000000000000
+      internalID: 5302949064078312947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02_Donut2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 80
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce7c48310f4a8b30800000000000000
+      internalID: 4290328461681917638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02_Donut3
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 80
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a31be53a8bd663a0800000000000000
+      internalID: -6672404411246242906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02_Donut4
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 80
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f31f415576e29a0800000000000000
+      internalID: -6255949217249804452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02__28
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 80
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc1781c4fa586680800000000000000
+      internalID: -8761653067783922441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02__29
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 80
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18de02591747c8a0800000000000000
+      internalID: -6284976580895778788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02__30
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 8
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 456751042a9cb1700800000000000000
+      internalID: 512224681333716564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02__31
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 8
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1969ba8232e7ec970800000000000000
+      internalID: 8777091413262964369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02__32
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 8
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c7daad07c0b32d0800000000000000
+      internalID: -3298028623274083189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02__33
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 8
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88dfd43317b12610800000000000000
+      internalID: 1594757036185213066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02_Coffee
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 8
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d9488d5cd1816f0800000000000000
+      internalID: -713787805359891087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood02__35
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 8
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0edf6dbd6d559a60800000000000000
+      internalID: 7680147465461292558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

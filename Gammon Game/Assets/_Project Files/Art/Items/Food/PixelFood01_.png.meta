@@ -1,0 +1,3837 @@
+fileFormatVersion: 2
+guid: 8fccabdd2f802bb47b8f8874d8730316
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 228419766509957012
+    second: 32x32 Pixel Food_0
+  - first:
+      213: -79223765369529626
+    second: 32x32 Pixel Food_1
+  - first:
+      213: 3208538771893206609
+    second: 32x32 Pixel Food_2
+  - first:
+      213: 595244067570522184
+    second: 32x32 Pixel Food_3
+  - first:
+      213: -5530702888362593252
+    second: 32x32 Pixel Food_4
+  - first:
+      213: -305781211708401410
+    second: 32x32 Pixel Food_5
+  - first:
+      213: -9099695244073083956
+    second: 32x32 Pixel Food_6
+  - first:
+      213: 2630751847529430787
+    second: 32x32 Pixel Food_7
+  - first:
+      213: -6091117106890980175
+    second: 32x32 Pixel Food_8
+  - first:
+      213: 199233881043197808
+    second: 32x32 Pixel Food_9
+  - first:
+      213: -4599252713658616429
+    second: PixelFood01_Plate
+  - first:
+      213: 300941256682310047
+    second: PixelFood01_Plate2
+  - first:
+      213: 5899626073082538967
+    second: PixelFood01_MultiplePlates
+  - first:
+      213: -6516110135213040368
+    second: PixelFood01_Bowl
+  - first:
+      213: -7660414472360568422
+    second: PixelFood01_Pie
+  - first:
+      213: 7322885236502781194
+    second: PixelFood01_PiePlate
+  - first:
+      213: -4705413295753732904
+    second: PixelFood01_Bread
+  - first:
+      213: 5399540143980340174
+    second: PixelFood01_BreadPlate
+  - first:
+      213: -2149562352444272600
+    second: PixelFood01_Bread2
+  - first:
+      213: 3843677706746250254
+    second: PixelFood01_Bread2Plate
+  - first:
+      213: -9099128297981895631
+    second: 32x32 Pixel Food_20
+  - first:
+      213: -2328331559956707240
+    second: 32x32 Pixel Food_21
+  - first:
+      213: 4841103336407181042
+    second: PixelFood01_Bacon
+  - first:
+      213: 2965574453741274159
+    second: PixelFood01_BaconPlate
+  - first:
+      213: 2670044322212791033
+    second: PixelFood01_Burger
+  - first:
+      213: -3160782551811538686
+    second: PixelFood01_BurgerPlate
+  - first:
+      213: 2069309179788558813
+    second: 32x32 Pixel Food_26
+  - first:
+      213: 615590451113645759
+    second: 32x32 Pixel Food_27
+  - first:
+      213: 3402427974333786448
+    second: 32x32 Pixel Food_28
+  - first:
+      213: -1421979524796084737
+    second: PixelFood01_Donut
+  - first:
+      213: 2202072839399001943
+    second: PixelFood01_DonutPlate
+  - first:
+      213: -5116496564659747783
+    second: 32x32 Pixel Food_31
+  - first:
+      213: 5658652913010474451
+    second: 32x32 Pixel Food_32
+  - first:
+      213: -835211872873051635
+    second: 32x32 Pixel Food_33
+  - first:
+      213: 4259420957318595711
+    second: 32x32 Pixel Food_34
+  - first:
+      213: -8469135134601231485
+    second: 32x32 Pixel Food_35
+  - first:
+      213: -6096133997494777176
+    second: 32x32 Pixel Food_36
+  - first:
+      213: 2277197017644485384
+    second: PixelFood01_Cookie
+  - first:
+      213: 4605451640476090845
+    second: PixelFood01_CookiePlate
+  - first:
+      213: -1675048598109021600
+    second: PixelFood01_ChoclateCake
+  - first:
+      213: 1810927379306087447
+    second: PixelFood01_ChoclatePlateCake
+  - first:
+      213: -5613790403030626799
+    second: 32x32 Pixel Food_41
+  - first:
+      213: 4893638204055432295
+    second: 32x32 Pixel Food_42
+  - first:
+      213: -7594997081739807647
+    second: 32x32 Pixel Food_43
+  - first:
+      213: -4572033466047800552
+    second: 32x32 Pixel Food_44
+  - first:
+      213: -3267821238886874269
+    second: PixelFood01_Dumplings
+  - first:
+      213: -3705385120068460742
+    second: PixelFood01_DumplingsPlate
+  - first:
+      213: 4523987179997634395
+    second: PixelFood01_Egg
+  - first:
+      213: -3677451924116118177
+    second: PixelFood01_EggPlate
+  - first:
+      213: 4324502264793848791
+    second: PixelFood01_FriedRice
+  - first:
+      213: -7702441466503412891
+    second: PixelFood01_FriedRicePlate
+  - first:
+      213: 4516789992084914096
+    second: 32x32 Pixel Food_51
+  - first:
+      213: 8568070906936594785
+    second: 32x32 Pixel Food_52
+  - first:
+      213: 4915033948875666128
+    second: 32x32 Pixel Food_53
+  - first:
+      213: 722446647664265039
+    second: 32x32 Pixel Food_54
+  - first:
+      213: 1540977321064246326
+    second: 32x32 Pixel Food_55
+  - first:
+      213: 473070509137231725
+    second: 32x32 Pixel Food_56
+  - first:
+      213: -4836096264303031494
+    second: 32x32 Pixel Food_57
+  - first:
+      213: 6058084142262447668
+    second: 32x32 Pixel Food_58
+  - first:
+      213: -5005458405164219137
+    second: 32x32 Pixel Food_59
+  - first:
+      213: 1594062824035561438
+    second: 32x32 Pixel Food_60
+  - first:
+      213: 4070944537649307876
+    second: 32x32 Pixel Food_61
+  - first:
+      213: 8971021207559417247
+    second: 32x32 Pixel Food_62
+  - first:
+      213: -1358982658920746094
+    second: 32x32 Pixel Food_63
+  - first:
+      213: 4143912398947422104
+    second: 32x32 Pixel Food_64
+  - first:
+      213: -7615622100009909983
+    second: 32x32 Pixel Food_65
+  - first:
+      213: 6712860531375483067
+    second: PixelFood01_Icecream
+  - first:
+      213: -3482263793119706362
+    second: PixelFood01_IcecreamPlate
+  - first:
+      213: 8272013951834390475
+    second: 32x32 Pixel Food_68
+  - first:
+      213: -1873653334707954823
+    second: 32x32 Pixel Food_69
+  - first:
+      213: -6640070740990281162
+    second: PixelFood01_Soda
+  - first:
+      213: -5038641371323830363
+    second: 32x32 Pixel Food_71
+  - first:
+      213: 1754187451930973316
+    second: 32x32 Pixel Food_72
+  - first:
+      213: -3079082569185010278
+    second: 32x32 Pixel Food_73
+  - first:
+      213: 4158189987568109594
+    second: 32x32 Pixel Food_74
+  - first:
+      213: -1552543367721651388
+    second: 32x32 Pixel Food_75
+  - first:
+      213: -578762152141248882
+    second: 32x32 Pixel Food_76
+  - first:
+      213: -8024999767296754440
+    second: 32x32 Pixel Food_77
+  - first:
+      213: 2931489072161504838
+    second: 32x32 Pixel Food_78
+  - first:
+      213: -7094973869677697112
+    second: 32x32 Pixel Food_79
+  - first:
+      213: 887091253657083554
+    second: 32x32 Pixel Food_80
+  - first:
+      213: -7167390488116134486
+    second: 32x32 Pixel Food_81
+  - first:
+      213: 860164716349211109
+    second: 32x32 Pixel Food_82
+  - first:
+      213: -3795643405088482179
+    second: 32x32 Pixel Food_83
+  - first:
+      213: -6218240531607447785
+    second: 32x32 Pixel Food_84
+  - first:
+      213: -8321355152986245736
+    second: 32x32 Pixel Food_85
+  - first:
+      213: -6736400640446541663
+    second: 32x32 Pixel Food_86
+  - first:
+      213: 8155099190793244096
+    second: 32x32 Pixel Food_87
+  - first:
+      213: 5025461406946368959
+    second: 32x32 Pixel Food_88
+  - first:
+      213: -4667758080712760567
+    second: 32x32 Pixel Food_89
+  - first:
+      213: -6372604368055079796
+    second: 32x32 Pixel Food_90
+  - first:
+      213: -2447153156169684810
+    second: 32x32 Pixel Food_91
+  - first:
+      213: 1686704388481741626
+    second: 32x32 Pixel Food_92
+  - first:
+      213: 4856212963759219876
+    second: 32x32 Pixel Food_93
+  - first:
+      213: -376620674423895541
+    second: 32x32 Pixel Food_94
+  - first:
+      213: 507748191660005959
+    second: 32x32 Pixel Food_95
+  - first:
+      213: 406122416103024358
+    second: 32x32 Pixel Food_96
+  - first:
+      213: -312111153257845929
+    second: 32x32 Pixel Food_97
+  - first:
+      213: 822444189650312765
+    second: 32x32 Pixel Food_98
+  - first:
+      213: -6392136825278275493
+    second: 32x32 Pixel Food_99
+  - first:
+      213: -9216551887524970123
+    second: 32x32 Pixel Food_100
+  - first:
+      213: 4477101674927609856
+    second: 32x32 Pixel Food_101
+  - first:
+      213: 1591451713108488362
+    second: 32x32 Pixel Food_102
+  - first:
+      213: -5767689519021707787
+    second: 32x32 Pixel Food_103
+  - first:
+      213: -7389257469760293769
+    second: 32x32 Pixel Food_104
+  - first:
+      213: -4083772003754638046
+    second: 32x32 Pixel Food_105
+  - first:
+      213: 8857607857599138791
+    second: 32x32 Pixel Food_106
+  - first:
+      213: -2004009337469860917
+    second: 32x32 Pixel Food_107
+  - first:
+      213: 9185834743125118919
+    second: 32x32 Pixel Food_108
+  - first:
+      213: 4792459260732625759
+    second: 32x32 Pixel Food_109
+  - first:
+      213: 2969284382310670994
+    second: 32x32 Pixel Food_110
+  - first:
+      213: -6230784231937365983
+    second: 32x32 Pixel Food_111
+  - first:
+      213: -3125895306681906517
+    second: 32x32 Pixel Food_112
+  - first:
+      213: -8294606969622026422
+    second: 32x32 Pixel Food_113
+  - first:
+      213: 8815071661211689977
+    second: 32x32 Pixel Food_114
+  - first:
+      213: 7762427044514277611
+    second: 32x32 Pixel Food_115
+  - first:
+      213: -5142717201432193349
+    second: 32x32 Pixel Food_116
+  - first:
+      213: 7251508684060313270
+    second: 32x32 Pixel Food_117
+  - first:
+      213: -7626372531854883564
+    second: 32x32 Pixel Food_118
+  - first:
+      213: 5107522335158652266
+    second: 32x32 Pixel Food_119
+  - first:
+      213: 4648434463133591972
+    second: 32x32 Pixel Food_120
+  - first:
+      213: 8053310934628886104
+    second: 32x32 Pixel Food_121
+  - first:
+      213: 3130639232782096065
+    second: 32x32 Pixel Food_122
+  - first:
+      213: 6541347542053671329
+    second: 32x32 Pixel Food_123
+  - first:
+      213: -201055637667465156
+    second: 32x32 Pixel Food_124
+  - first:
+      213: -3058622743070055953
+    second: 32x32 Pixel Food_125
+  - first:
+      213: 6944052452984423605
+    second: 32x32 Pixel Food_126
+  - first:
+      213: -5251512705609488948
+    second: 32x32 Pixel Food_127
+  - first:
+      213: -5291438607655853226
+    second: 32x32 Pixel Food_128
+  - first:
+      213: -4761813105003803589
+    second: 32x32 Pixel Food_129
+  - first:
+      213: 3251206487197750085
+    second: 32x32 Pixel Food_130
+  - first:
+      213: 6754539132416750019
+    second: 32x32 Pixel Food_131
+  - first:
+      213: -5155667001154740917
+    second: 32x32 Pixel Food_132
+  - first:
+      213: -5625948830227901547
+    second: 32x32 Pixel Food_133
+  - first:
+      213: -8185814076311437281
+    second: 32x32 Pixel Food_134
+  - first:
+      213: -3595102540404153326
+    second: 32x32 Pixel Food_135
+  - first:
+      213: 6021015135733255896
+    second: 32x32 Pixel Food_136
+  - first:
+      213: -2167231285077069832
+    second: 32x32 Pixel Food_137
+  - first:
+      213: 6217893776353391100
+    second: 32x32 Pixel Food_138
+  - first:
+      213: 4633544514857023323
+    second: 32x32 Pixel Food_139
+  - first:
+      213: 758787162138226891
+    second: 32x32 Pixel Food_140
+  - first:
+      213: 6427022366004873491
+    second: 32x32 Pixel Food_141
+  - first:
+      213: 3846804664363749747
+    second: 32x32 Pixel Food_142
+  - first:
+      213: 3737159294861473528
+    second: 32x32 Pixel Food_143
+  - first:
+      213: -595970225978979681
+    second: 32x32 Pixel Food_144
+  - first:
+      213: 1176889094712083942
+    second: 32x32 Pixel Food_145
+  - first:
+      213: -3787493438381970092
+    second: 32x32 Pixel Food_146
+  - first:
+      213: -3774722007865131006
+    second: 32x32 Pixel Food_147
+  - first:
+      213: 117024085297177194
+    second: 32x32 Pixel Food_148
+  - first:
+      213: -4794038068991340717
+    second: 32x32 Pixel Food_149
+  - first:
+      213: 3456988879298217898
+    second: 32x32 Pixel Food_150
+  - first:
+      213: -6520118584392481959
+    second: 32x32 Pixel Food_151
+  - first:
+      213: 4734558180802535573
+    second: 32x32 Pixel Food_152
+  - first:
+      213: -2259073841959521597
+    second: 32x32 Pixel Food_153
+  - first:
+      213: -3678330993222495746
+    second: 32x32 Pixel Food_154
+  - first:
+      213: -5996041073101006273
+    second: 32x32 Pixel Food_155
+  - first:
+      213: -1837628687618367909
+    second: 32x32 Pixel Food_156
+  - first:
+      213: 2041560566614820194
+    second: 32x32 Pixel Food_157
+  - first:
+      213: 1637835554612188702
+    second: 32x32 Pixel Food_158
+  - first:
+      213: 6601619693866301908
+    second: 32x32 Pixel Food_159
+  - first:
+      213: 3125498768156011648
+    second: 32x32 Pixel Food_160
+  - first:
+      213: -8197303640161678559
+    second: 32x32 Pixel Food_161
+  - first:
+      213: -5363479607795234644
+    second: 32x32 Pixel Food_162
+  - first:
+      213: 659572137819216270
+    second: 32x32 Pixel Food_163
+  - first:
+      213: 887644136915895080
+    second: 32x32 Pixel Food_164
+  - first:
+      213: 3561134282142052867
+    second: 32x32 Pixel Food_165
+  - first:
+      213: 7724058390758545590
+    second: 32x32 Pixel Food_166
+  - first:
+      213: -8499257927491753164
+    second: 32x32 Pixel Food_167
+  - first:
+      213: 273869197617936906
+    second: 32x32 Pixel Food_168
+  - first:
+      213: -5649383867762356002
+    second: 32x32 Pixel Food_169
+  - first:
+      213: 72553921150745465
+    second: 32x32 Pixel Food_170
+  - first:
+      213: -5864669372231979193
+    second: 32x32 Pixel Food_171
+  - first:
+      213: 7148693659626322463
+    second: 32x32 Pixel Food_172
+  - first:
+      213: 3059029111283791855
+    second: 32x32 Pixel Food_173
+  - first:
+      213: 7288576602921149589
+    second: 32x32 Pixel Food_174
+  - first:
+      213: 8979312756204965625
+    second: 32x32 Pixel Food_175
+  - first:
+      213: 5383292977263165534
+    second: 32x32 Pixel Food_176
+  - first:
+      213: 5470480396475506243
+    second: 32x32 Pixel Food_177
+  - first:
+      213: -4275702290288167286
+    second: 32x32 Pixel Food_178
+  - first:
+      213: -1512383019322005209
+    second: 32x32 Pixel Food_179
+  - first:
+      213: -2885418777571596110
+    second: 32x32 Pixel Food_180
+  - first:
+      213: -9191245052927199263
+    second: 32x32 Pixel Food_181
+  - first:
+      213: 1662521135746518297
+    second: 32x32 Pixel Food_182
+  - first:
+      213: -5115224310401779425
+    second: 32x32 Pixel Food_183
+  - first:
+      213: 33233333276487657
+    second: 32x32 Pixel Food_184
+  - first:
+      213: -7083500010924848432
+    second: 32x32 Pixel Food_185
+  - first:
+      213: 3414966009935001316
+    second: 32x32 Pixel Food_186
+  - first:
+      213: -8511725759680919115
+    second: 32x32 Pixel Food_187
+  - first:
+      213: -2101224829548094732
+    second: 32x32 Pixel Food_188
+  - first:
+      213: -599143042220624326
+    second: 32x32 Pixel Food_189
+  - first:
+      213: -3241309588671475667
+    second: 32x32 Pixel Food_190
+  - first:
+      213: -3430255234694699319
+    second: 32x32 Pixel Food_191
+  - first:
+      213: 6507629092227820413
+    second: 32x32 Pixel Food_192
+  - first:
+      213: -1191315533177890740
+    second: 32x32 Pixel Food_193
+  - first:
+      213: -4926855116721407536
+    second: 32x32 Pixel Food_194
+  - first:
+      213: -5623775774381802818
+    second: 32x32 Pixel Food_195
+  - first:
+      213: -4530133224484797640
+    second: 32x32 Pixel Food_196
+  - first:
+      213: 5226634981239851694
+    second: 32x32 Pixel Food_197
+  - first:
+      213: -7553848619253619120
+    second: 32x32 Pixel Food_198
+  - first:
+      213: -1041287676640561732
+    second: 32x32 Pixel Food_199
+  - first:
+      213: -2456822658010951594
+    second: 32x32 Pixel Food_200
+  - first:
+      213: -3345052292812027818
+    second: 32x32 Pixel Food_201
+  - first:
+      213: 8079613050586739465
+    second: 32x32 Pixel Food_202
+  - first:
+      213: 311229589106245414
+    second: 32x32 Pixel Food_203
+  - first:
+      213: 5615636457770180682
+    second: 32x32 Pixel Food_204
+  - first:
+      213: 683757500749803249
+    second: 32x32 Pixel Food_205
+  - first:
+      213: 6478449519783273425
+    second: 32x32 Pixel Food_206
+  - first:
+      213: 2934096682638737004
+    second: 32x32 Pixel Food_207
+  - first:
+      213: -8645853776478972665
+    second: 32x32 Pixel Food_208
+  - first:
+      213: -6050041836188174886
+    second: 32x32 Pixel Food_209
+  - first:
+      213: 2897342652153442856
+    second: 32x32 Pixel Food_210
+  - first:
+      213: -1107644412847132410
+    second: 32x32 Pixel Food_211
+  - first:
+      213: 7772745936668393336
+    second: 32x32 Pixel Food_212
+  - first:
+      213: 7611100762107116910
+    second: 32x32 Pixel Food_213
+  - first:
+      213: -2839088109957752557
+    second: 32x32 Pixel Food_214
+  - first:
+      213: -5815503473801608454
+    second: 32x32 Pixel Food_215
+  - first:
+      213: -4564549578646774530
+    second: 32x32 Pixel Food_216
+  - first:
+      213: -6439681119851613444
+    second: 32x32 Pixel Food_217
+  - first:
+      213: -675588468052350191
+    second: 32x32 Pixel Food_218
+  - first:
+      213: 230961238712631432
+    second: 32x32 Pixel Food_219
+  - first:
+      213: 3825635641206025748
+    second: 32x32 Pixel Food_220
+  - first:
+      213: 3236889680182268561
+    second: 32x32 Pixel Food_221
+  - first:
+      213: -3824692678829859366
+    second: 32x32 Pixel Food_222
+  - first:
+      213: 731445356231598504
+    second: 32x32 Pixel Food_223
+  - first:
+      213: 3092056766197247739
+    second: 32x32 Pixel Food_224
+  - first:
+      213: -8442968801711739891
+    second: 32x32 Pixel Food_225
+  - first:
+      213: 3579980263599173312
+    second: 32x32 Pixel Food_226
+  - first:
+      213: -2897500269440095277
+    second: 32x32 Pixel Food_227
+  - first:
+      213: -3308116720145694509
+    second: 32x32 Pixel Food_228
+  - first:
+      213: -6114906511802369982
+    second: 32x32 Pixel Food_229
+  - first:
+      213: -5113774007687901592
+    second: 32x32 Pixel Food_230
+  - first:
+      213: 5235746402493825280
+    second: 32x32 Pixel Food_231
+  - first:
+      213: 7897552306849968623
+    second: 32x32 Pixel Food_232
+  - first:
+      213: -6418027683190303253
+    second: 32x32 Pixel Food_233
+  - first:
+      213: 5263648733152521126
+    second: 32x32 Pixel Food_234
+  - first:
+      213: -2956459317425633521
+    second: 32x32 Pixel Food_235
+  - first:
+      213: 3132893927747710282
+    second: 32x32 Pixel Food_236
+  - first:
+      213: -8447584790462340341
+    second: 32x32 Pixel Food_237
+  - first:
+      213: 5381167911066705859
+    second: 32x32 Pixel Food_238
+  - first:
+      213: -1330373269183575565
+    second: 32x32 Pixel Food_239
+  - first:
+      213: 7087808753015504012
+    second: 32x32 Pixel Food_240
+  - first:
+      213: 7626626232891174826
+    second: 32x32 Pixel Food_241
+  - first:
+      213: -1516342544201392034
+    second: 32x32 Pixel Food_242
+  - first:
+      213: 1646943853796202348
+    second: 32x32 Pixel Food_243
+  - first:
+      213: 6116051156718329175
+    second: 32x32 Pixel Food_244
+  - first:
+      213: 8004480714221475741
+    second: 32x32 Pixel Food_245
+  - first:
+      213: -616800869813752819
+    second: 32x32 Pixel Food_246
+  - first:
+      213: -6624249892501403332
+    second: 32x32 Pixel Food_247
+  - first:
+      213: 5054947465641851552
+    second: 32x32 Pixel Food_248
+  - first:
+      213: 1776949747059940465
+    second: 32x32 Pixel Food_249
+  - first:
+      213: -987609621575773479
+    second: 32x32 Pixel Food_250
+  - first:
+      213: -7011292683767017120
+    second: 32x32 Pixel Food_251
+  - first:
+      213: 4565490158539745068
+    second: 32x32 Pixel Food_252
+  - first:
+      213: 380262892851620518
+    second: 32x32 Pixel Food_253
+  - first:
+      213: -3762561318880997991
+    second: 32x32 Pixel Food_254
+  - first:
+      213: 1526697631730786488
+    second: 32x32 Pixel Food_255
+  - first:
+      213: -601959574694495433
+    second: 32x32 Pixel Food_256
+  - first:
+      213: 947528844074855030
+    second: 32x32 Pixel Food_257
+  - first:
+      213: 1231186950126926204
+    second: 32x32 Pixel Food_258
+  - first:
+      213: -8735953566118493991
+    second: 32x32 Pixel Food_259
+  - first:
+      213: 5481306349666228495
+    second: 32x32 Pixel Food_260
+  - first:
+      213: -6980143419811852239
+    second: 32x32 Pixel Food_261
+  - first:
+      213: -6246322032492446014
+    second: 32x32 Pixel Food_262
+  - first:
+      213: 3481681280645627444
+    second: 32x32 Pixel Food_263
+  - first:
+      213: 253221340313885536
+    second: 32x32 Pixel Food_264
+  - first:
+      213: 2278123446814708239
+    second: 32x32 Pixel Food_265
+  - first:
+      213: -4553932022737991529
+    second: 32x32 Pixel Food_266
+  - first:
+      213: -210225640674106196
+    second: 32x32 Pixel Food_267
+  - first:
+      213: 6017112480693830882
+    second: 32x32 Pixel Food_268
+  - first:
+      213: 9046071351224801639
+    second: 32x32 Pixel Food_269
+  - first:
+      213: -7806499096705605225
+    second: 32x32 Pixel Food_270
+  - first:
+      213: -529336163583038354
+    second: 32x32 Pixel Food_271
+  - first:
+      213: -6094646105356674069
+    second: 32x32 Pixel Food_272
+  - first:
+      213: 4783681027488973346
+    second: 32x32 Pixel Food_273
+  - first:
+      213: -1942402332782226557
+    second: 32x32 Pixel Food_274
+  - first:
+      213: -1829192164374578010
+    second: 32x32 Pixel Food_275
+  - first:
+      213: -4377437179538700835
+    second: 32x32 Pixel Food_276
+  - first:
+      213: -7670689152153028136
+    second: 32x32 Pixel Food_277
+  - first:
+      213: -8126193366030529849
+    second: 32x32 Pixel Food_278
+  - first:
+      213: 8115548230004093064
+    second: 32x32 Pixel Food_279
+  - first:
+      213: 8425161537277908888
+    second: 32x32 Pixel Food_280
+  - first:
+      213: -6319393115414451773
+    second: 32x32 Pixel Food_281
+  - first:
+      213: 7275407393654898220
+    second: 32x32 Pixel Food_282
+  - first:
+      213: -8520026653257397291
+    second: 32x32 Pixel Food_283
+  - first:
+      213: 3594659730936293988
+    second: 32x32 Pixel Food_284
+  - first:
+      213: -4643459080656059096
+    second: 32x32 Pixel Food_285
+  - first:
+      213: 3997245861100529821
+    second: 32x32 Pixel Food_286
+  - first:
+      213: -545364857304818297
+    second: 32x32 Pixel Food_287
+  - first:
+      213: -3245080978803859654
+    second: 32x32 Pixel Food_288
+  - first:
+      213: 3960640056387879228
+    second: 32x32 Pixel Food_289
+  - first:
+      213: 3197145603209073842
+    second: 32x32 Pixel Food_290
+  - first:
+      213: -1230955371703333286
+    second: 32x32 Pixel Food_291
+  - first:
+      213: 1419768765906991691
+    second: 32x32 Pixel Food_292
+  - first:
+      213: -6275848017012104815
+    second: 32x32 Pixel Food_293
+  - first:
+      213: -7271051453692295878
+    second: 32x32 Pixel Food_294
+  - first:
+      213: -4175800387770112262
+    second: 32x32 Pixel Food_295
+  - first:
+      213: 2192804325754707101
+    second: 32x32 Pixel Food_296
+  - first:
+      213: 5485521469230503645
+    second: 32x32 Pixel Food_297
+  - first:
+      213: -8555822188723453756
+    second: 32x32 Pixel Food_298
+  - first:
+      213: 4037362285764347915
+    second: 32x32 Pixel Food_299
+  - first:
+      213: 6830816437974483613
+    second: 32x32 Pixel Food_300
+  - first:
+      213: 2451485829393591231
+    second: 32x32 Pixel Food_301
+  - first:
+      213: -1213946901399377851
+    second: 32x32 Pixel Food_302
+  - first:
+      213: -2202713483924335363
+    second: 32x32 Pixel Food_303
+  - first:
+      213: -3869388643919247013
+    second: 32x32 Pixel Food_304
+  - first:
+      213: -4426725800636988090
+    second: 32x32 Pixel Food_305
+  - first:
+      213: 5915687737834127558
+    second: 32x32 Pixel Food_306
+  - first:
+      213: -7554753844701028674
+    second: 32x32 Pixel Food_307
+  - first:
+      213: 3092209361249510414
+    second: 32x32 Pixel Food_308
+  - first:
+      213: -8696941877643039295
+    second: 32x32 Pixel Food_309
+  - first:
+      213: 7372295918581975072
+    second: 32x32 Pixel Food_310
+  - first:
+      213: -7834434355207284568
+    second: 32x32 Pixel Food_311
+  - first:
+      213: 1758689873338749472
+    second: 32x32 Pixel Food_312
+  - first:
+      213: -5891726576468046143
+    second: 32x32 Pixel Food_313
+  - first:
+      213: -4618316319371054770
+    second: 32x32 Pixel Food_314
+  - first:
+      213: -5320180456778189878
+    second: 32x32 Pixel Food_315
+  - first:
+      213: 3312776013257554674
+    second: 32x32 Pixel Food_316
+  - first:
+      213: -3222779850739817263
+    second: 32x32 Pixel Food_317
+  - first:
+      213: -927458636900730649
+    second: 32x32 Pixel Food_318
+  - first:
+      213: -356748039858077580
+    second: 32x32 Pixel Food_319
+  - first:
+      213: -4087337957425604774
+    second: 32x32 Pixel Food_320
+  - first:
+      213: -714516618962394414
+    second: 32x32 Pixel Food_321
+  - first:
+      213: -3599093030188535489
+    second: 32x32 Pixel Food_322
+  - first:
+      213: -5163663838448243400
+    second: 32x32 Pixel Food_323
+  - first:
+      213: 2552671411389390971
+    second: 32x32 Pixel Food_324
+  - first:
+      213: -2013589260422551174
+    second: 32x32 Pixel Food_325
+  - first:
+      213: -1385401838419624256
+    second: 32x32 Pixel Food_326
+  - first:
+      213: 6214705898192932977
+    second: 32x32 Pixel Food_327
+  - first:
+      213: -3383954012193261572
+    second: 32x32 Pixel Food_328
+  - first:
+      213: -7039070738337815194
+    second: 32x32 Pixel Food_329
+  - first:
+      213: 605625386437400079
+    second: 32x32 Pixel Food_330
+  - first:
+      213: -6681253742052075496
+    second: 32x32 Pixel Food_331
+  - first:
+      213: 6432347969502299098
+    second: 32x32 Pixel Food_332
+  - first:
+      213: 9174803480582014550
+    second: 32x32 Pixel Food_333
+  - first:
+      213: 8318398141973327225
+    second: 32x32 Pixel Food_334
+  - first:
+      213: -2124889476049531906
+    second: 32x32 Pixel Food_335
+  - first:
+      213: -1949442156410303752
+    second: 32x32 Pixel Food_336
+  - first:
+      213: 4174937117518729718
+    second: 32x32 Pixel Food_337
+  - first:
+      213: 6541182326692249203
+    second: 32x32 Pixel Food_338
+  - first:
+      213: 5243340305108666463
+    second: 32x32 Pixel Food_339
+  - first:
+      213: 168830033434278496
+    second: 32x32 Pixel Food_340
+  - first:
+      213: -4430311165638444709
+    second: 32x32 Pixel Food_341
+  - first:
+      213: 7086740433599191383
+    second: 32x32 Pixel Food_342
+  - first:
+      213: -4759240475442172836
+    second: 32x32 Pixel Food_343
+  - first:
+      213: 8265498299948774569
+    second: 32x32 Pixel Food_344
+  - first:
+      213: -3563019762065229428
+    second: 32x32 Pixel Food_345
+  - first:
+      213: -7756409649647729572
+    second: 32x32 Pixel Food_346
+  - first:
+      213: -1035653333441194556
+    second: 32x32 Pixel Food_347
+  - first:
+      213: -532931090086525688
+    second: 32x32 Pixel Food_348
+  - first:
+      213: 8497664491668023830
+    second: 32x32 Pixel Food_349
+  - first:
+      213: -5202948175552591694
+    second: 32x32 Pixel Food_350
+  - first:
+      213: -5676343670905074901
+    second: 32x32 Pixel Food_351
+  - first:
+      213: -2897101045783471607
+    second: 32x32 Pixel Food_352
+  - first:
+      213: -1147100277736654118
+    second: 32x32 Pixel Food_353
+  - first:
+      213: 5143743708701759077
+    second: 32x32 Pixel Food_354
+  - first:
+      213: -288956459760209903
+    second: 32x32 Pixel Food_355
+  - first:
+      213: -1973080250501616890
+    second: 32x32 Pixel Food_356
+  - first:
+      213: -971488952417317457
+    second: 32x32 Pixel Food_357
+  - first:
+      213: -919968927776958873
+    second: 32x32 Pixel Food_358
+  - first:
+      213: -2521439994278415960
+    second: 32x32 Pixel Food_359
+  - first:
+      213: -8654333112519961236
+    second: 32x32 Pixel Food_360
+  - first:
+      213: -1583768931375728467
+    second: 32x32 Pixel Food_361
+  - first:
+      213: -2272048209745075698
+    second: 32x32 Pixel Food_362
+  - first:
+      213: 7899030468665906032
+    second: 32x32 Pixel Food_363
+  - first:
+      213: -3135610544343737439
+    second: 32x32 Pixel Food_364
+  - first:
+      213: 6707595639039330379
+    second: 32x32 Pixel Food_365
+  - first:
+      213: 4492496247250283593
+    second: 32x32 Pixel Food_366
+  - first:
+      213: 7635022510140038255
+    second: 32x32 Pixel Food_367
+  - first:
+      213: 2510183243229109699
+    second: 32x32 Pixel Food_368
+  - first:
+      213: 9104507858722388604
+    second: 32x32 Pixel Food_369
+  - first:
+      213: -796073592190563180
+    second: 32x32 Pixel Food_370
+  - first:
+      213: 7489934951896519953
+    second: 32x32 Pixel Food_371
+  - first:
+      213: -6867307600782354247
+    second: 32x32 Pixel Food_372
+  - first:
+      213: -4472868304243508731
+    second: 32x32 Pixel Food_373
+  - first:
+      213: 1359524193970099756
+    second: 32x32 Pixel Food_374
+  - first:
+      213: 8331034076659517307
+    second: 32x32 Pixel Food_375
+  - first:
+      213: -4882633197835451731
+    second: 32x32 Pixel Food_376
+  - first:
+      213: 3204846983174924026
+    second: 32x32 Pixel Food_377
+  - first:
+      213: -4548645096468782364
+    second: 32x32 Pixel Food_378
+  - first:
+      213: 6690152289410564769
+    second: 32x32 Pixel Food_379
+  - first:
+      213: 1159330393643285124
+    second: 32x32 Pixel Food_380
+  - first:
+      213: 3032505029087434296
+    second: 32x32 Pixel Food_381
+  - first:
+      213: 4666766931264505847
+    second: 32x32 Pixel Food_382
+  - first:
+      213: 4876562995312814892
+    second: 32x32 Pixel Food_383
+  - first:
+      213: -4885131388592098323
+    second: 32x32 Pixel Food_384
+  - first:
+      213: 5985290381336058454
+    second: 32x32 Pixel Food_385
+  - first:
+      213: 1259649335802955586
+    second: 32x32 Pixel Food_386
+  - first:
+      213: -1351329951073896988
+    second: 32x32 Pixel Food_387
+  - first:
+      213: -7371058700687842399
+    second: 32x32 Pixel Food_388
+  - first:
+      213: -1243386568803603014
+    second: 32x32 Pixel Food_389
+  - first:
+      213: -6381709968341356952
+    second: 32x32 Pixel Food_390
+  - first:
+      213: 8849275420312584809
+    second: 32x32 Pixel Food_391
+  - first:
+      213: -4899147578609546197
+    second: 32x32 Pixel Food_392
+  - first:
+      213: -370770265299063326
+    second: 32x32 Pixel Food_393
+  - first:
+      213: -5121342802021872432
+    second: 32x32 Pixel Food_394
+  - first:
+      213: -3429046654345012663
+    second: 32x32 Pixel Food_395
+  - first:
+      213: 7112009511736625435
+    second: 32x32 Pixel Food_396
+  - first:
+      213: -8625451229986057846
+    second: 32x32 Pixel Food_397
+  - first:
+      213: 3670957727429212779
+    second: 32x32 Pixel Food_398
+  - first:
+      213: 7379329082301223937
+    second: 32x32 Pixel Food_399
+  - first:
+      213: -869697244078429130
+    second: 32x32 Pixel Food_400
+  - first:
+      213: 3383956766260980716
+    second: 32x32 Pixel Food_401
+  - first:
+      213: -5391824951681899723
+    second: 32x32 Pixel Food_402
+  - first:
+      213: 2636967765872416242
+    second: 32x32 Pixel Food_403
+  - first:
+      213: -3184760544042444860
+    second: 32x32 Pixel Food_404
+  - first:
+      213: -9029001961552971436
+    second: 32x32 Pixel Food_405
+  - first:
+      213: -4865700152552265381
+    second: 32x32 Pixel Food_406
+  - first:
+      213: -5921528268875488798
+    second: 32x32 Pixel Food_407
+  - first:
+      213: 8414309731407393083
+    second: 32x32 Pixel Food_408
+  - first:
+      213: 8679241610349642567
+    second: 32x32 Pixel Food_409
+  - first:
+      213: -4950734796424459384
+    second: 32x32 Pixel Food_410
+  - first:
+      213: 7848185034854574649
+    second: 32x32 Pixel Food_411
+  - first:
+      213: -1308065242606034394
+    second: 32x32 Pixel Food_412
+  - first:
+      213: 1297036590671664727
+    second: 32x32 Pixel Food_413
+  - first:
+      213: 2835801330799779948
+    second: 32x32 Pixel Food_414
+  - first:
+      213: -8403659018077924522
+    second: 32x32 Pixel Food_415
+  - first:
+      213: -4908410742086411363
+    second: 32x32 Pixel Food_416
+  - first:
+      213: 8948410828376036360
+    second: 32x32 Pixel Food_417
+  - first:
+      213: 2225159137782416976
+    second: 32x32 Pixel Food_418
+  - first:
+      213: -6864150402041155698
+    second: 32x32 Pixel Food_419
+  - first:
+      213: 2654275619252837167
+    second: 32x32 Pixel Food_420
+  - first:
+      213: -2500596849216105795
+    second: 32x32 Pixel Food_421
+  - first:
+      213: -1868339524215878389
+    second: 32x32 Pixel Food_422
+  - first:
+      213: -8397891182608693396
+    second: 32x32 Pixel Food_423
+  - first:
+      213: -7304446082640886614
+    second: 32x32 Pixel Food_424
+  - first:
+      213: 1981264860578901822
+    second: 32x32 Pixel Food_425
+  - first:
+      213: -5546319531835527772
+    second: 32x32 Pixel Food_426
+  - first:
+      213: -6175104513288289178
+    second: 32x32 Pixel Food_427
+  - first:
+      213: 466906983452153394
+    second: 32x32 Pixel Food_428
+  - first:
+      213: -2987883614741522220
+    second: 32x32 Pixel Food_429
+  - first:
+      213: 6770781413437217353
+    second: 32x32 Pixel Food_430
+  - first:
+      213: 8965631594651762105
+    second: 32x32 Pixel Food_431
+  - first:
+      213: -7707938009170269072
+    second: 32x32 Pixel Food_432
+  - first:
+      213: -5664193041180914622
+    second: 32x32 Pixel Food_433
+  - first:
+      213: -544745577611929220
+    second: 32x32 Pixel Food_434
+  - first:
+      213: 6025549588137699945
+    second: 32x32 Pixel Food_435
+  - first:
+      213: -7069311171857915175
+    second: 32x32 Pixel Food_436
+  - first:
+      213: -7559170229174381769
+    second: 32x32 Pixel Food_437
+  - first:
+      213: -5741718239041081776
+    second: 32x32 Pixel Food_438
+  - first:
+      213: 357598369856055688
+    second: 32x32 Pixel Food_439
+  - first:
+      213: 6477099289933833184
+    second: 32x32 Pixel Food_440
+  - first:
+      213: -4773915929839360631
+    second: 32x32 Pixel Food_441
+  - first:
+      213: -3383126918861087959
+    second: 32x32 Pixel Food_442
+  - first:
+      213: -3550356967659029123
+    second: 32x32 Pixel Food_443
+  - first:
+      213: -4388518466059110150
+    second: 32x32 Pixel Food_444
+  - first:
+      213: 3595866990921985033
+    second: 32x32 Pixel Food_445
+  - first:
+      213: -5911976790188795952
+    second: 32x32 Pixel Food_446
+  - first:
+      213: 3050900283463236558
+    second: 32x32 Pixel Food_447
+  - first:
+      213: 8109196446896297564
+    second: 32x32 Pixel Food_448
+  - first:
+      213: 1036072932992780500
+    second: 32x32 Pixel Food_449
+  - first:
+      213: 5936623698889161330
+    second: 32x32 Pixel Food_450
+  - first:
+      213: 6420958865580485787
+    second: 32x32 Pixel Food_451
+  - first:
+      213: -3951695213925552774
+    second: 32x32 Pixel Food_452
+  - first:
+      213: -4390499308345551616
+    second: 32x32 Pixel Food_453
+  - first:
+      213: 4560275535972275379
+    second: 32x32 Pixel Food_454
+  - first:
+      213: -629565370358142629
+    second: 32x32 Pixel Food_455
+  - first:
+      213: -8205030826335392530
+    second: 32x32 Pixel Food_456
+  - first:
+      213: 4900767629910803320
+    second: 32x32 Pixel Food_457
+  - first:
+      213: 2056541523396449053
+    second: 32x32 Pixel Food_458
+  - first:
+      213: 5462789621399826249
+    second: 32x32 Pixel Food_459
+  - first:
+      213: -4337194972229150386
+    second: 32x32 Pixel Food_460
+  - first:
+      213: 4430157731832265070
+    second: 32x32 Pixel Food_461
+  - first:
+      213: 3534049459697946327
+    second: 32x32 Pixel Food_462
+  - first:
+      213: -3964139543778742480
+    second: 32x32 Pixel Food_463
+  - first:
+      213: 738953229147659208
+    second: 32x32 Pixel Food_464
+  - first:
+      213: 8777301327573496161
+    second: 32x32 Pixel Food_465
+  - first:
+      213: -2599243831692134788
+    second: 32x32 Pixel Food_466
+  - first:
+      213: -1354589406361969943
+    second: 32x32 Pixel Food_467
+  - first:
+      213: -3372193334415292875
+    second: 32x32 Pixel Food_468
+  - first:
+      213: -3224178755674407305
+    second: 32x32 Pixel Food_469
+  - first:
+      213: -5074190688704863238
+    second: 32x32 Pixel Food_470
+  - first:
+      213: 2996654024132561823
+    second: 32x32 Pixel Food_471
+  - first:
+      213: -4522784731320782176
+    second: 32x32 Pixel Food_472
+  - first:
+      213: -1457744367636983390
+    second: 32x32 Pixel Food_473
+  - first:
+      213: 7941471412296181179
+    second: 32x32 Pixel Food_474
+  - first:
+      213: -993170497775389315
+    second: 32x32 Pixel Food_475
+  - first:
+      213: 9199118714802233859
+    second: 32x32 Pixel Food_476
+  - first:
+      213: 9170677908656600096
+    second: 32x32 Pixel Food_477
+  - first:
+      213: -1467280453660436677
+    second: 32x32 Pixel Food_478
+  - first:
+      213: 5138673202599929191
+    second: 32x32 Pixel Food_479
+  - first:
+      213: 2216718522177477891
+    second: 32x32 Pixel Food_480
+  - first:
+      213: -1941204609435020909
+    second: 32x32 Pixel Food_481
+  - first:
+      213: 8321499081229062456
+    second: 32x32 Pixel Food_482
+  - first:
+      213: 3425845393991173370
+    second: 32x32 Pixel Food_483
+  - first:
+      213: -6720960265660032120
+    second: 32x32 Pixel Food_484
+  - first:
+      213: -8516156103325759710
+    second: 32x32 Pixel Food_485
+  - first:
+      213: -3890966166399415624
+    second: 32x32 Pixel Food_486
+  - first:
+      213: 631853705247569337
+    second: 32x32 Pixel Food_487
+  - first:
+      213: -9121949026884353141
+    second: 32x32 Pixel Food_488
+  - first:
+      213: 8467416066861349502
+    second: 32x32 Pixel Food_489
+  - first:
+      213: 7921098894087549573
+    second: 32x32 Pixel Food_490
+  - first:
+      213: 7959237166205861525
+    second: 32x32 Pixel Food_491
+  - first:
+      213: 976419725318375624
+    second: 32x32 Pixel Food_492
+  - first:
+      213: -5453109287995270309
+    second: 32x32 Pixel Food_493
+  - first:
+      213: 6271593541002784557
+    second: 32x32 Pixel Food_494
+  - first:
+      213: 870808339990287657
+    second: 32x32 Pixel Food_495
+  - first:
+      213: 2330105199778775796
+    second: 32x32 Pixel Food_496
+  - first:
+      213: -6424705869303446206
+    second: 32x32 Pixel Food_497
+  - first:
+      213: 6631057879088790664
+    second: 32x32 Pixel Food_498
+  - first:
+      213: 5962825034186764644
+    second: 32x32 Pixel Food_499
+  - first:
+      213: 1278215841168068314
+    second: 32x32 Pixel Food_500
+  - first:
+      213: 5240586294322439254
+    second: 32x32 Pixel Food_501
+  - first:
+      213: -7592827999882512712
+    second: 32x32 Pixel Food_502
+  - first:
+      213: -1323801963763178153
+    second: 32x32 Pixel Food_503
+  - first:
+      213: -3888103454282329121
+    second: 32x32 Pixel Food_504
+  - first:
+      213: -8053774442445606121
+    second: 32x32 Pixel Food_505
+  - first:
+      213: 5385620041422696593
+    second: 32x32 Pixel Food_506
+  - first:
+      213: -6939280645603980410
+    second: 32x32 Pixel Food_507
+  - first:
+      213: -6530890746818995120
+    second: 32x32 Pixel Food_508
+  - first:
+      213: 5021351879147747626
+    second: 32x32 Pixel Food_509
+  - first:
+      213: -7785639833378757259
+    second: 32x32 Pixel Food_510
+  - first:
+      213: 7724814522307973925
+    second: 32x32 Pixel Food_511
+  - first:
+      213: -6762296307147393555
+    second: 32x32 Pixel Food_512
+  - first:
+      213: 1535693706651871221
+    second: 32x32 Pixel Food_513
+  - first:
+      213: -2496480431628796187
+    second: 32x32 Pixel Food_514
+  - first:
+      213: -8884620593633998836
+    second: 32x32 Pixel Food_515
+  - first:
+      213: -2337305155636861038
+    second: 32x32 Pixel Food_516
+  - first:
+      213: 6968238148547201770
+    second: 32x32 Pixel Food_517
+  - first:
+      213: -9937733092929815
+    second: 32x32 Pixel Food_518
+  - first:
+      213: -6627688332860044362
+    second: 32x32 Pixel Food_519
+  - first:
+      213: -3321623901165397616
+    second: 32x32 Pixel Food_520
+  - first:
+      213: -4388224888455713944
+    second: 32x32 Pixel Food_521
+  - first:
+      213: 7463161054645862292
+    second: 32x32 Pixel Food_522
+  - first:
+      213: -3966193808655665259
+    second: 32x32 Pixel Food_523
+  - first:
+      213: 5269048590218244607
+    second: 32x32 Pixel Food_524
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PixelFood01_Plate
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 657
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 395702a560c2c20c0800000000000000
+      internalID: -4599252713658616429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_Plate2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 657
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f990fce7a782d2400800000000000000
+      internalID: 300941256682310047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_MultiplePlates
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 657
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dba7b9e7aeafd150800000000000000
+      internalID: 5899626073082538967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_Bowl
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 657
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ddd491b502295a0800000000000000
+      internalID: -6516110135213040368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_Pie
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 657
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99dfaebf9db0b590800000000000000
+      internalID: -7660414472360568422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_PiePlate
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 657
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d53b4035d10a560800000000000000
+      internalID: 7322885236502781194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_Bread
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 657
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dcd231b98303beb0800000000000000
+      internalID: -4705413295753732904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_BreadPlate
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 657
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3e86827250fea40800000000000000
+      internalID: 5399540143980340174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_Bread2
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 657
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8209108ed683b22e0800000000000000
+      internalID: -2149562352444272600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_Bread2Plate
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 657
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04c2b5728c775530800000000000000
+      internalID: 3843677706746250254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_20
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 593
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c9511b50769b180800000000000000
+      internalID: -9099128297981895631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_21
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 593
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 858037148ca10bfd0800000000000000
+      internalID: -2328331559956707240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_Bacon
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 593
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f6228fc5dd0f2340800000000000000
+      internalID: 4841103336407181042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_BaconPlate
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 593
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24c83ed046d72920800000000000000
+      internalID: 2965574453741274159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_Burger
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 593
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f2ca002a27ed0520800000000000000
+      internalID: 2670044322212791033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_BurgerPlate
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 593
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20145030405a224d0800000000000000
+      internalID: -3160782551811538686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_26
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 593
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd180cf3cb9a7bc10800000000000000
+      internalID: 2069309179788558813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_27
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 593
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb650c5f0440b8800800000000000000
+      internalID: 615590451113645759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_28
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 593
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0596400473ad73f20800000000000000
+      internalID: 3402427974333786448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_Donut
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 593
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd86aaf72d144ce0800000000000000
+      internalID: -1421979524796084737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_DonutPlate
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 529
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75fc9e194955f8e10800000000000000
+      internalID: 2202072839399001943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_31
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 529
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93403f89b7d8ef8b0800000000000000
+      internalID: -5116496564659747783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_32
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 529
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ddf733f7d2978e40800000000000000
+      internalID: 5658652913010474451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_33
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 529
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a863d0a3bb864f0800000000000000
+      internalID: -835211872873051635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_34
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 529
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7444d51bc08c1b30800000000000000
+      internalID: 4259420957318595711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_35
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 529
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 383405b6776977a80800000000000000
+      internalID: -8469135134601231485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_36
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 529
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa44209d6e266ba0800000000000000
+      internalID: -6096133997494777176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_Cookie
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 529
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b47485f9a3a9f10800000000000000
+      internalID: 2277197017644485384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_CookiePlate
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 529
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd141d4cdd9d9ef30800000000000000
+      internalID: 4605451640476090845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_ChoclateCake
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 529
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a1230cc2801c8e0800000000000000
+      internalID: -1675048598109021600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_ChoclatePlateCake
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 465
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71481955bd4b12910800000000000000
+      internalID: 1810927379306087447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_41
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 465
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11eccdf1f5fc712b0800000000000000
+      internalID: -5613790403030626799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_42
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 465
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76c210cd402b9e340800000000000000
+      internalID: 4893638204055432295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_43
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 465
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16435c8e466299690800000000000000
+      internalID: -7594997081739807647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_44
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 465
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81bd50b49cfdc80c0800000000000000
+      internalID: -4572033466047800552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_Dumplings
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 465
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363cbaa95ed56a2d0800000000000000
+      internalID: -3267821238886874269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_DumplingsPlate
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 465
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f1d428dd3d39cc0800000000000000
+      internalID: -3705385120068460742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_Egg
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 465
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f1e200f5e68ce30800000000000000
+      internalID: 4523987179997634395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_EggPlate
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 465
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f556b7085f017fcc0800000000000000
+      internalID: -3677451924116118177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_FriedRice
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 465
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dbd86bc5e7b30c30800000000000000
+      internalID: 4324502264793848791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_FriedRicePlate
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 401
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56343d5ab4e6b1590800000000000000
+      internalID: -7702441466503412891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_51
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 401
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bfb24b119cdeae30800000000000000
+      internalID: 4516789992084914096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_52
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 401
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16190522817e7e670800000000000000
+      internalID: 8568070906936594785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_53
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 401
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d238b5e555b53440800000000000000
+      internalID: 4915033948875666128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_54
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 401
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47433bf565a60a00800000000000000
+      internalID: 722446647664265039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_55
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 401
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ca7f485b6a26510800000000000000
+      internalID: 1540977321064246326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_56
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 401
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6f76d22f1fa09600800000000000000
+      internalID: 473070509137231725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_57
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 401
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3bcf92021cb2ecb0800000000000000
+      internalID: -4836096264303031494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_58
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 401
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43eeaf62e63a21450800000000000000
+      internalID: 6058084142262447668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_59
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 401
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff4813eb91a098ab0800000000000000
+      internalID: -5005458405164219137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_60
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 337
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edfab4851bf3f1610800000000000000
+      internalID: 1594062824035561438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_61
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 337
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e067eafc76ee7830800000000000000
+      internalID: 4070944537649307876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_62
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 337
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d231df1487f7c70800000000000000
+      internalID: 8971021207559417247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_63
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 337
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293fc1fc87ce32de0800000000000000
+      internalID: -1358982658920746094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_64
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 337
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f09971f52228930800000000000000
+      internalID: 4143912398947422104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_65
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 337
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1218b41ac00ef4690800000000000000
+      internalID: -7615622100009909983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_Icecream
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 337
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb82067461fd82d50800000000000000
+      internalID: 6712860531375483067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_IcecreamPlate
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 337
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60345eca7838cafc0800000000000000
+      internalID: -3482263793119706362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_68
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 337
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcff928bcd81cc270800000000000000
+      internalID: 8272013951834390475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_69
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 337
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b918818327ff5e0800000000000000
+      internalID: -1873653334707954823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelFood01_Soda
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 273
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a3fc777dab9d3a0800000000000000
+      internalID: -6640070740990281162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_71
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 273
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5afe7af5e56231ab0800000000000000
+      internalID: -5038641371323830363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_72
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 273
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4841bc58130285810800000000000000
+      internalID: 1754187451930973316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_73
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 273
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d51ad87b6e445d0800000000000000
+      internalID: -3079082569185010278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_74
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 273
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a18459d33cbd4b930800000000000000
+      internalID: 4158189987568109594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_75
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 273
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 443ff846802447ae0800000000000000
+      internalID: -1552543367721651388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_76
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 273
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e862e2893e2d7f7f0800000000000000
+      internalID: -578762152141248882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_77
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 273
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc3fabda3971a090800000000000000
+      internalID: -8024999767296754440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_78
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 273
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e302987cdbea820800000000000000
+      internalID: 2931489072161504838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_79
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 273
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7ae273bd6998d90800000000000000
+      internalID: -7094973869677697112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_80
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 209
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae16919bc49f4c00800000000000000
+      internalID: 887091253657083554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_81
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 209
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aadf2555350588c90800000000000000
+      internalID: -7167390488116134486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_82
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 209
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e1c15e804befeb00800000000000000
+      internalID: 860164716349211109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_83
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 209
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7c95a9ee6a235bc0800000000000000
+      internalID: -3795643405088482179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_84
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 209
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7171a91ae2f54b9a0800000000000000
+      internalID: -6218240531607447785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_85
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 209
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8957368a39b948c80800000000000000
+      internalID: -8321355152986245736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_86
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 209
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a05879fe4f7382a0800000000000000
+      internalID: -6736400640446541663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_87
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 209
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd8e47a18bbc2170800000000000000
+      internalID: 8155099190793244096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_88
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 209
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd197906860eb540800000000000000
+      internalID: 5025461406946368959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_89
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 209
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90328a5a1cac83fb0800000000000000
+      internalID: -4667758080712760567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_90
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 145
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c69fb3716ff87a0800000000000000
+      internalID: -6372604368055079796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_91
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 145
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8a7878b27f90ed0800000000000000
+      internalID: -2447153156169684810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_92
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 145
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a33fb8c64b0686710800000000000000
+      internalID: 1686704388481741626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_93
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 145
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4e38216fbb46340800000000000000
+      internalID: 4856212963759219876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_94
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 145
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a45e5fd79f5caf0800000000000000
+      internalID: -376620674423895541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_95
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 145
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74add374a42eb0700800000000000000
+      internalID: 507748191660005959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_96
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 145
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6e42b8f26d2a500800000000000000
+      internalID: 406122416103024358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_97
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 145
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75be0ab4f882babf0800000000000000
+      internalID: -312111153257845929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_98
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 145
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ed0bb02a8e96b00800000000000000
+      internalID: 822444189650312765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_99
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 145
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b506895ac619a47a0800000000000000
+      internalID: -6392136825278275493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_100
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 81
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5714e12c3ea381080800000000000000
+      internalID: -9216551887524970123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_101
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 81
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008dd5da04cd12e30800000000000000
+      internalID: 4477101674927609856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_102
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 81
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0b405b6e8f51610800000000000000
+      internalID: 1591451713108488362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_103
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 81
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fda7f3e0fc05ffa0800000000000000
+      internalID: -5767689519021707787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_104
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 81
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77439013b75147990800000000000000
+      internalID: -7389257469760293769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_105
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 81
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2250584dff68357c0800000000000000
+      internalID: -4083772003754638046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_106
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 81
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ebc7e7ba6b8cea70800000000000000
+      internalID: 8857607857599138791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_107
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 81
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc30b8110245034e0800000000000000
+      internalID: -2004009337469860917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_108
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 81
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf0a6db704aa7f70800000000000000
+      internalID: 9185834743125118919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_109
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 81
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53df7c5e4c328240800000000000000
+      internalID: 4792459260732625759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_110
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 17
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2922ebce964053920800000000000000
+      internalID: 2969284382310670994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32 Pixel Food_111
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 17
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 128a44fc0cec789a0800000000000000
+      internalID: -6230784231937365983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

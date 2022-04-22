@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9167540377085047598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9167540377085047599}
+  - component: {fileID: 5339337145034863726}
+  - component: {fileID: 9167540377085047592}
+  - component: {fileID: 5510229275656468263}
+  m_Layer: 0
+  m_Name: _GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9167540377085047599
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9167540377085047598}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 661.5023, y: 426.26913, z: -832.64734}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5339337145034863726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9167540377085047598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0a88852ac996c1428d30c9ed35ab120, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &9167540377085047592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9167540377085047598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a489c4acf338654b80c3ea9fd290683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgImage: {fileID: 0}
+  itemImage: {fileID: 0}
+  itemBackdrop: {fileID: 0}
+  charImage: {fileID: 0}
+  achievementBackdrop: {fileID: 0}
+  subPanel0: {fileID: 0}
+  subPanel1: {fileID: 0}
+  subPanel2: {fileID: 0}
+  bgArray:
+  - name: DefaultBG
+    sprite: {fileID: 21300000, guid: a0f68428ab183ba478d559b9204a97a1, type: 3}
+  - name: Inside
+    sprite: {fileID: 21300000, guid: 7fcb7549588720445ae64b7240e8696e, type: 3}
+  - name: Outside
+    sprite: {fileID: 21300000, guid: bbfdadd3f419cba43b9578b9707a392d, type: 3}
+  - name: Transition
+    sprite: {fileID: 21300000, guid: a0f68428ab183ba478d559b9204a97a1, type: 3}
+  - name: Achievement
+    sprite: {fileID: 21300000, guid: c98de3e824f863f4c8e45611ca590f02, type: 3}
+  - name: Kitchen
+    sprite: {fileID: 21300000, guid: 1d4ab4c204b9df4448607fe8dfc1d3fd, type: 3}
+  - name: Menu
+    sprite: {fileID: 21300000, guid: 9f320f08eca1ffb449263970641e99b3, type: 3}
+  - name: Stats
+    sprite: {fileID: 21300000, guid: 74c757e46a992bb4584543dc43d42489, type: 3}
+  - name: Meals
+    sprite: {fileID: 21300000, guid: 1db8a5314e09e3e4699aa0a4f4170013, type: 3}
+  - name: Recipes1
+    sprite: {fileID: 21300000, guid: 7db2f91c12336ba41b4980758587d7ea, type: 3}
+  - name: Recipes2
+    sprite: {fileID: 21300000, guid: 13be702126210b64c9d8801372849a19, type: 3}
+  - name: ActionPhase
+    sprite: {fileID: 21300000, guid: aae74c15519a1b44ebb9c75809b5216f, type: 3}
+  - name: ST_Transformation
+    sprite: {fileID: 21300000, guid: f86e3b9ba1a773a4e902b1c6dd9b8945, type: 3}
+  - name: ST_AndreInto1
+    sprite: {fileID: 21300000, guid: 13d77edc3054c0b42b08a1d0ebec50a3, type: 3}
+  - name: ST_AndreInto2
+    sprite: {fileID: 21300000, guid: 90533004783c44249a19ded05091e822, type: 3}
+  - name: ST_Fighto
+    sprite: {fileID: 21300000, guid: a5672757ed26a5448b78f57fc9da6101, type: 3}
+  itemArray:
+  - name: MenuDex
+    sprite: {fileID: 21300000, guid: a3bc3dd0fb196484ea97087a3a88d8c9, type: 3}
+  - name: SmashBurger
+    sprite: {fileID: 21300000, guid: 45d60ac33be620f4494e769445522d3d, type: 3}
+  charArray:
+  - name: Nephele
+    sprite: {fileID: 21300000, guid: 2418354150f764349bd6af36ce9a1a1b, type: 3}
+  - name: Cacey
+    sprite: {fileID: 21300000, guid: b5ca36a6491cd6a4abf6623324c8bd9b, type: 3}
+  - name: Ellios
+    sprite: {fileID: 21300000, guid: fde4463aa818c1644b03f428baf2c2b7, type: 3}
+  - name: Carlos
+    sprite: {fileID: 0}
+--- !u!114 &5510229275656468263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9167540377085047598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 606b05e4af32069459e6b093d33854ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
