@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-namespace Data {
+namespace InventorySystem {
     using UI;
 
-    [CreateAssetMenu(fileName = "New Stats", menuName = "Data/New Stats")]
+    [CreateAssetMenu(fileName = "New Stats", menuName = "Inventory System/New Stats Object")]
     public class StatsObject : ScriptableObject
     {
         public GameObject statCard;

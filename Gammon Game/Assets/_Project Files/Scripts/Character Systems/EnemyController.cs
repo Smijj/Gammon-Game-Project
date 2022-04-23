@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
+namespace CharacterSystems {
+    public class EnemyController : MonoBehaviour
     {
-        
-    }
+        private MoveController move;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+
+        private void Start() {
+            move = GetComponent<MoveController>();
+        }
+
     }
 }

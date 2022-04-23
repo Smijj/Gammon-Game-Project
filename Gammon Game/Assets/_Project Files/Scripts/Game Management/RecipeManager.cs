@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace InventorySystem {
+namespace GameManagement {
+    using InventorySystem;
+
+
     public class RecipeManager : MonoBehaviour {
         [Header("Inventory Object References")]
         public InventoryObject recipeInventory;

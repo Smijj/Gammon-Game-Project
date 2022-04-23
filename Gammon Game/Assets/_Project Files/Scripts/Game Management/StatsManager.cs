@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Data {
+namespace GameManagement {
     using UI;
+    using InventorySystem;
 
     public class StatsManager : MonoBehaviour
     {

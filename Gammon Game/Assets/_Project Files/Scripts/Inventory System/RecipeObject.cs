@@ -11,7 +11,7 @@ namespace InventorySystem {
         Drink
     }
 
-    [CreateAssetMenu(fileName = "New Food", menuName = "Inventory System/New Food Item")]
+    [CreateAssetMenu(fileName = "New Recipe", menuName = "Inventory System/New Recipe Item")]
     public class RecipeObject : ScriptableObject
     {
         [Header("Basic Information")]

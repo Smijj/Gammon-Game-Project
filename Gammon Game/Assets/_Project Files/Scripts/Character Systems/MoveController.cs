@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 
 namespace CharacterSystems {
-    using Pathfinding;
     using GameManagement;
 
     public class MoveController : MonoBehaviour

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using TMPro;
 
 namespace UI {
-    using Data;
+    using InventorySystem;
 
     public class StatCard : MonoBehaviour, IPointerDownHandler {
         public Stat stat;

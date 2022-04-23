@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Pathfinding {
+namespace CharacterSystems {
     public class PathNode
     {
         public Vector3 worldPos;

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using GameManagement;
-using Data;
 using MenuSystem;
 
 public class TestingScript: MonoBehaviour
