@@ -6,7 +6,7 @@ using System.Linq;
 namespace InventorySystem {
     using UI;
 
-    [CreateAssetMenu(fileName = "New Stats", menuName = "Inventory System/New Stats Object")]
+    [CreateAssetMenu(fileName = "New Stats List", menuName = "Inventory System/New Stats Object")]
     public class StatsObject : ScriptableObject
     {
         public GameObject statCard;

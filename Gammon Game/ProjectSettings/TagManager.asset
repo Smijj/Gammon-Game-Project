@@ -9,6 +9,7 @@ TagManager:
   - SubPanel2
   - StatInfoPanel
   - RecipeInfoPanel
+  - Grid
   layers:
   - Default
   - TransparentFX

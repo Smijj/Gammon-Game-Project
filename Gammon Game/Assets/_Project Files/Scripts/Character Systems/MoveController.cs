@@ -23,7 +23,7 @@ namespace CharacterSystems {
 
 
         [Header("Pathfinding Settings")]
-        public Grid grid;
+        private Grid grid;
         public Tilemap map;
 
         public GameObject pathHighlightPrefab;
@@ -46,7 +46,8 @@ namespace CharacterSystems {
 
         #region Unity Functions
 
-        private void OnEnable() {
+        private void Start() {
+            grid = GameManager.grid;
             movePoint = transform.position;
             lastPoint = transform.position;
             currentNodePos = grid.WorldToCell(transform.position);

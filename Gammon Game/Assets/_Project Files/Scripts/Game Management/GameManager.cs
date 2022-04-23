@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 namespace GameManagement {
     using MenuSystem;
 
-    public class GameManager : MonoBehaviour
-    {
+    public class GameManager : MonoBehaviour {
         #region Singleton
         public static GameManager singleton;
         private void CheckSingleton() {
@@ -24,11 +23,20 @@ namespace GameManagement {
         public static bool isLoading = false;
         public static Scene currentScene;
 
-        #region Unity Functions
+        public static Grid grid;
+
+        #region Unity Functions        
 
         private void Awake() {
             // If there isnt already an instance (following the Singleton pattern) then:
             CheckSingleton();
+
+            try {
+                grid = GameObject.FindGameObjectWithTag("Grid").GetComponent<Grid>();
+            } catch {
+                Debug.Log("There is no grid in this scene");
+            }
+            
         }
 
         #region Scene Management
