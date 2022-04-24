@@ -47,9 +47,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   followTarget: {fileID: 0}
-  idling: 0
-  movePointSet: 0
-  movePoint: {x: 0, y: 0, z: 0}
+  minIdleTime: 3
+  maxIdleTime: 6
 --- !u!114 &6520653041219019434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,9 +70,9 @@ MonoBehaviour:
   moveOnMouseRelease: 1
   lastPoint: {x: 0, y: 0, z: 0}
   movePoint: {x: 0, y: 0, z: 0}
-  map: {fileID: 0}
   pathHighlightPrefab: {fileID: 8705688121449926182, guid: 2b390426a4d37024a90c9e652948c02f, type: 3}
   isMoving: 0
+  atDestination: 0
   activePath: 0
   pathFound: 0
 --- !u!61 &6520653041219019435

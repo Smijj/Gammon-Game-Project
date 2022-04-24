@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 using UnityEngine.SceneManagement;
 
 namespace GameManagement {
@@ -24,6 +25,7 @@ namespace GameManagement {
         public static Scene currentScene;
 
         public static Grid grid;
+        public static Tilemap map;
 
         #region Unity Functions        
 
@@ -36,7 +38,13 @@ namespace GameManagement {
             } catch {
                 Debug.Log("There is no grid in this scene");
             }
-            
+
+            try {
+                map = GameObject.FindGameObjectWithTag("BaseMap").GetComponent<Tilemap>();
+            } catch {
+                Debug.Log("There is no valid Base Tilemap in this scene");
+            }
+
         }
 
         #region Scene Management

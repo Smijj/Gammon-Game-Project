@@ -9,23 +9,22 @@ namespace CharacterSystems {
     public class MoveController : MonoBehaviour
     {
         [Header("Movement Settings")]
-        public float moveSpeed = 7f;
+        public float moveSpeed = 8f;
         public int moveDistance = 1;
         public LayerMask WhatStopsMovement;
 
         public bool useDiagonalMovement = true;
         public bool moveOnMouseRelease = true;
 
+        [Header("Debug")]
         //[HideInInspector]
         public Vector3 lastPoint;
         //[HideInInspector]
         public Vector3 movePoint;
 
 
-        [Header("Pathfinding Settings")]
-        private Grid grid;
-        public Tilemap map;
 
+        [Header("Pathfinding Settings")]
         public GameObject pathHighlightPrefab;
         private List<GameObject> pathHighlightList = new List<GameObject>();
 
@@ -36,8 +35,12 @@ namespace CharacterSystems {
         private List<PathNode> closedSet;
         private List<PathNode> movementPath;
 
-        // { get; private set; }
+        private Grid grid;
+        private Tilemap map;
+
+        [Header("Debug")]
         public bool isMoving  = false;
+        public bool atDestination = false;
         [SerializeField]
         private bool activePath = false;
         [SerializeField]
@@ -47,10 +50,12 @@ namespace CharacterSystems {
         #region Unity Functions
 
         private void Start() {
+            map = GameManager.map;
             grid = GameManager.grid;
-            movePoint = transform.position;
-            lastPoint = transform.position;
             currentNodePos = grid.WorldToCell(transform.position);
+            transform.position = currentNodePos;
+            movePoint = currentNodePos;
+            lastPoint = currentNodePos;
         }
 
         private void Update() {
@@ -92,7 +97,7 @@ namespace CharacterSystems {
             Vector3Int targetNode = currentNodePos + new Vector3Int((int)_input.x, (int)_input.y, 0);
             
             // Checks to make sure the player cant move into a collider or off the map.
-            if (NodeColliderCheck(targetNode)) return;
+            if (WalkableTileCheck(targetNode)) return;
             if (!map.HasTile(targetNode)) return;
 
             lastPoint = transform.position;
@@ -104,7 +109,7 @@ namespace CharacterSystems {
         public void IncrementXPosition(float _xInput) {
             currentNodePos = grid.WorldToCell(transform.position);
             Vector3Int targetNode = currentNodePos + new Vector3Int((int)_xInput, 0, 0);
-            if (NodeColliderCheck(targetNode)) return;
+            if (WalkableTileCheck(targetNode)) return;
 
             lastPoint = transform.position;
             movePoint = grid.GetCellCenterWorld(targetNode);
@@ -113,7 +118,7 @@ namespace CharacterSystems {
         public void IncrementYPosition(float _yInput) {
             currentNodePos = grid.WorldToCell(transform.position);
             Vector3Int targetNode = currentNodePos + new Vector3Int(0, (int)_yInput, 0);
-            if (NodeColliderCheck(targetNode)) return;
+            if (WalkableTileCheck(targetNode)) return;
 
             lastPoint = transform.position;
             movePoint = grid.GetCellCenterWorld(targetNode);
@@ -129,7 +134,7 @@ namespace CharacterSystems {
                 activePath = _setActivePath;
                 if (_setActivePath == false)
                     ClearPathHighlight();
-                } else {
+            } else {
                 ClearPathHighlight();
             }
         }
@@ -139,15 +144,17 @@ namespace CharacterSystems {
             if (transform.position != _movePoint) {
                 // Moves the gameobject to the target position.
                 transform.position = Vector3.MoveTowards(transform.position, _movePoint, moveSpeed * Time.deltaTime);
+                if (atDestination) atDestination = false;
             } else {
                 isMoving = false;
+                if (!atDestination) atDestination = true;
             }
         }
 
 
         private Vector3Int targetPosTemp;
         private Vector3Int currentPosTemp;
-        public void AutoPath(Vector3 _worldPos) {
+        public bool AutoPath(Vector3 _worldPos) {
             if (!GameManager.isPaused) {
                 targetNodePos = grid.WorldToCell(_worldPos);
                 currentNodePos = grid.WorldToCell(transform.position);
@@ -163,9 +170,10 @@ namespace CharacterSystems {
                     currentPosTemp = currentNodePos;
 
                     if (map.HasTile(targetNodePos)) {
-                        if (!NodeColliderCheck(targetNodePos)) {
+                        if (!WalkableTileCheck(targetNodePos)) {
                             if (activePath) activePath = false;
                             FindPath(currentNodePos, targetNodePos);
+                            return true;
                             //Debug.Log("Moving to cell: " + targetNodePos);
                         }
                         else {
@@ -174,6 +182,22 @@ namespace CharacterSystems {
                     }
                 }
             }
+            return false;
+        }
+
+
+        /// <summary>
+        /// Used to check for colliders at a target position. 
+        /// </summary>
+        /// <param name="_targetNode"></param>
+        /// <returns>True if there is a collider on the layer "WhatStopsMovement" at the target position. Otherwise returns false.</returns>
+        public bool WalkableTileCheck(Vector3Int _targetNode) {
+            Vector3 checkPos = grid.GetCellCenterWorld(_targetNode);
+
+            if (Physics2D.OverlapCircle(checkPos, 0.2f, WhatStopsMovement)) {
+                return true;
+            }
+            return false;
         }
 
         #endregion
@@ -219,7 +243,7 @@ namespace CharacterSystems {
                 foreach (PathNode neighbour in GetNeighbours(currentNode)) {
 
                     // If the neighbour being explored isn't traversable or is in the closedset, skip it.
-                    if (NodeColliderCheck(neighbour.gridPos) || CheckList(closedSet, neighbour)) {
+                    if (WalkableTileCheck(neighbour.gridPos) || CheckList(closedSet, neighbour)) {
                         continue;
                     }
 
@@ -337,21 +361,6 @@ namespace CharacterSystems {
             obj.transform.position = _pos;
             yield return new WaitForSeconds(_timeAlive);
             Destroy(obj);
-        }
-
-
-        /// <summary>
-        /// Used to check for colliders at a target position. 
-        /// </summary>
-        /// <param name="_targetNode"></param>
-        /// <returns>True if there is a collider on the layer "WhatStopsMovement" at the target position. Otherwise returns false.</returns>
-        private bool NodeColliderCheck(Vector3Int _targetNode) {
-            Vector3 checkPos = grid.GetCellCenterWorld(_targetNode);
-
-            if (Physics2D.OverlapCircle(checkPos, 0.2f, WhatStopsMovement)) {
-                return true;
-            }
-            return false;
         }
 
         #endregion

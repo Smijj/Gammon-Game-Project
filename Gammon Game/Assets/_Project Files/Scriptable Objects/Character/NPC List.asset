@@ -17,3 +17,9 @@ MonoBehaviour:
   - name: Cacey
     charArt: {fileID: -7561076500183784841, guid: 09689a4f99880894b94bd52e1077b831, type: 3}
     description: 
+  - name: Posiden
+    charArt: {fileID: -223532674153091342, guid: 09689a4f99880894b94bd52e1077b831, type: 3}
+    description: 
+  - name: TestMan
+    charArt: {fileID: 8050966871458943657, guid: 09689a4f99880894b94bd52e1077b831, type: 3}
+    description: 

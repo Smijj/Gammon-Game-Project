@@ -8,6 +8,41 @@ namespace CharacterSystems {
     {
         public GameObject npcPrefab;
         public List<NPC> container = new List<NPC>();
+
+        public NPC GetNPC(string _name) {
+            for (int i = 0; i < container.Count; i++) {
+                if (container[i].name == _name) {
+                    return container[i];
+                }
+            }
+            return null;
+        }
+
+        public GameObject GenerateNPC(Vector3Int _spawnPos, string _npcName = null) {
+            NPC npc;
+            if (_npcName != null) {
+                if (GetNPC(_npcName) == null) return null;  // Returns if the NPC doesnt exist
+                npc = GetNPC(_npcName); // Gets the NPC with the given name
+            } else {
+                if (GetRandomNPC() == null) return null;    // Returns if the NPC doesnt exist
+                npc = GetRandomNPC();   // If no name is specified will give a random NPC from the list
+            }
+
+            GameObject npcObject;
+            npcObject = Instantiate(npcPrefab);
+            npcObject.transform.position = _spawnPos;
+            npcObject.GetComponent<NPCController>().npc = npc;
+
+            return npcObject;
+        }
+
+        private NPC GetRandomNPC() {
+            if (container.Count > 0) {
+                return container[Random.Range(0, container.Count)];
+            }
+            return null;
+        }
+    
     }
 
     [System.Serializable]

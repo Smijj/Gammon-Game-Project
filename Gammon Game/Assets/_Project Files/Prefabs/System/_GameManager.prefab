@@ -58,6 +58,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd49f6bdc0fd93f49939abc4a3c6e718, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnLocation: {fileID: 0}
+  spawnTimer: 5
   npcs: {fileID: 11400000, guid: 4e4d5579a01c1cf48bda4d1fba536c99, type: 2}
 --- !u!114 &9167540377085047592
 MonoBehaviour:

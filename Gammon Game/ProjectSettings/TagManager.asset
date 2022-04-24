@@ -10,6 +10,8 @@ TagManager:
   - StatInfoPanel
   - RecipeInfoPanel
   - Grid
+  - target
+  - BaseMap
   layers:
   - Default
   - TransparentFX
