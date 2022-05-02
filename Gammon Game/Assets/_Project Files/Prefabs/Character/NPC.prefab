@@ -46,7 +46,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae11f50f9c724c4db835fa5dcbb55f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followTarget: {fileID: 0}
+  npc:
+    name: 
+    charArt: {fileID: 0}
+    description: 
+  walkPointSet: 0
+  walkPoint: {x: 0, y: 0, z: 0}
+  sittingTime: 10
   minIdleTime: 3
   maxIdleTime: 6
 --- !u!114 &6520653041219019434
@@ -73,7 +79,7 @@ MonoBehaviour:
   pathHighlightPrefab: {fileID: 8705688121449926182, guid: 2b390426a4d37024a90c9e652948c02f, type: 3}
   isMoving: 0
   atDestination: 0
-  activePath: 0
+  pathing: 0
   pathFound: 0
 --- !u!61 &6520653041219019435
 BoxCollider2D:
@@ -169,8 +175,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -551492191
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -7561076500183784841, guid: 09689a4f99880894b94bd52e1077b831, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

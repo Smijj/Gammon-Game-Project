@@ -17,6 +17,14 @@ namespace CharacterSystems {
             }
             return null;
         }
+        public NPC GetNPC(NPC _npc) {
+            for (int i = 0; i < container.Count; i++) {
+                if (container[i] == _npc) {
+                    return container[i];
+                }
+            }
+            return null;
+        }
 
         public GameObject GenerateNPC(Vector3Int _spawnPos, string _npcName = null) {
             NPC npc;

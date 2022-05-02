@@ -26,12 +26,16 @@ namespace GameManagement {
 
         public static Grid grid;
         public static Tilemap map;
+        public NPCManager npcManager;
+
+        public List<SeatEntity> seatList = new List<SeatEntity>();
 
         #region Unity Functions        
 
         private void Awake() {
             // If there isnt already an instance (following the Singleton pattern) then:
             CheckSingleton();
+            npcManager = GetComponent<NPCManager>();
 
             try {
                 grid = GameObject.FindGameObjectWithTag("Grid").GetComponent<Grid>();

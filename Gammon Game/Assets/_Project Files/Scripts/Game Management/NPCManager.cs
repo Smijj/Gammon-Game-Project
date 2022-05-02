@@ -8,6 +8,7 @@ namespace GameManagement {
     public class NPCManager : MonoBehaviour
     {
 
+        public int maxNPCs = 10;
         public Transform spawnLocation;
         public float spawnTimer;
         private float spawnTimerCounter;
@@ -25,8 +26,23 @@ namespace GameManagement {
         }
 
         private void Update() {
-            HandleNPCSpawning();
+            if (activeNPCs.Count <= maxNPCs)
+                HandleNPCSpawning();
+        }
 
+
+        public void DestroyNPC(GameObject _npcObject, string _npcName = "") {
+            if (activeNPCs.Contains(_npcObject)) {
+                Debug.Log("Found item in list");
+                activeNPCs.Remove(_npcObject);
+            }
+            Destroy(_npcObject);
+
+            //foreach (GameObject npcObject in activeNPCs) {
+            //    if (npcObject.GetComponent<NPCController>().npc.name == _npcName) {
+
+            //    }
+            //}
         }
 
 
@@ -41,7 +57,6 @@ namespace GameManagement {
                 spawnTimerCounter += Time.deltaTime;
             }
         }
-
 
     }
 }

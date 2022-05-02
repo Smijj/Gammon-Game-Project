@@ -60,6 +60,7 @@ namespace CharacterSystems {
 
         private void Update() {
             if (!GameManager.isPaused) {
+                // if the character is pathing using the AutoPath() function
                 if (pathing) {
                     if(!isMoving) {
                         if (movementPath.Count > 0) {
@@ -69,6 +70,7 @@ namespace CharacterSystems {
                             movementPath.RemoveAt(0);
                             isMoving = true;
                         } else {
+                            currentNodePos = grid.WorldToCell(transform.position);
                             ClearPathHighlight();
                             pathing = false;
                             pathFound = false;
@@ -77,11 +79,19 @@ namespace CharacterSystems {
                     else {
                         Move(movePoint);
                     }
-                } 
+                }
+                // Otherwise they must be moving using the IncrementPosition() function
                 else {
                     if (isMoving) {
                         Move(movePoint);
                     }
+                }
+
+                // For other scripts to check if their character is at its destination.
+                if(currentNodePos == targetNodePos && !atDestination) {
+                    atDestination = true;
+                } else {
+                    if (atDestination) atDestination = false;
                 }
             }
         }
@@ -127,13 +137,12 @@ namespace CharacterSystems {
 
         // Moves this gameObject to the movePoint
         public void Move(Vector3 _movePoint) {
+            atDestination = false;
             if (transform.position != _movePoint) {
                 // Moves the gameobject to the target position.
                 transform.position = Vector3.MoveTowards(transform.position, _movePoint, moveSpeed * Time.deltaTime);
-                if (atDestination) atDestination = false;
             } else {
                 isMoving = false;
-                if (!atDestination) atDestination = true;
             }
         }
 
@@ -211,7 +220,7 @@ namespace CharacterSystems {
         public bool WalkableTileCheck(Vector3Int _targetNode) {
             Vector3 checkPos = grid.GetCellCenterWorld(_targetNode);
 
-            if (Physics2D.OverlapCircle(checkPos, 0.2f, WhatStopsMovement)) {
+            if (Physics2D.OverlapCircle(checkPos, 0.35f, WhatStopsMovement)) {
                 return true;
             }
             return false;
