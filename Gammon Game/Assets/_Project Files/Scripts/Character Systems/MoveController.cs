@@ -42,7 +42,7 @@ namespace CharacterSystems {
         public bool isMoving  = false;
         public bool atDestination = false;
         [SerializeField]
-        private bool activePath = false;
+        private bool pathing = false;
         [SerializeField]
         private bool pathFound = false;
         
@@ -60,7 +60,7 @@ namespace CharacterSystems {
 
         private void Update() {
             if (!GameManager.isPaused) {
-                if (activePath) {
+                if (pathing) {
                     if(!isMoving) {
                         if (movementPath.Count > 0) {
                             movePoint = movementPath[0].worldPos;
@@ -70,7 +70,7 @@ namespace CharacterSystems {
                             isMoving = true;
                         } else {
                             ClearPathHighlight();
-                            activePath = false;
+                            pathing = false;
                             pathFound = false;
                         }
                     } 
@@ -125,20 +125,6 @@ namespace CharacterSystems {
             isMoving = true;
         }
 
-        /// <summary>
-        /// If a path exists, will set the activePath bool to the _setActivePath variable passed through
-        /// </summary>
-        /// <param name="_setActivePath"></param>
-        public void SetActivePath(bool _setActivePath = true) {
-            if (pathFound) {
-                activePath = _setActivePath;
-                if (_setActivePath == false)
-                    ClearPathHighlight();
-            } else {
-                ClearPathHighlight();
-            }
-        }
-
         // Moves this gameObject to the movePoint
         public void Move(Vector3 _movePoint) {
             if (transform.position != _movePoint) {
@@ -154,7 +140,14 @@ namespace CharacterSystems {
 
         private Vector3Int targetPosTemp;
         private Vector3Int currentPosTemp;
-        public bool AutoPath(Vector3 _worldPos) {
+        /// <summary>
+        /// Moves the gameobject that has this script to the tile at _worldPos if there is one.
+        /// </summary>
+        /// <param name="_worldPos">Position to move to.</param>
+        /// <param name="_highlightPath">Determines if the path is visually shown</param>
+        /// <param name="_onlyFindPath">If true the path will be found but the object wont move until the 'pathing' variable is set to true using the SetPathing() function.</param>
+        /// <returns>True if finding a path was successful, False if it was unsuccessful.</returns>
+        public bool AutoPath(Vector3 _worldPos, bool _highlightPath = false, bool _onlyFindPath = false) {
             if (!GameManager.isPaused) {
                 targetNodePos = grid.WorldToCell(_worldPos);
                 currentNodePos = grid.WorldToCell(transform.position);
@@ -171,10 +164,20 @@ namespace CharacterSystems {
 
                     if (map.HasTile(targetNodePos)) {
                         if (!WalkableTileCheck(targetNodePos)) {
-                            if (activePath) activePath = false;
-                            FindPath(currentNodePos, targetNodePos);
-                            return true;
-                            //Debug.Log("Moving to cell: " + targetNodePos);
+                            pathFound = FindPath(currentNodePos, targetNodePos);
+                            
+                            if (pathFound) {
+                                if (_highlightPath) HighlightPath(movementPath); // Show path visually
+
+                                // This is here so that if for some reason you dont want to path imediately after finding a
+                                // path (like you want to wait for the player to release the mouse button) Then the path will be found and
+                                // set but it wont move until the pathing variable is set to true; 
+                                if (!_onlyFindPath) pathing = true;
+                                else pathing = false;
+
+                                return true;
+                            }
+                            return false;
                         }
                         else {
                             Debug.Log("Cannot Move to this Position.");
@@ -183,6 +186,20 @@ namespace CharacterSystems {
                 }
             }
             return false;
+        }
+
+        /// <summary>
+        /// If a path exists, will set the pathing bool to the _setPathing variable passed through
+        /// </summary>
+        /// <param name="_setPathing"></param>
+        public void SetPathing(bool _setPathing = true) {
+            if (pathFound) {
+                pathing = _setPathing;
+                if (_setPathing == false)
+                    ClearPathHighlight();
+            } else {
+                ClearPathHighlight();
+            }
         }
 
 
@@ -206,7 +223,7 @@ namespace CharacterSystems {
         #region Private Functions
 
         // Finds a path using an A* algorithm
-        private void FindPath(Vector3Int _startPos, Vector3Int _targetPos) {
+        private bool FindPath(Vector3Int _startPos, Vector3Int _targetPos) {
             // Sets the start and destination nodes
             PathNode startNode = new PathNode(grid.GetCellCenterWorld(_startPos), _startPos);
             PathNode targetNode = new PathNode(grid.GetCellCenterWorld(_targetPos), _targetPos);
@@ -235,8 +252,7 @@ namespace CharacterSystems {
                     //print("Found target Node.");
                     //print("Openset Size: " + openSet.Count);
                     movementPath = RetracePath(startNode, currentNode);
-                    pathFound = true;
-                    return;
+                    return true;
                 }
 
                 // Explore nodes surrounding the currentNode.
@@ -264,8 +280,8 @@ namespace CharacterSystems {
             }
             // Prints if a path could not be found and the while loop is exited
             Debug.Log("Could not find a path, or the exceeded the search limit.");
-            pathFound = false;
             movementPath.Clear();            
+            return false;
         }
 
         private List<PathNode> RetracePath(PathNode _startNode, PathNode _endNode) {
@@ -278,10 +294,6 @@ namespace CharacterSystems {
             }
 
             path.Reverse();
-
-            // Show path visually
-            HighlightPath(path);
-
             return path;
         }
 

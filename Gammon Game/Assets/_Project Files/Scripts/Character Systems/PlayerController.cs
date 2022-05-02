@@ -23,10 +23,10 @@ namespace CharacterSystems {
 
             // Get input for mouse movement
             if (Input.GetMouseButton(0) || Input.GetMouseButton(1)) {
-                move.AutoPath(cam.ScreenToWorldPoint(Input.mousePosition));
+                move.AutoPath(cam.ScreenToWorldPoint(Input.mousePosition), true, true);
             }
             if (Input.GetMouseButtonUp(0) || Input.GetMouseButtonUp(1)) {
-                move.SetActivePath(true);
+                move.SetPathing(true);
             }
 
             // get input for WASD movement
@@ -51,7 +51,7 @@ namespace CharacterSystems {
             }else {
                 // Cancels pathing if there is any input
                 if (Mathf.Abs(input.normalized.magnitude) > 0) {
-                    move.SetActivePath(false);
+                    move.SetPathing(false);
                 }
             }
         }

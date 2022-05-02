@@ -82,7 +82,6 @@ namespace CharacterSystems {
 
             if (walkPointSet) {
                 move.AutoPath(walkPoint);
-                move.SetActivePath();
             }
 
             //Walkpoint reached

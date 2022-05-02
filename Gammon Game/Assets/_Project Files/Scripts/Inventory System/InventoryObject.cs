@@ -17,7 +17,6 @@ namespace InventorySystem {
                 Debug.Log("Save Failed, item is already in the inventory or is a placeholder.");
                 return false;            
             }
-            Debug.Log("Saved!");
             Container.Add(new InventoryItem(_recipe));
             return true;
         }

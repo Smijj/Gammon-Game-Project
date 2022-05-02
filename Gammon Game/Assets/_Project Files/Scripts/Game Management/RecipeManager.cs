@@ -62,7 +62,7 @@ namespace GameManagement {
             recipeInfoPanel.recipe = recipeCards[0].GetComponent<RecipeCard>().recipe;
             recipeInfoPanel.UpdateRecipeCard();
 
-            Debug.Log("Initalized Recipes");
+            //Debug.Log("Initalized Recipes");
         }
     }
 }

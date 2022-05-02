@@ -68,8 +68,7 @@ namespace GameManagement {
                 statInfoPanel.UpdateStatCard();
             }
 
-
-            Debug.Log("Initalized Stats");
+            //Debug.Log("Initalized Stats");
         }
     }
 }
