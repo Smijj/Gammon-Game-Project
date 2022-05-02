@@ -18,8 +18,14 @@ MonoBehaviour:
     charArt: {fileID: -7561076500183784841, guid: 09689a4f99880894b94bd52e1077b831, type: 3}
     description: 
   - name: Posiden
-    charArt: {fileID: -223532674153091342, guid: 09689a4f99880894b94bd52e1077b831, type: 3}
+    charArt: {fileID: -3286399977183211859, guid: 09689a4f99880894b94bd52e1077b831, type: 3}
     description: 
   - name: TestMan
     charArt: {fileID: 8050966871458943657, guid: 09689a4f99880894b94bd52e1077b831, type: 3}
+    description: 
+  - name: Andre
+    charArt: {fileID: -749870791383467193, guid: 09689a4f99880894b94bd52e1077b831, type: 3}
+    description: 
+  - name: Ellios
+    charArt: {fileID: 5574972241592957668, guid: 09689a4f99880894b94bd52e1077b831, type: 3}
     description: 

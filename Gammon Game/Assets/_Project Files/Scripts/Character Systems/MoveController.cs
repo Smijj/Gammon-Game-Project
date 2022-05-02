@@ -53,7 +53,7 @@ namespace CharacterSystems {
             map = GameManager.map;
             grid = GameManager.grid;
             currentNodePos = grid.WorldToCell(transform.position);
-            transform.position = currentNodePos;
+            transform.position = grid.GetCellCenterWorld(currentNodePos);
             movePoint = currentNodePos;
             lastPoint = currentNodePos;
         }
