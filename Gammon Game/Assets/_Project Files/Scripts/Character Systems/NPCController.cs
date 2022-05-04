@@ -26,7 +26,7 @@ namespace CharacterSystems {
         private Vector3Int walkPoint;
 
 
-        // Searching for a seat
+        // Searching for a chair
         public float sittingTime = 10;
         [SerializeField]
         private float sittingTimer;
@@ -34,7 +34,7 @@ namespace CharacterSystems {
         private bool foundSeat = false;
         [SerializeField]
         private bool isSitting = false;
-        private SeatEntity seat;
+        private ChairEntity chair;
 
         private bool isLeaving = false;
 
@@ -61,18 +61,18 @@ namespace CharacterSystems {
         private void Update() {
             /*
             Psudocode:
-            Check if there is any seats available
-                If there isn't any seats, wander around the restaurant idling
-                If there is, mark that seat as taken and path to it
-                    Sit in the seat and start a timer
-                    once the timer <= 0 get up from the seat and leave
+            Check if there is any chairs available
+                If there isn't any chairs, wander around the restaurant idling
+                If there is, mark that chair as taken and path to it
+                    Sit in the chair and start a timer
+                    once the timer <= 0 get up from the chair and leave
             */
 
             if (!isLeaving) {
                 if (!foundSeat) {
-                    // Search for a seat, returns false if there are no available seats.
+                    // Search for a chair, returns false if there are no available chairs.
                     if (!SearchForSeat()) {
-                        // If there are no seats the NPC will patrol/Idle around the restaurant
+                        // If there are no chairs the NPC will patrol/Idle around the restaurant
                         if (!idling)        // If the NPC isnt idling then patrol
                             Patroling();
                         else {              // Otherwise idle (which just counts down the idle timer)
@@ -81,8 +81,8 @@ namespace CharacterSystems {
                     }
                 } else {
                     if (!isSitting) {
-                        // the NPC should now be pathing towards the available seats access point.
-                        // Once at the seat, sit in it
+                        // the NPC should now be pathing towards the available chairs access point.
+                        // Once at the chair, sit in it
                         if (move.atDestination) {
                             SitInSeat();
                         }
@@ -121,18 +121,18 @@ namespace CharacterSystems {
 
 
         private bool SearchForSeat() {
-            if (gm.seatList.Count > 0) {
-                foreach (SeatEntity _seat in gm.seatList) {
-                    if (!_seat.occupied) {
+            if (gm.activeChairList.Count > 0) {
+                foreach (ChairEntity _chair in gm.activeChairList) {
+                    if (!_chair.occupied) {
                         // Set necessary bools
                         foundSeat = true;
-                        _seat.SetOccupied(true);
+                        _chair.occupied = true;
                         if (idling) idling = false;
 
-                        // Path to the seats access pos
-                        move.AutoPath(_seat.accessPoint.position);
+                        // Path to the chairs access pos
+                        move.AutoPath(_chair.accessPoint.position);
 
-                        seat = _seat;
+                        chair = _chair;
 
                         return true;
                     }
@@ -144,24 +144,25 @@ namespace CharacterSystems {
             isSitting = true;
             sittingTimer = sittingTime;
 
-            // Makes sure the NPC sitting in the chair appears in front of the chair.
-            //spriteRen.sortingOrder = 1;   // Currently doing this in the [SeatEntity] script, but its making the seat behind everything else.
+            // Makes sure the NPC sitting in the chair appears in front of the chair by lowering the sorting order of the chair
+            chair.spriteRen.sortingOrder = -1; 
 
-            // Moves the NPC onto the seat
-            transform.position = grid.GetCellCenterWorld(grid.WorldToCell(seat.transform.position));
+            // Moves the NPC onto the chair
+            transform.position = grid.GetCellCenterWorld(grid.WorldToCell(chair.transform.position));
         }
         private void LeaveSeat() {
             foundSeat = false;
             isSitting = false;
-            seat.SetOccupied(false);
+            chair.occupied = false;
+            
+            // Sets the chairs sorting order back to normal.
+            chair.spriteRen.sortingOrder = 0;
 
-            transform.position = grid.GetCellCenterWorld(grid.WorldToCell(seat.accessPoint.position));
-            seat = null;
+            transform.position = grid.GetCellCenterWorld(grid.WorldToCell(chair.accessPoint.position));
+            chair = null;
 
-            // Sets the NPCs sorting order back to normal.
-            //spriteRen.sortingOrder = 0;
         }
-        
+
         private void LeaveResaurant() {
             isLeaving = true;
             move.AutoPath(gm.npcManager.spawnLocation.position);

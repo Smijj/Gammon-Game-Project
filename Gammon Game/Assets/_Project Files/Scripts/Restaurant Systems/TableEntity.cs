@@ -4,28 +4,38 @@ using UnityEngine;
 
 namespace RestaurantSystems {
     using GameManagement;
+    public enum Direction {
+        Left,
+        Right,
+    }
+
     public class TableEntity : MonoBehaviour {
 
         public LayerMask WhatStopsMovement;
-        public List<SeatSpot> seatingList = new List<SeatSpot>();
+        public List<SeatingDirection> seatingDirections = new List<SeatingDirection>();
+        public List<SeatingData> seatingList = new List<SeatingData>();
+        
         [SerializeField]
-        private List<GameObject> activeChairs = new List<GameObject>();
-        [SerializeField]
-        private List<GameObject> activeDishes = new List<GameObject>();
+        private List<SeatingData> activeSeating = new List<SeatingData>();
 
         private void Start() {
 
-            foreach (SeatSpot _seat in seatingList) {
-                // Check if the seating position is not blocked by a collider
-                if (CheckIfPlaceableSpot(_seat.chairPos.transform.position)) {
-                    // Spawn Chair
-                    if (_seat.chairPrefab) activeChairs.Add(Instantiate(_seat.chairPrefab, _seat.chairPos));
-                    // Spawn Dish
-                    if(_seat.dishPrefab) activeDishes.Add(Instantiate(_seat.dishPrefab, _seat.dishPos));
-                }
-            }
-            foreach (GameObject chair in activeChairs) {
-                chair.GetComponent<SeatEntity>().parentTable = GetComponent<TableEntity>();
+            for (int i = 0; i < seatingList.Count; i++) {
+                // Check if the seating position is blocked by a collider, if it is skip to the next iteration
+                if (!CheckIfPlaceableSpot(seatingList[i].chairPos.transform.position)) continue;
+
+                // Set the SeatingData's prefabs, if it fails skip to the next iteration
+                if (!seatingList[i].SetPrefabs(seatingDirections)) continue;
+
+                // If the necessary prefabs are not available skip to the next iteration
+                if (!seatingList[i].chairPrefab || !seatingList[i].dishPrefab) continue;
+
+                // Otherwise spawn the seating
+                seatingList[i].tableParent = GetComponent<TableEntity>();
+                seatingList[i].chairInstance = Instantiate(seatingList[i].chairPrefab, seatingList[i].chairPos);
+                seatingList[i].chairInstance.GetComponent<ChairEntity>().seatData = seatingList[i];
+                seatingList[i].dishInstance = Instantiate(seatingList[i].dishPrefab, seatingList[i].dishPos);
+                activeSeating.Add(seatingList[i]);
             }
         }
 
@@ -37,26 +47,62 @@ namespace RestaurantSystems {
             }
             return true;
         }
+    }
 
-        private void SpawnSeating() {
+    [System.Serializable]
+    public class SeatingData {
+        public string name;
+        public Direction seatingDir;
+        [HideInInspector]
+        public TableEntity tableParent;
+        public Transform chairPos;
+        [HideInInspector]
+        public GameObject chairPrefab;
+        [HideInInspector]
+        public GameObject chairInstance;
+        public Transform dishPos;
+        [HideInInspector]
+        public GameObject dishPrefab;
+        [HideInInspector]
+        public GameObject dishInstance;
 
+        public SeatingData(string _name, TableEntity _tableParent, Transform _chairPos, GameObject _chairPrefab, GameObject _chairInstance, Transform _dishPos, GameObject _dishPrefab, GameObject _dishInstance) {
+            name = _name;
+            tableParent = _tableParent;
+            chairPos = _chairPos;
+            chairPrefab = _chairPrefab;
+            chairInstance = _chairInstance;
+            dishPos = _dishPos;
+            dishPrefab = _dishPrefab;
+            dishInstance = _dishInstance;
+        }
+
+        public bool SetPrefabs(List<SeatingDirection> _seatingDirections) {
+            foreach (SeatingDirection _seatDir in _seatingDirections) {
+                if(seatingDir == _seatDir.seatingDir) {
+                    chairPrefab = _seatDir.chairPrefab;
+                    dishPrefab = _seatDir.dishPrefab;
+                    return true;
+                }
+            }
+            return false;
         }
     }
 
     [System.Serializable]
-    public struct SeatSpot {
+    public class SeatingDirection {
         public string name;
-        public Transform chairPos;
+        public Direction seatingDir;
         public GameObject chairPrefab;
-        public Transform dishPos;
         public GameObject dishPrefab;
 
-        //public SeatSpot(string _name, Transform _chairPos, GameObject _chairPrefab, Transform _dishPos, GameObject _dishPrefab) {
-        //    name = _name;
-        //    chairPos = _chairPos;
-        //    chairPrefab = _chairPrefab;
-        //    dishPos = _dishPos;
-        //    dishPrefab = _dishPrefab;
-        //}
+        public SeatingDirection(string _name, Direction _seatingDir, GameObject _chairPrefab, GameObject _dishPrefab) {
+            name = _name;
+            seatingDir = _seatingDir;
+            chairPrefab = _chairPrefab;
+            dishPrefab = _dishPrefab;
+        }
     }
+
+
 }

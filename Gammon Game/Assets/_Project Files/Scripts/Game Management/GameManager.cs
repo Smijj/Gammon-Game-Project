@@ -29,7 +29,7 @@ namespace GameManagement {
         public static Tilemap map;
         public NPCManager npcManager;
 
-        public List<SeatEntity> seatList = new List<SeatEntity>();
+        public List<ChairEntity> activeChairList = new List<ChairEntity>();
 
         #region Unity Functions        
 

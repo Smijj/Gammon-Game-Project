@@ -53,6 +53,9 @@ MonoBehaviour:
   walkPointSet: 0
   walkPoint: {x: 0, y: 0, z: 0}
   sittingTime: 10
+  sittingTimer: 0
+  foundSeat: 0
+  isSitting: 0
   minIdleTime: 3
   maxIdleTime: 6
 --- !u!114 &6520653041219019434
@@ -72,8 +75,8 @@ MonoBehaviour:
   WhatStopsMovement:
     serializedVersion: 2
     m_Bits: 64
-  useDiagonalMovement: 1
-  moveOnMouseRelease: 1
+  useDiagonalMovement: 0
+  moveOnMouseRelease: 0
   lastPoint: {x: 0, y: 0, z: 0}
   movePoint: {x: 0, y: 0, z: 0}
   pathHighlightPrefab: {fileID: 8705688121449926182, guid: 2b390426a4d37024a90c9e652948c02f, type: 3}

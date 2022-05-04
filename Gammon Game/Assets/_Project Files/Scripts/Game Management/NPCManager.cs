@@ -31,18 +31,11 @@ namespace GameManagement {
         }
 
 
-        public void DestroyNPC(GameObject _npcObject, string _npcName = "") {
+        public void DestroyNPC(GameObject _npcObject) {
             if (activeNPCs.Contains(_npcObject)) {
-                Debug.Log("Found item in list");
                 activeNPCs.Remove(_npcObject);
             }
             Destroy(_npcObject);
-
-            //foreach (GameObject npcObject in activeNPCs) {
-            //    if (npcObject.GetComponent<NPCController>().npc.name == _npcName) {
-
-            //    }
-            //}
         }
 
 

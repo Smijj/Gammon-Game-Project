@@ -85,29 +85,53 @@ MonoBehaviour:
   WhatStopsMovement:
     serializedVersion: 2
     m_Bits: 64
+  seatingDirections:
+  - name: Left
+    seatingDir: 0
+    chairPrefab: {fileID: 2466137834305041685, guid: 796f3810bbd6f8343970fccbdf40a147, type: 3}
+    dishPrefab: {fileID: 5370927769632275461, guid: 8398ce93ec42d3f459e35f4e3d069248, type: 3}
+  - name: Right
+    seatingDir: 1
+    chairPrefab: {fileID: 2466137834305041685, guid: 79aa5b3edb478e2439ffc50fc133548b, type: 3}
+    dishPrefab: {fileID: 5370927769632275461, guid: 8398ce93ec42d3f459e35f4e3d069248, type: 3}
   seatingList:
   - name: Seat1
+    seatingDir: 0
+    tableParent: {fileID: 0}
     chairPos: {fileID: 8276887682822565164}
     chairPrefab: {fileID: 2466137834305041685, guid: 796f3810bbd6f8343970fccbdf40a147, type: 3}
+    chairInstance: {fileID: 0}
     dishPos: {fileID: 6860027455705264618}
     dishPrefab: {fileID: 5370927769632275461, guid: 8398ce93ec42d3f459e35f4e3d069248, type: 3}
+    dishInstance: {fileID: 0}
   - name: Seat2
+    seatingDir: 0
+    tableParent: {fileID: 0}
     chairPos: {fileID: 1286551204069425783}
     chairPrefab: {fileID: 2466137834305041685, guid: 796f3810bbd6f8343970fccbdf40a147, type: 3}
+    chairInstance: {fileID: 0}
     dishPos: {fileID: 6078560259810897123}
     dishPrefab: {fileID: 5370927769632275461, guid: 8398ce93ec42d3f459e35f4e3d069248, type: 3}
+    dishInstance: {fileID: 0}
   - name: Seat3
+    seatingDir: 1
+    tableParent: {fileID: 0}
     chairPos: {fileID: 526310044603075899}
     chairPrefab: {fileID: 2466137834305041685, guid: 79aa5b3edb478e2439ffc50fc133548b, type: 3}
+    chairInstance: {fileID: 0}
     dishPos: {fileID: 208656000536632717}
     dishPrefab: {fileID: 5370927769632275461, guid: 8398ce93ec42d3f459e35f4e3d069248, type: 3}
+    dishInstance: {fileID: 0}
   - name: Seat4
+    seatingDir: 1
+    tableParent: {fileID: 0}
     chairPos: {fileID: 8695983025096896959}
     chairPrefab: {fileID: 2466137834305041685, guid: 79aa5b3edb478e2439ffc50fc133548b, type: 3}
+    chairInstance: {fileID: 0}
     dishPos: {fileID: 9215501713305917341}
     dishPrefab: {fileID: 5370927769632275461, guid: 8398ce93ec42d3f459e35f4e3d069248, type: 3}
-  activeChairs: []
-  activeDishes: []
+    dishInstance: {fileID: 0}
+  activeSeating: []
 --- !u!1 &677392723664632437
 GameObject:
   m_ObjectHideFlags: 0
