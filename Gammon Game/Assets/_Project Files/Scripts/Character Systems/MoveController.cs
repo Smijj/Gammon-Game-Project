@@ -220,7 +220,7 @@ namespace CharacterSystems {
         public bool WalkableTileCheck(Vector3Int _targetNode) {
             Vector3 checkPos = grid.GetCellCenterWorld(_targetNode);
 
-            if (Physics2D.OverlapCircle(checkPos, 0.35f, WhatStopsMovement)) {
+            if (Physics2D.OverlapCircle(checkPos, 0.15f, WhatStopsMovement)) {
                 return true;
             }
             return false;

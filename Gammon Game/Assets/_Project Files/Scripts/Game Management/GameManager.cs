@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 namespace GameManagement {
     using MenuSystem;
+    using RestaurantSystems;
 
     public class GameManager : MonoBehaviour {
         #region Singleton

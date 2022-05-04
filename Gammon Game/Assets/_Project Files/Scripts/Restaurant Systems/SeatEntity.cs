@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace GameManagement {
+namespace RestaurantSystems {
+    using GameManagement;
 
     public enum ChairType {
         None,
@@ -26,7 +27,7 @@ namespace GameManagement {
         // Parent Table can instantiate its own chairs in any available preset positions around the table. As it spawns them it will set itself as their parent. 
         // Might need its own script.
         // A Table might get set to 'private' or 'taken' or 'friends only' when a NPC sits at it, only allowing friends of that NPC to sit with them, or nobody at all.
-        private SeatEntity parentTable;
+        public TableEntity parentTable;
 
         private void Start() {
             gm = GameManager.singleton;

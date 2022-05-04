@@ -5,6 +5,7 @@ using UnityEngine.Tilemaps;
 
 namespace CharacterSystems {
     using GameManagement;
+    using RestaurantSystems;
 
     public class NPCController : MonoBehaviour
     {
