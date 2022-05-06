@@ -75,7 +75,7 @@ MonoBehaviour:
   WhatStopsMovement:
     serializedVersion: 2
     m_Bits: 64
-  useDiagonalMovement: 0
+  useDiagonalMovement: 1
   moveOnMouseRelease: 0
   lastPoint: {x: 0, y: 0, z: 0}
   movePoint: {x: 0, y: 0, z: 0}
