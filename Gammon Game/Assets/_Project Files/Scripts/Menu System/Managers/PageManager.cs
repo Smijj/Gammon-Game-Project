@@ -16,6 +16,7 @@ namespace MenuSystem {
         Orders,
         Stats,
         Contacts,
+        Map,
     }
 
     public class PageManager : MonoBehaviour
