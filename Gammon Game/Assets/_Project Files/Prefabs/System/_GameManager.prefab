@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0a88852ac996c1428d30c9ed35ab120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcManager: {fileID: 0}
+  npcManager: {fileID: 129430332161108863}
   activeChairList: []
 --- !u!114 &129430332161108863
 MonoBehaviour:

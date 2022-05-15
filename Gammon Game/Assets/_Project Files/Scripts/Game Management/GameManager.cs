@@ -27,6 +27,7 @@ namespace GameManagement {
 
         public static Grid grid;
         public static Tilemap map;
+        [HideInInspector]
         public NPCManager npcManager;
 
         public List<ChairEntity> activeChairList = new List<ChairEntity>();
