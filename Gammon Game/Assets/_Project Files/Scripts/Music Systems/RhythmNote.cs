@@ -18,8 +18,6 @@ namespace MusicSystem {
             double timeSinceInstantiated = SongManager.GetAudioSourceTime() - timeInstantiated;
             float t = (float)(timeSinceInstantiated / (SongManager.instance.noteTime * 2));
 
-            
-
             // when t == 0 the note should be at the noteSpawnY, when t == 1 the note should be at noteDespawnY
             if (t>1) {
                 Destroy(gameObject);

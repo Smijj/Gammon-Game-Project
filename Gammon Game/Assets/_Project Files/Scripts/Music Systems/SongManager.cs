@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using System.Collections;
 using System.Collections.Generic;
@@ -5,7 +6,6 @@ using UnityEngine;
 using UnityEngine.Networking;
 using Melanchall.DryWetMidi.Core;
 using Melanchall.DryWetMidi.Interaction;
-using System;
 
 namespace MusicSystem {
     public class SongManager : MonoBehaviour
@@ -27,6 +27,8 @@ namespace MusicSystem {
             }
         }
 
+        public GameObject indicatorLine;
+
         public static MidiFile midiFile;
 
         #region Unity Functions
@@ -38,14 +40,47 @@ namespace MusicSystem {
             } else {
                 ReadFromFile();
             }
-            Debug.Log(noteDespawnY);
+
+            Vector3 spawnYPos = new Vector3(0, noteSpawnY, 0);
+            Vector3 despawnYPos = new Vector3(0, noteDespawnY, 0);
+
+            double timeToGetToFirstMargin = noteTime - (inputDelayInMiliseconds / 1000.0f) - marginOfError;
+            float firstMarginPercentage = (float)timeToGetToFirstMargin / (noteTime * 2);
+            Vector3 firstMarginYPos = Vector3.Lerp(spawnYPos, despawnYPos, firstMarginPercentage);
+
+            double timeToGetToSecondMargin = noteTime - (inputDelayInMiliseconds / 1000.0f) + marginOfError;
+            float secondMarginPercentage = (float)timeToGetToSecondMargin / (noteTime * 2);
+            Vector3 secondMarginYPos = Vector3.Lerp(spawnYPos, despawnYPos, secondMarginPercentage);
+
+
+            if (indicatorLine) {
+                Instantiate(indicatorLine, firstMarginYPos, Quaternion.identity);
+                Instantiate(indicatorLine, secondMarginYPos, Quaternion.identity);
+            }
+
         }
+
+        //private void OnDrawGizmos() {
+
+        //    Vector3 spawnYPos = new Vector3(0, noteSpawnY, 0);
+        //    Vector3 despawnYPos = new Vector3(0, noteDespawnY, 0);
+
+        //    double timeToGetToFirstMargin = noteTime - (inputDelayInMiliseconds / 1000.0f) - marginOfError;
+        //    float firstMarginPercentage = (float)timeToGetToFirstMargin / (noteTime * 2);
+        //    Vector3 firstMarginYPos = Vector3.Lerp(spawnYPos, despawnYPos, firstMarginPercentage);
+        //    Gizmos.DrawLine(new Vector3(-20, firstMarginYPos.y, 0), new Vector3(20, firstMarginYPos.y, 0));
+
+        //    double timeToGetToSecondMargin = noteTime - (inputDelayInMiliseconds / 1000.0f) + marginOfError;
+        //    float secondMarginPercentage = (float)timeToGetToSecondMargin / (noteTime * 2);
+        //    Vector3 secondMarginYPos = Vector3.Lerp(spawnYPos, despawnYPos, secondMarginPercentage);
+        //    Gizmos.DrawLine(new Vector3(-20, secondMarginYPos.y, 0), new Vector3(20, secondMarginYPos.y, 0));
+        //}
 
         #endregion
 
 
         #region Public Functions
-        
+
         /// <summary>
         /// Gets the current timestamp of the audio that is playing
         /// </summary>
@@ -53,6 +88,12 @@ namespace MusicSystem {
         public static double GetAudioSourceTime() {
             return (double)instance.audioSource.timeSamples / instance.audioSource.clip.frequency;
         }
+
+        // Doesnt Work
+        //public void ResetSong() {
+        //    if (audioSource.isPlaying) audioSource.Stop();
+        //    GetDataFromMidi();
+        //}
 
         #endregion
 

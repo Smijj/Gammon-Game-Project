@@ -11,6 +11,7 @@ namespace MusicSystem {
         public KeyCode input;
         public KeyCode secondaryInput;
         public GameObject notePrefab;
+        public bool debug = false;
         public List<double> timeStamps = new List<double>();
         private List<RhythmNote> notes = new List<RhythmNote>();
 
@@ -36,19 +37,19 @@ namespace MusicSystem {
                 double marginOfError = SongManager.instance.marginOfError;
                 double audioTime = SongManager.GetAudioSourceTime() - (SongManager.instance.inputDelayInMiliseconds / 1000.0f);
 
-                if (Input.GetKeyDown(input) || Input.GetKeyDown(secondaryInput)) {
+                if (Input.GetKey(input) || Input.GetKeyDown(secondaryInput)) {
                     if (Math.Abs(audioTime - timeStamp) < marginOfError) {
                         Hit();
-                        Debug.Log($"Hit on {inputIndex} note.");
+                        Log($"Hit on {inputIndex} note.");
                         Destroy(notes[inputIndex].gameObject);
                         inputIndex++;
                     } else {
-                        Debug.Log($"Hit inaccurate on {inputIndex} note with {Math.Abs(audioTime - timeStamp)} delay.");
+                        Log($"Hit inaccurate on {inputIndex} note with {Math.Abs(audioTime - timeStamp)} delay.");
                     }
                 }
                 if (timeStamp + marginOfError <= audioTime) {
                     Miss();
-                    Debug.Log($"Missed {inputIndex} note.");
+                    Log($"Missed {inputIndex} note.");
                     inputIndex++;
                 }
             }
@@ -60,6 +61,15 @@ namespace MusicSystem {
         #region Public Functions
 
         public void SetTimeStamps(Melanchall.DryWetMidi.Interaction.Note[] _array) {
+            //spawnIndex = 0;
+            //inputIndex = 0;
+            //if (notes.Count > 0) {
+            //    foreach (var note in notes) {
+            //        Destroy(note.gameObject);
+            //    }
+            //    notes.Clear();
+            //}
+
             foreach (var _note in _array) {
                 if (_note.NoteName == noteRestriction) {
                     // _note.Time does not return a normal timestamp, so it is necessary to convert it into metric time
@@ -81,6 +91,12 @@ namespace MusicSystem {
 
         private void Miss() {
             ScoreManager.Miss();
+        }
+
+        private void Log(string _msg) {
+            if (debug) {
+                Debug.Log("[Lane] " + _msg);
+            }
         }
 
         #endregion
