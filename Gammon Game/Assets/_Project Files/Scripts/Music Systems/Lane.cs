@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Melanchall.DryWetMidi.Interaction;
+using TMPro;
 
 namespace MusicSystem {
     public class Lane : MonoBehaviour
@@ -12,11 +13,15 @@ namespace MusicSystem {
         public KeyCode secondaryInput;
         public GameObject notePrefab;
         public bool debug = false;
+        
+        public Transform hitTextPos;    // the transform of where the hit texts prefabs will get instantiated
+        
         public List<double> timeStamps = new List<double>();        // A list of all the timestamps needed for this lane of notes, gets set it [SongManager].
         private List<RhythmNote> notes = new List<RhythmNote>();    // a list of all the notes in used in this lane
 
         private int spawnIndex = 0;     // The index that tracks the order notes should be spawned
         private int inputIndex = 0;     // Tracks the players input and increments when they hit a note or it goes to far and counts as a miss
+
 
         #region Unity Functions
 
@@ -115,15 +120,19 @@ namespace MusicSystem {
 
         private void PerfectHit() {
             ScoreManager.PerfectHit();
+            ScoreManager.InstantiateHitText(ScoreManager.instance.perfectHitText, hitTextPos);
         }
         private void GoodHit() {
             ScoreManager.GoodHit();
+            ScoreManager.InstantiateHitText(ScoreManager.instance.goodHitText, hitTextPos);
         }
         private void BadHit() {
             ScoreManager.BadHit();
+            ScoreManager.InstantiateHitText(ScoreManager.instance.badHitText, hitTextPos);
         }
         private void Miss() {
             ScoreManager.Miss();
+            ScoreManager.InstantiateHitText(ScoreManager.instance.missText, hitTextPos);
         }
 
         private void Log(string _msg) {

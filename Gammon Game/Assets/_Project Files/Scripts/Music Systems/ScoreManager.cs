@@ -6,19 +6,33 @@ using TMPro;
 namespace MusicSystem {
     public class ScoreManager : MonoBehaviour
     {
+        static int comboScore;
         public static ScoreManager instance;
+        
         public AudioSource perfectHitSFX;
         public AudioSource goodHitSFX;
         public AudioSource badHitSFX;
         public AudioSource missSFX;
         public TextMeshProUGUI comboScoreText;
-        static int comboScore;
+
+        public GameObject hitText;
+        public string perfectHitText;
+        public string goodHitText;
+        public string badHitText;
+        public string missText;
 
 
         private void Start() {
             instance = this;
             comboScore = 0;
         }
+
+
+
+        public static void InstantiateHitText(string _text, Transform _pos) {
+            Instantiate(instance.hitText, _pos).GetComponent<TextMeshPro>().text = _text;
+        }
+
 
         public static void PerfectHit() {
             instance.perfectHitSFX.Play();
