@@ -57,7 +57,7 @@ namespace MusicSystem {
                 // Moves the note between the hitIndicatorStartPos and 0 based on the percentage t2
                 //hitIndicatorLeft.transform.localPosition = Vector3.Lerp(hitIndicatorLeftStartPos.position, Vector3.zero, t2);
                 //hitIndicatorRight.transform.localPosition = Vector3.Lerp(hitIndicatorRightStartPos.position, Vector3.zero, t2);
-                hitIndicator.transform.localScale = Vector3.Lerp(hitIndicatorStartingScale, new Vector3(0.6f, 0.6f, 0.6f), t2);
+                hitIndicator.transform.localScale = Vector3.Lerp(hitIndicatorStartingScale, new Vector3(1, 1, 1), t2);
             }
         }
     }

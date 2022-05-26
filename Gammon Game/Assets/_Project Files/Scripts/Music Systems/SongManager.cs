@@ -117,6 +117,7 @@ namespace MusicSystem {
         /// Used for drawning a horizontal line across the screen in relation to the tapPos.
         /// </summary>
         /// <param name="_timeMargin">Negative number to place before the tapPos, positive for after. This is the time in seconds before or after the tapPos you want to draw something.</param>
+        /// <param name="_lineColour"></param>
         /// <param name="_accountForInputDelay">Controls whether or not the drawn objects pos will account for input delay or not (i.e. will it visually move to match the input delay).</param>
         private void DrawAroundTapPos(double _timeMargin, Color _lineColour, bool _accountForInputDelay = false) {
             Vector3 spawnYPos = new Vector3(0, noteSpawnY, 0);
@@ -132,7 +133,14 @@ namespace MusicSystem {
                 ScalePrefabInst(prefabInst, 42f, 0.1f);
             }
         }
-        private void DrawBlockAroundTapPos(double _timeMargin, Color _blockColour, float _colourAlpha = 1, bool _accountForInputDelay = false) {
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="_timeMargin"></param>
+        /// <param name="_blockColour"></param>
+        /// <param name="_accountForInputDelay"></param>
+        private void DrawBlockAroundTapPos(double _timeMargin, Color _blockColour, bool _accountForInputDelay = false) {
             Vector3 spawnYPos = new Vector3(0, noteSpawnY, 0);
             Vector3 despawnYPos = new Vector3(0, noteDespawnY, 0);
 
@@ -146,9 +154,7 @@ namespace MusicSystem {
 
             if (indicatorPrefab) {
                 GameObject prefabInst = Instantiate(indicatorPrefab, (marginYPos1 + marginYPos2) / 2, Quaternion.identity);
-                Color color = _blockColour;
-                color.a = _colourAlpha;
-                prefabInst.GetComponent<SpriteRenderer>().color = color;
+                prefabInst.GetComponent<SpriteRenderer>().color = _blockColour;
                 ScalePrefabInst(prefabInst, 42f, marginYPos1, marginYPos2);
             }
         }

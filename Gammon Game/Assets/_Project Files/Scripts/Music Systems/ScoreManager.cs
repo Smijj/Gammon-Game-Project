@@ -7,10 +7,10 @@ using TMPro;
 namespace MusicSystem {
     public class ScoreManager : MonoBehaviour
     {
+        public static ScoreManager instance;
         static int comboScore;
         static int multiplier;
         static double score;
-        public static ScoreManager instance;
         
         [Header("Audio Refs: ")]
         public AudioSource perfectHitSFX;
