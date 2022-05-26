@@ -12,21 +12,29 @@ namespace MusicSystem {
     {
         // a static ref to the midifile that the current song is using
         public static MidiFile midiFile;
-        public GameObject indicatorLine;    // A simple gameobject that will be spawned to indicate where the player needs to tap
-        
         public static SongManager instance; // Might need to turn this into a singleton, but dont need to rn
+        
+        [Header("Song Mangager Stuff: ")]
         public AudioSource audioSource;     // The audiosource where the audio will be played through in the game
         public Lane[] lanes;                // The lanes that the notes drop from
+        
+        [Header("Song Settings: ")]
+        [Tooltip("The location of the midi file that is to be played alongside the music.")]
+        public string fileLocation;
         public float songDelayInSeconds;    // The ddelay before the song starts
-        public int inputDelayInMiliseconds; // To account for input delay
 
+        [Header("Tap Settings: ")]
+        public int inputDelayInMiliseconds; // To account for input delay
         public double perfectMargin;
         public double goodMargin;       
         public double badMargin;
 
+        public Color perfectTapZone;
+        public Color goodTapZoneLines;
+        public GameObject indicatorPrefab;    // A simple gameobject that will be spawned to indicate where the player needs to tap
 
-        [Tooltip("The location of the midi file that is to be played alongside the music.")]
-        public string fileLocation;
+
+        [Header("Note Settings: ")]
         [Tooltip("The time it takes for the note to reach the noteTapY position.")]
         public float noteTime;
         [Tooltip("The position the notes will spawn in the world.")]
@@ -47,6 +55,8 @@ namespace MusicSystem {
         private void Start() {
             instance = this;
 
+            audioSource.pitch = noteTime;
+
             // Checks if the mififile that is trying to be read is from an online link or on file, then calls the necessary function to handle it
             if (Application.streamingAssetsPath.StartsWith("http://") || Application.streamingAssetsPath.StartsWith("https://")) {
                 StartCoroutine(ReadFromWebsite());
@@ -56,10 +66,9 @@ namespace MusicSystem {
 
 
             // Spawns the tap line indicators.
-            DrawAroundTapPos(-perfectMargin, Color.grey + Color.red + Color.yellow);   // Draws line before the tapPos
-            DrawAroundTapPos(perfectMargin, Color.grey + Color.red + Color.yellow);    // Draws line after the tapPos
-            DrawAroundTapPos(-goodMargin, Color.white);   // Draws line before the tapPos
-            DrawAroundTapPos(goodMargin, Color.white);    // Draws line after the tapPos
+            DrawBlockAroundTapPos(perfectMargin, perfectTapZone);
+            DrawAroundTapPos(-goodMargin, goodTapZoneLines);   // Draws line before the tapPos
+            DrawAroundTapPos(goodMargin, goodTapZoneLines);    // Draws line after the tapPos
 
         }
 
@@ -117,10 +126,49 @@ namespace MusicSystem {
             float marginPercentage = (float)timeToGetToMargin / (noteTime * 2);
             Vector3 marginYPos = Vector3.Lerp(spawnYPos, despawnYPos, marginPercentage);
 
-            if (indicatorLine) {
-                Instantiate(indicatorLine, marginYPos, Quaternion.identity).GetComponent<SpriteRenderer>().color = _lineColour;
+            if (indicatorPrefab) {
+                GameObject prefabInst = Instantiate(indicatorPrefab, marginYPos, Quaternion.identity);
+                prefabInst.GetComponent<SpriteRenderer>().color = _lineColour;
+                ScalePrefabInst(prefabInst, 42f, 0.1f);
             }
         }
+        private void DrawBlockAroundTapPos(double _timeMargin, Color _blockColour, float _colourAlpha = 1, bool _accountForInputDelay = false) {
+            Vector3 spawnYPos = new Vector3(0, noteSpawnY, 0);
+            Vector3 despawnYPos = new Vector3(0, noteDespawnY, 0);
+
+            double timeToGetToMargin1 = !_accountForInputDelay ? noteTime - _timeMargin : noteTime - (inputDelayInMiliseconds / 1000.0f) - _timeMargin;
+            float marginPercentage1 = (float)timeToGetToMargin1 / (noteTime * 2);
+            Vector3 marginYPos1 = Vector3.Lerp(spawnYPos, despawnYPos, marginPercentage1);
+
+            double timeToGetToMargin2 = !_accountForInputDelay ? noteTime + _timeMargin : noteTime - (inputDelayInMiliseconds / 1000.0f) + _timeMargin;
+            float marginPercentage2 = (float)timeToGetToMargin2 / (noteTime * 2);
+            Vector3 marginYPos2 = Vector3.Lerp(spawnYPos, despawnYPos, marginPercentage2);
+
+            if (indicatorPrefab) {
+                GameObject prefabInst = Instantiate(indicatorPrefab, (marginYPos1 + marginYPos2) / 2, Quaternion.identity);
+                Color color = _blockColour;
+                color.a = _colourAlpha;
+                prefabInst.GetComponent<SpriteRenderer>().color = color;
+                ScalePrefabInst(prefabInst, 42f, marginYPos1, marginYPos2);
+            }
+        }
+
+        // Scales the prefab to match _disX and _disY
+        private void ScalePrefabInst(GameObject _prefabInst, float _disX, float _disY) {
+            _prefabInst.transform.localScale = new Vector3(_disX, _disY, 1);
+        }
+        // Scales the prefab to match _disX and the distance between the _top and _bottom vectors
+        private void ScalePrefabInst(GameObject _prefabInst, float _disX, Vector3 _top, Vector3 _bottom) {
+            float disY = Vector3.Distance(_top, _bottom);
+            _prefabInst.transform.localScale = new Vector3(_disX, disY, 1);
+        }
+        // Scales the prefab to match the distance between the _top, _bottom, _left, and _right vectors
+        private void ScalePrefabInst(GameObject _prefabInst, Vector3 _top, Vector3 _bottom, Vector3 _left, Vector3 _right) {
+            float disY = Vector3.Distance(_top, _bottom);
+            float disX = Vector3.Distance(_left, _right);
+            _prefabInst.transform.localScale = new Vector3(disX, disY, 1);
+        }
+        
 
         private IEnumerator ReadFromWebsite() {
             // Sends a request to the streamingAssetsPath website looking for the fileLocation

@@ -53,12 +53,12 @@ namespace MusicSystem {
                     
                     // Manage Perfect/Good/Bad notes in here
                     if (Math.Abs(audioTime - timeStamp) < perfectMargin) {
-                        PerfectHit();
+                        PerfectHit(audioTime - timeStamp);
                         Log($"Perfect Hit on {inputIndex} note.");
                         Destroy(notes[inputIndex].gameObject);
                         inputIndex++;
                     } else if (Math.Abs(audioTime - timeStamp) < goodMargin) {
-                        GoodHit();
+                        GoodHit(audioTime - timeStamp);
                         Log($"Good Hit on {inputIndex} note.");
                         Destroy(notes[inputIndex].gameObject);
                         inputIndex++;
@@ -118,12 +118,12 @@ namespace MusicSystem {
         
         #region Private Functions
 
-        private void PerfectHit() {
-            ScoreManager.PerfectHit();
+        private void PerfectHit(double _disFromPerfect) {
+            ScoreManager.PerfectHit(_disFromPerfect);
             ScoreManager.InstantiateHitText(ScoreManager.instance.perfectHitText, hitTextPos);
         }
-        private void GoodHit() {
-            ScoreManager.GoodHit();
+        private void GoodHit(double _disFromPerfect) {
+            ScoreManager.GoodHit(_disFromPerfect);
             ScoreManager.InstantiateHitText(ScoreManager.instance.goodHitText, hitTextPos);
         }
         private void BadHit() {

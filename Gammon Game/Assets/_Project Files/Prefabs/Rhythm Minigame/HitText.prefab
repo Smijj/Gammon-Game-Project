@@ -53,6 +53,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeToDestroy: 0.5
   textTilt: 3.5
+  spawnPosOffset: 0.5
 --- !u!114 &2034088313934331664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75,8 +76,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Perfect!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00659b8776374db44806155e3b391b86, type: 2}
-  m_sharedMaterial: {fileID: -8811854083777646454, guid: 00659b8776374db44806155e3b391b86, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0bdbc231578aa9546b675bf3bd17c099, type: 2}
+  m_sharedMaterial: {fileID: -8811854083777646454, guid: 0bdbc231578aa9546b675bf3bd17c099, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -183,7 +184,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -8811854083777646454, guid: 00659b8776374db44806155e3b391b86, type: 2}
+  - {fileID: -8811854083777646454, guid: 0bdbc231578aa9546b675bf3bd17c099, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -201,7 +202,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -551492191
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
