@@ -8,15 +8,18 @@ using TMPro;
 namespace MusicSystem {
     public class Lane : MonoBehaviour
     {
+        [Header("Lane Settings: ")]
         public Melanchall.DryWetMidi.MusicTheory.NoteName noteRestriction;    // restricts notes to a certain key
+        [Header("Input Settings: ")]
         public KeyCode input;
         public KeyCode secondaryInput;
+        [Header("Refs: ")]
         public GameObject notePrefab;
+        public Transform hitTextPos;    // the transform of where the hit texts prefabs will get instantiated
         public bool debug = false;
         
-        public Transform hitTextPos;    // the transform of where the hit texts prefabs will get instantiated
         
-        public List<double> timeStamps = new List<double>();        // A list of all the timestamps needed for this lane of notes, gets set it [SongManager].
+        public List<double> timeStamps = new List<double>();        // A list of all the timestamps needed for this lane of notes, gets set in [SongManager].
         private List<RhythmNote> notes = new List<RhythmNote>();    // a list of all the notes in used in this lane
 
         private int spawnIndex = 0;     // The index that tracks the order notes should be spawned
@@ -119,20 +122,16 @@ namespace MusicSystem {
         #region Private Functions
 
         private void PerfectHit(double _disFromPerfect) {
-            ScoreManager.PerfectHit(_disFromPerfect);
-            ScoreManager.InstantiateHitText(ScoreManager.instance.perfectHitText, hitTextPos);
+            ScoreManager.PerfectHit(hitTextPos, _disFromPerfect);
         }
         private void GoodHit(double _disFromPerfect) {
-            ScoreManager.GoodHit(_disFromPerfect);
-            ScoreManager.InstantiateHitText(ScoreManager.instance.goodHitText, hitTextPos);
+            ScoreManager.GoodHit(hitTextPos, _disFromPerfect);
         }
         private void BadHit() {
-            ScoreManager.BadHit();
-            ScoreManager.InstantiateHitText(ScoreManager.instance.badHitText, hitTextPos);
+            ScoreManager.BadHit(hitTextPos);
         }
         private void Miss() {
-            ScoreManager.Miss();
-            ScoreManager.InstantiateHitText(ScoreManager.instance.missText, hitTextPos);
+            ScoreManager.Miss(hitTextPos);
         }
 
         private void Log(string _msg) {

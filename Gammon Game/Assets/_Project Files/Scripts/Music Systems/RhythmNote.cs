@@ -5,20 +5,15 @@ using UnityEngine;
 namespace MusicSystem {
     public class RhythmNote : MonoBehaviour
     {
-        private double timeInstantiated;
+
+        //private double timeInstantiated;
         public float assignedTime;
-        public float t2;
         public GameObject sprite;
         public GameObject hitIndicator;
-        //public GameObject hitIndicatorLeft;
-        //public GameObject hitIndicatorRight;
-
-        //private Transform hitIndicatorLeftStartPos;
-        //private Transform hitIndicatorRightStartPos;
         private Vector3 hitIndicatorStartingScale;
 
         private void Start() {
-            timeInstantiated = SongManager.GetAudioSourceTime();
+            //timeInstantiated = SongManager.GetAudioSourceTime();
 
             //hitIndicatorLeftStartPos = hitIndicatorLeft.transform;
             //hitIndicatorRightStartPos = hitIndicatorRight.transform;
@@ -31,7 +26,7 @@ namespace MusicSystem {
         }
 
         private void Update() {
-            double timeSinceInstantiated = SongManager.GetAudioSourceTime() - timeInstantiated; // Calculates the time since the note was instansiated
+            double timeSinceInstantiated = SongManager.GetAudioSourceTime() - (assignedTime - SongManager.instance.noteTime); // Calculates the time since the note was instansiated
             float t = (float)(timeSinceInstantiated / (SongManager.instance.noteTime * 2));     // Gets the current percentage the note pos is between the spawnPos and despawnPos
                                                                                                 // if t=0 the note would be at the spawnPos, if t=0.5 then it would be at the tap
                                                                                                 // position, and if t=1 then it would be at the despawn pos
@@ -45,18 +40,12 @@ namespace MusicSystem {
             }
 
 
-            // ---- Handles Indicator Stuff ----
+            // ---- Handles Hit Indicator Stuff ----
 
-            t2 = (float)(timeSinceInstantiated / SongManager.instance.noteTime);
-            // when t2 == 0 the HitIndicator should be at the hitIndicatorStartPos, when t2 == 1 the HtiIndicator should be at Vector3(0, 1, 0)
+            float t2 = (float)(timeSinceInstantiated / SongManager.instance.noteTime);
             if (t2 > 1) {
-                //hitIndicatorLeft.SetActive(false);
-                //hitIndicatorRight.SetActive(false);
                 hitIndicator.SetActive(false);
             } else {
-                // Moves the note between the hitIndicatorStartPos and 0 based on the percentage t2
-                //hitIndicatorLeft.transform.localPosition = Vector3.Lerp(hitIndicatorLeftStartPos.position, Vector3.zero, t2);
-                //hitIndicatorRight.transform.localPosition = Vector3.Lerp(hitIndicatorRightStartPos.position, Vector3.zero, t2);
                 hitIndicator.transform.localScale = Vector3.Lerp(hitIndicatorStartingScale, new Vector3(1, 1, 1), t2);
             }
         }
