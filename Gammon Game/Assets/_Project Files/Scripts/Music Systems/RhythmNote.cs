@@ -5,24 +5,33 @@ using UnityEngine;
 namespace MusicSystem {
     public class RhythmNote : MonoBehaviour
     {
-
-        //private double timeInstantiated;
+        [Header("Note Info: ")]
         public float assignedTime;
-        public GameObject sprite;
+
+        [Header("Refs: ")]
+        public SpriteRenderer foodSprite;
+        public SpriteRenderer noteBG;
+        public Color noteBGColourStart;
+        public Color noteBGColourTap;
+        public Color noteBGColourMiss;
+        
         public GameObject hitIndicator;
+        public Color hitIndicatorStartColour;
+        public Color hitIndicatorEndColour;
+
         private Vector3 hitIndicatorStartingScale;
+        private SpriteRenderer hitIndicatorSprite;
 
         private void Start() {
-            //timeInstantiated = SongManager.GetAudioSourceTime();
-
-            //hitIndicatorLeftStartPos = hitIndicatorLeft.transform;
-            //hitIndicatorRightStartPos = hitIndicatorRight.transform;
+            hitIndicatorSprite = hitIndicator.GetComponentInChildren<SpriteRenderer>();
             hitIndicatorStartingScale = hitIndicator.transform.localScale;
+            hitIndicatorSprite.color = hitIndicatorStartColour;
+            
+            noteBG.color = noteBGColourStart;
+            StartCoroutine(ChangeNoteBGColour(SongManager.instance.noteTime - (float)SongManager.instance.goodMargin, noteBGColourTap));     // changes the bg colour when the note is in the perfect zone
+            StartCoroutine(ChangeNoteBGColour(SongManager.instance.noteTime + (float)SongManager.instance.goodMargin, noteBGColourMiss));    // changes the bg colour when the note leaves the perfect zone
 
             transform.localPosition = Vector3.up * SongManager.instance.noteSpawnY;
-            // The notePrefabs sprite gameobject not activated, so it will get set to true once its spawned and the position is set.
-            sprite.SetActive(true);
-            hitIndicator.SetActive(true);
         }
 
         private void Update() {
@@ -46,8 +55,14 @@ namespace MusicSystem {
             if (t2 > 1) {
                 hitIndicator.SetActive(false);
             } else {
-                hitIndicator.transform.localScale = Vector3.Lerp(hitIndicatorStartingScale, new Vector3(1, 1, 1), t2);
+                hitIndicator.transform.localScale = Vector3.Lerp(hitIndicatorStartingScale, new Vector3(2, 2, 2), t2);
+                hitIndicatorSprite.color = Color.Lerp(hitIndicatorStartColour, hitIndicatorEndColour, t2);
             }
+        }
+
+        private IEnumerator ChangeNoteBGColour(float _delay, Color _colour) {
+            yield return new WaitForSeconds(_delay);
+            noteBG.color = _colour;
         }
     }
 }

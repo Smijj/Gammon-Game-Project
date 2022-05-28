@@ -56,7 +56,8 @@ namespace MusicSystem {
             score += hitScore * multiplier;
 
             instance.InstantiateHitText(hitScore.ToString("0") + " | " + instance.perfectHitText, instance.hitText, _pos);
-            instance.InstantiateHitText("+ " + hitScore.ToString("0") + $" x{multiplier}", instance.lastScoreText, instance.lastScoreTextPos);
+            instance.InstantiateHitText("+ " + (hitScore * multiplier).ToString("0"), instance.lastScoreText, instance.lastScoreTextPos);
+            //"+ " + hitScore.ToString("0") + $" x{multiplier}"
             instance.perfectHitSFX.Play();
         }
         public static void GoodHit(Transform _pos, double _disFromPerfect) {
@@ -67,7 +68,7 @@ namespace MusicSystem {
             score += hitScore * multiplier;
 
             instance.InstantiateHitText(hitScore.ToString("0") + " | " + instance.goodHitText, instance.hitText, _pos);
-            instance.InstantiateHitText("+ " + hitScore.ToString("0") + $" x{multiplier}", instance.lastScoreText, instance.lastScoreTextPos);
+            instance.InstantiateHitText("+ " + (hitScore * multiplier).ToString("0"), instance.lastScoreText, instance.lastScoreTextPos);
             instance.goodHitSFX.Play();
         }
         public static void BadHit(Transform _pos) {

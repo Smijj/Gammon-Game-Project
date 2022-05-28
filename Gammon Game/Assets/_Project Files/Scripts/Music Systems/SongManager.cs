@@ -29,8 +29,10 @@ namespace MusicSystem {
         public double goodMargin;       
         public double badMargin;
 
+        public float tapIndicatorWidth = 20f;
         public Color perfectTapZone;
         public Color goodTapZoneLines;
+        public Transform gameArea;
         public GameObject indicatorPrefab;    // A simple gameobject that will be spawned to indicate where the player needs to tap
 
 
@@ -73,7 +75,7 @@ namespace MusicSystem {
         }
 
         // Just using this to visulize some lines
-        private void OnDrawGizmos() {
+        /*private void OnDrawGizmos() {
 
             Vector3 spawnYPos = new Vector3(0, noteSpawnY, 0);
             Vector3 despawnYPos = new Vector3(0, noteDespawnY, 0);
@@ -87,7 +89,7 @@ namespace MusicSystem {
             float secondMarginPercentage = (float)timeToGetToSecondMargin / (noteTime * 2);
             Vector3 secondMarginYPos = Vector3.Lerp(spawnYPos, despawnYPos, secondMarginPercentage);
             Gizmos.DrawLine(new Vector3(-20, secondMarginYPos.y, 0), new Vector3(20, secondMarginYPos.y, 0));
-        }
+        }*/
 
         #endregion
 
@@ -127,10 +129,15 @@ namespace MusicSystem {
             float marginPercentage = (float)timeToGetToMargin / (noteTime * 2);
             Vector3 marginYPos = Vector3.Lerp(spawnYPos, despawnYPos, marginPercentage);
 
-            if (indicatorPrefab) {
-                GameObject prefabInst = Instantiate(indicatorPrefab, marginYPos, Quaternion.identity);
+            if (indicatorPrefab && gameArea) {
+                GameObject prefabInst = Instantiate(indicatorPrefab, gameArea);
+                
+                Vector3 yPosVec = marginYPos;
+                prefabInst.transform.localPosition = new Vector3(0, yPosVec.y, 0);
+                //prefabInst.transform.position = marginYPos;
+                
                 prefabInst.GetComponent<SpriteRenderer>().color = _lineColour;
-                ScalePrefabInst(prefabInst, 42f, 0.1f);
+                ScalePrefabInst(prefabInst, tapIndicatorWidth, 0.1f);
             }
         }
 
@@ -152,10 +159,14 @@ namespace MusicSystem {
             float marginPercentage2 = (float)timeToGetToMargin2 / (noteTime * 2);
             Vector3 marginYPos2 = Vector3.Lerp(spawnYPos, despawnYPos, marginPercentage2);
 
-            if (indicatorPrefab) {
-                GameObject prefabInst = Instantiate(indicatorPrefab, (marginYPos1 + marginYPos2) / 2, Quaternion.identity);
+            if (indicatorPrefab && gameArea) {
+                GameObject prefabInst = Instantiate(indicatorPrefab, gameArea);
+                
+                Vector3 yPosVec = (marginYPos1 + marginYPos2) / 2;
+                prefabInst.transform.localPosition = new Vector3(0, yPosVec.y, 0);
+                
                 prefabInst.GetComponent<SpriteRenderer>().color = _blockColour;
-                ScalePrefabInst(prefabInst, 42f, marginYPos1, marginYPos2);
+                ScalePrefabInst(prefabInst, tapIndicatorWidth, marginYPos1, marginYPos2);
             }
         }
 

@@ -20,6 +20,8 @@ namespace MusicSystem {
         
         
         public List<double> timeStamps = new List<double>();        // A list of all the timestamps needed for this lane of notes, gets set in [SongManager].
+        public List<Tuple<double, bool>> timeStampsData = new List<Tuple<double, bool>>();        // A list of all the timestamps needed for this lane of notes, gets set in [SongManager].
+        
         private List<RhythmNote> notes = new List<RhythmNote>();    // a list of all the notes in used in this lane
 
         private int spawnIndex = 0;     // The index that tracks the order notes should be spawned
@@ -52,7 +54,7 @@ namespace MusicSystem {
                 double timeStamp = timeStamps[inputIndex];
                 double audioTime = SongManager.GetAudioSourceTime() - (SongManager.instance.inputDelayInMiliseconds / 1000.0f);
 
-                if (Input.GetKey(input) || Input.GetKeyDown(secondaryInput)) {
+                if (Input.GetKeyDown(input) || Input.GetKeyDown(secondaryInput)) {
                     
                     // Manage Perfect/Good/Bad notes in here
                     if (Math.Abs(audioTime - timeStamp) < perfectMargin) {
@@ -111,9 +113,20 @@ namespace MusicSystem {
                     // _note.Time does not return a normal timestamp, so it is necessary to convert it into metric time
                     var metricTimeSpan = TimeConverter.ConvertTo<MetricTimeSpan>(_note.Time, SongManager.midiFile.GetTempoMap());
                     // Converting all the units of time (min, sec, millisec) into seconds and adding that to the timeStamps list
-                    timeStamps.Add((double)metricTimeSpan.Minutes * 60f + metricTimeSpan.Seconds + (double)metricTimeSpan.Milliseconds / 1000f);    
+                    timeStamps.Add((double)metricTimeSpan.Minutes * 60f + metricTimeSpan.Seconds + (double)metricTimeSpan.Milliseconds / 1000f);
+                    timeStampsData.Add(new Tuple<double, bool>((double)metricTimeSpan.Minutes * 60f + metricTimeSpan.Seconds + (double)metricTimeSpan.Milliseconds / 1000f, false));    
                 }
             }
+
+            //for (int i = 0; i < timeStampsData.Count; i++) {
+            //    // if the time after the note timeStamps[i] is greater than 1 second
+            //    if (Math.Abs(timeStampsData[i].Item1 - timeStampsData[i+1].Item1) > 1) {
+            //        // There is a 25% chance that note will be turned into a hold note
+            //        if (UnityEngine.Random.Range(0,3) == 0) {
+            //            timeStampsData[i] = new Tuple<double, bool>(timeStampsData[i].Item1, true);
+            //        }
+            //    }
+            //}
         }
         
         #endregion
