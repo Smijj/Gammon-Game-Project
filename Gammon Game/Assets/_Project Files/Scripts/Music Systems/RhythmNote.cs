@@ -28,6 +28,7 @@ namespace MusicSystem {
             hitIndicatorSprite.color = hitIndicatorStartColour;
             
             noteBG.color = noteBGColourStart;
+            // Since the first few notes are instantiated before the song starts playing they will change colour before they are meant to
             StartCoroutine(ChangeNoteBGColour(SongManager.instance.noteTime - (float)SongManager.instance.goodMargin, noteBGColourTap));     // changes the bg colour when the note is in the perfect zone
             StartCoroutine(ChangeNoteBGColour(SongManager.instance.noteTime + (float)SongManager.instance.goodMargin, noteBGColourMiss));    // changes the bg colour when the note leaves the perfect zone
 

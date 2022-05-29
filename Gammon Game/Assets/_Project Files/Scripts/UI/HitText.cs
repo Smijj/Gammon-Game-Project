@@ -10,7 +10,7 @@ public class HitText : MonoBehaviour
 
     private void Start() {
         Destroy(gameObject, timeToDestroy);
-        transform.eulerAngles = new Vector3(0,0,Random.Range(-textTilt, textTilt));
+        transform.eulerAngles = new Vector3(-15,0,Random.Range(-textTilt, textTilt));
         transform.localPosition += new Vector3(Random.Range(-spawnPosOffset, spawnPosOffset), Random.Range(-spawnPosOffset, spawnPosOffset), 0);
     }
 }

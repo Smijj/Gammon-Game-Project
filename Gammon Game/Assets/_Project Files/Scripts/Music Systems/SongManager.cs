@@ -12,6 +12,7 @@ namespace MusicSystem {
     {
         // a static ref to the midifile that the current song is using
         public static MidiFile midiFile;
+        public static AudioClip audioClip;
         public static SongManager instance; // Might need to turn this into a singleton, but dont need to rn
         
         [Header("Song Mangager Stuff: ")]
@@ -19,8 +20,10 @@ namespace MusicSystem {
         public Lane[] lanes;                // The lanes that the notes drop from
         
         [Header("Song Settings: ")]
-        [Tooltip("The location of the midi file that is to be played alongside the music.")]
-        public string fileLocation;
+        [Tooltip("The name of the midi file stored in StreamingAssets that is to be played alongside the music.")]
+        public string midiFileLocation;
+        [Tooltip("The name of the AudioClip file stored in StreamingAssets that is to be played alongside the midi file.")]
+        public string songFileLocation;
         public float songDelayInSeconds;    // The ddelay before the song starts
 
         [Header("Tap Settings: ")]
@@ -39,6 +42,7 @@ namespace MusicSystem {
         [Header("Note Settings: ")]
         [Tooltip("The time it takes for the note to reach the noteTapY position.")]
         public float noteTime;
+        private float lastNoteTime;
         [Tooltip("The position the notes will spawn in the world.")]
         public float noteSpawnY;
         [Tooltip("The position the player has to tap the notes.")]
@@ -50,14 +54,24 @@ namespace MusicSystem {
         }
 
 
+        private Camera mainCamera;
+        private List<GameObject> hitIndicatorObjects = new List<GameObject>();
 
 
         #region Unity Functions
 
-        private void Start() {
+        private void Awake() {
             instance = this;
+            mainCamera = Camera.main;
+            mainCamera.gameObject.SetActive(false);
+        }
 
-            audioSource.pitch = noteTime;
+        private void OnDisable() {
+            mainCamera.gameObject.SetActive(true);
+        }
+
+        private void Start() {
+            //audioSource.pitch = noteTime;
 
             // Checks if the mififile that is trying to be read is from an online link or on file, then calls the necessary function to handle it
             if (Application.streamingAssetsPath.StartsWith("http://") || Application.streamingAssetsPath.StartsWith("https://")) {
@@ -65,31 +79,20 @@ namespace MusicSystem {
             } else {
                 ReadFromFile();
             }
-
-
-            // Spawns the tap line indicators.
-            DrawBlockAroundTapPos(perfectMargin, perfectTapZone);
-            DrawAroundTapPos(-goodMargin, goodTapZoneLines);   // Draws line before the tapPos
-            DrawAroundTapPos(goodMargin, goodTapZoneLines);    // Draws line after the tapPos
-
+            
+            StartCoroutine(LoadAudio(songFileLocation));
+            
         }
 
-        // Just using this to visulize some lines
-        /*private void OnDrawGizmos() {
-
-            Vector3 spawnYPos = new Vector3(0, noteSpawnY, 0);
-            Vector3 despawnYPos = new Vector3(0, noteDespawnY, 0);
-
-            double timeToGetToFirstMargin = noteTime - (inputDelayInMiliseconds / 1000.0f) - badMargin;
-            float firstMarginPercentage = (float)timeToGetToFirstMargin / (noteTime * 2);
-            Vector3 firstMarginYPos = Vector3.Lerp(spawnYPos, despawnYPos, firstMarginPercentage);
-            Gizmos.DrawLine(new Vector3(-20, firstMarginYPos.y, 0), new Vector3(20, firstMarginYPos.y, 0));
-
-            double timeToGetToSecondMargin = noteTime - (inputDelayInMiliseconds / 1000.0f) + badMargin;
-            float secondMarginPercentage = (float)timeToGetToSecondMargin / (noteTime * 2);
-            Vector3 secondMarginYPos = Vector3.Lerp(spawnYPos, despawnYPos, secondMarginPercentage);
-            Gizmos.DrawLine(new Vector3(-20, secondMarginYPos.y, 0), new Vector3(20, secondMarginYPos.y, 0));
-        }*/
+        private void Update() {
+            if (lastNoteTime != noteTime) {
+                DrawTapLineIndicators();
+                lastNoteTime = noteTime;
+            }
+            if (audioSource.clip != null && GetAudioSourceTime() > audioSource.clip.length) {
+                Debug.Log("Song is finished");
+            }
+        }
 
         #endregion
 
@@ -101,7 +104,10 @@ namespace MusicSystem {
         /// </summary>
         /// <returns></returns>
         public static double GetAudioSourceTime() {
-            return (double)instance.audioSource.timeSamples / instance.audioSource.clip.frequency;
+            if (instance.audioSource.clip != null) {
+                return (double)instance.audioSource.timeSamples / instance.audioSource.clip.frequency;
+            }
+            return 0;
         }
 
         // DOESNT WORK
@@ -115,13 +121,28 @@ namespace MusicSystem {
 
         #region Private Functions
 
+        private void DrawTapLineIndicators() {
+            // Cleans up any old hit indicators in the case this function is called more than once.
+            if (hitIndicatorObjects.Count > 0) {
+                foreach(var _object in hitIndicatorObjects) {
+                    Destroy(_object);
+                }
+                hitIndicatorObjects.Clear();
+            }
+
+            // Spawns the tap line indicators.
+            hitIndicatorObjects.Add(DrawBlockAroundTapPos(perfectMargin, perfectTapZone));
+            hitIndicatorObjects.Add(DrawAroundTapPos(-goodMargin, goodTapZoneLines));   // Draws line before the tapPos
+            hitIndicatorObjects.Add(DrawAroundTapPos(goodMargin, goodTapZoneLines));    // Draws line after the tapPos
+        }
+
         /// <summary>
         /// Used for drawning a horizontal line across the screen in relation to the tapPos.
         /// </summary>
         /// <param name="_timeMargin">Negative number to place before the tapPos, positive for after. This is the time in seconds before or after the tapPos you want to draw something.</param>
         /// <param name="_lineColour"></param>
         /// <param name="_accountForInputDelay">Controls whether or not the drawn objects pos will account for input delay or not (i.e. will it visually move to match the input delay).</param>
-        private void DrawAroundTapPos(double _timeMargin, Color _lineColour, bool _accountForInputDelay = false) {
+        private GameObject DrawAroundTapPos(double _timeMargin, Color _lineColour, bool _accountForInputDelay = false) {
             Vector3 spawnYPos = new Vector3(0, noteSpawnY, 0);
             Vector3 despawnYPos = new Vector3(0, noteDespawnY, 0);
 
@@ -138,7 +159,10 @@ namespace MusicSystem {
                 
                 prefabInst.GetComponent<SpriteRenderer>().color = _lineColour;
                 ScalePrefabInst(prefabInst, tapIndicatorWidth, 0.1f);
+                
+                return prefabInst;
             }
+            return null;
         }
 
         /// <summary>
@@ -147,7 +171,7 @@ namespace MusicSystem {
         /// <param name="_timeMargin"></param>
         /// <param name="_blockColour"></param>
         /// <param name="_accountForInputDelay"></param>
-        private void DrawBlockAroundTapPos(double _timeMargin, Color _blockColour, bool _accountForInputDelay = false) {
+        private GameObject DrawBlockAroundTapPos(double _timeMargin, Color _blockColour, bool _accountForInputDelay = false) {
             Vector3 spawnYPos = new Vector3(0, noteSpawnY, 0);
             Vector3 despawnYPos = new Vector3(0, noteDespawnY, 0);
 
@@ -167,7 +191,10 @@ namespace MusicSystem {
                 
                 prefabInst.GetComponent<SpriteRenderer>().color = _blockColour;
                 ScalePrefabInst(prefabInst, tapIndicatorWidth, marginYPos1, marginYPos2);
+
+                return prefabInst;
             }
+            return null;
         }
 
         // Scales the prefab to match _disX and _disY
@@ -179,17 +206,24 @@ namespace MusicSystem {
             float disY = Vector3.Distance(_top, _bottom);
             _prefabInst.transform.localScale = new Vector3(_disX, disY, 1);
         }
-        // Scales the prefab to match the distance between the _top, _bottom, _left, and _right vectors
-        private void ScalePrefabInst(GameObject _prefabInst, Vector3 _top, Vector3 _bottom, Vector3 _left, Vector3 _right) {
-            float disY = Vector3.Distance(_top, _bottom);
-            float disX = Vector3.Distance(_left, _right);
-            _prefabInst.transform.localScale = new Vector3(disX, disY, 1);
-        }
         
+        private IEnumerator LoadAudio(string _name) {
+            using (UnityWebRequest www = UnityWebRequestMultimedia.GetAudioClip(Application.streamingAssetsPath + "/" + _name, AudioType.WAV)) {
+                yield return www.SendWebRequest();  // Waits for websites response
+
+                if (www.result == UnityWebRequest.Result.DataProcessingError) {
+                    Debug.Log(www.error);
+                }
+
+                audioClip = DownloadHandlerAudioClip.GetContent(www);
+                audioClip.name = _name;
+                audioSource.clip = audioClip;
+            }
+        }
 
         private IEnumerator ReadFromWebsite() {
-            // Sends a request to the streamingAssetsPath website looking for the fileLocation
-            using (UnityWebRequest www = UnityWebRequest.Get(Application.streamingAssetsPath + "/" + fileLocation)) {
+            // Sends a request to the streamingAssetsPath website looking for the midiFileLocation
+            using (UnityWebRequest www = UnityWebRequest.Get(Application.streamingAssetsPath + "/" + midiFileLocation)) {
                 yield return www.SendWebRequest();  // Waits for websites response
 
                 // Checks for errors with the response
@@ -206,9 +240,11 @@ namespace MusicSystem {
         }
 
         private void ReadFromFile() {
-            midiFile = MidiFile.Read(Application.streamingAssetsPath + "/" + fileLocation);
+            midiFile = MidiFile.Read(Application.streamingAssetsPath + "/" + midiFileLocation);
             GetDataFromMidi();
         }
+
+
 
         private void GetDataFromMidi() {
             var notes = midiFile.GetNotes();    // gets the notes from the midi file
@@ -221,6 +257,7 @@ namespace MusicSystem {
             Invoke(nameof(StartSong), songDelayInSeconds);
         }
 
+        // Turn into a corutine and add a countdown
         private void StartSong() {
             audioSource.Play();
             Debug.Log("Start");

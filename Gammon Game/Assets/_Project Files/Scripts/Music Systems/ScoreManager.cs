@@ -37,7 +37,7 @@ namespace MusicSystem {
         public string missText;
 
 
-        private void Start() {
+        private void Awake() {
             instance = this;
             comboScore = 0;
         }
