@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 namespace MenuSystem {
     using GameManagement;
     using MusicSystem;
+    using InventorySystem;
 
     public class MenuManager : MonoBehaviour
     {
@@ -75,6 +76,10 @@ namespace MenuSystem {
         public void Menu_Save() {
             // Save
         }
+        
+        public void Menu_Songs() {
+            PageManager.singleton.TurnPageOff(PageType.Menu, true, PageType.Songs);
+        }
 
         public void Menu_Back() {
             PageManager.singleton.TurnPageOff(PageManager.activePage, true, PageType.Menu);
@@ -90,6 +95,22 @@ namespace MenuSystem {
 
             if (RhythmManager.instance) Destroy(RhythmManager.instance.gameObject);
         }
+
+        public void RhythmGame_GiveUp() {
+            General_ClosePage();
+            if (RhythmManager.instance) {
+                RhythmManager.instance.FinishSong();
+            }
+        }
+        public void RhythmGame_Restart() {
+            General_ClosePage();
+            if (RhythmManager.instance) {
+                Song song = RhythmManager.instance.song;
+                Destroy(RhythmManager.instance.gameObject);
+                GameManager.singleton.PlaySong(song);
+            }
+        }
+
 
         #endregion
     }

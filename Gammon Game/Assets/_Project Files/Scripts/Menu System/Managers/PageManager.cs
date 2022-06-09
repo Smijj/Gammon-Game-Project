@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 namespace MenuSystem {
     using GameManagement;
+    using MusicSystem;
+
     public enum PageType {
         None,
         Loading,
@@ -17,8 +19,8 @@ namespace MenuSystem {
         Stats,
         Contacts,
         Songs,
+        SongPause,
         SongOver,
-
     }
 
     public class PageManager : MonoBehaviour
@@ -63,10 +65,25 @@ namespace MenuSystem {
 		private void Update() {
             if (!GameManager.isLoading) {
                 if (Input.GetKeyDown(KeyCode.Escape) && GameManager.currentScene.name == "Play") {
-                    if (activePage == PageType.None || activePage == PageType.Menu)
-                        TurnPageOn(PageType.Menu);  // Will turn the Menu page on, if that page is already open it will turn it off.
-                    else
-                        TurnPageOff(activePage, true, PageType.Menu);
+                    
+                    if (!RhythmManager.songIsPlaying) {
+
+                        /// If there is not rhythm minigame playing 
+                        if (activePage == PageType.None || activePage == PageType.Menu)
+                            TurnPageOn(PageType.Menu);  // Will turn the Menu page on, if that page is already open it will turn it off.
+                        else
+                            TurnPageOff(activePage, true, PageType.Menu);   // if there is any other page type open then close it and open the menu page
+                    } else {
+
+                        /// if there is a rhythm minigame use a different pause menu
+                        if (activePage == PageType.None || activePage == PageType.Menu) {
+                            TurnPageOn(PageType.SongPause);  // Will turn the Menu page on, if that page is already open it will turn it off.
+                            if (RhythmManager.isPaused) RhythmManager.instance.PauseSong(false);
+                            else RhythmManager.instance.PauseSong(true);
+                        }
+                        else
+                            TurnPageOff(activePage, true, PageType.Menu);   // if there is any other page type open then close it and open the menu page
+                    }
 
                 } else if (Input.GetKeyDown(KeyCode.Escape) && GameManager.currentScene.name == "Main Menu") {
                     TurnPageOff(activePage);

@@ -20,6 +20,7 @@ namespace MusicSystem {
         public static AudioClip audioClip;
         public static RhythmManager instance;
         public static bool songIsPlaying = false;
+        public static bool isPaused = false;
         
         [Header("Song Mangager Stuff: ")]
         public AudioSource audioSource;     // The audiosource where the audio will be played through in the game
@@ -111,8 +112,19 @@ namespace MusicSystem {
         }
 
         public void PauseSong(bool _pause) {
-            if (_pause) audioSource.pitch = 0;
-            else audioSource.pitch = 1; // Can set this to equal some pitch speed var later
+            if (_pause) {
+                audioSource.pitch = 0; 
+                isPaused = true;
+            } else {
+                audioSource.pitch = 1; // Can set this to equal some pitch speed var later
+                isPaused = false;
+            } 
+        }
+
+        public void FinishSong() {
+            songIsPlaying = false;
+            PauseSong(true);
+            PageManager.singleton.TurnPageOn(PageType.SongOver);
         }
 
 
@@ -193,14 +205,6 @@ namespace MusicSystem {
 
             Debug.Log("Start");
         }
-
-        private void FinishSong() {
-            songIsPlaying = false;
-            PauseSong(true);
-            PageManager.singleton.TurnPageOn(PageType.SongOver);
-        }
-
-
 
 
 
