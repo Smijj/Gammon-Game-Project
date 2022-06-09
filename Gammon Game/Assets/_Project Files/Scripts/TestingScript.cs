@@ -31,7 +31,7 @@ public class TestingScript: MonoBehaviour
             page.TurnPageOn(PageType.Loading);
         }
         if (Input.GetKeyDown(KeyCode.P)) {
-            page.TurnPageOn(PageType.Menu);
+            page.TurnPageOn(PageType.Songs);
         }
 
         // Testing Stats exp system

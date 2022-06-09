@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 namespace MenuSystem {
     using GameManagement;
+    using MusicSystem;
 
     public class MenuManager : MonoBehaviour
     {
@@ -77,6 +78,17 @@ namespace MenuSystem {
 
         public void Menu_Back() {
             PageManager.singleton.TurnPageOff(PageManager.activePage, true, PageType.Menu);
+        }
+
+        #endregion
+
+
+        #region RhythmGame
+
+        public void RhythmGame_Close() {
+            General_ClosePage();
+
+            if (RhythmManager.instance) Destroy(RhythmManager.instance.gameObject);
         }
 
         #endregion

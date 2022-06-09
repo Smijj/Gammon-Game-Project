@@ -27,8 +27,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9167540377085047598}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 661.5023, y: 426.26913, z: -832.64734}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npcManager: {fileID: 129430332161108863}
+  rhythmManager: {fileID: 5130848662092415671, guid: 8461f6534a418374c9094a7cb726ff4e, type: 3}
   activeChairList: []
 --- !u!114 &129430332161108863
 MonoBehaviour:

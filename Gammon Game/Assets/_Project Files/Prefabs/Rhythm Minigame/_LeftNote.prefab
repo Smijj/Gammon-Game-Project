@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2218124597639148585}
   - component: {fileID: 7803075159621840201}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FoodSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1940971485090364667}
   - component: {fileID: 9027113267212949135}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FoodBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5047034276981525689}
   - component: {fileID: 6203871459123233605}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FoodBorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8952401530626229708}
   - component: {fileID: 8952401530626229711}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: _LeftNote
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,7 +313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8952401532190271667}
   - component: {fileID: 8952401532190271664}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ArrowSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

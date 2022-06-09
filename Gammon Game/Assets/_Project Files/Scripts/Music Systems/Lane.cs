@@ -35,7 +35,7 @@ namespace MusicSystem {
             if (spawnIndex < timeStamps.Count) {
                 // checks if the current point in the song is >= the next note's timestamp minus the time the note needs to travel from its spawn location to the tap location.
                 // if it is, it's time for that note to spawn.
-                if (SongManager.GetAudioSourceTime() >= timeStamps[spawnIndex] - SongManager.instance.noteTime) {
+                if (RhythmManager.GetAudioSourceTime() >= timeStamps[spawnIndex] - RhythmManager.instance.noteTime) {
                     // a note prefab is instantiated then added to the notes list
                     var note = Instantiate(notePrefab, transform);  
                     notes.Add(note.GetComponent<RhythmNote>());
@@ -47,12 +47,12 @@ namespace MusicSystem {
             // if not all the notes for this lane have been hit or missed:
             if (inputIndex < timeStamps.Count) {
                 // Setting some variables so they are easier to work with
-                double perfectMargin = SongManager.instance.perfectMargin;
-                double goodMargin = SongManager.instance.goodMargin;
-                double badMargin = SongManager.instance.badMargin;
+                double perfectMargin = RhythmManager.instance.perfectMargin;
+                double goodMargin = RhythmManager.instance.goodMargin;
+                double badMargin = RhythmManager.instance.badMargin;
                 
                 double timeStamp = timeStamps[inputIndex];
-                double audioTime = SongManager.GetAudioSourceTime() - (SongManager.instance.inputDelayInMiliseconds / 1000.0f);
+                double audioTime = RhythmManager.GetAudioSourceTime() - (RhythmManager.instance.inputDelayInMiliseconds / 1000.0f);
 
                 if (Input.GetKeyDown(input) || Input.GetKeyDown(secondaryInput)) {
                     
@@ -96,27 +96,18 @@ namespace MusicSystem {
         /// </summary>
         /// <param name="_array">Array that holds all the midi notes for the song.</param>
         public void SetTimeStamps(Melanchall.DryWetMidi.Interaction.Note[] _array) {
-            
-            // An attempt to create reset functionality, DOESNT WORK rn
-            //spawnIndex = 0;
-            //inputIndex = 0;
-            //if (notes.Count > 0) {
-            //    foreach (var note in notes) {
-            //        Destroy(note.gameObject);
-            //    }
-            //    notes.Clear();
-            //}
-
             foreach (var _note in _array) {
                 // if the note in the midi matches the noteRestriction it will add it to the timestamps
                 if (_note.NoteName == noteRestriction) {
                     // _note.Time does not return a normal timestamp, so it is necessary to convert it into metric time
-                    var metricTimeSpan = TimeConverter.ConvertTo<MetricTimeSpan>(_note.Time, SongManager.midiFile.GetTempoMap());
+                    var metricTimeSpan = TimeConverter.ConvertTo<MetricTimeSpan>(_note.Time, RhythmManager.midiFile.GetTempoMap());
                     // Converting all the units of time (min, sec, millisec) into seconds and adding that to the timeStamps list
                     timeStamps.Add((double)metricTimeSpan.Minutes * 60f + metricTimeSpan.Seconds + (double)metricTimeSpan.Milliseconds / 1000f);
                     timeStampsData.Add(new Tuple<double, bool>((double)metricTimeSpan.Minutes * 60f + metricTimeSpan.Seconds + (double)metricTimeSpan.Milliseconds / 1000f, false));    
                 }
             }
+
+            // Was working on hold notes here:
 
             //for (int i = 0; i < timeStampsData.Count; i++) {
             //    // if the time after the note timeStamps[i] is greater than 1 second

@@ -16,6 +16,9 @@ namespace MenuSystem {
         Orders,
         Stats,
         Contacts,
+        Songs,
+        SongOver,
+
     }
 
     public class PageManager : MonoBehaviour

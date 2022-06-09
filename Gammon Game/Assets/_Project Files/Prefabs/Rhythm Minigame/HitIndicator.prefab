@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 379480900859088212}
   - component: {fileID: 3576305539822460298}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sprite (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 647357267313347696}
   - component: {fileID: 8641531439573347277}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7168146565862944978}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HitIndicator
   m_TagString: Untagged
   m_Icon: {fileID: 0}

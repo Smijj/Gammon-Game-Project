@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 namespace GameManagement {
     using MenuSystem;
     using RestaurantSystems;
+    using MusicSystem;
+    using InventorySystem;
 
     public class GameManager : MonoBehaviour {
         #region Singleton
@@ -27,8 +29,10 @@ namespace GameManagement {
 
         public static Grid grid;
         public static Tilemap map;
+        
         [HideInInspector]
         public NPCManager npcManager;
+        public GameObject rhythmManager;
 
         public List<ChairEntity> activeChairList = new List<ChairEntity>();
 
@@ -74,6 +78,12 @@ namespace GameManagement {
         #endregion
 
         #region Public Functions
+
+        public void PlaySong(Song _song) {
+            // Instantiate a SongManager
+            Instantiate(rhythmManager).GetComponent<RhythmManager>().InitSong(_song);
+            PageManager.singleton.TurnPageOff(PageManager.activePage);
+        }
 
         public static void PauseGame() {
             isPaused = true;

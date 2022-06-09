@@ -29,15 +29,15 @@ namespace MusicSystem {
             
             noteBG.color = noteBGColourStart;
             // Since the first few notes are instantiated before the song starts playing they will change colour before they are meant to
-            StartCoroutine(ChangeNoteBGColour(SongManager.instance.noteTime - (float)SongManager.instance.goodMargin, noteBGColourTap));     // changes the bg colour when the note is in the perfect zone
-            StartCoroutine(ChangeNoteBGColour(SongManager.instance.noteTime + (float)SongManager.instance.goodMargin, noteBGColourMiss));    // changes the bg colour when the note leaves the perfect zone
+            StartCoroutine(ChangeNoteBGColour(RhythmManager.instance.noteTime - (float)RhythmManager.instance.goodMargin, noteBGColourTap));     // changes the bg colour when the note is in the perfect zone
+            StartCoroutine(ChangeNoteBGColour(RhythmManager.instance.noteTime + (float)RhythmManager.instance.goodMargin, noteBGColourMiss));    // changes the bg colour when the note leaves the perfect zone
 
-            transform.localPosition = Vector3.up * SongManager.instance.noteSpawnY;
+            transform.localPosition = Vector3.up * RhythmManager.instance.noteSpawnY;
         }
 
         private void Update() {
-            double timeSinceInstantiated = SongManager.GetAudioSourceTime() - (assignedTime - SongManager.instance.noteTime); // Calculates the time since the note was instansiated
-            float t = (float)(timeSinceInstantiated / (SongManager.instance.noteTime * 2));     // Gets the current percentage the note pos is between the spawnPos and despawnPos
+            double timeSinceInstantiated = RhythmManager.GetAudioSourceTime() - (assignedTime - RhythmManager.instance.noteTime); // Calculates the time since the note was instansiated
+            float t = (float)(timeSinceInstantiated / (RhythmManager.instance.noteTime * 2));     // Gets the current percentage the note pos is between the spawnPos and despawnPos
                                                                                                 // if t=0 the note would be at the spawnPos, if t=0.5 then it would be at the tap
                                                                                                 // position, and if t=1 then it would be at the despawn pos
 
@@ -46,13 +46,13 @@ namespace MusicSystem {
                 Destroy(gameObject);
             } else {
                 // Moves the note between the spawnPos and despawnPos based on the percentage t
-                transform.localPosition = Vector3.Lerp(Vector3.up * SongManager.instance.noteSpawnY, Vector3.up * SongManager.instance.noteDespawnY, t);
+                transform.localPosition = Vector3.Lerp(Vector3.up * RhythmManager.instance.noteSpawnY, Vector3.up * RhythmManager.instance.noteDespawnY, t);
             }
 
 
             // ---- Handles Hit Indicator Stuff ----
 
-            float t2 = (float)(timeSinceInstantiated / SongManager.instance.noteTime);
+            float t2 = (float)(timeSinceInstantiated / RhythmManager.instance.noteTime);
             if (t2 > 1) {
                 hitIndicator.SetActive(false);
             } else {
@@ -62,7 +62,13 @@ namespace MusicSystem {
         }
 
         private IEnumerator ChangeNoteBGColour(float _delay, Color _colour) {
-            yield return new WaitForSeconds(_delay);
+            
+            /// MIGHT CAUSE A MEMORY LEAK
+            while (RhythmManager.songIsPlaying == false) {
+                yield return null;
+            }
+
+            yield return new WaitForSecondsRealtime(_delay);
             noteBG.color = _colour;
         }
     }
