@@ -66,21 +66,21 @@ namespace MenuSystem {
             if (!GameManager.isLoading) {
                 if (Input.GetKeyDown(KeyCode.Escape) && GameManager.currentScene.name == "Play") {
                     
-                    if (!RhythmManager.songIsPlaying) {
-
-                        /// If there is not rhythm minigame playing 
-                        if (activePage == PageType.None || activePage == PageType.Menu)
-                            TurnPageOn(PageType.Menu);  // Will turn the Menu page on, if that page is already open it will turn it off.
-                        else
-                            TurnPageOff(activePage, true, PageType.Menu);   // if there is any other page type open then close it and open the menu page
-                    } else {
-
+                    if (RhythmManager.instance != null) {
                         /// if there is a rhythm minigame use a different pause menu
-                        if (activePage == PageType.None || activePage == PageType.Menu) {
+                        if (activePage == PageType.None || activePage == PageType.SongPause) {
                             TurnPageOn(PageType.SongPause);  // Will turn the Menu page on, if that page is already open it will turn it off.
+                            
                             if (RhythmManager.isPaused) RhythmManager.instance.PauseSong(false);
                             else RhythmManager.instance.PauseSong(true);
                         }
+                        else {
+                            TurnPageOff(activePage);   // if there is any other page type open then close it
+                        }
+                    } else {
+                        /// If there is not rhythm minigame playing 
+                        if (activePage == PageType.None || activePage == PageType.Menu)
+                            TurnPageOn(PageType.Menu);  // Will turn the Menu page on, if that page is already open it will turn it off.
                         else
                             TurnPageOff(activePage, true, PageType.Menu);   // if there is any other page type open then close it and open the menu page
                     }

@@ -67,14 +67,17 @@ namespace MusicSystem {
 
         private void OnEnable() {
             instance = this;
-            GameManager.PauseGame();
+            if (!GameManager.isPaused) GameManager.PauseGame();
             mainCamera = Camera.main;
             mainCamera.gameObject.SetActive(false);
+
+            isPaused = true;
         }
 
         private void OnDisable() {
             mainCamera.gameObject.SetActive(true);
             songIsPlaying = false;
+            isPaused = false;
         }
 
         private void Start() {
@@ -202,6 +205,9 @@ namespace MusicSystem {
             startCountdown.SetActive(false);
             audioSource.Play();
             songIsPlaying = true;
+            isPaused = false;
+
+            if (GameManager.isPaused) GameManager.UnpauseGame();
 
             Debug.Log("Start");
         }

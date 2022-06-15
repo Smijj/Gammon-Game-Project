@@ -96,6 +96,13 @@ namespace MenuSystem {
             if (RhythmManager.instance) Destroy(RhythmManager.instance.gameObject);
         }
 
+        public void RhythmGame_Resume() {
+            PageManager.singleton.TurnPageOn(PageType.SongPause, false, false); // Will close the song pause page without unpausing the game
+            if (RhythmManager.instance) {
+                RhythmManager.instance.PauseSong(false);
+            }
+        }
+
         public void RhythmGame_GiveUp() {
             General_ClosePage();
             if (RhythmManager.instance) {

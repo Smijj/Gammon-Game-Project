@@ -83,6 +83,7 @@ namespace GameManagement {
             // Instantiate a SongManager
             Instantiate(rhythmManager).GetComponent<RhythmManager>().InitSong(_song);
             PageManager.singleton.TurnPageOff(PageManager.activePage);
+            if (!isPaused) PauseGame();
         }
 
         public static void PauseGame() {
