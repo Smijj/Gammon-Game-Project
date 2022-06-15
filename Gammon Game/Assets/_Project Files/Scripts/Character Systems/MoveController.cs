@@ -6,22 +6,34 @@ using UnityEngine.Tilemaps;
 namespace CharacterSystems {
     using GameManagement;
 
+    public enum CharFacing {
+        N,
+        NE,
+        E,
+        SE,
+        S,
+        SW,
+        W,
+        NW,
+    }
+
     public class MoveController : MonoBehaviour
     {
+        private AnimationController animController;
+
         [Header("Movement Settings")]
         public float moveSpeed = 8f;
         public int moveDistance = 1;
         public LayerMask WhatStopsMovement;
 
         public bool useDiagonalMovement = true;
-        public bool moveOnMouseRelease = true;
 
         [Header("Debug")]
         //[HideInInspector]
         public Vector3 lastPoint;
         //[HideInInspector]
         public Vector3 movePoint;
-
+        public CharFacing currentFacing = CharFacing.S;
 
 
         [Header("Pathfinding Settings")]
@@ -50,6 +62,7 @@ namespace CharacterSystems {
         #region Unity Functions
 
         private void Start() {
+            animController = GetComponent<AnimationController>();
             map = GameManager.map;
             grid = GameManager.grid;
             currentNodePos = grid.WorldToCell(transform.position);
@@ -93,6 +106,10 @@ namespace CharacterSystems {
                 } else {
                     if (atDestination) atDestination = false;
                 }
+
+
+                // Animation Stuff
+                CalculateFacingDirection();
             }
         }
 
@@ -230,6 +247,16 @@ namespace CharacterSystems {
 
 
         #region Private Functions
+
+        private void CalculateFacingDirection() {
+            if (isMoving) {
+                // Get the angle of the direction the player is moving in then divide that by 45 to get the cardinal directions as ints, then cast that to an enum.
+                Vector3 currentDir = movePoint - lastPoint;
+                float ang = Vector3.SignedAngle(currentDir, Vector3.down, Vector3.back);
+                ang = 360 - (ang + 180);
+                currentFacing = (CharFacing)((int)ang / 45);
+            }
+        }
 
         // Finds a path using an A* algorithm
         private bool FindPath(Vector3Int _startPos, Vector3Int _targetPos) {

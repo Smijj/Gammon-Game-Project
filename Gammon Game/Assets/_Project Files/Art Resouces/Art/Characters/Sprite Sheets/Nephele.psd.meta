@@ -193,13 +193,13 @@ TextureImporter:
     second: Nephele_22
   - first:
       213: 3773182432960884972
-    second: Nephele_23
+    second: Nephele_Idle_01
   - first:
       213: 3112647759682084991
-    second: Nephele_24
+    second: Nephele_Walk_Right_3
   - first:
       213: -3286399977183211859
-    second: Nephele_25
+    second: Nephele_Walk_Left_3
   - first:
       213: 5095658921149797586
     second: Nephele_26
@@ -214,16 +214,16 @@ TextureImporter:
     second: Nephele_29
   - first:
       213: 783702055829280882
-    second: Nephele_30
+    second: Nephele_Idle_02
   - first:
       213: -1064936105190858454
-    second: Nephele_31
+    second: Nephele_Walk_Right_4
   - first:
       213: -9013135258565042652
-    second: Nephele_32
+    second: Nephele_Walk_Left_4
   - first:
       213: 6168754996396739435
-    second: Nephele_38
+    second: Nephele_Idle_03
   - first:
       213: -5744248231292891525
     second: Nephele_39
@@ -826,7 +826,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nephele_23
+      name: Nephele_Idle_01
       rect:
         serializedVersion: 2
         x: 20
@@ -847,7 +847,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nephele_24
+      name: Nephele_Walk_Right_3
       rect:
         serializedVersion: 2
         x: 53
@@ -868,7 +868,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nephele_25
+      name: Nephele_Walk_Left_3
       rect:
         serializedVersion: 2
         x: 120
@@ -973,7 +973,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nephele_30
+      name: Nephele_Idle_02
       rect:
         serializedVersion: 2
         x: 20
@@ -994,7 +994,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nephele_31
+      name: Nephele_Walk_Right_4
       rect:
         serializedVersion: 2
         x: 53
@@ -1015,7 +1015,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nephele_32
+      name: Nephele_Walk_Left_4
       rect:
         serializedVersion: 2
         x: 120
@@ -1036,7 +1036,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nephele_38
+      name: Nephele_Idle_03
       rect:
         serializedVersion: 2
         x: 20

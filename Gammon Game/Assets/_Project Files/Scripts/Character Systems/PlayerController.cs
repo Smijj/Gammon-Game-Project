@@ -13,6 +13,9 @@ namespace CharacterSystems {
         //public Animator anim;
         private Camera cam;
 
+        [SerializeField]
+        private bool moveOnMouseRelease = true;
+
 
         private void Start() {
             cam = Camera.main;
@@ -23,9 +26,10 @@ namespace CharacterSystems {
 
             // Get input for mouse movement
             if (Input.GetMouseButton(0) || Input.GetMouseButton(1)) {
-                move.AutoPath(cam.ScreenToWorldPoint(Input.mousePosition), true, true);
+                if (moveOnMouseRelease) move.AutoPath(cam.ScreenToWorldPoint(Input.mousePosition), true, true);
+                else move.AutoPath(cam.ScreenToWorldPoint(Input.mousePosition), true);
             }
-            if (Input.GetMouseButtonUp(0) || Input.GetMouseButtonUp(1)) {
+            if (moveOnMouseRelease && Input.GetMouseButtonUp(0) || Input.GetMouseButtonUp(1)) {
                 move.SetPathing(true);
             }
 
