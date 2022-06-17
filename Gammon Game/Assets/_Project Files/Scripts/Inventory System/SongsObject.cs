@@ -22,6 +22,10 @@ namespace InventorySystem {
         public string midiFileName;
         [Tooltip("The name of the AudioClip file stored in StreamingAssets that is to be played alongside the midi file.")]
         public string songFileName;
+
+        public double highscore;
+        public int stars;
+
         public Song(string _name, string _midiFileName, string _songFileName) {
             name = _name;
             midiFileName = _midiFileName;

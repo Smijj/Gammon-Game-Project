@@ -32,9 +32,11 @@ namespace InventorySystem {
             if (recipe.dishTypeSprite)
                 dishTypeSprite.sprite = recipe.dishTypeSprite;
             itemValueText.text = recipe.dishValue.ToString();
-            itemQuantityText.text = "x" + recipe.quantity.ToString();
             if (itemDescText) {
                 itemDescText.text = recipe.description;
+                itemQuantityText.text = "Quantity: " + recipe.quantity.ToString();
+            } else {
+                itemQuantityText.text = "x" + recipe.quantity.ToString();
             }
         }
 

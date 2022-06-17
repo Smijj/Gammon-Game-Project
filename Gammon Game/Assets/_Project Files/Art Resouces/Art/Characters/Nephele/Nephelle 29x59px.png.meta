@@ -1,0 +1,1224 @@
+fileFormatVersion: 2
+guid: ec55d60743c275b44907b01933a2119a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6927045583578546777
+    second: Nephelle_Idle_SW
+  - first:
+      213: 7806610300367804544
+    second: Nephelle_Idle_W
+  - first:
+      213: -1276629403682182075
+    second: Nephelle_Idle_NW
+  - first:
+      213: 6166894319941807568
+    second: Nephelle_Idle_N
+  - first:
+      213: 8940951735071102617
+    second: Nephelle_Idle_NE
+  - first:
+      213: -5704654996333357181
+    second: Nephelle_Idle_E
+  - first:
+      213: -1801386885146793635
+    second: Nephelle_Idle_SE
+  - first:
+      213: 7304421363792439962
+    second: Nephelle_Idle_S
+  - first:
+      213: -726856359494377695
+    second: Nephelle_Walk_SW_0
+  - first:
+      213: -6283157463927327182
+    second: Nephelle_Walk_SW_1
+  - first:
+      213: -8937399710365486190
+    second: Nephelle_Walk_SW_1
+  - first:
+      213: 5920437089292117652
+    second: Nephelle_Walk_SW_0
+  - first:
+      213: 2577218070740628178
+    second: Nephelle_Walk_W_3
+  - first:
+      213: -7165211104194382372
+    second: Nephelle_Walk_W_1
+  - first:
+      213: -525668521396900404
+    second: Nephelle_Walk_W_1
+  - first:
+      213: -6564188270086562458
+    second: Nephelle_Walk_W_0
+  - first:
+      213: -5809851161726658467
+    second: Nephelle_Walk_NW_0
+  - first:
+      213: 1653184715553516613
+    second: Nephelle_Walk_NW_2
+  - first:
+      213: 7592988213941147856
+    second: Nephelle_Walk_NW_1
+  - first:
+      213: 5017337238695094834
+    second: Nephelle_Walk_NW_0
+  - first:
+      213: -2758691642697883608
+    second: Nephelle_Walk_N_0
+  - first:
+      213: -4284095271424816445
+    second: Nephelle_Walk_N_1
+  - first:
+      213: -5896584173376952993
+    second: Nephelle_Walk_N_1
+  - first:
+      213: -2143864663837569558
+    second: Nephelle_Walk_N_0
+  - first:
+      213: 7380757875443945680
+    second: Nephelle_Walk_NE_0
+  - first:
+      213: 2808957196481949517
+    second: Nephelle_Walk_NE_1
+  - first:
+      213: -8766981850763381275
+    second: Nephelle_Walk_NE_1
+  - first:
+      213: 6547196416635001632
+    second: Nephelle_Walk_NE_0
+  - first:
+      213: -7976590595843562690
+    second: Nephelle_Walk_E_0
+  - first:
+      213: 2508900601544792875
+    second: Nephelle_Walk_E_1
+  - first:
+      213: 6639966171734901512
+    second: Nephelle_Walk_E_1
+  - first:
+      213: 18815940271220866
+    second: Nephelle_Walk_E_0
+  - first:
+      213: 5340308088186751827
+    second: Nephelle_Walk_SE_0
+  - first:
+      213: -5752009073163284653
+    second: Nephelle_Walk_SE_1
+  - first:
+      213: -5289998650416306470
+    second: Nephelle_Walk_SE_1
+  - first:
+      213: -5417466726485469599
+    second: Nephelle_Walk_SE_0
+  - first:
+      213: 2568672861658631353
+    second: Nephelle_Walk_S_0
+  - first:
+      213: -8910726578852340054
+    second: Nephelle_Walk_S_1
+  - first:
+      213: -8125403229941028269
+    second: Nephelle_Walk_S_1
+  - first:
+      213: 1777197858544091907
+    second: Nephelle_Walk_S_0
+  - first:
+      213: -5897640889916242672
+    second: Nephelle_Emote_Death_0
+  - first:
+      213: -673794360605549368
+    second: Nephelle_Emote_Tired_0
+  - first:
+      213: 4843810766384148685
+    second: Nephelle_Emote_Confused_0
+  - first:
+      213: 8867643458976826207
+    second: Nephelle_Emote_Annoyed_0
+  - first:
+      213: -4840906002045038532
+    second: Nephelle_Emote_Love_0
+  - first:
+      213: -589137403499894807
+    second: Nephelle_Emote_Love_1
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Nephelle_Idle_SW
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 118
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9524328d14fc12060800000000000000
+      internalID: 6927045583578546777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Idle_W
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 118
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088145df4b6a65c60800000000000000
+      internalID: 7806610300367804544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Idle_NW
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 118
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c64bb3250884ee0800000000000000
+      internalID: -1276629403682182075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Idle_N
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 118
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd618bd5b5359550800000000000000
+      internalID: 6166894319941807568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Idle_NE
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 118
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99653da5b34a41c70800000000000000
+      internalID: 8940951735071102617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Idle_E
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 118
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3879461618ef4d0b0800000000000000
+      internalID: -5704654996333357181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Idle_SE
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 118
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5927cf0c203007e0800000000000000
+      internalID: -1801386885146793635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Idle_S
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 118
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9a6f96a7848e5560800000000000000
+      internalID: 7304421363792439962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_SW_3
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 118
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f9a99fdffa9e5f0800000000000000
+      internalID: -726856359494377695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_SW_2
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 118
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23674ce739dbdc8a0800000000000000
+      internalID: -6283157463927327182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_SW_1
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 118
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2937cf7d05af7f380800000000000000
+      internalID: -8937399710365486190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_SW_0
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 118
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 496ed463a2e992250800000000000000
+      internalID: 5920437089292117652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_W_3
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 118
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2763f3e2e14c320800000000000000
+      internalID: 2577218070740628178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_W_2
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 118
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd53fc1b67e009c90800000000000000
+      internalID: -7165211104194382372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_W_1
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 118
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd6880d34374b8f0800000000000000
+      internalID: -525668521396900404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_W_0
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 118
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d54b20c8157e4a0800000000000000
+      internalID: -6564188270086562458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_NW_3
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 118
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d58546b76234f5fa0800000000000000
+      internalID: -5809851161726658467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_NW_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 59
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c2ca66dba41f610800000000000000
+      internalID: 1653184715553516613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_NW_1
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 59
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d890bb1d86bf5960800000000000000
+      internalID: 7592988213941147856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_NW_0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 59
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23aa2c6b2a921a540800000000000000
+      internalID: 5017337238695094834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_N_3
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 59
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8206720319827b9d0800000000000000
+      internalID: -2758691642697883608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_N_2
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 59
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca0bca7c06db84c0800000000000000
+      internalID: -4284095271424816445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_N_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 59
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f552dad8fef1b2ea0800000000000000
+      internalID: -5896584173376952993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_N_0
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 59
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed037962767f32e0800000000000000
+      internalID: -2143864663837569558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_NE_3
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 59
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0d00bce28bd6660800000000000000
+      internalID: 7380757875443945680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_NE_2
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 59
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f659d00bb6bf620800000000000000
+      internalID: 2808957196481949517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_NE_1
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 59
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5b3f8c47c655680800000000000000
+      internalID: -8766981850763381275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_NE_0
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 59
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b5d30d3705cda50800000000000000
+      internalID: 6547196416635001632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_E_3
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 59
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e33e5086d157d4190800000000000000
+      internalID: -7976590595843562690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_E_2
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 59
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b57dbedc761d220800000000000000
+      internalID: 2508900601544792875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_E_1
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 59
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8038eda9d06e52c50800000000000000
+      internalID: 6639966171734901512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_E_0
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 59
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2882bfb7ff8d24000800000000000000
+      internalID: 18815940271220866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_SE_3
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 59
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b448b79e59c1a40800000000000000
+      internalID: 5340308088186751827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_SE_2
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 59
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f47413932cc20b0800000000000000
+      internalID: -5752009073163284653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_SE_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6e3ab41462696b0800000000000000
+      internalID: -5289998650416306470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_SE_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 0
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166d55917ba41d4b0800000000000000
+      internalID: -5417466726485469599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_S_3
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 0
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc4957bb52c5a320800000000000000
+      internalID: 2568672861658631353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_S_2
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 0
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaedfd8336db65480800000000000000
+      internalID: -8910726578852340054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_S_1
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 0
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35aad8600d4cc3f80800000000000000
+      internalID: -8125403229941028269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Walk_S_0
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 0
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3030b1e4900e9a810800000000000000
+      internalID: 1777197858544091907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Emote_Death_0
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 0
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01549bf8bde572ea0800000000000000
+      internalID: -5897640889916242672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Emote_Tired_0
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 0
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ccd174599336a6f0800000000000000
+      internalID: -673794360605549368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Emote_Confused_0
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 0
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc03a897a3ca83340800000000000000
+      internalID: 4843810766384148685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Emote_Annoyed_0
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 0
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53412f3eb2301b70800000000000000
+      internalID: 8867643458976826207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Emote_Love_0
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 0
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c309c0da3a5a1dcb0800000000000000
+      internalID: -4840906002045038532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nephelle_Emote_Love_1
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 0
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e72e7427a6f2d7f0800000000000000
+      internalID: -589137403499894807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

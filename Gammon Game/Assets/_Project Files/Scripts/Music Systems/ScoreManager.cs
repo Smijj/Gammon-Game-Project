@@ -8,10 +8,12 @@ namespace MusicSystem {
     public class ScoreManager : MonoBehaviour
     {
         public static ScoreManager instance;
+        public static double score;
         static int comboScore;
         static int multiplier = 1;
-        static double score;
         
+
+
         [Header("Audio Refs: ")]
         public AudioSource perfectHitSFX;
         public AudioSource goodHitSFX;

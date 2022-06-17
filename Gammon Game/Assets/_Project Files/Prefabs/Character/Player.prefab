@@ -49,6 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: {x: 0, y: 0}
+  moveOnMouseRelease: 1
 --- !u!114 &5838633469370318765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,9 +68,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   useDiagonalMovement: 1
-  moveOnMouseRelease: 1
   lastPoint: {x: 0, y: 0, z: 0}
   movePoint: {x: 0, y: 0, z: 0}
+  currentFacing: 4
   pathHighlightPrefab: {fileID: 8705688121449926182, guid: 2b390426a4d37024a90c9e652948c02f, type: 3}
   isMoving: 0
   atDestination: 0
@@ -203,7 +204,7 @@ SpriteRenderer:
   m_SortingLayerID: -551492191
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3442182037192028260, guid: 09689a4f99880894b94bd52e1077b831, type: 3}
+  m_Sprite: {fileID: 7304421363792439962, guid: ec55d60743c275b44907b01933a2119a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

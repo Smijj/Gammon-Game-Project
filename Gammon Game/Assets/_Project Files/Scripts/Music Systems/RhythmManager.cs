@@ -25,6 +25,11 @@ namespace MusicSystem {
         [Header("Song Mangager Stuff: ")]
         public AudioSource audioSource;     // The audiosource where the audio will be played through in the game
         public Lane[] lanes;                // The lanes that the notes drop from
+
+        int perfectNotesHit = 0;
+        int goodNotesHit = 0;
+        int badNotesHit = 0;
+        int missedNotes = 0;
         
         [Header("Song Settings: ")]
         public Song song;
@@ -118,15 +123,21 @@ namespace MusicSystem {
             if (_pause) {
                 audioSource.pitch = 0; 
                 isPaused = true;
+                if (!GameManager.isPaused) GameManager.PauseGame();
             } else {
                 audioSource.pitch = 1; // Can set this to equal some pitch speed var later
                 isPaused = false;
+                if (!GameManager.isPaused) GameManager.PauseGame();
             } 
         }
 
         public void FinishSong() {
             songIsPlaying = false;
             PauseSong(true);
+
+            // Sets highscore
+            if (ScoreManager.score > song.highscore) song.highscore = ScoreManager.score;
+
             PageManager.singleton.TurnPageOn(PageType.SongOver);
         }
 
@@ -207,7 +218,7 @@ namespace MusicSystem {
             songIsPlaying = true;
             isPaused = false;
 
-            if (GameManager.isPaused) GameManager.UnpauseGame();
+            if (!GameManager.isPaused) GameManager.PauseGame();
 
             Debug.Log("Start");
         }
