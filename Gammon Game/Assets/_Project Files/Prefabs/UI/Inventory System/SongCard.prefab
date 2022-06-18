@@ -38,7 +38,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 700, y: 130}
+  m_SizeDelta: {x: 225, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &279072823071543830
 MonoBehaviour:
@@ -56,6 +56,10 @@ MonoBehaviour:
     name: 
     midiFileName: 
     songFileName: 
+    songLength: 
+    highscore: 0
+    maxComboScore: 0
+    starRating: 0
   isDisplayCard: 0
   songName: {fileID: 7467580775554074510}
 --- !u!114 &1388451889170941568
@@ -171,7 +175,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2411897021804274674
 RectTransform:
   m_ObjectHideFlags: 0
@@ -530,8 +534,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -46.836105, y: 0}
-  m_SizeDelta: {x: -93.6722, y: 52.1231}
+  m_AnchoredPosition: {x: -0.000022888184, y: 0}
+  m_SizeDelta: {x: 0.000045776, y: 52.1231}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &54844529162549839
 CanvasRenderer:
@@ -595,7 +599,7 @@ MonoBehaviour:
   m_fontSizeMin: 30
   m_fontSizeMax: 55
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -624,7 +628,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 15, y: 0, z: 0, w: 0}
+  m_margin: {x: 15, y: 0, z: 15, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

@@ -25,11 +25,6 @@ namespace MusicSystem {
         [Header("Song Mangager Stuff: ")]
         public AudioSource audioSource;     // The audiosource where the audio will be played through in the game
         public Lane[] lanes;                // The lanes that the notes drop from
-
-        int perfectNotesHit = 0;
-        int goodNotesHit = 0;
-        int badNotesHit = 0;
-        int missedNotes = 0;
         
         [Header("Song Settings: ")]
         public Song song;
@@ -135,8 +130,7 @@ namespace MusicSystem {
             songIsPlaying = false;
             PauseSong(true);
 
-            // Sets highscore
-            if (ScoreManager.score > song.highscore) song.highscore = ScoreManager.score;
+            ScoreManager.instance.CalculateAndSaveSongStats();
 
             PageManager.singleton.TurnPageOn(PageType.SongOver);
         }
