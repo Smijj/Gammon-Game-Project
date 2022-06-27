@@ -950,7 +950,7 @@ MonoBehaviour:
   notePrefab: {fileID: 1933404931140237860, guid: 70b39a0b6af16d3489c9f741e4785019, type: 3}
   hitTextPos: {fileID: 5130848661479402242}
   debug: 0
-  timeStamps: []
+  notesData: []
 --- !u!1 &5130848660590716525
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,7 +1104,7 @@ MonoBehaviour:
   notePrefab: {fileID: 7790920889056478736, guid: fbc2d578c903f7d47b75a1666c95f375, type: 3}
   hitTextPos: {fileID: 5130848660030327862}
   debug: 0
-  timeStamps: []
+  notesData: []
 --- !u!1 &5130848660850723064
 GameObject:
   m_ObjectHideFlags: 0
@@ -1572,7 +1572,7 @@ MonoBehaviour:
   notePrefab: {fileID: 8952401530626229710, guid: ab1c76f3cd5eeb449aa15e7397d8ad5b, type: 3}
   hitTextPos: {fileID: 5130848661938000877}
   debug: 0
-  timeStamps: []
+  notesData: []
 --- !u!1 &5130848661479402245
 GameObject:
   m_ObjectHideFlags: 0
@@ -2350,6 +2350,7 @@ MonoBehaviour:
   - {fileID: 5130848661434283211}
   - {fileID: 5130848660718080392}
   - {fileID: 5130848660538462040}
+  debug: 0
   song:
     name: 
     midiFileName: 
@@ -2369,7 +2370,7 @@ MonoBehaviour:
   goodTapZoneLines: {r: 1, g: 0.9962013, b: 0.75, a: 1}
   gameArea: {fileID: 4822481409154005980}
   indicatorPrefab: {fileID: 4307507506737536873, guid: 29a37475450d2ea49ad1e534019f6e18, type: 3}
-  noteTime: 1
+  noteFallTime: 1
   noteSpawnY: 25
   noteTapY: -4
 --- !u!1 &5323331952684800981

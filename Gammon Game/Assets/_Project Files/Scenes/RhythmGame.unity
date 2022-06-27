@@ -345,11 +345,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5130848662092415668, guid: 8461f6534a418374c9094a7cb726ff4e, type: 3}
       propertyPath: song.midiFileName
-      value: GuitarSong.mid
+      value: Test.mid
       objectReference: {fileID: 0}
     - target: {fileID: 5130848662092415668, guid: 8461f6534a418374c9094a7cb726ff4e, type: 3}
       propertyPath: song.songFileName
-      value: GuitarSong.wav
+      value: Test.wav
       objectReference: {fileID: 0}
     - target: {fileID: 5130848662092415669, guid: 8461f6534a418374c9094a7cb726ff4e, type: 3}
       propertyPath: m_RootOrder

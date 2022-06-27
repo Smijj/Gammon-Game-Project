@@ -4,17 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace MusicSystem {
+
     public class RhythmNote : MonoBehaviour
     {
-        enum Type {
-            Tap,
-            Hold
-        }
+        public static int tapNoteThreshold = 64;
 
         [Header("Note Info: ")]
-        public float assignedTime;
-        public Lane lane;
-        public double noteLenth;
+        public NoteData noteData;
 
         [Header("Refs: ")]
         public SpriteRenderer foodSprite;
@@ -36,16 +32,21 @@ namespace MusicSystem {
             hitIndicatorSprite.color = hitIndicatorStartColour;
             
             noteBG.color = noteBGColourStart;
-            // Since the first few notes are instantiated before the song starts playing they will change colour before they are meant to
-            StartCoroutine(ChangeNoteBGColour(RhythmManager.instance.noteTime - (float)RhythmManager.instance.goodMargin, noteBGColourTap));     // changes the bg colour when the note is in the perfect zone
-            StartCoroutine(ChangeNoteBGColour(RhythmManager.instance.noteTime + (float)RhythmManager.instance.goodMargin, noteBGColourMiss));    // changes the bg colour when the note leaves the perfect zone
+            // Need to somehow put this stuff into a lerp of the percentage between spawn & despawn positions
+            // BUG: Since the first few notes are instantiated before the song starts playing they will change colour before they are meant to
+            StartCoroutine(ChangeNoteBGColour(RhythmManager.instance.noteFallTime - (float)RhythmManager.instance.goodMargin, noteBGColourTap));     // changes the bg colour when the note is in the perfect zone
+            StartCoroutine(ChangeNoteBGColour(RhythmManager.instance.noteFallTime + (float)RhythmManager.instance.goodMargin, noteBGColourMiss));    // changes the bg colour when the note leaves the perfect zone
 
             transform.localPosition = Vector3.up * RhythmManager.instance.noteSpawnY;
+
+
+            // If the note is above the tapNoteThreshold:
+                // instantiate a holdNoteTailPrefab (stored in the lane this note belongs to)
         }
 
         private void Update() {
-            double timeSinceInstantiated = RhythmManager.GetAudioSourceTime() - (assignedTime - RhythmManager.instance.noteTime); // Calculates the time since the note was instansiated
-            float t = (float)(timeSinceInstantiated / (RhythmManager.instance.noteTime * 2));     // Gets the current percentage the note pos is between the spawnPos and despawnPos
+            double timeSinceInstantiated = RhythmManager.GetAudioSourceTime() - (noteData.timeStamp - RhythmManager.instance.noteFallTime); // Calculates the time since the note was instansiated
+            float t = (float)(timeSinceInstantiated / (RhythmManager.instance.noteFallTime * 2));     // Gets the current percentage the note pos is between the spawnPos and despawnPos
                                                                                                 // if t=0 the note would be at the spawnPos, if t=0.5 then it would be at the tap
                                                                                                 // position, and if t=1 then it would be at the despawn pos
 
@@ -60,7 +61,7 @@ namespace MusicSystem {
 
             // ---- Handles Hit Indicator Stuff ----
 
-            float t2 = (float)(timeSinceInstantiated / RhythmManager.instance.noteTime);
+            float t2 = (float)(timeSinceInstantiated / RhythmManager.instance.noteFallTime);
             if (t2 > 1) {
                 hitIndicator.SetActive(false);
             } else {
@@ -69,18 +70,40 @@ namespace MusicSystem {
             }
 
 
+            /// IDEA: to rewind the song as an ability or something, store all destroyed notes in an first in first out list and bring them back in that sequence, 
+            /// would need to probably record their pos when getting destroyed, and the points scored in that period of time, etc. to be able to effectively rewind everything.
+            /// maybe even keep the points there, and have it as an opertunity to get a higher score or something.
+
 
             // If the note goes past the area where it can be hit then it counts as a miss, the note itself handles despawning so this script just leaves it to do that by itself.
-            if (assignedTime + RhythmManager.instance.badMargin <= RhythmManager.GetAudioSourceTime() - (RhythmManager.instance.inputDelayInMiliseconds / 1000.0f)) {
+            if (noteData.timeStamp + RhythmManager.instance.badMargin <= RhythmManager.GetAudioSourceTime() - (RhythmManager.instance.inputDelayInMiliseconds / 1000.0f)) {
                 Miss();
-                lane.removeNote(this);
+                noteData.lane.removeNote(this);
                 Destroy(this.gameObject);
             }
         }
 
         #region Public Functions
 
+        /*
+        Time Scale | Note.Length | Note.Length converted into seconds
+        1/1 = 512 = 1.714 seconds
+        1/2 = 256 = 0.857 seconds
+        1/4 = 128 = 0.428 seconds
+        1/8 = 64 = 0.214 seconds
+        1/16 = 32 = 0.107 seconds
+        1/32 = 16 = 0.053 seconds
+
+        I calculated these manually but after the fact i found this nifty little website that could have done it for me: https://rechneronline.de/musik/note-length.php
+        ;--------------------------; 
+        oh well i guess i can consider my calculations peer reviewed or something.
+        */
+
         public void Tapped() {
+            if (noteData.timeScale > tapNoteThreshold) return;
+
+            Debug.Log("Tap");
+
             RhythmManager rhythmManager = RhythmManager.instance;
             double perfectMargin = rhythmManager.perfectMargin;
             double goodMargin = rhythmManager.goodMargin;
@@ -88,7 +111,7 @@ namespace MusicSystem {
 
             double audioTime = RhythmManager.GetAudioSourceTime() - (rhythmManager.inputDelayInMiliseconds / 1000.0f);
 
-            double inputDifference = Math.Abs(audioTime - assignedTime);
+            double inputDifference = Math.Abs(audioTime - noteData.timeStamp);
             bool wasHit = false;
 
             // Manage Perfect/Good/Bad notes in here
@@ -109,12 +132,16 @@ namespace MusicSystem {
             }
 
             if (wasHit) {
-                lane.removeNote(this);
+                noteData.lane.removeNote(this);
                 Destroy(this.gameObject);
             }
         }
 
         public void Held() {
+            if (noteData.timeScale <= tapNoteThreshold) return;
+
+            Debug.Log("Held");
+
             RhythmManager rhythmManager = RhythmManager.instance;
             double perfectMargin = rhythmManager.perfectMargin;
             double goodMargin = rhythmManager.goodMargin;
@@ -122,7 +149,7 @@ namespace MusicSystem {
 
             double audioTime = RhythmManager.GetAudioSourceTime() - (rhythmManager.inputDelayInMiliseconds / 1000.0f);
 
-            double inputDifference = Math.Abs(audioTime - assignedTime);
+            double inputDifference = Math.Abs(audioTime - noteData.timeStamp);
             bool wasHit = false;
 
             // Manage Perfect/Good/Bad notes in here
@@ -143,7 +170,7 @@ namespace MusicSystem {
             }
 
             if (wasHit) {
-                lane.removeNote(this);
+                noteData.lane.removeNote(this);
                 Destroy(this.gameObject);
             }
         }
@@ -158,16 +185,16 @@ namespace MusicSystem {
         }
 
         private void PerfectHit(double _disFromPerfect) {
-            ScoreManager.PerfectHit(lane.hitTextPos, _disFromPerfect);
+            ScoreManager.PerfectHit(noteData.lane.hitTextPos, _disFromPerfect);
         }
         private void GoodHit(double _disFromPerfect) {
-            ScoreManager.GoodHit(lane.hitTextPos, _disFromPerfect);
+            ScoreManager.GoodHit(noteData.lane.hitTextPos, _disFromPerfect);
         }
         private void BadHit() {
-            ScoreManager.BadHit(lane.hitTextPos);
+            ScoreManager.BadHit(noteData.lane.hitTextPos);
         }
         private void Miss() {
-            ScoreManager.Miss(lane.hitTextPos);
+            ScoreManager.Miss(noteData.lane.hitTextPos);
         }
 
         private void Log(string _msg) {

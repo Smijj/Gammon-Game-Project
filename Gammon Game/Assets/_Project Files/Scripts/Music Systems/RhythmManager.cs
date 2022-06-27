@@ -29,7 +29,7 @@ namespace MusicSystem {
 
         [Header("Song Settings: ")]
         public Song song;
-        public float songDelayInSeconds;    // The ddelay before the song starts
+        public float songDelayInSeconds;    // The delay before the song starts
         public GameObject startCountdown;
 
         [Header("Tap Settings: ")]
@@ -47,7 +47,7 @@ namespace MusicSystem {
 
         [Header("Note Settings: ")]
         [Tooltip("The time it takes for the note to reach the noteTapY position.")]
-        public float noteTime;
+        public float noteFallTime;
         private float lastNoteTime;
         [Tooltip("The position the notes will spawn in the world.")]
         public float noteSpawnY;
@@ -82,8 +82,6 @@ namespace MusicSystem {
         }
 
         private void Start() {
-            //audioSource.pitch = noteTime;
-
             // Checks if the mififile that is trying to be read is from an online link or on file, then calls the necessary function to handle it
             if (Application.streamingAssetsPath.StartsWith("http://") || Application.streamingAssetsPath.StartsWith("https://")) {
                 StartCoroutine(ReadMidiFromWebsite(song.midiFileName));
@@ -96,9 +94,9 @@ namespace MusicSystem {
         }
 
         private void Update() {
-            if (lastNoteTime != noteTime) {
+            if (lastNoteTime != noteFallTime) {
                 DrawTapLineIndicators();
-                lastNoteTime = noteTime;
+                lastNoteTime = noteFallTime;
             }
             if (audioSource.clip != null && GetAudioSourceTime() > audioSource.clip.length) {
                 Debug.Log("Song is finished");
@@ -252,8 +250,8 @@ namespace MusicSystem {
             Vector3 spawnYPos = new Vector3(0, noteSpawnY, 0);
             Vector3 despawnYPos = new Vector3(0, noteDespawnY, 0);
 
-            double timeToGetToMargin = !_accountForInputDelay ? noteTime + _timeMargin : noteTime - (inputDelayInMiliseconds / 1000.0f) + _timeMargin;
-            float marginPercentage = (float)timeToGetToMargin / (noteTime * 2);
+            double timeToGetToMargin = !_accountForInputDelay ? noteFallTime + _timeMargin : noteFallTime - (inputDelayInMiliseconds / 1000.0f) + _timeMargin;
+            float marginPercentage = (float)timeToGetToMargin / (noteFallTime * 2);
             Vector3 marginYPos = Vector3.Lerp(spawnYPos, despawnYPos, marginPercentage);
 
             if (indicatorPrefab && gameArea) {
@@ -279,12 +277,12 @@ namespace MusicSystem {
             Vector3 spawnYPos = new Vector3(0, noteSpawnY, 0);
             Vector3 despawnYPos = new Vector3(0, noteDespawnY, 0);
 
-            double timeToGetToMargin1 = !_accountForInputDelay ? noteTime - _timeMargin : noteTime - (inputDelayInMiliseconds / 1000.0f) - _timeMargin;
-            float marginPercentage1 = (float)timeToGetToMargin1 / (noteTime * 2);
+            double timeToGetToMargin1 = !_accountForInputDelay ? noteFallTime - _timeMargin : noteFallTime - (inputDelayInMiliseconds / 1000.0f) - _timeMargin;
+            float marginPercentage1 = (float)timeToGetToMargin1 / (noteFallTime * 2);
             Vector3 marginYPos1 = Vector3.Lerp(spawnYPos, despawnYPos, marginPercentage1);
 
-            double timeToGetToMargin2 = !_accountForInputDelay ? noteTime + _timeMargin : noteTime - (inputDelayInMiliseconds / 1000.0f) + _timeMargin;
-            float marginPercentage2 = (float)timeToGetToMargin2 / (noteTime * 2);
+            double timeToGetToMargin2 = !_accountForInputDelay ? noteFallTime + _timeMargin : noteFallTime - (inputDelayInMiliseconds / 1000.0f) + _timeMargin;
+            float marginPercentage2 = (float)timeToGetToMargin2 / (noteFallTime * 2);
             Vector3 marginYPos2 = Vector3.Lerp(spawnYPos, despawnYPos, marginPercentage2);
 
             if (indicatorPrefab && gameArea) {

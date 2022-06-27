@@ -1,0 +1,7 @@
+Time Scale | Note.Length | Note.Length converted into seconds
+1/1 = 512 = 1.714 seconds
+1/2 = 256 = 0.857 seconds
+1/4 = 128 = 0.428 seconds
+1/8 = 64 = 0.214 seconds
+1/16 = 32 = 0.107 seconds
+1/32 = 16 = 0.053 seconds

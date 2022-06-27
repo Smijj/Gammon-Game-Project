@@ -15,30 +15,32 @@ namespace MusicSystem {
         public KeyCode secondaryInput;
         [Header("Refs: ")]
         public GameObject notePrefab;
+        public GameObject holdNoteTailPrefab;
         public Transform hitTextPos;    // the transform of where the hit texts prefabs will get instantiated
         public bool debug = false;
         
         
-        public List<double> timeStamps = new List<double>();        // A list of all the timestamps needed for this lane of notes, gets set in [SongManager].        
+        public List<NoteData> notesData = new List<NoteData>();
+        //public List<double> timeStamps = new List<double>();        // A list of all the timestamps needed for this lane of notes, gets set in [SongManager].        
         private List<RhythmNote> notes = new List<RhythmNote>();    // a list of all the notes in used in this lane
 
+
         private int spawnIndex = 0;     // The index that tracks the order notes should be spawned
-        private int inputIndex = 0;     // Tracks the players input and increments when they hit a note or it goes to far and counts as a miss
+        //private int inputIndex = 0;     // Tracks the players input and increments when they hit a note or it goes to far and counts as a miss
 
 
         #region Unity Functions
 
         private void Update() {
             // if not all the notes for this lane have been spawned:
-            if (spawnIndex < timeStamps.Count) {
+            if (spawnIndex < notesData.Count) {
                 // checks if the current point in the song is >= the next note's timestamp minus the time the note needs to travel from its spawn location to the tap location.
                 // if it is, it's time for that note to spawn.
-                if (RhythmManager.GetAudioSourceTime() >= timeStamps[spawnIndex] - RhythmManager.instance.noteTime) {
+                if (RhythmManager.GetAudioSourceTime() >= notesData[spawnIndex].timeStamp - RhythmManager.instance.noteFallTime) {
                     // a note prefab is instantiated then added to the notes list
-                    var note = Instantiate(notePrefab, transform);  
+                    var note = Instantiate(notePrefab, transform);
+                    note.GetComponent<RhythmNote>().noteData = notesData[spawnIndex];
                     notes.Add(note.GetComponent<RhythmNote>());
-                    note.GetComponent<RhythmNote>().assignedTime = (float)timeStamps[spawnIndex];
-                    note.GetComponent<RhythmNote>().lane = this;
                     spawnIndex++;
                 }
             }
@@ -50,12 +52,12 @@ namespace MusicSystem {
 
                 if (Input.GetKeyDown(input) || Input.GetKeyDown(secondaryInput)) {
                     nextNote.Tapped();
-                    Debug.Log("Tap");
+                    //Debug.Log("Tap");
                 }
                 
                 if (Input.GetKey(input) || Input.GetKey(secondaryInput)) {
                     nextNote.Held();
-                    Debug.Log("Held");
+                    //Debug.Log("Held");
                 }
             }
 
@@ -115,9 +117,16 @@ namespace MusicSystem {
                 // if the note in the midi matches the noteRestriction it will add it to the timestamps
                 if (_note.NoteName == noteRestriction) {
                     // _note.Time does not return a normal timestamp, so it is necessary to convert it into metric time
-                    var metricTimeSpan = TimeConverter.ConvertTo<MetricTimeSpan>(_note.Time, RhythmManager.midiFile.GetTempoMap());
-                    // Converting all the units of time (min, sec, millisec) into seconds and adding that to the timeStamps list
-                    timeStamps.Add((double)metricTimeSpan.Minutes * 60f + metricTimeSpan.Seconds + (double)metricTimeSpan.Milliseconds / 1000f);
+                    var metricTimeStamp = TimeConverter.ConvertTo<MetricTimeSpan>(_note.Time, RhythmManager.midiFile.GetTempoMap());
+                    // Converting all the units of time (min, sec, millisec) into seconds
+                    double timeStampInSeconds = (double)metricTimeStamp.Minutes * 60f + metricTimeStamp.Seconds + (double)metricTimeStamp.Milliseconds / 1000f;
+                    
+                    // Converting the _note.Length timescale into into metric time
+                    var metricNoteLength = TimeConverter.ConvertTo<MetricTimeSpan>(_note.Length, RhythmManager.midiFile.GetTempoMap());
+                    // Converting all the units of time (min, sec, millisec) into seconds
+                    double lengthInSeconds = (double)metricNoteLength.Minutes * 60f + metricNoteLength.Seconds + (double)metricNoteLength.Milliseconds / 1000f;
+
+                    notesData.Add(new NoteData(timeStampInSeconds, _note.Length, lengthInSeconds, this));
                 }
             }
         }
@@ -152,5 +161,20 @@ namespace MusicSystem {
         //}
 
         #endregion
+    }
+
+    [Serializable]
+    public class NoteData {
+        public double timeStamp;
+        public long timeScale;
+        public double lengthInSeconds;
+        public Lane lane;
+
+        public NoteData(double _timeStamp, long _timeScale, double _lengthInSeconds, Lane _lane) {
+            timeStamp = _timeStamp;
+            timeScale = _timeScale;
+            lengthInSeconds = _lengthInSeconds;
+            lane = _lane;
+        }
     }
 }
