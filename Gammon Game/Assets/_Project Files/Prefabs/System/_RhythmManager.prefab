@@ -2354,6 +2354,10 @@ MonoBehaviour:
     name: 
     midiFileName: 
     songFileName: 
+    songLength: 
+    highscore: 0
+    maxComboScore: 0
+    starRating: 0
   songDelayInSeconds: 3
   startCountdown: {fileID: 8665579031827783011}
   inputDelayInMiliseconds: 0

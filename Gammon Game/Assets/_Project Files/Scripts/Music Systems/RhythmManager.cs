@@ -25,7 +25,8 @@ namespace MusicSystem {
         [Header("Song Mangager Stuff: ")]
         public AudioSource audioSource;     // The audiosource where the audio will be played through in the game
         public Lane[] lanes;                // The lanes that the notes drop from
-        
+        public bool debug = false;
+
         [Header("Song Settings: ")]
         public Song song;
         public float songDelayInSeconds;    // The ddelay before the song starts
@@ -152,6 +153,11 @@ namespace MusicSystem {
 
         #region Private Functions
         
+        /// <summary>
+        /// Loads the Audio file that accompanies the Midi file (the filetype is required to be WAV right now)
+        /// </summary>
+        /// <param name="_name"></param>
+        /// <returns></returns>
         private IEnumerator LoadAudio(string _name) {
             using (UnityWebRequest www = UnityWebRequestMultimedia.GetAudioClip(Application.streamingAssetsPath + "/" + _name, AudioType.WAV)) {
                 yield return www.SendWebRequest();  // Waits for websites response
@@ -218,6 +224,7 @@ namespace MusicSystem {
         }
 
 
+        #region Draw Functions
 
         private void DrawTapLineIndicators() {
             // Cleans up any old hit indicators in the case this function is called more than once.
@@ -229,9 +236,10 @@ namespace MusicSystem {
             }
 
             // Spawns the tap line indicators.
-            hitIndicatorObjects.Add(DrawBlockAroundTapPos(perfectMargin, perfectTapZone));
-            hitIndicatorObjects.Add(DrawAroundTapPos(-goodMargin, goodTapZoneLines));   // Draws line before the tapPos
-            hitIndicatorObjects.Add(DrawAroundTapPos(goodMargin, goodTapZoneLines));    // Draws line after the tapPos
+            hitIndicatorObjects.Add(DrawBlockAroundTapPos(0.01, perfectTapZone));
+            //hitIndicatorObjects.Add(DrawBlockAroundTapPos(perfectMargin, perfectTapZone));
+            //hitIndicatorObjects.Add(DrawAroundTapPos(-goodMargin, goodTapZoneLines));   // Draws line before the tapPos
+            //hitIndicatorObjects.Add(DrawAroundTapPos(goodMargin, goodTapZoneLines));    // Draws line after the tapPos
         }
 
         /// <summary>
@@ -293,6 +301,8 @@ namespace MusicSystem {
             }
             return null;
         }
+
+        #endregion
 
         #endregion
     }

@@ -19,9 +19,7 @@ namespace MusicSystem {
         public bool debug = false;
         
         
-        public List<double> timeStamps = new List<double>();        // A list of all the timestamps needed for this lane of notes, gets set in [SongManager].
-        public List<Tuple<double, bool>> timeStampsData = new List<Tuple<double, bool>>();        // A list of all the timestamps needed for this lane of notes, gets set in [SongManager].
-        
+        public List<double> timeStamps = new List<double>();        // A list of all the timestamps needed for this lane of notes, gets set in [SongManager].        
         private List<RhythmNote> notes = new List<RhythmNote>();    // a list of all the notes in used in this lane
 
         private int spawnIndex = 0;     // The index that tracks the order notes should be spawned
@@ -40,12 +38,29 @@ namespace MusicSystem {
                     var note = Instantiate(notePrefab, transform);  
                     notes.Add(note.GetComponent<RhythmNote>());
                     note.GetComponent<RhythmNote>().assignedTime = (float)timeStamps[spawnIndex];
+                    note.GetComponent<RhythmNote>().lane = this;
                     spawnIndex++;
                 }
             }
 
             // if not all the notes for this lane have been hit or missed:
-            if (inputIndex < timeStamps.Count) {
+            if (notes.Count > 0) {
+
+                RhythmNote nextNote = notes[0];
+
+                if (Input.GetKeyDown(input) || Input.GetKeyDown(secondaryInput)) {
+                    nextNote.Tapped();
+                    Debug.Log("Tap");
+                }
+                
+                if (Input.GetKey(input) || Input.GetKey(secondaryInput)) {
+                    nextNote.Held();
+                    Debug.Log("Held");
+                }
+            }
+
+            // if not all the notes for this lane have been hit or missed:
+            /*if (inputIndex < timeStamps.Count) {
                 // Setting some variables so they are easier to work with
                 double perfectMargin = RhythmManager.instance.perfectMargin;
                 double goodMargin = RhythmManager.instance.goodMargin;
@@ -83,7 +98,7 @@ namespace MusicSystem {
                     Log($"Missed {inputIndex} note.");
                     inputIndex++;
                 }
-            }
+            }*/
         }
 
         #endregion
@@ -103,46 +118,38 @@ namespace MusicSystem {
                     var metricTimeSpan = TimeConverter.ConvertTo<MetricTimeSpan>(_note.Time, RhythmManager.midiFile.GetTempoMap());
                     // Converting all the units of time (min, sec, millisec) into seconds and adding that to the timeStamps list
                     timeStamps.Add((double)metricTimeSpan.Minutes * 60f + metricTimeSpan.Seconds + (double)metricTimeSpan.Milliseconds / 1000f);
-                    timeStampsData.Add(new Tuple<double, bool>((double)metricTimeSpan.Minutes * 60f + metricTimeSpan.Seconds + (double)metricTimeSpan.Milliseconds / 1000f, false));    
                 }
             }
-
-            // Was working on hold notes here:
-
-            //for (int i = 0; i < timeStampsData.Count; i++) {
-            //    // if the time after the note timeStamps[i] is greater than 1 second
-            //    if (Math.Abs(timeStampsData[i].Item1 - timeStampsData[i+1].Item1) > 1) {
-            //        // There is a 25% chance that note will be turned into a hold note
-            //        if (UnityEngine.Random.Range(0,3) == 0) {
-            //            timeStampsData[i] = new Tuple<double, bool>(timeStampsData[i].Item1, true);
-            //        }
-            //    }
-            //}
         }
-        
+
+        public void removeNote(RhythmNote _note) {
+            //clear from notes, etc.
+            notes.Remove(_note);
+        }
+
         #endregion
-        
-        
+
+
         #region Private Functions
 
-        private void PerfectHit(double _disFromPerfect) {
-            ScoreManager.PerfectHit(hitTextPos, _disFromPerfect);
-        }
-        private void GoodHit(double _disFromPerfect) {
-            ScoreManager.GoodHit(hitTextPos, _disFromPerfect);
-        }
-        private void BadHit() {
-            ScoreManager.BadHit(hitTextPos);
-        }
-        private void Miss() {
-            ScoreManager.Miss(hitTextPos);
-        }
+        //private void PerfectHit(double _disFromPerfect) {
+        //    ScoreManager.PerfectHit(hitTextPos, _disFromPerfect);
+        //}
+        //private void GoodHit(double _disFromPerfect) {
+        //    ScoreManager.GoodHit(hitTextPos, _disFromPerfect);
+        //}
+        //private void BadHit() {
+        //    ScoreManager.BadHit(hitTextPos);
+        //}
+        //private void Miss() {
+        //    ScoreManager.Miss(hitTextPos);
+        //}
 
-        private void Log(string _msg) {
-            if (debug) {
-                Debug.Log("[Lane] " + _msg);
-            }
-        }
+        //private void Log(string _msg) {
+        //    if (debug) {
+        //        Debug.Log("[Lane] " + _msg);
+        //    }
+        //}
 
         #endregion
     }
