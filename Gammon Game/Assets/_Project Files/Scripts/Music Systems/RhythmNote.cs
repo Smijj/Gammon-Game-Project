@@ -11,6 +11,10 @@ namespace MusicSystem {
 
         [Header("Note Info: ")]
         public NoteData noteData;
+        
+        private double noteLength;
+        private bool holding = false;
+        private GameObject noteTailPrefab;
 
         [Header("Refs: ")]
         public SpriteRenderer foodSprite;
@@ -26,6 +30,8 @@ namespace MusicSystem {
         private Vector3 hitIndicatorStartingScale;
         private SpriteRenderer hitIndicatorSprite;
 
+
+
         private void Start() {
             hitIndicatorSprite = hitIndicator.GetComponentInChildren<SpriteRenderer>();
             hitIndicatorStartingScale = hitIndicator.transform.localScale;
@@ -40,6 +46,8 @@ namespace MusicSystem {
             transform.localPosition = Vector3.up * RhythmManager.instance.noteSpawnY;
 
 
+            noteLength = noteData.lengthInSeconds;
+
             // If the note is above the tapNoteThreshold:
                 // instantiate a holdNoteTailPrefab (stored in the lane this note belongs to)
         }
@@ -50,12 +58,16 @@ namespace MusicSystem {
                                                                                                 // if t=0 the note would be at the spawnPos, if t=0.5 then it would be at the tap
                                                                                                 // position, and if t=1 then it would be at the despawn pos
 
-            // when t == 0 the note should be at the noteSpawnY, when t == 1 the note should be at noteDespawnY
-            if (t>1) {
-                Destroy(gameObject);
+            if (!holding) {
+                // when t == 0 the note should be at the noteSpawnY, when t == 1 the note should be at noteDespawnY
+                if (t>1) {
+                    Destroy(gameObject);
+                } else {
+                    // Moves the note between the spawnPos and despawnPos based on the percentage t
+                    transform.localPosition = Vector3.Lerp(Vector3.up * RhythmManager.instance.noteSpawnY, Vector3.up * RhythmManager.instance.noteDespawnY, t);
+                }
             } else {
-                // Moves the note between the spawnPos and despawnPos based on the percentage t
-                transform.localPosition = Vector3.Lerp(Vector3.up * RhythmManager.instance.noteSpawnY, Vector3.up * RhythmManager.instance.noteDespawnY, t);
+                // play holding effects
             }
 
 
@@ -74,13 +86,46 @@ namespace MusicSystem {
             /// would need to probably record their pos when getting destroyed, and the points scored in that period of time, etc. to be able to effectively rewind everything.
             /// maybe even keep the points there, and have it as an opertunity to get a higher score or something.
 
+            
+            if (holding) {
+                if (Input.GetKey(noteData.lane.input) || Input.GetKey(noteData.lane.secondaryInput)) {
+                    if (noteLength >= 0) {
+                        // reduce the note tail length based on the time the left to hold
+                        noteLength -= Time.unscaledDeltaTime;
+                    } else {
+                        // upon the hold time being complete, calculate score base on the length of the hold time
+                        ScoreManager.CaclulateHoldScore(noteData.lane.hitTextPos, noteLength);
+                        
+                        DestroyNote();
+                    }
+                } else {
+                    // if the player doesnt complete the hold note (lets go of the key too early)
+                    Miss();
+                    DestroyNote();
+                }
 
-            // If the note goes past the area where it can be hit then it counts as a miss, the note itself handles despawning so this script just leaves it to do that by itself.
-            if (noteData.timeStamp + RhythmManager.instance.badMargin <= RhythmManager.GetAudioSourceTime() - (RhythmManager.instance.inputDelayInMiliseconds / 1000.0f)) {
-                Miss();
-                noteData.lane.removeNote(this);
-                Destroy(this.gameObject);
             }
+
+
+
+
+            if (noteData.timeScale > tapNoteThreshold) {
+                if (noteData.timeStamp + noteData.lengthInSeconds + RhythmManager.instance.badMargin <= RhythmManager.GetAudioSourceTime() - (RhythmManager.instance.inputDelayInMiliseconds / 1000.0f)) {
+                    Miss();
+                    DestroyNote();
+                }
+
+                // Draws the hold note tail
+                if (noteTailPrefab) Destroy(noteTailPrefab);
+                noteTailPrefab = DrawRhythmUI.instance.DrawUI(noteLength, 1f, transform, Color.black, noteLength/2);
+            } else {
+                // If the note goes past the area where it can be hit then it counts as a miss, the note itself handles despawning so this script just leaves it to do that by itself.
+                if (noteData.timeStamp + RhythmManager.instance.badMargin <= RhythmManager.GetAudioSourceTime() - (RhythmManager.instance.inputDelayInMiliseconds / 1000.0f)) {
+                    Miss();
+                    DestroyNote();
+                }
+            }
+
         }
 
         #region Public Functions
@@ -100,10 +145,6 @@ namespace MusicSystem {
         */
 
         public void Tapped() {
-            if (noteData.timeScale > tapNoteThreshold) return;
-
-            Debug.Log("Tap");
-
             RhythmManager rhythmManager = RhythmManager.instance;
             double perfectMargin = rhythmManager.perfectMargin;
             double goodMargin = rhythmManager.goodMargin;
@@ -112,35 +153,61 @@ namespace MusicSystem {
             double audioTime = RhythmManager.GetAudioSourceTime() - (rhythmManager.inputDelayInMiliseconds / 1000.0f);
 
             double inputDifference = Math.Abs(audioTime - noteData.timeStamp);
-            bool wasHit = false;
 
-            // Manage Perfect/Good/Bad notes in here
-            if (inputDifference < perfectMargin) {
-                PerfectHit(inputDifference);
-                Log($"Perfect Hit on note.");
-                wasHit = true;
-            } else if (inputDifference < goodMargin) {
-                GoodHit(inputDifference);
-                Log($"Good Hit on note.");
-                wasHit = true;
-            } else if (inputDifference < badMargin) {
-                BadHit();
-                Log($"Bad Hit on note.");
-                wasHit = true;
+            if (noteData.timeScale <= tapNoteThreshold) {
+                Debug.Log("Tap");
+
+                bool wasHit = false;
+
+                // Manage Perfect/Good/Bad notes in here
+                if (inputDifference < perfectMargin) {
+                    PerfectHit(inputDifference);
+                    Log($"Perfect Hit on note.");
+                    wasHit = true;
+                } else if (inputDifference < goodMargin) {
+                    GoodHit(inputDifference);
+                    Log($"Good Hit on note.");
+                    wasHit = true;
+                } else if (inputDifference < badMargin) {
+                    BadHit();
+                    Log($"Bad Hit on note.");
+                    wasHit = true;
+                } else {
+                    Log($"Hit inaccurate on note with {inputDifference} delay.");
+                }
+
+                if (wasHit) {
+                    DestroyNote();
+                }
+
             } else {
-                Log($"Hit inaccurate on note with {inputDifference} delay.");
-            }
-
-            if (wasHit) {
-                noteData.lane.removeNote(this);
-                Destroy(this.gameObject);
+                Debug.Log("Held");
+                
+                // Manage Perfect/Good/Bad notes in here
+                if (inputDifference < perfectMargin) {
+                    PerfectHit(inputDifference);
+                    Log($"Perfect Hit on note.");
+                    holding = true;
+                } else if (inputDifference < goodMargin) {
+                    GoodHit(inputDifference);
+                    Log($"Good Hit on note.");
+                    holding = true;
+                } else if (inputDifference < badMargin) {
+                    BadHit();
+                    Log($"Bad Hit on note.");
+                } else {
+                    Log($"Hit inaccurate on note with {inputDifference} delay.");
+                }         
+                
+                if (!holding) {
+                    DestroyNote();
+                }
             }
         }
 
         public void Held() {
             if (noteData.timeScale <= tapNoteThreshold) return;
-
-            Debug.Log("Held");
+            
 
             RhythmManager rhythmManager = RhythmManager.instance;
             double perfectMargin = rhythmManager.perfectMargin;
@@ -150,28 +217,37 @@ namespace MusicSystem {
             double audioTime = RhythmManager.GetAudioSourceTime() - (rhythmManager.inputDelayInMiliseconds / 1000.0f);
 
             double inputDifference = Math.Abs(audioTime - noteData.timeStamp);
-            bool wasHit = false;
 
-            // Manage Perfect/Good/Bad notes in here
-            if (inputDifference < perfectMargin) {
-                PerfectHit(inputDifference);
-                Log($"Perfect Hit on note.");
-                wasHit = true;
-            } else if (inputDifference < goodMargin) {
-                GoodHit(inputDifference);
-                Log($"Good Hit on note.");
-                wasHit = true;
-            } else if (inputDifference < badMargin) {
-                BadHit();
-                Log($"Bad Hit on note.");
-                wasHit = true;
+            if (!holding) { 
+                // Manage Perfect/Good/Bad notes in here
+                if (inputDifference < perfectMargin) {
+                    PerfectHit(inputDifference);
+                    Log($"Perfect Hit on note.");
+                    holding = true;
+                } else if (inputDifference < goodMargin) {
+                    GoodHit(inputDifference);
+                    Log($"Good Hit on note.");
+                    holding = true;
+                } else if (inputDifference < badMargin) {
+                    BadHit();
+                    Log($"Bad Hit on note.");
+                    holding = true;
+                } else {
+                    Log($"Hit inaccurate on note with {inputDifference} delay.");
+                }
             } else {
-                Log($"Hit inaccurate on note with {inputDifference} delay.");
-            }
+                // This is constantly being called in the update loop when a hold note is being pressed
+                
+                if (noteLength >= 0) {
+                    // reduce the note tail length based on the time the left to hold
+                    noteLength -= Time.unscaledDeltaTime;
+                } else {
+                    // upon the hold time being complete, calculate score base on the length of the hold time
 
-            if (wasHit) {
-                noteData.lane.removeNote(this);
-                Destroy(this.gameObject);
+                }
+                // if the player doesnt complete the hold note (lets go of the key too early) then this function will stop being called so the play wont get any points 
+                // but it also needs a way to destroy the rest of the hold note if its not completed.
+
             }
         }
 
@@ -180,8 +256,9 @@ namespace MusicSystem {
 
         #region Private Functions
 
-        private void HoldNote() {
-
+        private void DestroyNote() {
+            noteData.lane.removeNote(this);
+            Destroy(this.gameObject);
         }
 
         private void PerfectHit(double _disFromPerfect) {
@@ -215,5 +292,21 @@ namespace MusicSystem {
         }
 
         #endregion
+    }
+
+
+    [Serializable]
+    public class NoteData {
+        public double timeStamp;
+        public long timeScale;
+        public double lengthInSeconds;
+        public Lane lane;
+
+        public NoteData(double _timeStamp, long _timeScale, double _lengthInSeconds, Lane _lane) {
+            timeStamp = _timeStamp;
+            timeScale = _timeScale;
+            lengthInSeconds = _lengthInSeconds;
+            lane = _lane;
+        }
     }
 }

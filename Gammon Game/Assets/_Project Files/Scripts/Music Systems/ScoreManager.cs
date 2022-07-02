@@ -41,6 +41,7 @@ namespace MusicSystem {
         public string goodHitText;
         public string badHitText;
         public string missText;
+        public string finishHoldNoteText;
 
 
         private void Awake() {
@@ -67,6 +68,18 @@ namespace MusicSystem {
             if (comboScore > maxComboScore) maxComboScore = comboScore;
         }
 
+
+        public static void CaclulateHoldScore(Transform _pos, double _noteLength) {
+            // Score caluclations
+            if (multiplier < instance.maxMulitplier) multiplier++;
+            double hitScore = instance.goodScore + (_noteLength * 10);
+            score += hitScore * multiplier;
+
+            // Displaying Score
+            instance.InstantiateHitText(hitScore.ToString("0") + " | " + instance.finishHoldNoteText, instance.hitText, _pos);
+            instance.InstantiateHitText("+ " + (hitScore * multiplier).ToString("0"), instance.lastScoreText, instance.lastScoreTextPos);
+            instance.goodHitSFX.Play();
+        }
 
         public static void PerfectHit(Transform _pos, double _disFromPerfect) {
             _disFromPerfect = Math.Abs(_disFromPerfect * 100);

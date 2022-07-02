@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7d6b43a4a48a26f4694252d1b168d708
+guid: eba3ff81728a9fb4280e2ed47532842b
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,10 +9,8 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - LEMON MILK
-  fallbackFontReferences:
-  - {fileID: 12800000, guid: f0e90b3ab70ff5743be93aa77c5b2cea, type: 3}
-  - {fileID: 12800000, guid: e4d94f6904ecdba43865ff2bd3b1b0c8, type: 3}
+  - Oat Milk
+  fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1

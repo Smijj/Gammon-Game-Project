@@ -32,9 +32,9 @@ namespace MenuSystem {
 				singleton = this;
 				m_Pages = new Hashtable();
 				RegisterAllPages();
-				if (enteryPage != PageType.None) {
-					TurnPageOn(enteryPage);
-				}
+				//if (enteryPage != PageType.None) {
+				//	TurnPageOn(enteryPage);
+				//}
                 menuManager = GetComponent<MenuManager>();
 				DontDestroyOnLoad(this);
 			} else {
@@ -61,8 +61,13 @@ namespace MenuSystem {
 			CheckSingleton();
 		}
 
+        private void Start() {
+            if (enteryPage != PageType.None) {
+                TurnPageOn(enteryPage);
+            }
+        }
 
-		private void Update() {
+        private void Update() {
             if (!GameManager.isLoading) {
                 HandleInput();
             }

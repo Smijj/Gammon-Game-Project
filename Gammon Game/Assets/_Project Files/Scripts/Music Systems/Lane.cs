@@ -55,52 +55,11 @@ namespace MusicSystem {
                     //Debug.Log("Tap");
                 }
                 
-                if (Input.GetKey(input) || Input.GetKey(secondaryInput)) {
-                    nextNote.Held();
-                    //Debug.Log("Held");
-                }
+                //if (Input.GetKey(input) || Input.GetKey(secondaryInput)) {
+                //    nextNote.Held();
+                //    //Debug.Log("Held");
+                //}
             }
-
-            // if not all the notes for this lane have been hit or missed:
-            /*if (inputIndex < timeStamps.Count) {
-                // Setting some variables so they are easier to work with
-                double perfectMargin = RhythmManager.instance.perfectMargin;
-                double goodMargin = RhythmManager.instance.goodMargin;
-                double badMargin = RhythmManager.instance.badMargin;
-                
-                double timeStamp = timeStamps[inputIndex];
-                double audioTime = RhythmManager.GetAudioSourceTime() - (RhythmManager.instance.inputDelayInMiliseconds / 1000.0f);
-
-                if (Input.GetKeyDown(input) || Input.GetKeyDown(secondaryInput)) {
-                    
-                    // Manage Perfect/Good/Bad notes in here
-                    if (Math.Abs(audioTime - timeStamp) < perfectMargin) {
-                        PerfectHit(audioTime - timeStamp);
-                        Log($"Perfect Hit on {inputIndex} note.");
-                        Destroy(notes[inputIndex].gameObject);
-                        inputIndex++;
-                    } else if (Math.Abs(audioTime - timeStamp) < goodMargin) {
-                        GoodHit(audioTime - timeStamp);
-                        Log($"Good Hit on {inputIndex} note.");
-                        Destroy(notes[inputIndex].gameObject);
-                        inputIndex++;
-                    } else if (Math.Abs(audioTime - timeStamp) < badMargin) {
-                        BadHit();
-                        Log($"Bad Hit on {inputIndex} note.");
-                        Destroy(notes[inputIndex].gameObject);
-                        inputIndex++;
-                    } else {
-                        Log($"Hit inaccurate on {inputIndex} note with {Math.Abs(audioTime - timeStamp)} delay.");
-                    }
-                }
-
-                // If the note goes past the area where it can be hit then it counts as a miss, the note itself handles despawning so this script just leaves it to do that by itself.
-                if (timeStamp + badMargin <= audioTime) {
-                    Miss();
-                    Log($"Missed {inputIndex} note.");
-                    inputIndex++;
-                }
-            }*/
         }
 
         #endregion
@@ -137,44 +96,5 @@ namespace MusicSystem {
         }
 
         #endregion
-
-
-        #region Private Functions
-
-        //private void PerfectHit(double _disFromPerfect) {
-        //    ScoreManager.PerfectHit(hitTextPos, _disFromPerfect);
-        //}
-        //private void GoodHit(double _disFromPerfect) {
-        //    ScoreManager.GoodHit(hitTextPos, _disFromPerfect);
-        //}
-        //private void BadHit() {
-        //    ScoreManager.BadHit(hitTextPos);
-        //}
-        //private void Miss() {
-        //    ScoreManager.Miss(hitTextPos);
-        //}
-
-        //private void Log(string _msg) {
-        //    if (debug) {
-        //        Debug.Log("[Lane] " + _msg);
-        //    }
-        //}
-
-        #endregion
-    }
-
-    [Serializable]
-    public class NoteData {
-        public double timeStamp;
-        public long timeScale;
-        public double lengthInSeconds;
-        public Lane lane;
-
-        public NoteData(double _timeStamp, long _timeScale, double _lengthInSeconds, Lane _lane) {
-            timeStamp = _timeStamp;
-            timeScale = _timeScale;
-            lengthInSeconds = _lengthInSeconds;
-            lane = _lane;
-        }
     }
 }

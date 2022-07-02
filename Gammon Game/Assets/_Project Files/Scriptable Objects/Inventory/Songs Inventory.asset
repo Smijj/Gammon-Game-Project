@@ -14,6 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   songCard: {fileID: 3232061558039685, guid: d8691aafe74969c48965012a4bfb4e55, type: 3}
   songs:
+  - name: Test 1
+    midiFileName: Test1.mid
+    songFileName: Test1.wav
+    songLength: 
+    highscore: 0
+    maxComboScore: 0
+    starRating: 0
   - name: Guitar Song
     midiFileName: GuitarSong.mid
     songFileName: GuitarSong.wav
+    songLength: 
+    highscore: 0
+    maxComboScore: 0
+    starRating: 0

@@ -42,7 +42,6 @@ namespace MusicSystem {
         public Color perfectTapZone;
         public Color goodTapZoneLines;
         public Transform gameArea;
-        public GameObject indicatorPrefab;    // A simple gameobject that will be spawned to indicate where the player needs to tap
 
 
         [Header("Note Settings: ")]
@@ -150,7 +149,23 @@ namespace MusicSystem {
 
 
         #region Private Functions
-        
+
+        private void DrawTapLineIndicators() {
+            // Cleans up any old hit indicators in the case this function is called more than once.
+            if (hitIndicatorObjects.Count > 0) {
+                foreach (var _object in hitIndicatorObjects) {
+                    Destroy(_object);
+                }
+                hitIndicatorObjects.Clear();
+            }
+
+            // Spawns the tap line indicators.
+            hitIndicatorObjects.Add(DrawRhythmUI.instance.DrawBlockAroundTapPos(0.01, perfectTapZone));
+            //hitIndicatorObjects.Add(DrawBlockAroundTapPos(perfectMargin, perfectTapZone));
+            //hitIndicatorObjects.Add(DrawAroundTapPos(-goodMargin, goodTapZoneLines));   // Draws line before the tapPos
+            //hitIndicatorObjects.Add(DrawAroundTapPos(goodMargin, goodTapZoneLines));    // Draws line after the tapPos
+        }
+
         /// <summary>
         /// Loads the Audio file that accompanies the Midi file (the filetype is required to be WAV right now)
         /// </summary>
@@ -220,87 +235,6 @@ namespace MusicSystem {
 
             Debug.Log("Start");
         }
-
-
-        #region Draw Functions
-
-        private void DrawTapLineIndicators() {
-            // Cleans up any old hit indicators in the case this function is called more than once.
-            if (hitIndicatorObjects.Count > 0) {
-                foreach (var _object in hitIndicatorObjects) {
-                    Destroy(_object);
-                }
-                hitIndicatorObjects.Clear();
-            }
-
-            // Spawns the tap line indicators.
-            hitIndicatorObjects.Add(DrawBlockAroundTapPos(0.01, perfectTapZone));
-            //hitIndicatorObjects.Add(DrawBlockAroundTapPos(perfectMargin, perfectTapZone));
-            //hitIndicatorObjects.Add(DrawAroundTapPos(-goodMargin, goodTapZoneLines));   // Draws line before the tapPos
-            //hitIndicatorObjects.Add(DrawAroundTapPos(goodMargin, goodTapZoneLines));    // Draws line after the tapPos
-        }
-
-        /// <summary>
-        /// Used for drawning a horizontal line across the screen in relation to the tapPos.
-        /// </summary>
-        /// <param name="_timeMargin">Negative number to place before the tapPos, positive for after. This is the time in seconds before or after the tapPos you want to draw something.</param>
-        /// <param name="_lineColour"></param>
-        /// <param name="_accountForInputDelay">Controls whether or not the drawn objects pos will account for input delay or not (i.e. will it visually move to match the input delay).</param>
-        private GameObject DrawAroundTapPos(double _timeMargin, Color _lineColour, bool _accountForInputDelay = false) {
-            Vector3 spawnYPos = new Vector3(0, noteSpawnY, 0);
-            Vector3 despawnYPos = new Vector3(0, noteDespawnY, 0);
-
-            double timeToGetToMargin = !_accountForInputDelay ? noteFallTime + _timeMargin : noteFallTime - (inputDelayInMiliseconds / 1000.0f) + _timeMargin;
-            float marginPercentage = (float)timeToGetToMargin / (noteFallTime * 2);
-            Vector3 marginYPos = Vector3.Lerp(spawnYPos, despawnYPos, marginPercentage);
-
-            if (indicatorPrefab && gameArea) {
-                GameObject prefabInst = Instantiate(indicatorPrefab, gameArea);
-
-                Vector3 yPosVec = marginYPos;
-                prefabInst.transform.localPosition = new Vector3(0, yPosVec.y, 0);
-                prefabInst.transform.localScale = new Vector3(tapIndicatorWidth, 0.1f, 1);
-                prefabInst.GetComponent<SpriteRenderer>().color = _lineColour;
-
-                return prefabInst;
-            }
-            return null;
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="_timeMargin"></param>
-        /// <param name="_blockColour"></param>
-        /// <param name="_accountForInputDelay"></param>
-        private GameObject DrawBlockAroundTapPos(double _timeMargin, Color _blockColour, bool _accountForInputDelay = false) {
-            Vector3 spawnYPos = new Vector3(0, noteSpawnY, 0);
-            Vector3 despawnYPos = new Vector3(0, noteDespawnY, 0);
-
-            double timeToGetToMargin1 = !_accountForInputDelay ? noteFallTime - _timeMargin : noteFallTime - (inputDelayInMiliseconds / 1000.0f) - _timeMargin;
-            float marginPercentage1 = (float)timeToGetToMargin1 / (noteFallTime * 2);
-            Vector3 marginYPos1 = Vector3.Lerp(spawnYPos, despawnYPos, marginPercentage1);
-
-            double timeToGetToMargin2 = !_accountForInputDelay ? noteFallTime + _timeMargin : noteFallTime - (inputDelayInMiliseconds / 1000.0f) + _timeMargin;
-            float marginPercentage2 = (float)timeToGetToMargin2 / (noteFallTime * 2);
-            Vector3 marginYPos2 = Vector3.Lerp(spawnYPos, despawnYPos, marginPercentage2);
-
-            if (indicatorPrefab && gameArea) {
-                GameObject prefabInst = Instantiate(indicatorPrefab, gameArea);
-
-                Vector3 yPosVec = (marginYPos1 + marginYPos2) / 2;
-                prefabInst.transform.localPosition = new Vector3(0, yPosVec.y, 0);
-                float disY = Vector3.Distance(marginYPos1, marginYPos2);
-                prefabInst.transform.localScale = new Vector3(tapIndicatorWidth, disY, 1);
-
-                prefabInst.GetComponent<SpriteRenderer>().color = _blockColour;
-
-                return prefabInst;
-            }
-            return null;
-        }
-
-        #endregion
 
         #endregion
     }
