@@ -18,9 +18,13 @@ namespace MenuSystem {
         Orders,
         Stats,
         Contacts,
+<<<<<<< HEAD
         Songs,
         SongPause,
         SongOver,
+=======
+        Map,
+>>>>>>> Oveworld-Map_Prototype
     }
 
     public class PageManager : MonoBehaviour
