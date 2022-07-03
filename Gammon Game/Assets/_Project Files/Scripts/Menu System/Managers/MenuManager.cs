@@ -45,24 +45,12 @@ namespace MenuSystem {
 
         #region Menu Buttons        
 
-        public void Menu_Meals() {
-            PageManager.singleton.TurnPageOff(PageType.Menu, true, PageType.Meals);
-        }
-
-        public void Menu_Planner() {
-            PageManager.singleton.TurnPageOff(PageType.Menu, true, PageType.Planner);
-        }
-
         public void Menu_Recipes() {
             PageManager.singleton.TurnPageOff(PageType.Menu, true, PageType.Recipes);
         }
 
         public void Menu_Settings() {
             PageManager.singleton.TurnPageOff(PageType.Menu, true, PageType.Settings);
-        }
-        
-        public void Menu_Orders() {
-            PageManager.singleton.TurnPageOff(PageType.Menu, true, PageType.Orders);
         }
 
         public void Menu_Stats() {
