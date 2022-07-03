@@ -73,6 +73,10 @@ namespace MenuSystem {
             PageManager.singleton.TurnPageOff(PageType.Menu, true, PageType.Settings);
         }
 
+        public void Menu_Map() {
+            PageManager.singleton.TurnPageOff(PageType.Menu, true, PageType.Map);
+        }
+
         public void Menu_Save() {
             // Save
         }
