@@ -10,7 +10,8 @@ namespace MenuSystem {
     public enum PageType {
         None,
         Loading,
-        Menu,
+        MainMenu,
+        PauseMenu,
         Recipes,
         Settings,
         Stats,
@@ -29,9 +30,6 @@ namespace MenuSystem {
 				singleton = this;
 				m_Pages = new Hashtable();
 				RegisterAllPages();
-				if (enteryPage != PageType.None) {
-					TurnPageOn(enteryPage);
-				}
                 menuManager = GetComponent<MenuManager>();
 				DontDestroyOnLoad(this);
 			} else {
@@ -57,9 +55,15 @@ namespace MenuSystem {
 		private void OnEnable() {
 			CheckSingleton();
 		}
+        private void Start()
+        {
+            if (enteryPage != PageType.None)
+            {
+                TurnPageOn(enteryPage);
+            }
+        }
 
-
-		private void Update() {
+        private void Update() {
             if (!GameManager.isLoading) {
                 HandleInput();
             }
@@ -70,11 +74,11 @@ namespace MenuSystem {
             if (Input.GetKeyDown(KeyCode.Escape) && GameManager.currentScene.name == "Play") {
                 if (RhythmManager.instance == null) {
                     /// If there is not rhythm minigame playing 
-                    if (activePage == PageType.None || activePage == PageType.Menu) {
-                        TurnPageOn(PageType.Menu);  // Will turn the Menu page on, if that page is already open it will turn it off.
+                    if (activePage == PageType.None || activePage == PageType.PauseMenu) {
+                        TurnPageOn(PageType.PauseMenu);  // Will turn the Menu page on, if that page is already open it will turn it off.
                     }
                     else {
-                        TurnPageOff(activePage, true, PageType.Menu);   // if there is any other page type open then close it and open the menu page
+                        TurnPageOff(activePage, true, PageType.PauseMenu);   // if there is any other page type open then close it and open the menu page
                     }
                 } else {
                     /// if there is a rhythm minigame use a different pause menu
