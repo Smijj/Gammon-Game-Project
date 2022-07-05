@@ -28,3 +28,10 @@ MonoBehaviour:
     highscore: 0
     maxComboScore: 0
     starRating: 0
+  - name: Poseidon  Song
+    midiFileName: PoseidonSong.mid
+    songFileName: PoseidonSong.wav
+    songLength: 
+    highscore: 0
+    maxComboScore: 0
+    starRating: 0

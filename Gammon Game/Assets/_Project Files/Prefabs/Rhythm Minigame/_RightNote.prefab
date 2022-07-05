@@ -129,15 +129,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49f4363461c2bed4c832d5a262cf867b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  assignedTime: 0
+  noteData:
+    timeStamp: 0
+    timeScale: 0
+    lengthInSeconds: 0
+    lane: {fileID: 0}
   foodSprite: {fileID: 5179374053494867697}
   noteBG: {fileID: 7432643095098230447}
   noteBGColourStart: {r: 0.5176471, g: 0.5176471, b: 0.5176471, a: 1}
   noteBGColourTap: {r: 1, g: 1, b: 1, a: 1}
   noteBGColourMiss: {r: 1, g: 0, b: 0, a: 1}
   hitIndicator: {fileID: 4554942096197503294}
-  hitIndicatorStartColour: {r: 0.99215686, g: 0.5254902, b: 0.23921569, a: 1}
-  hitIndicatorEndColour: {r: 0.101960786, g: 0.15686275, b: 0.6901961, a: 1}
+  hitIndicatorStartColour: {r: 0, g: 1, b: 0.9898968, a: 1}
+  hitIndicatorEndColour: {r: 0.015368214, g: 0.9528302, b: 0, a: 1}
 --- !u!1 &1933404932326858447
 GameObject:
   m_ObjectHideFlags: 0
