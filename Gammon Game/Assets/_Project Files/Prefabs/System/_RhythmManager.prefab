@@ -2387,7 +2387,7 @@ MonoBehaviour:
   goodMargin: 0.12
   badMargin: 0.2
   tapIndicatorWidth: 20
-  perfectTapZone: {r: 1, g: 0.99607843, b: 0.7490196, a: 0.5882353}
+  perfectTapZone: {r: 1, g: 0.99607843, b: 0.7490196, a: 1}
   goodTapZoneLines: {r: 1, g: 0.9962013, b: 0.75, a: 1}
   gameArea: {fileID: 4822481409154005980}
   hitEffect: {fileID: 6018891729558880758, guid: 4a499163e38aa394cbcfa82570e8ec9c, type: 3}
