@@ -15,7 +15,6 @@ namespace MusicSystem {
         public KeyCode secondaryInput;
         [Header("Refs: ")]
         public GameObject notePrefab;
-        public GameObject holdNoteTailPrefab;
         public Transform hitTextPos;    // the transform of where the hit texts prefabs will get instantiated
         public bool debug = false;
         
@@ -52,13 +51,7 @@ namespace MusicSystem {
 
                 if (Input.GetKeyDown(input) || Input.GetKeyDown(secondaryInput)) {
                     nextNote.Tapped();
-                    //Debug.Log("Tap");
                 }
-                
-                //if (Input.GetKey(input) || Input.GetKey(secondaryInput)) {
-                //    nextNote.Held();
-                //    //Debug.Log("Held");
-                //}
             }
         }
 

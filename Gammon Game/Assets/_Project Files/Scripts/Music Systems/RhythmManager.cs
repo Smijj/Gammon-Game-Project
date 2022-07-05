@@ -42,6 +42,8 @@ namespace MusicSystem {
         public Color perfectTapZone;
         public Color goodTapZoneLines;
         public Transform gameArea;
+        public GameObject hitEffect;
+        public GameObject holdEffect;
 
 
         [Header("Note Settings: ")]

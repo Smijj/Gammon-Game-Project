@@ -45,11 +45,7 @@ namespace MusicSystem {
 
             transform.localPosition = Vector3.up * RhythmManager.instance.noteSpawnY;
 
-
             noteLength = noteData.lengthInSeconds;
-
-            // If the note is above the tapNoteThreshold:
-                // instantiate a holdNoteTailPrefab (stored in the lane this note belongs to)
         }
 
         private void Update() {
@@ -57,7 +53,8 @@ namespace MusicSystem {
             float t = (float)(timeSinceInstantiated / (RhythmManager.instance.noteFallTime * 2));     // Gets the current percentage the note pos is between the spawnPos and despawnPos
                                                                                                 // if t=0 the note would be at the spawnPos, if t=0.5 then it would be at the tap
                                                                                                 // position, and if t=1 then it would be at the despawn pos
-
+            
+            // Stops the note from moving if its being held
             if (!holding) {
                 // when t == 0 the note should be at the noteSpawnY, when t == 1 the note should be at noteDespawnY
                 if (t>1) {
@@ -66,8 +63,6 @@ namespace MusicSystem {
                     // Moves the note between the spawnPos and despawnPos based on the percentage t
                     transform.localPosition = Vector3.Lerp(Vector3.up * RhythmManager.instance.noteSpawnY, Vector3.up * RhythmManager.instance.noteDespawnY, t);
                 }
-            } else {
-                // play holding effects
             }
 
 
@@ -117,7 +112,7 @@ namespace MusicSystem {
 
                 // Draws the hold note tail
                 if (noteTailPrefab) Destroy(noteTailPrefab);
-                noteTailPrefab = DrawRhythmUI.instance.DrawUI(noteLength, 1f, transform, Color.black, noteLength/2);
+                noteTailPrefab = DrawRhythmUI.instance.DrawUI(noteLength, 1f, transform, Color.white, noteLength/2);
             } else {
                 // If the note goes past the area where it can be hit then it counts as a miss, the note itself handles despawning so this script just leaves it to do that by itself.
                 if (noteData.timeStamp + RhythmManager.instance.badMargin <= RhythmManager.GetAudioSourceTime() - (RhythmManager.instance.inputDelayInMiliseconds / 1000.0f)) {
@@ -201,53 +196,9 @@ namespace MusicSystem {
                 
                 if (!holding) {
                     DestroyNote();
-                }
-            }
-        }
-
-        public void Held() {
-            if (noteData.timeScale <= tapNoteThreshold) return;
-            
-
-            RhythmManager rhythmManager = RhythmManager.instance;
-            double perfectMargin = rhythmManager.perfectMargin;
-            double goodMargin = rhythmManager.goodMargin;
-            double badMargin = rhythmManager.badMargin;
-
-            double audioTime = RhythmManager.GetAudioSourceTime() - (rhythmManager.inputDelayInMiliseconds / 1000.0f);
-
-            double inputDifference = Math.Abs(audioTime - noteData.timeStamp);
-
-            if (!holding) { 
-                // Manage Perfect/Good/Bad notes in here
-                if (inputDifference < perfectMargin) {
-                    PerfectHit(inputDifference);
-                    Log($"Perfect Hit on note.");
-                    holding = true;
-                } else if (inputDifference < goodMargin) {
-                    GoodHit(inputDifference);
-                    Log($"Good Hit on note.");
-                    holding = true;
-                } else if (inputDifference < badMargin) {
-                    BadHit();
-                    Log($"Bad Hit on note.");
-                    holding = true;
                 } else {
-                    Log($"Hit inaccurate on note with {inputDifference} delay.");
+                    Instantiate(RhythmManager.instance.holdEffect, transform);
                 }
-            } else {
-                // This is constantly being called in the update loop when a hold note is being pressed
-                
-                if (noteLength >= 0) {
-                    // reduce the note tail length based on the time the left to hold
-                    noteLength -= Time.unscaledDeltaTime;
-                } else {
-                    // upon the hold time being complete, calculate score base on the length of the hold time
-
-                }
-                // if the player doesnt complete the hold note (lets go of the key too early) then this function will stop being called so the play wont get any points 
-                // but it also needs a way to destroy the rest of the hold note if its not completed.
-
             }
         }
 
@@ -259,6 +210,7 @@ namespace MusicSystem {
         private void DestroyNote() {
             noteData.lane.removeNote(this);
             Destroy(this.gameObject);
+            Destroy(Instantiate(RhythmManager.instance.hitEffect, transform.position, transform.rotation), 2);
         }
 
         private void PerfectHit(double _disFromPerfect) {

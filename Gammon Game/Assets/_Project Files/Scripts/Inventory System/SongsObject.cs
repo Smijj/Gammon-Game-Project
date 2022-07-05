@@ -23,7 +23,10 @@ namespace InventorySystem {
         [Tooltip("The name of the AudioClip file stored in StreamingAssets that is to be played alongside the midi file.")]
         public string songFileName;
 
-        public string songLength;
+        public RecipeObject recipe;
+
+
+        //public string songLength;
 
         public double highscore;
         public int maxComboScore;
