@@ -8830,12 +8830,14 @@ MonoBehaviour:
     name: 
     midiFileName: 
     songFileName: 
-    songLength: 
+    recipe: {fileID: 0}
     highscore: 0
     maxComboScore: 0
     starRating: 0
   isDisplayCard: 1
   songName: {fileID: 2095743514575468147}
+  highScore: {fileID: 5128351217548429102}
+  comboScore: {fileID: 3161736850076205310}
 --- !u!114 &5186227842564557994
 MonoBehaviour:
   m_ObjectHideFlags: 0

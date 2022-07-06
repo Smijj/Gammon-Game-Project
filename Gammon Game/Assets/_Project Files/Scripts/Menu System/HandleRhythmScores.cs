@@ -35,7 +35,7 @@ namespace MenuSystem {
             if (song == null) return;
 
             if (highscoreText) highscoreText.text = "- HighScore -\n".Replace("\\n", "\n") + song.highscore.ToString("0");
-            if (maxComboScoreText) maxComboScoreText.text = "- Max Combo -\n".Replace("\\n", "\n") + song.maxComboScore.ToString("0");
+            if (maxComboScoreText) maxComboScoreText.text = "- Max Combo -\n".Replace("\\n", "\n") + song.largestCombo.ToString("0");
             
             if (ScoreManager.instance) {
                 if (perfectHitsText) perfectHitsText.text = "Perfect: " + ScoreManager.perfectHits.ToString("0");

@@ -15,7 +15,6 @@ namespace MusicSystem {
         public KeyCode secondaryInput;
         [Header("Refs: ")]
         public GameObject notePrefab;
-        public Transform hitTextPos;    // the transform of where the hit texts prefabs will get instantiated
         public bool debug = false;
         
         

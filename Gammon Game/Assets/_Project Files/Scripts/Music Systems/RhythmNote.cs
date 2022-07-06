@@ -8,6 +8,7 @@ namespace MusicSystem {
     public class RhythmNote : MonoBehaviour
     {
         public static int tapNoteThreshold = 64;
+        private RhythmManager rm;
 
         [Header("Note Info: ")]
         public NoteData noteData;
@@ -19,13 +20,7 @@ namespace MusicSystem {
         [Header("Refs: ")]
         public SpriteRenderer foodSprite;
         public SpriteRenderer noteBG;
-        public Color noteBGColourStart;
-        public Color noteBGColourTap;
-        public Color noteBGColourMiss;
-        
         public GameObject hitIndicator;
-        public Color hitIndicatorStartColour;
-        public Color hitIndicatorEndColour;
 
         private Vector3 hitIndicatorStartingScale;
         private SpriteRenderer hitIndicatorSprite;
@@ -33,24 +28,26 @@ namespace MusicSystem {
 
 
         private void Start() {
+            rm = RhythmManager.instance;
+
             hitIndicatorSprite = hitIndicator.GetComponentInChildren<SpriteRenderer>();
             hitIndicatorStartingScale = hitIndicator.transform.localScale;
-            hitIndicatorSprite.color = hitIndicatorStartColour;
+            hitIndicatorSprite.color = rm.hitIndicatorStartColour;
             
-            noteBG.color = noteBGColourStart;
+            noteBG.color = rm.noteBGColourStart;
             // Need to somehow put this stuff into a lerp of the percentage between spawn & despawn positions
             // BUG: Since the first few notes are instantiated before the song starts playing they will change colour before they are meant to
-            StartCoroutine(ChangeNoteBGColour(RhythmManager.instance.noteFallTime - (float)RhythmManager.instance.goodMargin, noteBGColourTap));     // changes the bg colour when the note is in the perfect zone
-            StartCoroutine(ChangeNoteBGColour(RhythmManager.instance.noteFallTime + (float)RhythmManager.instance.goodMargin, noteBGColourMiss));    // changes the bg colour when the note leaves the perfect zone
+            StartCoroutine(ChangeNoteBGColour(rm.noteFallTime - (float)rm.goodMargin, rm.noteBGColourTap));     // changes the bg colour when the note is in the perfect zone
+            StartCoroutine(ChangeNoteBGColour(rm.noteFallTime + (float)rm.goodMargin, rm.noteBGColourMiss));    // changes the bg colour when the note leaves the perfect zone
 
-            transform.localPosition = Vector3.up * RhythmManager.instance.noteSpawnY;
+            transform.localPosition = Vector3.up * rm.noteSpawnY;
 
             noteLength = noteData.lengthInSeconds;
         }
 
         private void Update() {
-            double timeSinceInstantiated = RhythmManager.GetAudioSourceTime() - (noteData.timeStamp - RhythmManager.instance.noteFallTime); // Calculates the time since the note was instansiated
-            float t = (float)(timeSinceInstantiated / (RhythmManager.instance.noteFallTime * 2));     // Gets the current percentage the note pos is between the spawnPos and despawnPos
+            double timeSinceInstantiated = RhythmManager.GetAudioSourceTime() - (noteData.timeStamp - rm.noteFallTime); // Calculates the time since the note was instansiated
+            float t = (float)(timeSinceInstantiated / (rm.noteFallTime * 2));     // Gets the current percentage the note pos is between the spawnPos and despawnPos
                                                                                                 // if t=0 the note would be at the spawnPos, if t=0.5 then it would be at the tap
                                                                                                 // position, and if t=1 then it would be at the despawn pos
             
@@ -61,19 +58,19 @@ namespace MusicSystem {
                     Destroy(gameObject);
                 } else {
                     // Moves the note between the spawnPos and despawnPos based on the percentage t
-                    transform.localPosition = Vector3.Lerp(Vector3.up * RhythmManager.instance.noteSpawnY, Vector3.up * RhythmManager.instance.noteDespawnY, t);
+                    transform.localPosition = Vector3.Lerp(Vector3.up * rm.noteSpawnY, Vector3.up * rm.noteDespawnY, t);
                 }
             }
 
 
             // ---- Handles Hit Indicator Stuff ----
 
-            float t2 = (float)(timeSinceInstantiated / RhythmManager.instance.noteFallTime);
+            float t2 = (float)(timeSinceInstantiated / rm.noteFallTime);
             if (t2 > 1) {
                 hitIndicator.SetActive(false);
             } else {
-                hitIndicator.transform.localScale = Vector3.Lerp(hitIndicatorStartingScale, new Vector3(2, 2, 2), t2);
-                hitIndicatorSprite.color = Color.Lerp(hitIndicatorStartColour, hitIndicatorEndColour, t2);
+                hitIndicator.transform.localScale = Vector3.Lerp(hitIndicatorStartingScale, Vector3.one, t2);
+                hitIndicatorSprite.color = Color.Lerp(rm.hitIndicatorStartColour, rm.hitIndicatorEndColour, t2);
             }
 
 
@@ -82,6 +79,7 @@ namespace MusicSystem {
             /// maybe even keep the points there, and have it as an opertunity to get a higher score or something.
 
             
+            // Handles hold note behaviour while the player is holding the key down, will destroy the note upon key release or note finish.
             if (holding) {
                 if (Input.GetKey(noteData.lane.input) || Input.GetKey(noteData.lane.secondaryInput)) {
                     if (noteLength >= 0) {
@@ -89,7 +87,7 @@ namespace MusicSystem {
                         noteLength -= Time.unscaledDeltaTime;
                     } else {
                         // upon the hold time being complete, calculate score base on the length of the hold time
-                        ScoreManager.CaclulateHoldScore(noteData.lane.hitTextPos, noteLength);
+                        ScoreManager.CaclulateHoldScore(noteLength);
                         
                         DestroyNote();
                     }
@@ -105,17 +103,17 @@ namespace MusicSystem {
 
 
             if (noteData.timeScale > tapNoteThreshold) {
-                if (noteData.timeStamp + noteData.lengthInSeconds + RhythmManager.instance.badMargin <= RhythmManager.GetAudioSourceTime() - (RhythmManager.instance.inputDelayInMiliseconds / 1000.0f)) {
+                if (noteData.timeStamp + noteData.lengthInSeconds + rm.badMargin <= RhythmManager.GetAudioSourceTime() - (rm.inputDelayInMiliseconds / 1000.0f)) {
                     Miss();
                     DestroyNote();
                 }
 
                 // Draws the hold note tail
                 if (noteTailPrefab) Destroy(noteTailPrefab);
-                noteTailPrefab = DrawRhythmUI.instance.DrawUI(noteLength, 1f, transform, Color.white, noteLength/2);
+                noteTailPrefab = DrawRhythmUI.instance.DrawUI(noteLength, 1f, transform, rm.holdNoteTailColour, noteLength/2);
             } else {
                 // If the note goes past the area where it can be hit then it counts as a miss, the note itself handles despawning so this script just leaves it to do that by itself.
-                if (noteData.timeStamp + RhythmManager.instance.badMargin <= RhythmManager.GetAudioSourceTime() - (RhythmManager.instance.inputDelayInMiliseconds / 1000.0f)) {
+                if (noteData.timeStamp + rm.badMargin <= RhythmManager.GetAudioSourceTime() - (rm.inputDelayInMiliseconds / 1000.0f)) {
                     Miss();
                     DestroyNote();
                 }
@@ -140,7 +138,7 @@ namespace MusicSystem {
         */
 
         public void Tapped() {
-            RhythmManager rhythmManager = RhythmManager.instance;
+            RhythmManager rhythmManager = rm;
             double perfectMargin = rhythmManager.perfectMargin;
             double goodMargin = rhythmManager.goodMargin;
             double badMargin = rhythmManager.badMargin;
@@ -197,7 +195,7 @@ namespace MusicSystem {
                 if (!holding) {
                     DestroyNote();
                 } else {
-                    Instantiate(RhythmManager.instance.holdEffect, transform);
+                    Instantiate(rm.holdEffect, transform);
                 }
             }
         }
@@ -210,24 +208,24 @@ namespace MusicSystem {
         private void DestroyNote() {
             noteData.lane.removeNote(this);
             Destroy(this.gameObject);
-            Destroy(Instantiate(RhythmManager.instance.hitEffect, transform.position, transform.rotation), 2);
+            Destroy(Instantiate(rm.hitEffect, transform.position, transform.rotation), 2);
         }
 
         private void PerfectHit(double _disFromPerfect) {
-            ScoreManager.PerfectHit(noteData.lane.hitTextPos, _disFromPerfect);
+            ScoreManager.PerfectHit(_disFromPerfect);
         }
         private void GoodHit(double _disFromPerfect) {
-            ScoreManager.GoodHit(noteData.lane.hitTextPos, _disFromPerfect);
+            ScoreManager.GoodHit(_disFromPerfect);
         }
         private void BadHit() {
-            ScoreManager.BadHit(noteData.lane.hitTextPos);
+            ScoreManager.BadHit();
         }
         private void Miss() {
-            ScoreManager.Miss(noteData.lane.hitTextPos);
+            ScoreManager.Miss();
         }
 
         private void Log(string _msg) {
-            if (RhythmManager.instance.debug) {
+            if (rm.debug) {
                 Debug.Log("[Lane] " + _msg);
             }
         }

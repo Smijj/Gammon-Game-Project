@@ -323,6 +323,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6018891729558880756, guid: 5907632072730e045845256e6c9337a0, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6018891729558880756, guid: 5907632072730e045845256e6c9337a0, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6018891729558880756, guid: 5907632072730e045845256e6c9337a0, type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6018891729558880756, guid: 5907632072730e045845256e6c9337a0, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6018891729558880756, guid: 5907632072730e045845256e6c9337a0, type: 3}
+      propertyPath: InitialModule.startSpeed.minScalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6018891729558880757, guid: 5907632072730e045845256e6c9337a0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8016c383000cb984482b5c88462be00d, type: 2}
     - target: {fileID: 6018891729558880758, guid: 5907632072730e045845256e6c9337a0, type: 3}
       propertyPath: m_Name
       value: NoteHoldEffect
@@ -380,6 +404,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6018891729558880756, guid: 4a499163e38aa394cbcfa82570e8ec9c, type: 3}
+      propertyPath: VelocityModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6018891729558880756, guid: 4a499163e38aa394cbcfa82570e8ec9c, type: 3}
+      propertyPath: ClampVelocityModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6018891729558880756, guid: 4a499163e38aa394cbcfa82570e8ec9c, type: 3}
+      propertyPath: ClampVelocityModule.drag.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6018891729558880756, guid: 4a499163e38aa394cbcfa82570e8ec9c, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6018891729558880756, guid: 4a499163e38aa394cbcfa82570e8ec9c, type: 3}
+      propertyPath: ClampVelocityModule.separateAxis
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6018891729558880756, guid: 4a499163e38aa394cbcfa82570e8ec9c, type: 3}
+      propertyPath: ClampVelocityModule.magnitude.scalar
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6018891729558880756, guid: 4a499163e38aa394cbcfa82570e8ec9c, type: 3}
+      propertyPath: InitialModule.startSpeed.minMaxState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6018891729558880757, guid: 4a499163e38aa394cbcfa82570e8ec9c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8016c383000cb984482b5c88462be00d, type: 2}
     - target: {fileID: 6018891729558880758, guid: 4a499163e38aa394cbcfa82570e8ec9c, type: 3}
       propertyPath: m_Name
       value: NoteHitEffect

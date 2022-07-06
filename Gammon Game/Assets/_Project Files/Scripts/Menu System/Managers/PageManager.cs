@@ -75,7 +75,7 @@ namespace MenuSystem {
 
 
         private void HandleInput() {
-            if (Input.GetKeyDown(KeyCode.Escape) && GameManager.currentScene.name == "Play") {
+            if (Input.GetKeyDown(KeyCode.Escape) && GameManager.currentScene.name != "MainMenu") {
                 if (RhythmManager.instance == null) {
                     /// If there is not rhythm minigame playing 
                     if (activePage == PageType.None || activePage == PageType.Menu) {
@@ -101,7 +101,7 @@ namespace MenuSystem {
 
                 }
 
-            } else if (Input.GetKeyDown(KeyCode.Escape) && GameManager.currentScene.name == "Main Menu") {
+            } else if (Input.GetKeyDown(KeyCode.Escape) && GameManager.currentScene.name == "MainMenu") {
                 TurnPageOff(activePage);
             }
         }

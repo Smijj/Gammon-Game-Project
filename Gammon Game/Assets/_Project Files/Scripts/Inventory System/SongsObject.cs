@@ -29,7 +29,7 @@ namespace InventorySystem {
         //public string songLength;
 
         public double highscore;
-        public int maxComboScore;
+        public int largestCombo;
 
         public int starRating;
 

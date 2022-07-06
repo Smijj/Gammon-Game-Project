@@ -42,8 +42,6 @@ namespace MusicSystem {
         public Color perfectTapZone;
         public Color goodTapZoneLines;
         public Transform gameArea;
-        public GameObject hitEffect;
-        public GameObject holdEffect;
 
 
         [Header("Note Settings: ")]
@@ -59,6 +57,15 @@ namespace MusicSystem {
                 return noteTapY - (noteSpawnY - noteTapY);
             }
         }
+
+        public GameObject hitEffect;
+        public GameObject holdEffect;
+        public Color noteBGColourStart;
+        public Color noteBGColourTap;
+        public Color noteBGColourMiss;
+        public Color hitIndicatorStartColour;
+        public Color hitIndicatorEndColour;
+        public Color holdNoteTailColour;
 
 
         private Camera mainCamera;
@@ -111,6 +118,9 @@ namespace MusicSystem {
         #region Public Functions
 
         public void InitSong(Song _song) {
+            song = null;
+            ScoreManager.ResetStatistics();
+
             song = _song;
         }
 

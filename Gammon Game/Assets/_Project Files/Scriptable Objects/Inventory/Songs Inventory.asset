@@ -17,21 +17,21 @@ MonoBehaviour:
   - name: Test 1
     midiFileName: Test1.mid
     songFileName: Test1.wav
-    songLength: 
+    recipe: {fileID: 0}
     highscore: 0
-    maxComboScore: 0
+    largestCombo: 5
     starRating: 0
   - name: Guitar Song
     midiFileName: GuitarSong.mid
     songFileName: GuitarSong.wav
-    songLength: 
+    recipe: {fileID: 0}
     highscore: 0
-    maxComboScore: 0
+    largestCombo: 0
     starRating: 0
   - name: Poseidon  Song
     midiFileName: PoseidonSong.mid
     songFileName: PoseidonSong.wav
-    songLength: 
+    recipe: {fileID: 0}
     highscore: 0
-    maxComboScore: 0
+    largestCombo: 47
     starRating: 0
