@@ -40,7 +40,6 @@ namespace MusicSystem {
 
         public float tapIndicatorWidth = 20f;
         public Color perfectTapZone;
-        public Color goodTapZoneLines;
         public Transform gameArea;
 
 

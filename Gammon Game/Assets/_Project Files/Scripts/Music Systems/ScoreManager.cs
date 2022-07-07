@@ -34,8 +34,7 @@ namespace MusicSystem {
 
         [Header("Score Settings: ")]
         public int maxMulitplier = 6;
-        public float perfectScore = 15;
-        public float goodScore = 11;
+        public float perfectScore = 10;
 
         public string perfectHitText;
         public string goodHitText;
