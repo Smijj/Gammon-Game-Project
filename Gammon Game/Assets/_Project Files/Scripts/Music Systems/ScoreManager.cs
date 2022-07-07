@@ -5,8 +5,7 @@ using UnityEngine;
 using TMPro;
 
 namespace MusicSystem {
-    public class ScoreManager : MonoBehaviour
-    {
+    public class ScoreManager : MonoBehaviour {
         public static ScoreManager instance;
         public static double score;
         public static int largestCombo = 0;
@@ -16,7 +15,7 @@ namespace MusicSystem {
         static public int goodHits = 0;
         static public int badHits = 0;
         static public int missedNotes = 0;
-
+        static public bool newHighscore = false;
 
         [Header("Audio Refs: ")]
         public AudioSource perfectHitSFX;
@@ -63,7 +62,10 @@ namespace MusicSystem {
             if (rm.song == null) return;
 
             // Sets highscore and other stats
-            if (score > rm.song.highscore) rm.song.highscore = score;
+            if (score > rm.song.highscore) {
+                rm.song.highscore = score;
+                newHighscore = true;
+            }
             if (largestCombo > rm.song.largestCombo) rm.song.largestCombo = largestCombo;
         }
 
@@ -76,58 +78,60 @@ namespace MusicSystem {
             goodHits = 0;
             badHits = 0;
             missedNotes = 0;
+            newHighscore = false;
         }
 
         public static void CaclulateHoldScore(double _noteLength) {
-            // Score caluclations
             if (multiplier < instance.maxMulitplier) multiplier++;
-            double hitScore = instance.goodScore + (_noteLength * 10);
-            score += hitScore * multiplier;
+
+            // Score caluclations
+            double hitScore = instance.perfectScore * _noteLength * multiplier;
+            score += hitScore;
 
             // Displaying Score
-            instance.InstantiateHitText(hitScore.ToString("0") + " | " + instance.finishHoldNoteText, instance.hitText, instance.hitTextPos);
-            instance.InstantiateHitText("+ " + (hitScore * multiplier).ToString("0"), instance.lastScoreText, instance.lastScoreTextPos);
+            instance.InstantiateHitText(/*hitScore.ToString("0") + " | " +*/ instance.finishHoldNoteText, instance.hitText, instance.hitTextPos);
+            instance.InstantiateHitText("+ " + hitScore.ToString("0"), instance.lastScoreText, instance.lastScoreTextPos);
             instance.goodHitSFX.Play();
         }
 
         public static void PerfectHit(double _disFromPerfect) {
-            _disFromPerfect = Math.Abs(_disFromPerfect * 100);
             perfectHits++;
             IncrementComboScore();
+            if (multiplier < instance.maxMulitplier) multiplier++;
 
             // Score caluclations
-            if (multiplier < instance.maxMulitplier) multiplier++;
-            double hitScore = instance.perfectScore - _disFromPerfect;
-            score += hitScore * multiplier;
+            double hitScore = GetHitScore(_disFromPerfect, multiplier);
+            score += hitScore;
 
             // Displaying Score
-            instance.InstantiateHitText(hitScore.ToString("0") + " | " + instance.perfectHitText, instance.hitText, instance.hitTextPos);
-            instance.InstantiateHitText("+ " + (hitScore * multiplier).ToString("0"), instance.lastScoreText, instance.lastScoreTextPos);
+            instance.InstantiateHitText(/*hitScore.ToString("0") + " | " +*/ instance.perfectHitText, instance.hitText, instance.hitTextPos);
+            instance.InstantiateHitText("+ " + hitScore.ToString("0"), instance.lastScoreText, instance.lastScoreTextPos);
             //"+ " + hitScore.ToString("0") + $" x{multiplier}"
             instance.perfectHitSFX.Play();
         }
+
         public static void GoodHit(double _disFromPerfect) {
-            _disFromPerfect = Math.Abs(_disFromPerfect * 100);
             goodHits++;
             IncrementComboScore();
+            if (multiplier < instance.maxMulitplier) multiplier++;   // Might have it so Good hits dont add to the multiplier but dont take away from it either
 
             // Score caluclations
-            if (multiplier < instance.maxMulitplier) multiplier++;   // Might have it so Good hits dont add to the multiplier but dont take away from it either
-            double hitScore = instance.goodScore - _disFromPerfect;
-            score += hitScore * multiplier;
+            double hitScore = GetHitScore(_disFromPerfect, multiplier);
+            score += hitScore;
 
             // Displaying Score
-            instance.InstantiateHitText(hitScore.ToString("0") + " | " + instance.goodHitText, instance.hitText, instance.hitTextPos);
-            instance.InstantiateHitText("+ " + (hitScore * multiplier).ToString("0"), instance.lastScoreText, instance.lastScoreTextPos);
+            instance.InstantiateHitText(/*hitScore.ToString("0") + " | " + */instance.goodHitText, instance.hitText, instance.hitTextPos);
+            instance.InstantiateHitText("+ " + hitScore.ToString("0"), instance.lastScoreText, instance.lastScoreTextPos);
             instance.goodHitSFX.Play();
         }
+
         public static void BadHit() {
             badHits++;
             comboScore = 0;
             multiplier = 1;
 
             // Displaying Score
-            instance.InstantiateHitText("0 | " + instance.badHitText, instance.hitText, instance.hitTextPos);
+            instance.InstantiateHitText(/*"0 | " + */instance.badHitText, instance.hitText, instance.hitTextPos);
             instance.badHitSFX.Play();
         }
         public static void Miss() {
@@ -136,7 +140,7 @@ namespace MusicSystem {
             multiplier = 1;
 
             // Displaying Score
-            instance.InstantiateHitText("0 | " + instance.missText, instance.hitText,  instance.hitTextPos);
+            instance.InstantiateHitText(/*"0 | " + */instance.missText, instance.hitText, instance.hitTextPos);
             instance.missSFX.Play();
         }
 
@@ -145,13 +149,18 @@ namespace MusicSystem {
 
         #region Private Functions
 
+        private static double GetHitScore(double _disFromPerfect, int _multiplier) {
+            double _percentageOfPerfect = 1 - Math.Abs(_disFromPerfect) / RhythmManager.instance.noteFallTime;
+            return instance.perfectScore * _percentageOfPerfect * _multiplier;
+        }
+
         private static void IncrementComboScore() {
             comboScore++;
             if (comboScore > largestCombo) largestCombo = comboScore;
         }
 
         private void InstantiateHitText(string _text, GameObject _prefab, Transform _pos) {
-            Instantiate(_prefab, _pos).GetComponent<TextMeshPro>().text = _text;
+            Instantiate(_prefab, _pos).GetComponent<TextMeshProUGUI>().text = _text;
         }
 
         #endregion

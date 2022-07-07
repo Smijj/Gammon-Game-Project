@@ -87,7 +87,7 @@ namespace MusicSystem {
                         noteLength -= Time.unscaledDeltaTime;
                     } else {
                         // upon the hold time being complete, calculate score base on the length of the hold time
-                        ScoreManager.CaclulateHoldScore(noteLength);
+                        ScoreManager.CaclulateHoldScore(noteData.lengthInSeconds);
                         
                         DestroyNote();
                     }
@@ -148,8 +148,6 @@ namespace MusicSystem {
             double inputDifference = Math.Abs(audioTime - noteData.timeStamp);
 
             if (noteData.timeScale <= tapNoteThreshold) {
-                Debug.Log("Tap");
-
                 bool wasHit = false;
 
                 // Manage Perfect/Good/Bad notes in here
@@ -174,8 +172,6 @@ namespace MusicSystem {
                 }
 
             } else {
-                Debug.Log("Held");
-                
                 // Manage Perfect/Good/Bad notes in here
                 if (inputDifference < perfectMargin) {
                     PerfectHit(inputDifference);
@@ -208,8 +204,9 @@ namespace MusicSystem {
         private void DestroyNote() {
             noteData.lane.removeNote(this);
             Destroy(this.gameObject);
-            Destroy(Instantiate(rm.hitEffect, transform.position, transform.rotation), 2);
+            Instantiate(rm.hitEffect, transform.position, transform.rotation);
         }
+
 
         private void PerfectHit(double _disFromPerfect) {
             ScoreManager.PerfectHit(_disFromPerfect);

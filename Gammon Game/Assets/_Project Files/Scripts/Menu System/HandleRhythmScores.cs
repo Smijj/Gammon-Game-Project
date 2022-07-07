@@ -11,7 +11,10 @@ namespace MenuSystem {
     public class HandleRhythmScores : MonoBehaviour
     {
         public TextMeshProUGUI highscoreText;
+        public TextMeshProUGUI scoreText;
+        public TextMeshProUGUI newHighscoreText;
         public TextMeshProUGUI maxComboScoreText;
+
         public TextMeshProUGUI perfectHitsText;
         public TextMeshProUGUI goodHitsText;
         public TextMeshProUGUI badHitsText;
@@ -19,6 +22,8 @@ namespace MenuSystem {
 
         private void OnEnable() {
             Song song;
+
+            if (newHighscoreText) newHighscoreText.gameObject.SetActive(false);
 
             // Checks if the script is on an object with a SongCard script (i.e. a SongDisplayPanel) and grabs the song from that. 
             try {
@@ -35,8 +40,10 @@ namespace MenuSystem {
             if (song == null) return;
 
             if (highscoreText) highscoreText.text = "- HighScore -\n".Replace("\\n", "\n") + song.highscore.ToString("0");
+            if (scoreText) scoreText.text = "- Score -\n".Replace("\\n", "\n") + ScoreManager.score.ToString("0");
             if (maxComboScoreText) maxComboScoreText.text = "- Max Combo -\n".Replace("\\n", "\n") + song.largestCombo.ToString("0");
-            
+            if (ScoreManager.newHighscore && newHighscoreText) newHighscoreText.gameObject.SetActive(false);
+
             if (ScoreManager.instance) {
                 if (perfectHitsText) perfectHitsText.text = "Perfect: " + ScoreManager.perfectHits.ToString("0");
                 if (goodHitsText) goodHitsText.text = "Good: " + ScoreManager.goodHits.ToString("0");

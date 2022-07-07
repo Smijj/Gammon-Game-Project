@@ -10,7 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5011357436403103786}
   - component: {fileID: 2233429833448394449}
+  - component: {fileID: 5435441801565527318}
   - component: {fileID: 5710322564427476388}
+  - component: {fileID: 1943197371932776047}
+  - component: {fileID: 5067851364712160438}
   m_Layer: 7
   m_Name: UILastScoreText
   m_TagString: Untagged
@@ -45,6 +48,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8884581604407966434}
   m_CullTransparentMesh: 1
+--- !u!114 &5435441801565527318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8884581604407966434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcd4987335ba00147abdc2090f7bcb94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToDestroy: 1
+  textTilt: 2
+  spawnPosOffset: 0.5
 --- !u!114 &5710322564427476388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,7 +83,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- Perfect~! -'
+  m_text: +10
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: db28d7b748ef8f14a8fcd7265f4a6523, type: 2}
   m_sharedMaterial: {fileID: -2045025108015479055, guid: db28d7b748ef8f14a8fcd7265f4a6523, type: 2}
@@ -134,3 +152,34 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!95 &1943197371932776047
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8884581604407966434}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3b763ca8f2996ea47abe7e0caddda996, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!225 &5067851364712160438
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8884581604407966434}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
