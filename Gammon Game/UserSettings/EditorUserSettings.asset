@@ -6,6 +6,7 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedScenePath-0:
+<<<<<<< HEAD
       value: 22424703114646680e0b0227036c6c111b07142f1f2b233e287b5326ece92021
       flags: 0
     RecentlyUsedScenePath-1:
@@ -28,20 +29,34 @@ EditorUserSettings:
       value: 22424703114646643d1c032815204b50301e142f3f67153328271820adc2313cf0e839e4a92f31352d1b
 =======
       value: 224247031146466b1f01062713371f361f1b1d39631b2535232c0e7cd6f52037f0ee37e5a92f31352d1b
+=======
+      value: 22424703114646643d1c032815204b50301e142f3f67153328271820adcb3d2ce1ef33e7a7057f1f3804ea721130082beb
+      flags: 0
+    RecentlyUsedScenePath-1:
+      value: 22424703114646643d1c032815204b50301e142f3f67153328271820add03839fba923e7ee2e26
+>>>>>>> FinishingRhythmGameForDemo
       flags: 0
     RecentlyUsedScenePath-2:
-      value: 224247031146466b1f01062713371f361f1b1d39631b2535232c0e7cd2ec3521acf238e0f323
+      value: 22424703114646643d1c032815204b50301e142f3f67153328271820adc7352ae6e238a7f234362820
       flags: 0
     RecentlyUsedScenePath-3:
+<<<<<<< HEAD
       value: 22424703114646643d1c032815204b50301e142f3f67153328271820add23c21f6ef3bcee6373a722c0ce6281d
       flags: 0
     RecentlyUsedScenePath-4:
       value: 22424703114646643d1c032815204b50301e142f3f67153328271820add03839fba923e7ee2e26
+=======
+      value: 22424703114646643d1c032815204b50301e142f3f67153328271820adc2313cf0e839e4a92f31352d1b
+      flags: 0
+    RecentlyUsedScenePath-4:
+      value: 22424703114646643d1c032815204b50301e142f3f67153328271820adc23522e3e624a7f234362820
+>>>>>>> FinishingRhythmGameForDemo
       flags: 0
     RecentlyUsedScenePath-5:
       value: 22424703114646643d1c032815204b50301e142f3f67153328271820add4212cedf53fe8eb742a323016f6
       flags: 0
     RecentlyUsedScenePath-6:
+<<<<<<< HEAD
       value: 22424703114646643d1c032815204b50301e142f3f67153328271820adcb3d2ce1ef33e7a92f31352d1b
 >>>>>>> origin/Oveworld-Map_Prototype
       flags: 0
@@ -50,6 +65,12 @@ EditorUserSettings:
       flags: 0
     RecentlyUsedScenePath-8:
       value: 22424703114646643d1c032815204b50301e142f3f67153328271820add03839fba923e7ee2e26
+=======
+      value: 22424703114646643d1c032815204b50301e142f3f67153328271820adce3128eae23aeca71930313c16af74073f073abe4a1b04f906464b160fef0a14f15c5313c402c41bda5652de1715dad4
+      flags: 0
+    RecentlyUsedScenePath-7:
+      value: 22424703114646643d1c032815204b50301e142f3f67153328271820add23c21f6ef3bcee6373a722c0ce6281d
+>>>>>>> FinishingRhythmGameForDemo
       flags: 0
     RecentlyUsedScenePath-9:
       value: 22424703114646643d1c032815204b50301e142f3f67153328271820add23c21f6ef3bcee6373a722c0ce6281d

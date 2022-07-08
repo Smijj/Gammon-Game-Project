@@ -18,5 +18,5 @@ MonoBehaviour:
   dishValue: 0
   quantity: 0
   unlocked: 0
-  foodSprite: {fileID: 21300000, guid: c0403f9ba4ce87e42a616b230405bb5d, type: 3}
+  foodSprite: {fileID: 21300000, guid: 714bc23ba9da60942b93c628a5290b83, type: 3}
   dishTypeSprite: {fileID: 0}

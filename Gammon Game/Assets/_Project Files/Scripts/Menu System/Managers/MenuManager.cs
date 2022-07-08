@@ -86,6 +86,7 @@ namespace MenuSystem {
             General_ClosePage();
 
             if (RhythmManager.instance) Destroy(RhythmManager.instance.gameObject);
+            PageManager.singleton.TurnPageOn(PageType.Songs);
         }
 
         public void RhythmGame_Resume() {

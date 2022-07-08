@@ -1088,7 +1088,7 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.85000014
+    canvasZoom: 0.8200002
   - id: 5
     fields:
     - title: Title
@@ -4464,7 +4464,7 @@ MonoBehaviour:
       - title: Sequence
         value: 'Fade(stay, 0.5)->Message(Done);
 
-          SendMessage(HideAchievement,,_GameManager))@Message(Done);
+          SendMessage(HideAchievement,,_GameManager)@Message(Done);
 
           Continue()@Message(Done);'
         type: 0
@@ -5074,11 +5074,11 @@ MonoBehaviour:
         typeString: 
       - title: Actor
         value: 5
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -5138,11 +5138,11 @@ MonoBehaviour:
         typeString: 
       - title: Actor
         value: 5
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -5176,7 +5176,7 @@ MonoBehaviour:
       - originConversationID: 5
         originDialogueID: 79
         destinationConversationID: 5
-        destinationDialogueID: 81
+        destinationDialogueID: 91
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -5280,9 +5280,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'Fade(in,0.5);
-
-          {{default}}'
+        value: 
         type: 0
         typeString: 
       conversationID: 5
@@ -5306,8 +5304,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2040.4386
-        y: 27.493591
+        x: 2041.9313
+        y: 76.74733
         width: 160
         height: 30
     - id: 82
@@ -5321,7 +5319,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 5
+        value: 6
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -5363,8 +5361,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2040.4386
-        y: 77.49359
+        x: 2041.9313
+        y: 126.74733
         width: 160
         height: 30
     - id: 83
@@ -5420,8 +5418,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2040.4386
-        y: 127.49359
+        x: 2041.9313
+        y: 176.74733
         width: 160
         height: 30
     - id: 84
@@ -5451,7 +5449,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'Fade(in,0.5);
+        value: 'SendMessage(SetBackground, Inside, _GameManager);
+
+          Fade(in,0.5);
 
           {{default}}'
         type: 0
@@ -5477,8 +5477,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2040.4386
-        y: 177.49359
+        x: 2041.9313
+        y: 226.74733
         width: 160
         height: 30
     - id: 85
@@ -5533,8 +5533,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2040.4386
-        y: 227.49359
+        x: 2041.9313
+        y: 276.74738
         width: 160
         height: 30
     - id: 86
@@ -5591,8 +5591,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2040.4386
-        y: 277.4936
+        x: 2041.9313
+        y: 326.7473
         width: 160
         height: 30
     - id: 87
@@ -5647,8 +5647,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2040.4386
-        y: 327.4936
+        x: 2041.9313
+        y: 376.7473
         width: 160
         height: 30
     - id: 88
@@ -5704,8 +5704,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2040.4386
-        y: 377.4936
+        x: 2041.9313
+        y: 426.7473
         width: 160
         height: 30
     - id: 89
@@ -5755,8 +5755,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2044.2848
-        y: 500.5705
+        x: 2043.8544
+        y: 530.5935
         width: 160
         height: 30
     - id: 90
@@ -5774,7 +5774,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -5782,7 +5782,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 
+        value: Ahh finally the tutorial is over ;-;
         type: 0
         typeString: 
       - title: Sequence
@@ -5810,13 +5810,78 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2040.4386
-        y: 427.4936
+        x: 2041.9313
+        y: 476.7473
+        width: 160
+        height: 30
+    - id: 91
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Sorry about that.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 'SendMessage(SetBackground, Inside, _GameManager);
+
+          SetDialoguePanel(true,
+          immediate);
+
+          SetContinueMode(true);
+
+
+          Fade(in,0.5);
+
+          {{default}}'
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 91
+        destinationConversationID: 5
+        destinationDialogueID: 81
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 2041.3193
+        y: 20.275543
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.52000004
+    canvasScrollPosition: {x: 114.639496, y: 0}
+    canvasZoom: 0.48999998
   syncInfo:
     syncActors: 0
     syncItems: 0
