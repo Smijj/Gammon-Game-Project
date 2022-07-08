@@ -28,6 +28,13 @@ MonoBehaviour:
     highscore: 0
     largestCombo: 0
     starRating: 0
+  - name: Tutorial Song
+    midiFileName: TutorialSong.mid
+    songFileName: TutorialSong.wav
+    recipe: {fileID: 0}
+    highscore: 0
+    largestCombo: 47
+    starRating: 0
   - name: Poseidon  Song
     midiFileName: PoseidonSong.mid
     songFileName: PoseidonSong.wav
