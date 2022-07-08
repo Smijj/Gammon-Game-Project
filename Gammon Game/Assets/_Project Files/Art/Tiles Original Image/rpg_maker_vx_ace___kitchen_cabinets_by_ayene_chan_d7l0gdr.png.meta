@@ -1,0 +1,924 @@
+fileFormatVersion: 2
+guid: ba4de0ebdeec8584080aa49d70d32485
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4351731543515567410
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_0
+  - first:
+      213: -4673938776598007230
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_1
+  - first:
+      213: 3244867741578795282
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_2
+  - first:
+      213: 4313255169701336388
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_3
+  - first:
+      213: -4982665695414046775
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_4
+  - first:
+      213: 6837792817754718770
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_5
+  - first:
+      213: 3852013381238117646
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_6
+  - first:
+      213: 3302468308214793693
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_7
+  - first:
+      213: 7356333393124755613
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_8
+  - first:
+      213: -6032248745780415597
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_9
+  - first:
+      213: -4335881834397218797
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_10
+  - first:
+      213: 4097041608708036402
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_11
+  - first:
+      213: 4168004036362450689
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_12
+  - first:
+      213: 4130579832526031767
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_13
+  - first:
+      213: 2422452510927815196
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_14
+  - first:
+      213: -7455228499595849920
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_15
+  - first:
+      213: 8907623139332924221
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_16
+  - first:
+      213: 8414296389294439637
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_17
+  - first:
+      213: 9214485410665962711
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_18
+  - first:
+      213: 2861751215906493707
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_19
+  - first:
+      213: 6932364796582063722
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_20
+  - first:
+      213: -7934687372661632468
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_21
+  - first:
+      213: -4675916773325255479
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_22
+  - first:
+      213: -2726029493751094307
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_23
+  - first:
+      213: 8338619413771911174
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_24
+  - first:
+      213: -1186244212945514635
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_25
+  - first:
+      213: -7216218982390866293
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_26
+  - first:
+      213: 5322370579027920071
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_27
+  - first:
+      213: 948905059011566057
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_28
+  - first:
+      213: 433021374333187304
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_29
+  - first:
+      213: 5237537783254272989
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_30
+  - first:
+      213: -6319470049774707168
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_32
+  - first:
+      213: -1857558631243484278
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_33
+  - first:
+      213: 8340159616356615511
+    second: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_31
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 233
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eca64e6b73b8b93c0800000000000000
+      internalID: -4351731543515567410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 233
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242b3fe3275d22fb0800000000000000
+      internalID: -4673938776598007230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 233
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2199de7d406180d20800000000000000
+      internalID: 3244867741578795282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 233
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4455aa769b2cbdb30800000000000000
+      internalID: 4313255169701336388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 233
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf225603f30adab0800000000000000
+      internalID: -4982665695414046775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 233
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 232ccfde658b4ee50800000000000000
+      internalID: 6837792817754718770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 233
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05dfbae2c9157530800000000000000
+      internalID: 3852013381238117646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 233
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd5c029dd69b4dd20800000000000000
+      internalID: 3302468308214793693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 169
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d988b8ade32f61660800000000000000
+      internalID: 7356333393124755613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 169
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39376f6d9b5294ca0800000000000000
+      internalID: -6032248745780415597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 169
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3184fa0b17ad3d3c0800000000000000
+      internalID: -4335881834397218797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 169
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2379905d2ad9bd830800000000000000
+      internalID: 4097041608708036402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 169
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10737c98699b7d930800000000000000
+      internalID: 4168004036362450689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 169
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b4b121974c25930800000000000000
+      internalID: 4130579832526031767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 169
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c120b1759b74e9120800000000000000
+      internalID: 2422452510927815196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_15
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f883add25b98890800000000000000
+      internalID: -7455228499595849920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 105
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d332df4fc0c3e9b70800000000000000
+      internalID: 8907623139332924221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 104
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc3fb63cf595c470800000000000000
+      internalID: 8414296389294439637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 104
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc93ca19ad60ef70800000000000000
+      internalID: 9214485410665962711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0516a3919bf6b720800000000000000
+      internalID: 2861751215906493707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e62b1ad05b43060800000000000000
+      internalID: 6932364796582063722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_21
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22d9b4dfd352e190800000000000000
+      internalID: -7934687372661632468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 104
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc48aef77ecb1fb0800000000000000
+      internalID: -4675916773325255479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_23
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 105
+        width: 32
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd36ab95e923b2ad0800000000000000
+      internalID: -2726029493751094307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6000d0b4d2ab8b370800000000000000
+      internalID: 8338619413771911174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 41
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f058e5c2d998fe0800000000000000
+      internalID: -1186244212945514635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 41
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8e59259117dadb90800000000000000
+      internalID: -7216218982390866293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 41
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c403fda7dbdcd940800000000000000
+      internalID: 5322370579027920071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 41
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e994f7af103b2d00800000000000000
+      internalID: 948905059011566057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 41
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e4f74d45a6620600800000000000000
+      internalID: 433021374333187304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 41
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddbce8c3dd87fa840800000000000000
+      internalID: 5237537783254272989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 41
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e5572c87bbc48a0800000000000000
+      internalID: -6319470049774707168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_33
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 42
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8375434440a836e0800000000000000
+      internalID: -1857558631243484278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace___kitchen_cabinets_by_ayene_chan_d7l0gdr_31
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7558ef6abf23eb370800000000000000
+      internalID: 8340159616356615511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
