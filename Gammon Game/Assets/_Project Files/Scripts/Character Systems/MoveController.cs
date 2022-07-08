@@ -48,7 +48,6 @@ namespace CharacterSystems {
         private List<PathNode> movementPath;
 
         private Grid grid;
-        private Tilemap map;
 
         [Header("Debug")]
         public bool isMoving  = false;
@@ -63,7 +62,6 @@ namespace CharacterSystems {
 
         private void Start() {
             animController = GetComponent<AnimationController>();
-            map = GameManager.map;
             grid = GameManager.grid;
             currentNodePos = grid.WorldToCell(transform.position);
             transform.position = grid.GetCellCenterWorld(currentNodePos);
@@ -118,6 +116,15 @@ namespace CharacterSystems {
 
         #region Public Functions
 
+        public bool TilemapsHaveTile(List<Tilemap> _tilemaps, Vector3Int _tilePosition) {
+            for (int i = 0; i < _tilemaps.Count; i++) {
+                if (_tilemaps[i].HasTile(_tilePosition)) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         // This function is used for diagonal movement
         public void IncrementPosition(Vector3 _input) {
             currentNodePos = grid.WorldToCell(transform.position);
@@ -125,7 +132,7 @@ namespace CharacterSystems {
             
             // Checks to make sure the player cant move into a collider or off the map.
             if (WalkableTileCheck(targetNode)) return;
-            if (!map.HasTile(targetNode)) return;
+            if (!TilemapsHaveTile(GameManager.singleton.tilemaps, targetNode)) return;
 
             lastPoint = transform.position;
             movePoint = grid.GetCellCenterWorld(targetNode);
@@ -188,7 +195,7 @@ namespace CharacterSystems {
                     targetPosTemp = targetNodePos;
                     currentPosTemp = currentNodePos;
 
-                    if (map.HasTile(targetNodePos)) {
+                    if (TilemapsHaveTile(GameManager.singleton.tilemaps, targetNodePos)) {
                         if (!WalkableTileCheck(targetNodePos)) {
                             pathFound = FindPath(currentNodePos, targetNodePos);
                             
@@ -362,7 +369,7 @@ namespace CharacterSystems {
 
                         Vector3Int checkNode = _node.gridPos + new Vector3Int(x, y, 0);
 
-                        if (map.HasTile(checkNode)) {
+                        if (TilemapsHaveTile(GameManager.singleton.tilemaps, checkNode)) {
                             neighbours.Add(new PathNode(grid.GetCellCenterWorld(checkNode), checkNode));
                         }
                     }
@@ -376,7 +383,7 @@ namespace CharacterSystems {
 
                         Vector3Int checkNode = _node.gridPos + new Vector3Int(x, y, 0);
 
-                        if (map.HasTile(checkNode)) {
+                        if (TilemapsHaveTile(GameManager.singleton.tilemaps, checkNode)) {
                             neighbours.Add(new PathNode(grid.GetCellCenterWorld(checkNode), checkNode));
                         }
                     }

@@ -28,8 +28,8 @@ namespace GameManagement {
         public static Scene currentScene;
 
         public static Grid grid;
-        public static Tilemap map;
-        
+        public List<Tilemap> tilemaps;
+
         [HideInInspector]
         public NPCManager npcManager;
         public GameObject rhythmManager;
@@ -50,9 +50,12 @@ namespace GameManagement {
             }
 
             try {
-                map = GameObject.FindGameObjectWithTag("BaseMap").GetComponent<Tilemap>();
-            } catch {
-                Debug.Log("There is no valid Base Tilemap in this scene");
+                GameObject[] tilemapObjs = GameObject.FindGameObjectsWithTag("BaseMap");
+                for (int i = 0; i < tilemapObjs.Length; i++) {
+                    tilemaps.Add(tilemapObjs[i].GetComponent<Tilemap>());
+                }
+            } catch (System.Exception e) {
+                Debug.Log(e);
             }
 
         }

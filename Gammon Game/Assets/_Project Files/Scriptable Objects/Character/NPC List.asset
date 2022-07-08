@@ -14,18 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcPrefab: {fileID: 6520653041219019432, guid: 0e661b9418324be44aa258badda19c64, type: 3}
   container:
-  - name: Cacey
-    charArt: {fileID: 8867643458976826207, guid: ec55d60743c275b44907b01933a2119a, type: 3}
-    description: 
-  - name: Posiden
-    charArt: {fileID: 4843810766384148685, guid: ec55d60743c275b44907b01933a2119a, type: 3}
-    description: 
   - name: TestMan
     charArt: {fileID: -5897640889916242672, guid: ec55d60743c275b44907b01933a2119a, type: 3}
     description: 
+  - name: Cacey
+    charArt: {fileID: 21300000, guid: fffc4b14bb8772b42b874f0f993f21ba, type: 3}
+    description: 
+  - name: Posiden
+    charArt: {fileID: 21300000, guid: c6ac55eedaac3224f8e30cda71e3e7bd, type: 3}
+    description: 
   - name: Andre
-    charArt: {fileID: -4840906002045038532, guid: ec55d60743c275b44907b01933a2119a, type: 3}
+    charArt: {fileID: 21300000, guid: d3a14312f9bd5f047a6cbcd7880c909a, type: 3}
     description: 
   - name: Ellios
-    charArt: {fileID: -673794360605549368, guid: ec55d60743c275b44907b01933a2119a, type: 3}
+    charArt: {fileID: 21300000, guid: a6d4de34db388c34fa7526995d5a8847, type: 3}
+    description: 
+  - name: Dr. Milo
+    charArt: {fileID: 21300000, guid: 123154d15aa612541b3bd721e4baae9c, type: 3}
+    description: 
+  - name: Inari
+    charArt: {fileID: 21300000, guid: 763c186b9cb8d9843a74bdd47fc979a5, type: 3}
+    description: 
+  - name: Zeus
+    charArt: {fileID: 21300000, guid: 619b01fc54e3e5647b3c0eb407a51ec1, type: 3}
     description: 

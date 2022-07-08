@@ -16,7 +16,8 @@ namespace CharacterSystems {
         private SpriteRenderer spriteRen;
         private MoveController move;
         private Grid grid;
-        private Tilemap map;
+        private List<Tilemap> map;
+        private Tilemap currentTilemap;
 
         [Header("Pathing")]
         //Patroling
@@ -41,6 +42,7 @@ namespace CharacterSystems {
         [Header("Idling")]
         //Idling
         public float minIdleTime, maxIdleTime;
+        public int idleRange = 10;
         private float idleTimer;
         private bool idling;
 
@@ -51,7 +53,7 @@ namespace CharacterSystems {
         private void Start() {
             gm = GameManager.singleton;
             grid = GameManager.grid;
-            map = GameManager.map;
+            map = GameManager.singleton.tilemaps;
             move = GetComponent<MoveController>();
             spriteRen = GetComponentInChildren<SpriteRenderer>();
 
@@ -194,11 +196,11 @@ namespace CharacterSystems {
 
         private void SearchWalkPoint() {
             //Calculate random point in range
-            float randomX = Random.Range(-map.size.x, map.size.x);
-            float randomY = Random.Range(-map.size.x, map.size.x);
+            float randomX = Random.Range(-idleRange, idleRange);
+            float randomY = Random.Range(-idleRange, idleRange);
 
             walkPoint = grid.WorldToCell(new Vector3(transform.position.x + randomX, transform.position.y + randomY));
-            if (map.HasTile(walkPoint) && !move.WalkableTileCheck(walkPoint)) {
+            if (move.TilemapsHaveTile(GameManager.singleton.tilemaps, walkPoint) && !move.WalkableTileCheck(walkPoint)) {
                 walkPointSet = true;
             }
         }
