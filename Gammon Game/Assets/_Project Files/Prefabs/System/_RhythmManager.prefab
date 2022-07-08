@@ -255,7 +255,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4098755417122500204}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &554942662411621390
 GameObject:
@@ -380,12 +380,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160022585131416647}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 89.6, z: -0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -128, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4098755417122500204}
-  m_RootOrder: 0
+  m_Father: {fileID: 5130848660590716522}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1618118506394576578
 GameObject:
@@ -1139,6 +1139,7 @@ RectTransform:
   - {fileID: 5130848660949514652}
   - {fileID: 5130848660960308619}
   - {fileID: 1293337247209124920}
+  - {fileID: 4078766676238897883}
   - {fileID: 44873112095219697}
   m_Father: {fileID: 5130848660098463580}
   m_RootOrder: 2
@@ -2321,7 +2322,7 @@ MonoBehaviour:
   goodMargin: 0.12
   badMargin: 0.2
   tapIndicatorWidth: 25
-  perfectTapZone: {r: 0, g: 0, b: 0, a: 1}
+  perfectTapZone: {r: 0.9568628, g: 0.7372549, b: 0.20000002, a: 1}
   gameArea: {fileID: 4822481409154005980}
   noteFallTime: 1
   noteSpawnY: 25
@@ -2333,7 +2334,7 @@ MonoBehaviour:
   noteBGColourMiss: {r: 1, g: 0, b: 0, a: 1}
   hitIndicatorStartColour: {r: 0.96470594, g: 0.15686275, b: 0.7294118, a: 1}
   hitIndicatorEndColour: {r: 0.9607844, g: 0.7176471, b: 0.03137255, a: 1}
-  holdNoteTailColour: {r: 0.26666668, g: 0.27058825, b: 0.2784314, a: 1}
+  holdNoteTailColour: {r: 0.54509807, g: 0.79215693, b: 0.93725497, a: 1}
 --- !u!114 &2596359968591779032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2435,7 +2436,7 @@ GameObject:
   - component: {fileID: 8929444407304420223}
   - component: {fileID: 799995212129814581}
   m_Layer: 7
-  m_Name: TextPopupCanvas
+  m_Name: ForegroundCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2452,7 +2453,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 4078766676238897883}
   - {fileID: 5854146180755906020}
   m_Father: {fileID: 5130848660098463580}
   m_RootOrder: 1
@@ -2925,7 +2925,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.54509807, g: 0.79215693, b: 0.93725497, a: 1}
+  m_Color: {r: 0.26666668, g: 0.27058825, b: 0.2784314, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3000,7 +3000,7 @@ RectTransform:
   m_Children:
   - {fileID: 8963428001540686665}
   m_Father: {fileID: 5130848660590716522}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
