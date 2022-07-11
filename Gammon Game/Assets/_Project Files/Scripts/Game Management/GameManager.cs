@@ -27,8 +27,11 @@ namespace GameManagement {
         public static bool isLoading = false;
         public static Scene currentScene;
 
+        public LayerMask whatStopsMovement;
+        public LayerMask whatIsTilemap;
+
         public static Grid grid;
-        public List<Tilemap> tilemaps;
+        //public List<Tilemap> tilemaps;
 
         [HideInInspector]
         public NPCManager npcManager;
@@ -49,14 +52,15 @@ namespace GameManagement {
                 Debug.Log("There is no grid in this scene");
             }
 
-            try {
-                GameObject[] tilemapObjs = GameObject.FindGameObjectsWithTag("BaseMap");
-                for (int i = 0; i < tilemapObjs.Length; i++) {
-                    tilemaps.Add(tilemapObjs[i].GetComponent<Tilemap>());
-                }
-            } catch (System.Exception e) {
-                Debug.Log(e);
-            }
+            //try {
+            //    GameObject[] tilemapObjs = GameObject.FindGameObjectsWithTag("BaseMap");
+            //    for (int i = 0; i < tilemapObjs.Length; i++) {
+            //        Debug.Log($"Saved '{tilemapObjs[i].name}' Tilemap.");
+            //        tilemaps.Add(tilemapObjs[i].GetComponent<Tilemap>());
+            //    }
+            //} catch (System.Exception e) {
+            //    Debug.Log($"Issue finding or saving tilemaps. Error: {e}");
+            //}
 
         }
 

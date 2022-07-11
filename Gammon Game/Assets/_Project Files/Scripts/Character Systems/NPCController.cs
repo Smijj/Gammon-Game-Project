@@ -16,8 +16,6 @@ namespace CharacterSystems {
         private SpriteRenderer spriteRen;
         private MoveController move;
         private Grid grid;
-        private List<Tilemap> map;
-        private Tilemap currentTilemap;
 
         [Header("Pathing")]
         //Patroling
@@ -53,7 +51,6 @@ namespace CharacterSystems {
         private void Start() {
             gm = GameManager.singleton;
             grid = GameManager.grid;
-            map = GameManager.singleton.tilemaps;
             move = GetComponent<MoveController>();
             spriteRen = GetComponentInChildren<SpriteRenderer>();
 
@@ -200,7 +197,7 @@ namespace CharacterSystems {
             float randomY = Random.Range(-idleRange, idleRange);
 
             walkPoint = grid.WorldToCell(new Vector3(transform.position.x + randomX, transform.position.y + randomY));
-            if (move.TilemapsHaveTile(GameManager.singleton.tilemaps, walkPoint) && !move.WalkableTileCheck(walkPoint)) {
+            if (move.isTileCheck(walkPoint) && !move.WalkableTileCheck(walkPoint)) {
                 walkPointSet = true;
             }
         }

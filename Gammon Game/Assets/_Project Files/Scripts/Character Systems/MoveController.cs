@@ -24,7 +24,6 @@ namespace CharacterSystems {
         [Header("Movement Settings")]
         public float moveSpeed = 8f;
         public int moveDistance = 1;
-        public LayerMask WhatStopsMovement;
 
         public bool useDiagonalMovement = true;
 
@@ -116,15 +115,6 @@ namespace CharacterSystems {
 
         #region Public Functions
 
-        public bool TilemapsHaveTile(List<Tilemap> _tilemaps, Vector3Int _tilePosition) {
-            for (int i = 0; i < _tilemaps.Count; i++) {
-                if (_tilemaps[i].HasTile(_tilePosition)) {
-                    return true;
-                }
-            }
-            return false;
-        }
-
         // This function is used for diagonal movement
         public void IncrementPosition(Vector3 _input) {
             currentNodePos = grid.WorldToCell(transform.position);
@@ -132,7 +122,7 @@ namespace CharacterSystems {
             
             // Checks to make sure the player cant move into a collider or off the map.
             if (WalkableTileCheck(targetNode)) return;
-            if (!TilemapsHaveTile(GameManager.singleton.tilemaps, targetNode)) return;
+            if (!isTileCheck(targetNode)) return;
 
             lastPoint = transform.position;
             movePoint = grid.GetCellCenterWorld(targetNode);
@@ -143,7 +133,9 @@ namespace CharacterSystems {
         public void IncrementXPosition(float _xInput) {
             currentNodePos = grid.WorldToCell(transform.position);
             Vector3Int targetNode = currentNodePos + new Vector3Int((int)_xInput, 0, 0);
+            
             if (WalkableTileCheck(targetNode)) return;
+            if (!isTileCheck(targetNode)) return;
 
             lastPoint = transform.position;
             movePoint = grid.GetCellCenterWorld(targetNode);
@@ -152,7 +144,9 @@ namespace CharacterSystems {
         public void IncrementYPosition(float _yInput) {
             currentNodePos = grid.WorldToCell(transform.position);
             Vector3Int targetNode = currentNodePos + new Vector3Int(0, (int)_yInput, 0);
+            
             if (WalkableTileCheck(targetNode)) return;
+            if (!isTileCheck(targetNode)) return;
 
             lastPoint = transform.position;
             movePoint = grid.GetCellCenterWorld(targetNode);
@@ -195,7 +189,7 @@ namespace CharacterSystems {
                     targetPosTemp = targetNodePos;
                     currentPosTemp = currentNodePos;
 
-                    if (TilemapsHaveTile(GameManager.singleton.tilemaps, targetNodePos)) {
+                    if (isTileCheck(targetNodePos)) {
                         if (!WalkableTileCheck(targetNodePos)) {
                             pathFound = FindPath(currentNodePos, targetNodePos);
                             
@@ -240,17 +234,32 @@ namespace CharacterSystems {
         /// Used to check for colliders at a target position. 
         /// </summary>
         /// <param name="_targetNode"></param>
-        /// <returns>True if there is a collider on the layer "WhatStopsMovement" at the target position. Otherwise returns false.</returns>
+        /// <returns>True if there is a collider on the layermask "whatStopsMovement" at the target position. Otherwise returns false.</returns>
         public bool WalkableTileCheck(Vector3Int _targetNode) {
             Vector3 checkPos = grid.GetCellCenterWorld(_targetNode);
 
-            if (Physics2D.OverlapCircle(checkPos, 0.15f, WhatStopsMovement)) {
+            if (Physics2D.OverlapCircle(checkPos, 0.15f, GameManager.singleton.whatStopsMovement)) {
+                return true;
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// Used to check if a tile exists in one of the base tilemaps at a target position. 
+        /// </summary>
+        /// <param name="_targetNode"></param>
+        /// <returns>True if there is a collider on the layermask "whatIsTilemap" at the target position. Otherwise returns false.</returns>
+        public bool isTileCheck(Vector3Int _targetNode) {
+            Vector3 checkPos = grid.GetCellCenterWorld(_targetNode);
+
+            if (Physics2D.OverlapCircle(checkPos, 0.15f, GameManager.singleton.whatIsTilemap)) {
                 return true;
             }
             return false;
         }
 
         #endregion
+
 
 
         #region Private Functions
@@ -369,7 +378,7 @@ namespace CharacterSystems {
 
                         Vector3Int checkNode = _node.gridPos + new Vector3Int(x, y, 0);
 
-                        if (TilemapsHaveTile(GameManager.singleton.tilemaps, checkNode)) {
+                        if (isTileCheck(checkNode)) {
                             neighbours.Add(new PathNode(grid.GetCellCenterWorld(checkNode), checkNode));
                         }
                     }
@@ -383,7 +392,7 @@ namespace CharacterSystems {
 
                         Vector3Int checkNode = _node.gridPos + new Vector3Int(x, y, 0);
 
-                        if (TilemapsHaveTile(GameManager.singleton.tilemaps, checkNode)) {
+                        if (isTileCheck(checkNode)) {
                             neighbours.Add(new PathNode(grid.GetCellCenterWorld(checkNode), checkNode));
                         }
                     }
@@ -393,6 +402,7 @@ namespace CharacterSystems {
             return neighbours;
         }
 
+        // Assins a value for distance between 2 nodes accounting for diagonal directions. This is for the A* algorithm.
         private int GetDistance(PathNode _node1, PathNode _node2) {
             int dstX = Mathf.Abs(_node1.gridPos.x - _node2.gridPos.x);
             int dstY = Mathf.Abs(_node1.gridPos.y - _node2.gridPos.y);
@@ -402,6 +412,7 @@ namespace CharacterSystems {
             return 14 * dstX + 10 * (dstY - dstX);
         }
 
+        // Checks through a list of nodes (_nodeSet) for a node (_node) and returns true if its in the list.
         private bool CheckList(List<PathNode> _nodeSet, PathNode _node) {
             foreach (PathNode item in _nodeSet) {
                 if (item.gridPos == _node.gridPos) {
