@@ -19,7 +19,7 @@ namespace MusicSystem {
         }
 
         // Takes an transform to parent the prefab too, its time period (length in relation to time), 
-        public GameObject DrawUI(double _timePeriod, float _width, Transform _parent, Color _colour, double _posOffset = 0, bool _accountForInputDelay = false) {
+        public GameObject DrawHoldNoteTailUI(double _timePeriod, float _width, Transform _parent, Color _colour, bool _accountForInputDelay = false) {
             if (!drawPrefab) {
                 Debug.LogWarning("[DrawRhythmUI] There is currently no DrawPrefab available");
                 return null;
@@ -29,15 +29,9 @@ namespace MusicSystem {
             Vector3 marginYPos2 = GetMarginPos(0, _accountForInputDelay);
             float disY = Vector3.Distance(marginYPos1, marginYPos2);
 
-            float offsetDisY = 0;
-            if (_posOffset != 0) {
-                Vector3 offsetYPos1 = GetMarginPos(_posOffset, _accountForInputDelay);
-                Vector3 offsetYPos2 = GetMarginPos(0, _accountForInputDelay);
-                offsetDisY = Vector3.Distance(offsetYPos1, offsetYPos2);
-            }
-
             GameObject prefabInst = Instantiate(drawPrefab, _parent);
-            prefabInst.transform.localPosition = new Vector3(0, offsetDisY, 0);
+
+            prefabInst.transform.localPosition = new Vector3(0, disY/2, 0);
             prefabInst.transform.localScale = new Vector3(_width, disY, 1);
             prefabInst.GetComponent<SpriteRenderer>().color = _colour;
             // Add Option to change the sorting layer

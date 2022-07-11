@@ -110,7 +110,7 @@ namespace MusicSystem {
 
                 // Draws the hold note tail
                 if (noteTailPrefab) Destroy(noteTailPrefab);
-                noteTailPrefab = DrawRhythmUI.instance.DrawUI(noteLength, 1f, transform, rm.holdNoteTailColour, noteLength/2);
+                noteTailPrefab = DrawRhythmUI.instance.DrawHoldNoteTailUI(noteLength, 1f, transform, rm.holdNoteTailColour);
             } else {
                 // If the note goes past the area where it can be hit then it counts as a miss, the note itself handles despawning so this script just leaves it to do that by itself.
                 if (noteData.timeStamp + rm.badMargin <= RhythmManager.GetAudioSourceTime() - (rm.inputDelayInMiliseconds / 1000.0f)) {

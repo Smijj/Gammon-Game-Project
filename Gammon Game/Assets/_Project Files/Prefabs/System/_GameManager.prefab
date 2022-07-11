@@ -45,6 +45,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0a88852ac996c1428d30c9ed35ab120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  whatStopsMovement:
+    serializedVersion: 2
+    m_Bits: 64
+  whatIsTilemap:
+    serializedVersion: 2
+    m_Bits: 256
+  tilemaps: []
   npcManager: {fileID: 0}
   rhythmManager: {fileID: 5130848662092415671, guid: 8461f6534a418374c9094a7cb726ff4e, type: 3}
   activeChairList: []

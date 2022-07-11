@@ -8637,6 +8637,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highscoreText: {fileID: 4606440187343386219}
+  scoreText: {fileID: 0}
+  newHighscoreText: {fileID: 0}
   maxComboScoreText: {fileID: 2690838565054306321}
   perfectHitsText: {fileID: 7339722834131960059}
   goodHitsText: {fileID: 3132672002086410150}
@@ -8832,7 +8834,7 @@ MonoBehaviour:
     songFileName: 
     recipe: {fileID: 0}
     highscore: 0
-    maxComboScore: 0
+    largestCombo: 0
     starRating: 0
   isDisplayCard: 1
   songName: {fileID: 2095743514575468147}
@@ -8851,6 +8853,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highscoreText: {fileID: 5128351217548429102}
+  scoreText: {fileID: 0}
+  newHighscoreText: {fileID: 0}
   maxComboScoreText: {fileID: 3161736850076205310}
   perfectHitsText: {fileID: 0}
   goodHitsText: {fileID: 0}
