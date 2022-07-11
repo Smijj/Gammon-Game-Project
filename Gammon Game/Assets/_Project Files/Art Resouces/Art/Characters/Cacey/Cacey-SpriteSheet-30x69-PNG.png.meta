@@ -1,7 +1,130 @@
 fileFormatVersion: 2
 guid: 71dde0f795075024cb0bfbf75d4f62aa
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -89757845631596870
+    second: Cacey-SpriteSheet-30x69-PNG_0
+  - first:
+      213: 2298044457879394455
+    second: Cacey-SpriteSheet-30x69-PNG_1
+  - first:
+      213: 5954709019808319746
+    second: Cacey-SpriteSheet-30x69-PNG_2
+  - first:
+      213: -1469629192498990422
+    second: Cacey-SpriteSheet-30x69-PNG_3
+  - first:
+      213: -6508284467872414441
+    second: Cacey-SpriteSheet-30x69-PNG_4
+  - first:
+      213: -8813396628909676573
+    second: Cacey-SpriteSheet-30x69-PNG_5
+  - first:
+      213: -1137121701032173690
+    second: Cacey-SpriteSheet-30x69-PNG_6
+  - first:
+      213: 1287468136736403869
+    second: Cacey-SpriteSheet-30x69-PNG_7
+  - first:
+      213: 1913291563793485293
+    second: Cacey-SpriteSheet-30x69-PNG_8
+  - first:
+      213: -3738763835908707795
+    second: Cacey-SpriteSheet-30x69-PNG_9
+  - first:
+      213: 1235907094541909841
+    second: Cacey-SpriteSheet-30x69-PNG_10
+  - first:
+      213: 8303058814763557918
+    second: Cacey-SpriteSheet-30x69-PNG_11
+  - first:
+      213: -1858375270068345713
+    second: Cacey-SpriteSheet-30x69-PNG_12
+  - first:
+      213: -2971434313666643096
+    second: Cacey-SpriteSheet-30x69-PNG_13
+  - first:
+      213: 8871922319113597291
+    second: Cacey-SpriteSheet-30x69-PNG_14
+  - first:
+      213: -6114511199895712659
+    second: Cacey-SpriteSheet-30x69-PNG_15
+  - first:
+      213: 5482858295567457395
+    second: Cacey-SpriteSheet-30x69-PNG_16
+  - first:
+      213: 4141783903229915094
+    second: Cacey-SpriteSheet-30x69-PNG_17
+  - first:
+      213: 2213577476927339064
+    second: Cacey-SpriteSheet-30x69-PNG_18
+  - first:
+      213: 8767676507618835718
+    second: Cacey-SpriteSheet-30x69-PNG_19
+  - first:
+      213: 9107260187300956920
+    second: Cacey-SpriteSheet-30x69-PNG_20
+  - first:
+      213: 5312999803733280688
+    second: Cacey-SpriteSheet-30x69-PNG_21
+  - first:
+      213: -83361406499608719
+    second: Cacey-SpriteSheet-30x69-PNG_22
+  - first:
+      213: 3226894864338380744
+    second: Cacey-SpriteSheet-30x69-PNG_23
+  - first:
+      213: 1118848039656132536
+    second: Cacey-SpriteSheet-30x69-PNG_24
+  - first:
+      213: -383245983298395965
+    second: Cacey-SpriteSheet-30x69-PNG_25
+  - first:
+      213: -7405885561488121523
+    second: Cacey-SpriteSheet-30x69-PNG_26
+  - first:
+      213: 1679051315128206879
+    second: Cacey-SpriteSheet-30x69-PNG_27
+  - first:
+      213: 375567818633499956
+    second: Cacey-SpriteSheet-30x69-PNG_28
+  - first:
+      213: -4154109960217918582
+    second: Cacey-SpriteSheet-30x69-PNG_29
+  - first:
+      213: 4119615046371365129
+    second: Cacey-SpriteSheet-30x69-PNG_30
+  - first:
+      213: 4416490978772063120
+    second: Cacey-SpriteSheet-30x69-PNG_31
+  - first:
+      213: -5782941650031145742
+    second: Cacey-SpriteSheet-30x69-PNG_32
+  - first:
+      213: -7057298843366916356
+    second: Cacey-SpriteSheet-30x69-PNG_33
+  - first:
+      213: -5078999438140066580
+    second: Cacey-SpriteSheet-30x69-PNG_34
+  - first:
+      213: -1434618066565704892
+    second: Cacey-SpriteSheet-30x69-PNG_35
+  - first:
+      213: 5841671799157761463
+    second: Cacey-SpriteSheet-30x69-PNG_36
+  - first:
+      213: -6142107017692877380
+    second: Cacey-SpriteSheet-30x69-PNG_37
+  - first:
+      213: 5090003562485293658
+    second: Cacey-SpriteSheet-30x69-PNG_38
+  - first:
+      213: 1505832299746459827
+    second: Cacey-SpriteSheet-30x69-PNG_39
+  - first:
+      213: -482736282196320608
+    second: Cacey-SpriteSheet-30x69-PNG_40
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +164,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +198,882 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 141
+        width: 28
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6035707bd11cef0800000000000000
+      internalID: -89757845631596870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 141
+        width: 28
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 798d4f5424b44ef10800000000000000
+      internalID: 2298044457879394455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_2
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 138
+        width: 28
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2094d7add4063a250800000000000000
+      internalID: 5954709019808319746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_3
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 143
+        width: 28
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2bd8d2904da9be0800000000000000
+      internalID: -1469629192498990422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_4
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 143
+        width: 27
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715c54342cdeda5a0800000000000000
+      internalID: -6508284467872414441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_5
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 142
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7a63d167680b580800000000000000
+      internalID: -8813396628909676573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_6
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 142
+        width: 27
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68fd69f66d12830f0800000000000000
+      internalID: -1137121701032173690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_7
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 144
+        width: 27
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91bec5f2710ed110800000000000000
+      internalID: 1287468136736403869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_8
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 139
+        width: 29
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded89ab4a806d8a10800000000000000
+      internalID: 1913291563793485293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_9
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 143
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2aa59d991e3d1cc0800000000000000
+      internalID: -3738763835908707795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_10
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 141
+        width: 27
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f3e8154f2d62110800000000000000
+      internalID: 1235907094541909841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_11
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 143
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14682320046a3370800000000000000
+      internalID: 8303058814763557918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_12
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 140
+        width: 27
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f84a438b989b536e0800000000000000
+      internalID: -1858375270068345713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_13
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 143
+        width: 27
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b3e7c2c3853c6d0800000000000000
+      internalID: -2971434313666643096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_14
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 140
+        width: 27
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6130a108566f1b70800000000000000
+      internalID: 8871922319113597291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_15
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 143
+        width: 27
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c8113b574e42ba0800000000000000
+      internalID: -6114511199895712659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_16
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 139
+        width: 29
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c1a150296071c40800000000000000
+      internalID: 5482858295567457395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_17
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 74
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df237014829a7930800000000000000
+      internalID: 4141783903229915094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_18
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 72
+        width: 27
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a3f0bbcf438be10800000000000000
+      internalID: 2213577476927339064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_19
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 74
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d782e945b0da970800000000000000
+      internalID: 8767676507618835718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_20
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 74
+        width: 27
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa812553ec736e70800000000000000
+      internalID: 9107260187300956920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_21
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 73
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b70e390c219bb940800000000000000
+      internalID: 5312999803733280688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_22
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 73
+        width: 27
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1772d911e37d7def0800000000000000
+      internalID: -83361406499608719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_23
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 75
+        width: 27
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c7eb6448cb38cc20800000000000000
+      internalID: 3226894864338380744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_24
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 72
+        width: 28
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf88593d52f68f00800000000000000
+      internalID: 1118848039656132536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_25
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 72
+        width: 28
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c067e70fcf6eaaf0800000000000000
+      internalID: -383245983298395965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_26
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 69
+        width: 28
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d416e44e152093990800000000000000
+      internalID: -7405885561488121523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_27
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 74
+        width: 28
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f168edd66403d4710800000000000000
+      internalID: 1679051315128206879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_28
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 70
+        width: 60
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435d7b2f0f8463500800000000000000
+      internalID: 375567818633499956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_29
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 70
+        width: 60
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a838c472003a956c0800000000000000
+      internalID: -4154109960217918582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_30
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 72
+        width: 28
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901d15ade00db2930800000000000000
+      internalID: 4119615046371365129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_31
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 73
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0931d6745278a4d30800000000000000
+      internalID: 4416490978772063120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_32
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 5
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc0519653ddebfa0800000000000000
+      internalID: -5782941650031145742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_33
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 5
+        width: 27
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfef657d7107f0e90800000000000000
+      internalID: -7057298843366916356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_34
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 5
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4b043bbe4c389b0800000000000000
+      internalID: -5078999438140066580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_35
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 4
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4435ef92876371ce0800000000000000
+      internalID: -1434618066565704892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_36
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 3
+        width: 28
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b527330d89c11150800000000000000
+      internalID: 5841671799157761463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_37
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 4
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd6bfda53ad2caa0800000000000000
+      internalID: -6142107017692877380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_38
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 4
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a52a867a54353a640800000000000000
+      internalID: 5090003562485293658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_39
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 4
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b082b59f7ac5e410800000000000000
+      internalID: 1505832299746459827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacey-SpriteSheet-30x69-PNG_40
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 4
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aede73b8e9fc49f0800000000000000
+      internalID: -482736282196320608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

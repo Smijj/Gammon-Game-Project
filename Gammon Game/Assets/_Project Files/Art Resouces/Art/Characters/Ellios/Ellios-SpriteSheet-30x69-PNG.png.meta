@@ -1,7 +1,130 @@
 fileFormatVersion: 2
 guid: 27d8652a336801543b7d1431d602d32c
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5737562875565693390
+    second: Ellios-SpriteSheet-30x69-PNG_0
+  - first:
+      213: -4210985106072509186
+    second: Ellios-SpriteSheet-30x69-PNG_1
+  - first:
+      213: 358361789356259213
+    second: Ellios-SpriteSheet-30x69-PNG_2
+  - first:
+      213: -8402645213546445668
+    second: Ellios-SpriteSheet-30x69-PNG_3
+  - first:
+      213: -6855496632777596938
+    second: Ellios-SpriteSheet-30x69-PNG_4
+  - first:
+      213: -6485957554548396499
+    second: Ellios-SpriteSheet-30x69-PNG_5
+  - first:
+      213: 8620008293040384368
+    second: Ellios-SpriteSheet-30x69-PNG_6
+  - first:
+      213: 2507960488037255386
+    second: Ellios-SpriteSheet-30x69-PNG_7
+  - first:
+      213: 5583303111165459704
+    second: Ellios-SpriteSheet-30x69-PNG_8
+  - first:
+      213: -5228312590487523006
+    second: Ellios-SpriteSheet-30x69-PNG_9
+  - first:
+      213: 5656824739436648059
+    second: Ellios-SpriteSheet-30x69-PNG_10
+  - first:
+      213: 4065472362730216874
+    second: Ellios-SpriteSheet-30x69-PNG_11
+  - first:
+      213: 8974322230830201915
+    second: Ellios-SpriteSheet-30x69-PNG_12
+  - first:
+      213: -2395676030226396363
+    second: Ellios-SpriteSheet-30x69-PNG_13
+  - first:
+      213: 8940552873747795996
+    second: Ellios-SpriteSheet-30x69-PNG_14
+  - first:
+      213: -8413798939019427976
+    second: Ellios-SpriteSheet-30x69-PNG_15
+  - first:
+      213: 6019611155390148321
+    second: Ellios-SpriteSheet-30x69-PNG_16
+  - first:
+      213: -5735944465434797128
+    second: Ellios-SpriteSheet-30x69-PNG_17
+  - first:
+      213: -9082212165119560359
+    second: Ellios-SpriteSheet-30x69-PNG_18
+  - first:
+      213: 2638976840018236518
+    second: Ellios-SpriteSheet-30x69-PNG_19
+  - first:
+      213: -248923141372479619
+    second: Ellios-SpriteSheet-30x69-PNG_20
+  - first:
+      213: -9129668010334088429
+    second: Ellios-SpriteSheet-30x69-PNG_21
+  - first:
+      213: 7477179089293350984
+    second: Ellios-SpriteSheet-30x69-PNG_22
+  - first:
+      213: -5717532808886162642
+    second: Ellios-SpriteSheet-30x69-PNG_23
+  - first:
+      213: -2900806855560073930
+    second: Ellios-SpriteSheet-30x69-PNG_24
+  - first:
+      213: 5767110865847963174
+    second: Ellios-SpriteSheet-30x69-PNG_25
+  - first:
+      213: -1022405589505620014
+    second: Ellios-SpriteSheet-30x69-PNG_26
+  - first:
+      213: 5951078429444880458
+    second: Ellios-SpriteSheet-30x69-PNG_27
+  - first:
+      213: 6646278813930621225
+    second: Ellios-SpriteSheet-30x69-PNG_28
+  - first:
+      213: -5806273492818219606
+    second: Ellios-SpriteSheet-30x69-PNG_29
+  - first:
+      213: 209869403057129006
+    second: Ellios-SpriteSheet-30x69-PNG_30
+  - first:
+      213: 5205928601905289238
+    second: Ellios-SpriteSheet-30x69-PNG_31
+  - first:
+      213: -7062844644720080389
+    second: Ellios-SpriteSheet-30x69-PNG_32
+  - first:
+      213: 7074877970437159234
+    second: Ellios-SpriteSheet-30x69-PNG_33
+  - first:
+      213: 2407466541796182998
+    second: Ellios-SpriteSheet-30x69-PNG_34
+  - first:
+      213: -5272308773618432705
+    second: Ellios-SpriteSheet-30x69-PNG_35
+  - first:
+      213: 6094618137525687773
+    second: Ellios-SpriteSheet-30x69-PNG_36
+  - first:
+      213: -904011830678119865
+    second: Ellios-SpriteSheet-30x69-PNG_37
+  - first:
+      213: 269513330454278335
+    second: Ellios-SpriteSheet-30x69-PNG_38
+  - first:
+      213: -6079969445748135455
+    second: Ellios-SpriteSheet-30x69-PNG_39
+  - first:
+      213: 8352992962595767855
+    second: Ellios-SpriteSheet-30x69-PNG_40
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +164,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +198,882 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 141
+        width: 28
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9df82590bef9f40800000000000000
+      internalID: 5737562875565693390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 141
+        width: 28
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef466165b539f85c0800000000000000
+      internalID: -4210985106072509186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_2
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 138
+        width: 28
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8737a3162829f400800000000000000
+      internalID: 358361789356259213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_3
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 143
+        width: 28
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c948de882bec36b80800000000000000
+      internalID: -8402645213546445668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_4
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 143
+        width: 27
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff976c62226cd0a0800000000000000
+      internalID: -6855496632777596938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_5
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 142
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ea1ecd7ff3df5a0800000000000000
+      internalID: -6485957554548396499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_6
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 142
+        width: 27
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079e79b2fdb60a770800000000000000
+      internalID: 8620008293040384368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_7
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 144
+        width: 27
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad80d20b6c01ec220800000000000000
+      internalID: 2507960488037255386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_8
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 139
+        width: 29
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fcb9561990eb7d40800000000000000
+      internalID: 5583303111165459704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_9
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 143
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241f945566d4177b0800000000000000
+      internalID: -5228312590487523006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_10
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 141
+        width: 27
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7653ce1124118e40800000000000000
+      internalID: 5656824739436648059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_11
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 143
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aadd3b8f2957b6830800000000000000
+      internalID: 4065472362730216874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_12
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 140
+        width: 27
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c768c55823b8c70800000000000000
+      internalID: 8974322230830201915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_13
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 143
+        width: 27
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53b0075e759d0ced0800000000000000
+      internalID: -2395676030226396363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_14
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 140
+        width: 27
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c10d5573879331c70800000000000000
+      internalID: 8940552873747795996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_15
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 143
+        width: 27
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f3034717e2c3b80800000000000000
+      internalID: -8413798939019427976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_16
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 139
+        width: 29
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee220bd374f98350800000000000000
+      internalID: 6019611155390148321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_17
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 74
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb146626e4d560b0800000000000000
+      internalID: -5735944465434797128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_18
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 72
+        width: 27
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955315bc72085f180800000000000000
+      internalID: -9082212165119560359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_19
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 74
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66415cf34778f9420800000000000000
+      internalID: 2638976840018236518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_20
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 74
+        width: 27
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d777e16c8b5ab8cf0800000000000000
+      internalID: -248923141372479619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_21
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 73
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3131acec057ec4180800000000000000
+      internalID: -9129668010334088429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_22
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 73
+        width: 27
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8481f4314c644c760800000000000000
+      internalID: 7477179089293350984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_23
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 75
+        width: 27
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2be2bef33e37a0b0800000000000000
+      internalID: -5717532808886162642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_24
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 72
+        width: 28
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63de254b8834eb7d0800000000000000
+      internalID: -2900806855560073930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_25
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 72
+        width: 28
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ec92be6c4e80050800000000000000
+      internalID: 5767110865847963174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_26
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 69
+        width: 28
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7c425888fafc1f0800000000000000
+      internalID: -1022405589505620014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_27
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 74
+        width: 28
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a483d892d4a769250800000000000000
+      internalID: 5951078429444880458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_28
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 70
+        width: 60
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9290a862e535c3c50800000000000000
+      internalID: 6646278813930621225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_29
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 70
+        width: 60
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aadadcf6509fb6fa0800000000000000
+      internalID: -5806273492818219606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_30
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 72
+        width: 28
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2681723c1b99e200800000000000000
+      internalID: 209869403057129006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_31
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 73
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6185c923b7c2f3840800000000000000
+      internalID: 5205928601905289238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_32
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 5
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf980b7573cbbfd90800000000000000
+      internalID: -7062844644720080389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_33
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 5
+        width: 27
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249b421a7040f2260800000000000000
+      internalID: 7074877970437159234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_34
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 5
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db4660801a096120800000000000000
+      internalID: 2407466541796182998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_35
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 4
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f354c42ba1ff4d6b0800000000000000
+      internalID: -5272308773618432705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_36
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 3
+        width: 28
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd51fd8c7ee649450800000000000000
+      internalID: 6094618137525687773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_37
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 4
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a1ea7970e4473f0800000000000000
+      internalID: -904011830678119865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_38
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 4
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb0b5f332f08db300800000000000000
+      internalID: 269513330454278335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_39
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 4
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e924fc800c9f9ba0800000000000000
+      internalID: -6079969445748135455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios-SpriteSheet-30x69-PNG_40
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 4
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f26cbdae7dacbe370800000000000000
+      internalID: 8352992962595767855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
