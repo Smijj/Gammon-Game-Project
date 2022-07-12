@@ -10,7 +10,8 @@ TrueTypeFontImporter:
   includeFontData: 1
   fontNames:
   - Papernotes
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: bad2ed763691ee94499e89b12cfb7988, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1

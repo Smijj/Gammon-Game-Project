@@ -18,22 +18,8 @@ namespace MenuSystem {
             PageManager.singleton.TurnPageOff(PageManager.activePage);
         }
 
-        #endregion
-
-
-        #region Main Menu
-
-        /*public void Play() {
-            try {
-                SceneManager.LoadScene("Tutorial");
-            }
-            catch (Exception e) {
-                Debug.LogError("[MenuSceneManager]: Failed to advance scene in 'Play' function. Are the scenes configured correctly in the build settings? \nReason:\n" + e.Message);
-            }
-        }*/
-
-
-        public void QuitGame() {
+        public void QuitGame()
+        {
 #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
 #endif
@@ -43,38 +29,69 @@ namespace MenuSystem {
         #endregion
 
 
+        #region Main Menu
+
+        public void MainMenu_Play()
+        {
+            try
+            {
+                SceneManager.LoadScene("Play");
+            }
+            catch (Exception e)
+            {
+                Debug.LogError("[MenuSceneManager]: Failed to advance scene in 'Play' function. Are the scenes configured correctly in the build settings? \nReason:\n" + e.Message);
+            }
+        }
+
+        public void MainMenu_Recipes()
+        {
+            PageManager.singleton.TurnPageOn(PageType.Recipes);
+        }
+        public void MainMenu_Settings()
+        {
+            PageManager.singleton.TurnPageOn(PageType.Settings);
+        }
+        public void MainMenu_Songs()
+        {
+            PageManager.singleton.TurnPageOn(PageType.Songs);
+        }
+
+
+        #endregion
+
+
         #region Menu Buttons        
 
-        public void Menu_Recipes() {
-            PageManager.singleton.TurnPageOff(PageType.Menu, true, PageType.Recipes);
+        public void PauseMenu_Recipes() {
+            PageManager.singleton.TurnPageOff(PageType.PauseMenu, true, PageType.Recipes);
         }
 
-        public void Menu_Settings() {
-            PageManager.singleton.TurnPageOff(PageType.Menu, true, PageType.Settings);
+        public void PauseMenu_Settings() {
+            PageManager.singleton.TurnPageOff(PageType.PauseMenu, true, PageType.Settings);
         }
 
-        public void Menu_Stats() {
-            PageManager.singleton.TurnPageOff(PageType.Menu, true, PageType.Stats);
+        public void PauseMenu_Stats() {
+            PageManager.singleton.TurnPageOff(PageType.PauseMenu, true, PageType.Stats);
         }
 
-        public void Menu_Contacts() {
-            PageManager.singleton.TurnPageOff(PageType.Menu, true, PageType.Settings);
+        public void PauseMenu_Contacts() {
+            PageManager.singleton.TurnPageOff(PageType.PauseMenu, true, PageType.Settings);
         }
 
-        public void Menu_Map() {
-            PageManager.singleton.TurnPageOff(PageType.Menu, true, PageType.Map);
+        public void PauseMenu_Map() {
+            PageManager.singleton.TurnPageOff(PageType.PauseMenu, true, PageType.Map);
         }
 
-        public void Menu_Save() {
+        public void PauseMenu_Save() {
             // Save
         }
         
-        public void Menu_Songs() {
-            PageManager.singleton.TurnPageOff(PageType.Menu, true, PageType.Songs);
+        public void PauseMenu_Songs() {
+            PageManager.singleton.TurnPageOff(PageType.PauseMenu, true, PageType.Songs);
         }
 
-        public void Menu_Back() {
-            PageManager.singleton.TurnPageOff(PageManager.activePage, true, PageType.Menu);
+        public void PauseMenu_Back() {
+            PageManager.singleton.TurnPageOff(PageManager.activePage, true, PageType.PauseMenu);
         }
 
         #endregion

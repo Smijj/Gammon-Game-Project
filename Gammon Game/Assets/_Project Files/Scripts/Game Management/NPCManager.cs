@@ -8,6 +8,7 @@ namespace GameManagement {
     public class NPCManager : MonoBehaviour
     {
 
+        public bool spawnNPCS = false;
         public int maxNPCs = 10;
         public Transform spawnLocation;
         public float spawnTimer;
@@ -26,7 +27,7 @@ namespace GameManagement {
         }
 
         private void Update() {
-            if (activeNPCs.Count <= maxNPCs)
+            if (spawnNPCS && activeNPCs.Count <= maxNPCs)
                 HandleNPCSpawning();
         }
 
