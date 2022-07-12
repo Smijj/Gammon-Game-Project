@@ -10,7 +10,6 @@ namespace MenuSystem {
     public enum PageType {
         None,
         Loading,
-        MainMenu,
         PauseMenu,
         Recipes,
         Settings,
@@ -28,15 +27,6 @@ namespace MenuSystem {
 		private void CheckSingleton() {
 			if (!singleton) {
 				singleton = this;
-				m_Pages = new Hashtable();
-				RegisterAllPages();
-<<<<<<< HEAD
-				//if (enteryPage != PageType.None) {
-				//	TurnPageOn(enteryPage);
-				//}
-=======
->>>>>>> RedesigningUI
-                menuManager = GetComponent<MenuManager>();
 				DontDestroyOnLoad(this);
 			} else {
 				Destroy(this);
@@ -60,24 +50,18 @@ namespace MenuSystem {
 
 		private void OnEnable() {
 			CheckSingleton();
-		}
-        private void Start()
-        {
-            if (enteryPage != PageType.None)
-            {
-                TurnPageOn(enteryPage);
-            }
+            // If the singleton doesnt destory this instance then: 
+            m_Pages = new Hashtable();
+            RegisterAllPages();
+            menuManager = GetComponent<MenuManager>();
         }
 
-<<<<<<< HEAD
         private void Start() {
             if (enteryPage != PageType.None) {
                 TurnPageOn(enteryPage);
             }
         }
 
-=======
->>>>>>> RedesigningUI
         private void Update() {
             if (!GameManager.isLoading) {
                 HandleInput();

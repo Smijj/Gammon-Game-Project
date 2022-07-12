@@ -2413,7 +2413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 2
   debug: 0
-  useAnimation: 1
+  useAnimation: 0
 --- !u!95 &8216582978644645839
 Animator:
   serializedVersion: 3
@@ -2424,7 +2424,7 @@ Animator:
   m_GameObject: {fileID: 1768474193875684499}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7d7228a02f4c618488ea3d16d4f16c3a, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 2
   m_ApplyRootMotion: 0
