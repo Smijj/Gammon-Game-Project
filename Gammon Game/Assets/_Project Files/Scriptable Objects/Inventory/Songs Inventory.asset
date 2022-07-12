@@ -14,31 +14,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   songCard: {fileID: 3232061558039685, guid: d8691aafe74969c48965012a4bfb4e55, type: 3}
   songs:
-  - name: Test 1
-    midiFileName: Test1.mid
-    songFileName: Test1.wav
+  - name: Tutorial Song
+    midiFileName: TutorialSong.mid
+    songFileName: TutorialSong.wav
+    recipe: {fileID: 0}
+    highscore: 3475.760000000001
+    largestCombo: 47
+    starRating: 0
+  - name: Poseidon Song
+    midiFileName: PoseidonSong.mid
+    songFileName: PoseidonSong.wav
     recipe: {fileID: 0}
     highscore: 0
-    largestCombo: 5
+    largestCombo: 47
     starRating: 0
-  - name: Guitar Song
+  - name: Testing Midi Format
     midiFileName: GuitarSong.mid
     songFileName: GuitarSong.wav
     recipe: {fileID: 0}
     highscore: 0
     largestCombo: 0
     starRating: 0
-  - name: Tutorial Song
-    midiFileName: TutorialSong.mid
-    songFileName: TutorialSong.wav
+  - name: Testing Hold Note
+    midiFileName: Test1.mid
+    songFileName: Test1.wav
     recipe: {fileID: 0}
     highscore: 0
-    largestCombo: 47
-    starRating: 0
-  - name: Poseidon  Song
-    midiFileName: PoseidonSong.mid
-    songFileName: PoseidonSong.wav
-    recipe: {fileID: 0}
-    highscore: 0
-    largestCombo: 47
+    largestCombo: 5
     starRating: 0
