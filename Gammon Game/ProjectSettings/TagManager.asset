@@ -12,6 +12,7 @@ TagManager:
   - Grid
   - target
   - BaseMap
+  - NPC
   layers:
   - Default
   - TransparentFX

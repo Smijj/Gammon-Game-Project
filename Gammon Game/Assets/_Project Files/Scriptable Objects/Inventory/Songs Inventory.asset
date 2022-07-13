@@ -42,3 +42,10 @@ MonoBehaviour:
     highscore: 0
     largestCombo: 47
     starRating: 0
+  - name: Inari Song
+    midiFileName: InariSong.mid
+    songFileName: InariSong.wav
+    recipe: {fileID: 0}
+    highscore: 0
+    largestCombo: 47
+    starRating: 0
