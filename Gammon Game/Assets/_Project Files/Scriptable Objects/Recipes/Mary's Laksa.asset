@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Mary's Laksa
   dishType: 1
-  description: To great to describe in this puny description. *Yes the Mary from
-    parap markets*
+  description: The deliciously creamy and spiced coconut broth perfectly compliments
+    the chewy mix of rice and egg noodles. Topped with fried tofu, bean sprouts,
+    bok choy, and just the right amount of fresh chilli, makes this the perfect dish
+    for any spicy soup lover.
   dishValue: 0
   quantity: 0
-  unlocked: 0
+  unlocked: 1
   foodSprite: {fileID: 21300000, guid: 91ce599008ca27f4fa51539536db8812, type: 3}
   dishTypeSprite: {fileID: 0}

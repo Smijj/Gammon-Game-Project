@@ -17,7 +17,9 @@ MonoBehaviour:
   - recipe: {fileID: 11400000, guid: aed5088d70a47114e802e37323d9d27b, type: 2}
   - recipe: {fileID: 11400000, guid: 8e73475d87ca6294294576ce2c9f07d0, type: 2}
   - recipe: {fileID: 11400000, guid: 9e9dac41b9788984abc28b8b4f6f4263, type: 2}
-  - recipe: {fileID: 11400000, guid: f07951fecc459aa4cae7f96916c33f44, type: 2}
-  - recipe: {fileID: 11400000, guid: a78daf1eb94611f46823e8454da3f651, type: 2}
   - recipe: {fileID: 11400000, guid: 5926c9d1ace88894f85810fad9dcad5c, type: 2}
+  - recipe: {fileID: 11400000, guid: a78daf1eb94611f46823e8454da3f651, type: 2}
+  - recipe: {fileID: 11400000, guid: f07951fecc459aa4cae7f96916c33f44, type: 2}
+  - recipe: {fileID: 11400000, guid: aecd0798355dfc845ab55726dabf9f8b, type: 2}
   - recipe: {fileID: 11400000, guid: 8760e1030ad24c5429e47194da4d0c2d, type: 2}
+  initialized: 1

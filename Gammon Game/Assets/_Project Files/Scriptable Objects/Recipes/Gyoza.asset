@@ -14,9 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Gyoza
   dishType: 0
-  description: Delicous Dumpling.
+  description: "Crisp golden brown on the outside and perfectly juicy on the inside,
+    with each bite you can taste the pork, cabbage, and mushrooms filling perfectly
+    bundled into each wrapper. You\u2019ve already finished your fourth gyoza by
+    the time you realise it."
   dishValue: 0
   quantity: 0
-  unlocked: 0
+  unlocked: 1
   foodSprite: {fileID: 21300000, guid: e5fa2d40c9e95174095693c465542f39, type: 3}
   dishTypeSprite: {fileID: 0}

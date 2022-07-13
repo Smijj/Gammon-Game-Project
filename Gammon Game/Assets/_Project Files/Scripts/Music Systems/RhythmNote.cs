@@ -78,6 +78,9 @@ namespace MusicSystem {
             /// would need to probably record their pos when getting destroyed, and the points scored in that period of time, etc. to be able to effectively rewind everything.
             /// maybe even keep the points there, and have it as an opertunity to get a higher score or something.
 
+
+
+            // ============================================ HOLD NOTE STUFF
             
             // Handles hold note behaviour while the player is holding the key down, will destroy the note upon key release or note finish.
             if (holding) {
@@ -101,8 +104,8 @@ namespace MusicSystem {
 
 
 
-
             if (noteData.timeScale > tapNoteThreshold) {
+                // Handeles destroying missed notes
                 if (noteData.timeStamp + noteData.lengthInSeconds + rm.badMargin <= RhythmManager.GetAudioSourceTime() - (rm.inputDelayInMiliseconds / 1000.0f)) {
                     Miss();
                     DestroyNote();
@@ -147,6 +150,7 @@ namespace MusicSystem {
 
             double inputDifference = Math.Abs(audioTime - noteData.timeStamp);
 
+            // Checks if note is hold note
             if (noteData.timeScale <= tapNoteThreshold) {
                 bool wasHit = false;
 
@@ -191,7 +195,8 @@ namespace MusicSystem {
                 if (!holding) {
                     DestroyNote();
                 } else {
-                    Instantiate(rm.holdEffect, transform);
+                    if (rm.badHitEffect)
+                        Instantiate(rm.holdEffect, transform);
                 }
             }
         }
@@ -204,21 +209,28 @@ namespace MusicSystem {
         private void DestroyNote() {
             noteData.lane.removeNote(this);
             Destroy(this.gameObject);
-            Instantiate(rm.hitEffect, transform.position, transform.rotation);
         }
 
 
         private void PerfectHit(double _disFromPerfect) {
             ScoreManager.PerfectHit(_disFromPerfect);
+            if (rm.perfectHitEffect)
+                Instantiate(rm.perfectHitEffect, transform.position, transform.rotation);
         }
         private void GoodHit(double _disFromPerfect) {
             ScoreManager.GoodHit(_disFromPerfect);
+            if (rm.perfectHitEffect)
+                Instantiate(rm.perfectHitEffect, transform.position, transform.rotation);
         }
         private void BadHit() {
             ScoreManager.BadHit();
+            if (rm.badHitEffect)
+                Instantiate(rm.badHitEffect, transform.position, transform.rotation);
         }
         private void Miss() {
             ScoreManager.Miss();
+            if (rm.badHitEffect)
+                Instantiate(rm.badHitEffect, transform.position, transform.rotation);
         }
 
         private void Log(string _msg) {

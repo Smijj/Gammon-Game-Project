@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Lobster Roll
   dishType: 1
-  description: Seems.... fishy.. hmmm
+  description: A rich spiced aioli coats generous portions of lobster topped with
+    pico de gallo salsa stuffed into the soft brioche bun. A handheld treat all year
+    round.
   dishValue: 0
   quantity: 0
-  unlocked: 0
+  unlocked: 1
   foodSprite: {fileID: 21300000, guid: 96e282c86a946284294d5e9436a839dd, type: 3}
   dishTypeSprite: {fileID: 0}

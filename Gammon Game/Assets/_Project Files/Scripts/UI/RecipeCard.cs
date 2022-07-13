@@ -23,6 +23,12 @@ namespace InventorySystem {
         public TextMeshProUGUI itemQuantityText;
         public TextMeshProUGUI itemDescText;
 
+        [Header("Hover Settings")]
+        [Range(0, 1)]
+        public float onHoverEnterDim = 0.8f;
+        [Range(0, 1)]
+        public float onHoverExitDim = 1f;
+
         private RecipeCard itemInfoPanel;
 
         private void Start() {
@@ -39,12 +45,13 @@ namespace InventorySystem {
                 itemSprite.sprite = recipe.foodSprite;
             if (recipe.dishTypeSprite)
                 dishTypeSprite.sprite = recipe.dishTypeSprite;
-            itemValueText.text = recipe.dishValue.ToString();
+            if (itemValueText)
+                itemValueText.text = recipe.dishValue.ToString();
             if (itemDescText) {
                 itemDescText.text = recipe.description;
-                itemQuantityText.text = "Quantity: " + recipe.quantity.ToString();
+                if (itemQuantityText) itemQuantityText.text = "Quantity: " + recipe.quantity.ToString();
             } else {
-                itemQuantityText.text = "x" + recipe.quantity.ToString();
+                if (itemQuantityText) itemQuantityText.text = "x" + recipe.quantity.ToString();
             }
         }
 
@@ -59,15 +66,15 @@ namespace InventorySystem {
 
         public void OnPointerEnter(PointerEventData eventData) {
             if (recipe && !isDisplayCard) {
-                Debug.Log($"Enter {recipe.name}");
                 // Darken Recipe Card UI
+                GetComponent<CanvasGroup>().alpha = onHoverEnterDim;
             }
         }
 
         public void OnPointerExit(PointerEventData eventData) {
             if (recipe && !isDisplayCard) {
-                Debug.Log($"Exit {recipe.name}");
                 // Lighten Recipe Card UI
+                GetComponent<CanvasGroup>().alpha = onHoverExitDim;
             }
         }
     }

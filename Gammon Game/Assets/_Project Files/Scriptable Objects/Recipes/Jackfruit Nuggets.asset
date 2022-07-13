@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Jackfruit Nuggets
   dishType: 0
-  description: What Nuggets...!?
+  description: "Each bite of these perfectly seasoned crispy battered bites would
+    almost make you think you were eating chicken, but the tender and flavourful
+    young jackfruit doesn\u2019t just resemble meat but makes for a perfect snack."
   dishValue: 0
   quantity: 0
-  unlocked: 0
+  unlocked: 1
   foodSprite: {fileID: 21300000, guid: c147c128d7c7e6c4bb51764cf75e1625, type: 3}
   dishTypeSprite: {fileID: 0}

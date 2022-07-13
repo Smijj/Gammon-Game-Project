@@ -49,6 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: {x: 0, y: 0}
+  enableMouseMovement: 0
   moveOnMouseRelease: 1
 --- !u!114 &5838633469370318765
 MonoBehaviour:
@@ -64,9 +65,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 8
   moveDistance: 1
-  WhatStopsMovement:
-    serializedVersion: 2
-    m_Bits: 64
   useDiagonalMovement: 1
   lastPoint: {x: 0, y: 0, z: 0}
   movePoint: {x: 0, y: 0, z: 0}

@@ -3,6 +3,7 @@ using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Networking;
 using Melanchall.DryWetMidi.Core;
 using Melanchall.DryWetMidi.Interaction;
@@ -25,7 +26,9 @@ namespace MusicSystem {
         [Header("Song Mangager Stuff: ")]
         public AudioSource audioSource;     // The audiosource where the audio will be played through in the game
         public Lane[] lanes;                // The lanes that the notes drop from
+        public Image songCharacterSprite;
         public bool debug = false;
+
 
         [Header("Song Settings: ")]
         public Song song;
@@ -57,7 +60,8 @@ namespace MusicSystem {
             }
         }
 
-        public GameObject hitEffect;
+        public GameObject perfectHitEffect;
+        public GameObject badHitEffect;
         public GameObject holdEffect;
         public Color noteBGColourStart;
         public Color noteBGColourTap;

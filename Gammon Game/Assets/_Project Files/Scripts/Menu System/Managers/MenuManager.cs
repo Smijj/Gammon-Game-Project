@@ -60,7 +60,11 @@ namespace MenuSystem {
         #endregion
 
 
-        #region Menu Buttons        
+        #region PauseMenu
+        
+        public void OpenPauseMenu() {
+            PageManager.singleton.TurnPageOn(PageType.PauseMenu);
+        }
 
         public void PauseMenu_Recipes() {
             PageManager.singleton.TurnPageOff(PageType.PauseMenu, true, PageType.Recipes);

@@ -182,7 +182,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5130848660590716522}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -385,7 +385,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5130848660590716522}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1618118506394576578
 GameObject:
@@ -470,6 +470,81 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1618118506394576578}
   m_Enabled: 1
+--- !u!1 &4480721751421983415
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7542686372497126401}
+  - component: {fileID: 4034715211400355441}
+  - component: {fileID: 2433628554105219715}
+  m_Layer: 7
+  m_Name: ReactionSprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7542686372497126401
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4480721751421983415}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.000023786095}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5130848660590716522}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -87.00001, y: 0}
+  m_SizeDelta: {x: 174, y: 235}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!222 &4034715211400355441
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4480721751421983415}
+  m_CullTransparentMesh: 1
+--- !u!114 &2433628554105219715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4480721751421983415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 26ecedd5d71244a4483e210dae19adb5, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &5130848660098463582
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,6 +599,9 @@ MonoBehaviour:
   goodHitSFX: {fileID: 5130848660489101602}
   badHitSFX: {fileID: 5130848660368484845}
   missSFX: {fileID: 5130848660850723065}
+  goodReactionSprite: {fileID: 21300000, guid: 26ecedd5d71244a4483e210dae19adb5, type: 3}
+  badReactionSprite: {fileID: 21300000, guid: b5eb13e340933c34e8ffb316b63af901, type: 3}
+  reactionSpriteObj: {fileID: 2433628554105219715}
   scoreText: {fileID: 5130848662070612057}
   comboScoreText: {fileID: 5130848661536684070}
   multiplierText: {fileID: 5130848662011616151}
@@ -581,7 +659,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3eb35bfb488bb504589018638b11e277, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -843,7 +921,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 77b9f35b4a328214083e35c63f805a25, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.8
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1136,6 +1214,7 @@ RectTransform:
   - {fileID: 7775374558050354287}
   - {fileID: 8876112185929153476}
   - {fileID: 7368987474944597746}
+  - {fileID: 7542686372497126401}
   - {fileID: 5130848660949514652}
   - {fileID: 5130848660960308619}
   - {fileID: 1293337247209124920}
@@ -1302,7 +1381,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 77b9f35b4a328214083e35c63f805a25, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.8
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1418,7 +1497,7 @@ RectTransform:
   - {fileID: 7990494127388623847}
   - {fileID: 3078212275947596287}
   m_Father: {fileID: 5130848660590716522}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -1493,7 +1572,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5130848660590716522}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -2306,6 +2385,7 @@ MonoBehaviour:
   - {fileID: 5130848661434283211}
   - {fileID: 5130848660718080392}
   - {fileID: 5130848660538462040}
+  songCharacterSprite: {fileID: 0}
   debug: 0
   song:
     name: 
@@ -2318,23 +2398,24 @@ MonoBehaviour:
   songDelayInSeconds: 1
   startCountdown: {fileID: 8665579031827783011}
   inputDelayInMiliseconds: 0
-  perfectMargin: 0.06
-  goodMargin: 0.12
-  badMargin: 0.2
+  perfectMargin: 0.05
+  goodMargin: 0.11
+  badMargin: 0.175
   tapIndicatorWidth: 25
   perfectTapZone: {r: 0.9568628, g: 0.7372549, b: 0.20000002, a: 1}
   gameArea: {fileID: 4822481409154005980}
   noteFallTime: 1
   noteSpawnY: 25
   noteTapY: -4
-  hitEffect: {fileID: 6018891729558880758, guid: 792720a40b9d3d949816595ee626f47f, type: 3}
+  perfectHitEffect: {fileID: 6018891729558880758, guid: 792720a40b9d3d949816595ee626f47f, type: 3}
+  badHitEffect: {fileID: 6018891729558880758, guid: 6145011ef5302cf4bb95ae8b36e2078d, type: 3}
   holdEffect: {fileID: 6018891729558880758, guid: 5907632072730e045845256e6c9337a0, type: 3}
-  noteBGColourStart: {r: 0.98823535, g: 0.654902, b: 0.22352943, a: 1}
+  noteBGColourStart: {r: 0.8941177, g: 0.29803923, b: 0.5568628, a: 1}
   noteBGColourTap: {r: 1, g: 1, b: 1, a: 1}
   noteBGColourMiss: {r: 1, g: 0, b: 0, a: 1}
-  hitIndicatorStartColour: {r: 0.96470594, g: 0.15686275, b: 0.7294118, a: 1}
+  hitIndicatorStartColour: {r: 0.8941177, g: 0.29803923, b: 0.5568628, a: 1}
   hitIndicatorEndColour: {r: 0.9607844, g: 0.7176471, b: 0.03137255, a: 1}
-  holdNoteTailColour: {r: 0.54509807, g: 0.79215693, b: 0.93725497, a: 1}
+  holdNoteTailColour: {r: 0.42352945, g: 0.5411765, b: 0.9215687, a: 1}
 --- !u!114 &2596359968591779032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2380,9 +2461,9 @@ RectTransform:
   m_Father: {fileID: 5130848660590716522}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -553, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 86.99997, y: 0}
   m_SizeDelta: {x: 174, y: 235}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &1583634209855409845
@@ -3000,7 +3081,7 @@ RectTransform:
   m_Children:
   - {fileID: 8963428001540686665}
   m_Father: {fileID: 5130848660590716522}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

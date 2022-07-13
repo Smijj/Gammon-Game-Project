@@ -9,6 +9,7 @@ namespace InventorySystem {
     {
         public GameObject recipeCard;
         public List<InventoryItem> Container = new List<InventoryItem>();
+        public bool initialized = false;
 
         #region Public Functions
 
