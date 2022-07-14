@@ -27,7 +27,9 @@ namespace MusicSystem {
         [Header("Object Refs: ")]
         public Sprite goodReactionSprite;
         public Sprite badReactionSprite;
-        public Image reactionSpriteObj;
+        public Sprite succeededReactionSprite;
+        public Sprite failedReactionSprite;
+        public Image reactionImageObj;
         public TextMeshProUGUI scoreText;
         public TextMeshProUGUI comboScoreText;
         public TextMeshProUGUI multiplierText;
@@ -158,9 +160,9 @@ namespace MusicSystem {
 
         private static void SetReactionSprite() {
             if (comboScore <= 3) {
-                instance.reactionSpriteObj.sprite = instance.badReactionSprite;
+                instance.reactionImageObj.sprite = instance.badReactionSprite;
             } else {
-                instance.reactionSpriteObj.sprite = instance.goodReactionSprite;
+                instance.reactionImageObj.sprite = instance.goodReactionSprite;
             }
         }
 

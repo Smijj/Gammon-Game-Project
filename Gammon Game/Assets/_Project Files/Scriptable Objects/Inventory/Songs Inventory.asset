@@ -17,16 +17,16 @@ MonoBehaviour:
   - name: Tutorial Song
     midiFileName: TutorialSong.mid
     songFileName: TutorialSong.wav
-    recipe: {fileID: 0}
+    recipe: {fileID: 11400000, guid: aed5088d70a47114e802e37323d9d27b, type: 2}
     highscore: 18357.629999999976
     largestCombo: 91
     starRating: 0
   - name: Poseidon Song
     midiFileName: PoseidonSong.mid
     songFileName: PoseidonSong.wav
-    recipe: {fileID: 0}
-    highscore: 49.40009070294785
-    largestCombo: 47
+    recipe: {fileID: 11400000, guid: 5926c9d1ace88894f85810fad9dcad5c, type: 2}
+    highscore: 9961.349387755105
+    largestCombo: 74
     starRating: 0
   - name: Testing Midi Format
     midiFileName: GuitarSong.mid

@@ -26,7 +26,8 @@ namespace MusicSystem {
         [Header("Song Mangager Stuff: ")]
         public AudioSource audioSource;     // The audiosource where the audio will be played through in the game
         public Lane[] lanes;                // The lanes that the notes drop from
-        public Image songCharacterSprite;
+        public Image songCharacterImageObj;
+        public Sprite songCharacterSprite;  // IDEA: Can have the character defined in the Song obj and just find the correct char through that
         public bool debug = false;
 
 
@@ -81,13 +82,17 @@ namespace MusicSystem {
             instance = this;
             if (!GameManager.isPaused) GameManager.PauseGame();
             mainCamera = Camera.main;
+            //mainCamera.enabled = false;
             mainCamera.gameObject.SetActive(false);
+
+            songCharacterImageObj.sprite = songCharacterSprite;
 
             isPaused = true;
         }
 
         private void OnDisable() {
             mainCamera.gameObject.SetActive(true);
+            //mainCamera.enabled = true;
             songIsPlaying = false;
             isPaused = false;
         }
