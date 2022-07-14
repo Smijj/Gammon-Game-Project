@@ -4,127 +4,133 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 5737562875565693390
-    second: Ellios-SpriteSheet-30x69-PNG_0
+    second: Ellios_Walk_SW_3
   - first:
       213: -4210985106072509186
-    second: Ellios-SpriteSheet-30x69-PNG_1
+    second: Ellios_Walk_SW_2
   - first:
       213: 358361789356259213
-    second: Ellios-SpriteSheet-30x69-PNG_2
+    second: Ellios_Walk_SW_1
   - first:
       213: -8402645213546445668
-    second: Ellios-SpriteSheet-30x69-PNG_3
+    second: Ellios_Walk_SW_0
   - first:
       213: -6855496632777596938
-    second: Ellios-SpriteSheet-30x69-PNG_4
+    second: Ellios_Walk_W_3
   - first:
       213: -6485957554548396499
-    second: Ellios-SpriteSheet-30x69-PNG_5
+    second: Ellios_Walk_W_2
   - first:
       213: 8620008293040384368
-    second: Ellios-SpriteSheet-30x69-PNG_6
+    second: Ellios_Walk_W_1
   - first:
       213: 2507960488037255386
-    second: Ellios-SpriteSheet-30x69-PNG_7
+    second: Ellios_Walk_W_0
   - first:
       213: 5583303111165459704
-    second: Ellios-SpriteSheet-30x69-PNG_8
+    second: Ellios_Walk_NW_3
   - first:
       213: -5228312590487523006
-    second: Ellios-SpriteSheet-30x69-PNG_9
+    second: Ellios_Walk_NW_2
   - first:
       213: 5656824739436648059
-    second: Ellios-SpriteSheet-30x69-PNG_10
+    second: Ellios_Walk_NW_1
   - first:
       213: 4065472362730216874
-    second: Ellios-SpriteSheet-30x69-PNG_11
+    second: Ellios_Walk_NW_0
   - first:
       213: 8974322230830201915
-    second: Ellios-SpriteSheet-30x69-PNG_12
+    second: Ellios_Walk_N_3
   - first:
       213: -2395676030226396363
-    second: Ellios-SpriteSheet-30x69-PNG_13
+    second: Ellios_Walk_N_2
   - first:
       213: 8940552873747795996
-    second: Ellios-SpriteSheet-30x69-PNG_14
+    second: Ellios_Walk_N_1
   - first:
       213: -8413798939019427976
-    second: Ellios-SpriteSheet-30x69-PNG_15
+    second: Ellios_Walk_N_0
   - first:
       213: 6019611155390148321
-    second: Ellios-SpriteSheet-30x69-PNG_16
+    second: Ellios_Walk_NE_3
   - first:
       213: -5735944465434797128
-    second: Ellios-SpriteSheet-30x69-PNG_17
+    second: Ellios_Walk_NE_2
   - first:
       213: -9082212165119560359
-    second: Ellios-SpriteSheet-30x69-PNG_18
+    second: Ellios_Walk_NE_1
   - first:
       213: 2638976840018236518
-    second: Ellios-SpriteSheet-30x69-PNG_19
+    second: Ellios_Walk_NE_0
   - first:
       213: -248923141372479619
-    second: Ellios-SpriteSheet-30x69-PNG_20
+    second: Ellios_Walk_E_3
   - first:
       213: -9129668010334088429
-    second: Ellios-SpriteSheet-30x69-PNG_21
+    second: Ellios_Walk_E_2
   - first:
       213: 7477179089293350984
-    second: Ellios-SpriteSheet-30x69-PNG_22
+    second: Ellios_Walk_E_1
   - first:
       213: -5717532808886162642
-    second: Ellios-SpriteSheet-30x69-PNG_23
+    second: Ellios_Walk_E_0
   - first:
       213: -2900806855560073930
-    second: Ellios-SpriteSheet-30x69-PNG_24
+    second: Ellios_Walk_SE_3
   - first:
       213: 5767110865847963174
-    second: Ellios-SpriteSheet-30x69-PNG_25
+    second: Ellios_Walk_SE_2
   - first:
       213: -1022405589505620014
-    second: Ellios-SpriteSheet-30x69-PNG_26
+    second: Ellios_Walk_SE_1
   - first:
       213: 5951078429444880458
-    second: Ellios-SpriteSheet-30x69-PNG_27
+    second: Ellios_Walk_SE_0
   - first:
       213: 6646278813930621225
-    second: Ellios-SpriteSheet-30x69-PNG_28
+    second: Ellios_Walk_S_3
   - first:
       213: -5806273492818219606
-    second: Ellios-SpriteSheet-30x69-PNG_29
+    second: Ellios_Walk_S_2
   - first:
       213: 209869403057129006
-    second: Ellios-SpriteSheet-30x69-PNG_30
+    second: Ellios_Walk_S_1
   - first:
       213: 5205928601905289238
-    second: Ellios-SpriteSheet-30x69-PNG_31
+    second: Ellios_Walk_S_0
   - first:
       213: -7062844644720080389
-    second: Ellios-SpriteSheet-30x69-PNG_32
+    second: Ellios_Idle_SW
   - first:
       213: 7074877970437159234
-    second: Ellios-SpriteSheet-30x69-PNG_33
+    second: Ellios_Idle_W
   - first:
       213: 2407466541796182998
-    second: Ellios-SpriteSheet-30x69-PNG_34
+    second: Ellios_Idle_NW
   - first:
       213: -5272308773618432705
-    second: Ellios-SpriteSheet-30x69-PNG_35
+    second: Ellios_Idle_N
   - first:
       213: 6094618137525687773
-    second: Ellios-SpriteSheet-30x69-PNG_36
+    second: Ellios_Idle_NE
   - first:
       213: -904011830678119865
-    second: Ellios-SpriteSheet-30x69-PNG_37
+    second: Ellios_Idle_E
   - first:
       213: 269513330454278335
-    second: Ellios-SpriteSheet-30x69-PNG_38
+    second: Ellios_Idle_SE
   - first:
       213: -6079969445748135455
-    second: Ellios-SpriteSheet-30x69-PNG_39
+    second: Ellios_Idle_S
   - first:
       213: 8352992962595767855
-    second: Ellios-SpriteSheet-30x69-PNG_40
+    second: Ellios_Emote_Love_0
+  - first:
+      213: 3050667684677155800
+    second: Ellios_Emote_Annoyed_0
+  - first:
+      213: 8336330718944017
+    second: Ellios_Emote_Tired_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -214,15 +220,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_0
+      name: Ellios_Walk_SW_3
       rect:
         serializedVersion: 2
-        x: 2
-        y: 141
-        width: 28
-        height: 64
+        x: 0
+        y: 138
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -235,15 +241,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_1
+      name: Ellios_Walk_SW_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 141
-        width: 28
-        height: 65
+        x: 30
+        y: 138
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -256,15 +262,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_2
+      name: Ellios_Walk_SW_1
       rect:
         serializedVersion: 2
-        x: 62
+        x: 60
         y: 138
-        width: 28
-        height: 67
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -277,15 +283,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_3
+      name: Ellios_Walk_SW_0
       rect:
         serializedVersion: 2
-        x: 92
-        y: 143
-        width: 28
-        height: 63
+        x: 90
+        y: 138
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -298,15 +304,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_4
+      name: Ellios_Walk_W_3
       rect:
         serializedVersion: 2
-        x: 122
-        y: 143
-        width: 27
-        height: 61
+        x: 120
+        y: 138
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -319,15 +325,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_5
+      name: Ellios_Walk_W_2
       rect:
         serializedVersion: 2
-        x: 152
-        y: 142
-        width: 27
-        height: 63
+        x: 150
+        y: 138
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -340,15 +346,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_6
+      name: Ellios_Walk_W_1
       rect:
         serializedVersion: 2
-        x: 182
-        y: 142
-        width: 27
-        height: 62
+        x: 180
+        y: 138
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -361,15 +367,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_7
+      name: Ellios_Walk_W_0
       rect:
         serializedVersion: 2
-        x: 212
-        y: 144
-        width: 27
-        height: 61
+        x: 210
+        y: 138
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -382,15 +388,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_8
+      name: Ellios_Walk_NW_3
       rect:
         serializedVersion: 2
-        x: 241
-        y: 139
-        width: 29
-        height: 66
+        x: 240
+        y: 138
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -403,15 +409,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_9
+      name: Ellios_Walk_NW_2
       rect:
         serializedVersion: 2
-        x: 273
-        y: 143
-        width: 27
-        height: 63
+        x: 270
+        y: 138
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -424,15 +430,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_10
+      name: Ellios_Walk_NW_1
       rect:
         serializedVersion: 2
-        x: 303
-        y: 141
-        width: 27
-        height: 64
+        x: 300
+        y: 138
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -445,15 +451,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_11
+      name: Ellios_Walk_NW_0
       rect:
         serializedVersion: 2
-        x: 333
-        y: 143
-        width: 27
-        height: 63
+        x: 330
+        y: 138
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -466,15 +472,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_12
+      name: Ellios_Walk_N_3
       rect:
         serializedVersion: 2
         x: 361
-        y: 140
-        width: 27
-        height: 66
+        y: 138
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -487,15 +493,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_13
+      name: Ellios_Walk_N_2
       rect:
         serializedVersion: 2
-        x: 391
-        y: 143
-        width: 27
-        height: 64
+        x: 390
+        y: 138
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -508,15 +514,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_14
+      name: Ellios_Walk_N_1
       rect:
         serializedVersion: 2
-        x: 421
-        y: 140
-        width: 27
-        height: 66
+        x: 420
+        y: 138
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -529,15 +535,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_15
+      name: Ellios_Walk_N_0
       rect:
         serializedVersion: 2
-        x: 451
-        y: 143
-        width: 27
-        height: 64
+        x: 450
+        y: 138
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -550,15 +556,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_16
+      name: Ellios_Walk_NE_3
       rect:
         serializedVersion: 2
-        x: 481
-        y: 139
-        width: 29
-        height: 66
+        x: 480
+        y: 138
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -571,15 +577,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_17
+      name: Ellios_Walk_NE_2
       rect:
         serializedVersion: 2
-        x: 1
-        y: 74
-        width: 27
-        height: 63
+        x: 0
+        y: 69
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -592,15 +598,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_18
+      name: Ellios_Walk_NE_1
       rect:
         serializedVersion: 2
-        x: 31
-        y: 72
-        width: 27
-        height: 64
+        x: 30
+        y: 69
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -613,15 +619,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_19
+      name: Ellios_Walk_NE_0
       rect:
         serializedVersion: 2
-        x: 61
-        y: 74
-        width: 27
-        height: 63
+        x: 60
+        y: 69
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -634,15 +640,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_20
+      name: Ellios_Walk_E_3
       rect:
         serializedVersion: 2
-        x: 92
-        y: 74
-        width: 27
-        height: 61
+        x: 90
+        y: 69
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -655,15 +661,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_21
+      name: Ellios_Walk_E_2
       rect:
         serializedVersion: 2
-        x: 122
-        y: 73
-        width: 27
-        height: 63
+        x: 120
+        y: 69
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -676,15 +682,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_22
+      name: Ellios_Walk_E_1
       rect:
         serializedVersion: 2
-        x: 152
-        y: 73
-        width: 27
-        height: 62
+        x: 150
+        y: 69
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -697,15 +703,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_23
+      name: Ellios_Walk_E_0
       rect:
         serializedVersion: 2
-        x: 182
-        y: 75
-        width: 27
-        height: 61
+        x: 180
+        y: 69
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -718,15 +724,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_24
+      name: Ellios_Walk_SE_3
       rect:
         serializedVersion: 2
         x: 210
-        y: 72
-        width: 28
-        height: 64
+        y: 69
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -739,15 +745,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_25
+      name: Ellios_Walk_SE_2
       rect:
         serializedVersion: 2
-        x: 240
-        y: 72
-        width: 28
-        height: 65
+        x: 241
+        y: 69
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -760,15 +766,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_26
+      name: Ellios_Walk_SE_1
       rect:
         serializedVersion: 2
         x: 270
         y: 69
-        width: 28
-        height: 67
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -781,15 +787,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_27
+      name: Ellios_Walk_SE_0
       rect:
         serializedVersion: 2
         x: 300
-        y: 74
-        width: 28
-        height: 63
+        y: 69
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -802,15 +808,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_28
+      name: Ellios_Walk_S_3
       rect:
         serializedVersion: 2
         x: 330
-        y: 70
-        width: 60
-        height: 68
+        y: 69
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -823,15 +829,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_29
+      name: Ellios_Walk_S_2
       rect:
         serializedVersion: 2
-        x: 390
-        y: 70
-        width: 60
-        height: 68
+        x: 360
+        y: 69
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -844,15 +850,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_30
+      name: Ellios_Walk_S_1
       rect:
         serializedVersion: 2
-        x: 451
-        y: 72
-        width: 28
-        height: 65
+        x: 390
+        y: 69
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -865,15 +871,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_31
+      name: Ellios_Walk_S_0
       rect:
         serializedVersion: 2
-        x: 481
-        y: 73
-        width: 27
-        height: 63
+        x: 420
+        y: 69
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -886,15 +892,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_32
+      name: Ellios_Idle_SW
       rect:
         serializedVersion: 2
-        x: 2
-        y: 5
-        width: 27
-        height: 63
+        x: 450
+        y: 69
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -907,15 +913,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_33
+      name: Ellios_Idle_W
       rect:
         serializedVersion: 2
-        x: 31
-        y: 5
-        width: 27
-        height: 64
+        x: 480
+        y: 69
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -928,15 +934,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_34
+      name: Ellios_Idle_NW
       rect:
         serializedVersion: 2
-        x: 61
-        y: 5
-        width: 27
-        height: 63
+        x: 0
+        y: 0
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -949,15 +955,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_35
+      name: Ellios_Idle_N
       rect:
         serializedVersion: 2
-        x: 92
-        y: 4
-        width: 27
-        height: 63
+        x: 30
+        y: 0
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -970,15 +976,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_36
+      name: Ellios_Idle_NE
       rect:
         serializedVersion: 2
-        x: 120
-        y: 3
-        width: 28
-        height: 65
+        x: 60
+        y: 0
+        width: 30
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -991,15 +997,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_37
+      name: Ellios_Idle_E
       rect:
         serializedVersion: 2
-        x: 150
-        y: 4
+        x: 90
+        y: 0
         width: 30
-        height: 65
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1012,15 +1018,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_38
+      name: Ellios_Idle_SE
       rect:
         serializedVersion: 2
-        x: 180
-        y: 4
+        x: 121
+        y: 0
         width: 30
-        height: 65
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1033,15 +1039,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_39
+      name: Ellios_Idle_S
       rect:
         serializedVersion: 2
-        x: 210
-        y: 4
+        x: 150
+        y: 0
         width: 30
-        height: 65
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1054,15 +1060,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ellios-SpriteSheet-30x69-PNG_40
+      name: Ellios_Emote_Love_0
       rect:
         serializedVersion: 2
-        x: 240
-        y: 4
+        x: 180
+        y: 0
         width: 30
-        height: 65
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1070,6 +1076,48 @@ TextureImporter:
       bones: []
       spriteID: f26cbdae7dacbe370800000000000000
       internalID: 8352992962595767855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios_Emote_Annoyed_0
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 30
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbf1f89816265a20800000000000000
+      internalID: 3050667684677155800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ellios_Emote_Tired_0
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 30
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b9b3f39dd9d1000800000000000000
+      internalID: 8336330718944017
       vertices: []
       indices: 
       edges: []
