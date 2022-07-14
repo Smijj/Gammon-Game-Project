@@ -249,6 +249,7 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
+<<<<<<< HEAD:Gammon Game/Assets/_Project Files/Art Resouces/Art/Characters/Dr. Milo/Dr Milo Spritesheet.png.meta
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -261,6 +262,8 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
+=======
+>>>>>>> 63f9e7e35648e82d6fbad8c5ace6e0b8c086b1cf:Gammon Game/Assets/_Project Files/Art Resouces/Art/Characters/Dr. Milo/Dr Milo Sprite Sheet v02 Transparent BG.png.meta
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
