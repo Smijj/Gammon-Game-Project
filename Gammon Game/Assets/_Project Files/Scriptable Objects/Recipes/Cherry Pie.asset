@@ -14,9 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Cherry Pie
   dishType: 2
-  description: Pie full of cherries.
+  description: "A classic comfort food, the flaky buttery pie crust is just as delicious
+    as the sticky sweet cherry filling. Perfect for a low day when you\u2019re feeling
+    low, the subtle note of almond and cinnamon, this sweet treat is always worth
+    the labour of love."
   dishValue: 0
   quantity: 0
-  unlocked: 0
+  unlocked: 1
   foodSprite: {fileID: 21300000, guid: 93078df407a10e345a6a8cb80f86a664, type: 3}
   dishTypeSprite: {fileID: 0}

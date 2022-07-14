@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 namespace MusicSystem {
@@ -24,6 +25,11 @@ namespace MusicSystem {
         public AudioSource missSFX;
 
         [Header("Object Refs: ")]
+        public Sprite goodReactionSprite;
+        public Sprite badReactionSprite;
+        public Sprite succeededReactionSprite;
+        public Sprite failedReactionSprite;
+        public Image reactionImageObj;
         public TextMeshProUGUI scoreText;
         public TextMeshProUGUI comboScoreText;
         public TextMeshProUGUI multiplierText;
@@ -96,6 +102,7 @@ namespace MusicSystem {
         public static void PerfectHit(double _disFromPerfect) {
             perfectHits++;
             IncrementComboScore();
+            SetReactionSprite();
             if (multiplier < instance.maxMulitplier) multiplier++;
 
             // Score caluclations
@@ -112,6 +119,7 @@ namespace MusicSystem {
         public static void GoodHit(double _disFromPerfect) {
             goodHits++;
             IncrementComboScore();
+            SetReactionSprite();
             if (multiplier < instance.maxMulitplier) multiplier++;   // Might have it so Good hits dont add to the multiplier but dont take away from it either
 
             // Score caluclations
@@ -128,6 +136,7 @@ namespace MusicSystem {
             badHits++;
             comboScore = 0;
             multiplier = 1;
+            SetReactionSprite();
 
             // Displaying Score
             instance.InstantiateHitText(/*"0 | " + */instance.badHitText, instance.hitText, instance.hitTextPos);
@@ -137,6 +146,7 @@ namespace MusicSystem {
             missedNotes++;
             comboScore = 0;
             multiplier = 1;
+            SetReactionSprite();
 
             // Displaying Score
             instance.InstantiateHitText(/*"0 | " + */instance.missText, instance.hitText, instance.hitTextPos);
@@ -147,6 +157,14 @@ namespace MusicSystem {
 
 
         #region Private Functions
+
+        private static void SetReactionSprite() {
+            if (comboScore <= 3) {
+                instance.reactionImageObj.sprite = instance.badReactionSprite;
+            } else {
+                instance.reactionImageObj.sprite = instance.goodReactionSprite;
+            }
+        }
 
         private static double GetHitScore(double _disFromPerfect, int _multiplier) {
             double _percentageOfPerfect = 1 - Math.Abs(_disFromPerfect) / RhythmManager.instance.noteFallTime;

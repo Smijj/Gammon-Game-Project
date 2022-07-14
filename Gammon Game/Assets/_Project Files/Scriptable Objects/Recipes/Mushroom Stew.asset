@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95b2c2b7a203aea45a04dea7f1e25fe4, type: 3}
+  m_Name: Mushroom Stew
+  m_EditorClassIdentifier: 
+  name: Mushroom Stew
+  dishType: 1
+  description: The selection of mushrooms perfectly bubble away in a deep spicy broth,
+    addictive heat from the kimchi and chewy ramen noodles, each component perfectly
+    compliments the other. On a cold day, you find this dish wonderfully comforting
+    and addicting.
+  dishValue: 0
+  quantity: 0
+  unlocked: 1
+  foodSprite: {fileID: 21300000, guid: 714bc23ba9da60942b93c628a5290b83, type: 3}
+  dishTypeSprite: {fileID: 0}

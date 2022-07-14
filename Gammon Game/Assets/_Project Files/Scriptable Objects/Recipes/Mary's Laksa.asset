@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95b2c2b7a203aea45a04dea7f1e25fe4, type: 3}
+  m_Name: Mary's Laksa
+  m_EditorClassIdentifier: 
+  name: Mary's Laksa
+  dishType: 1
+  description: The deliciously creamy and spiced coconut broth perfectly compliments
+    the chewy mix of rice and egg noodles. Topped with fried tofu, bean sprouts,
+    bok choy, and just the right amount of fresh chilli, makes this the perfect dish
+    for any spicy soup lover.
+  dishValue: 0
+  quantity: 0
+  unlocked: 1
+  foodSprite: {fileID: 21300000, guid: 91ce599008ca27f4fa51539536db8812, type: 3}
+  dishTypeSprite: {fileID: 0}

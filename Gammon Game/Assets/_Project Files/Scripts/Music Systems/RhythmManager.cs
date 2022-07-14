@@ -3,6 +3,7 @@ using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Networking;
 using Melanchall.DryWetMidi.Core;
 using Melanchall.DryWetMidi.Interaction;
@@ -25,7 +26,10 @@ namespace MusicSystem {
         [Header("Song Mangager Stuff: ")]
         public AudioSource audioSource;     // The audiosource where the audio will be played through in the game
         public Lane[] lanes;                // The lanes that the notes drop from
+        public Image songCharacterImageObj;
+        public Sprite songCharacterSprite;  // IDEA: Can have the character defined in the Song obj and just find the correct char through that
         public bool debug = false;
+
 
         [Header("Song Settings: ")]
         public Song song;
@@ -57,7 +61,8 @@ namespace MusicSystem {
             }
         }
 
-        public GameObject hitEffect;
+        public GameObject perfectHitEffect;
+        public GameObject badHitEffect;
         public GameObject holdEffect;
         public Color noteBGColourStart;
         public Color noteBGColourTap;
@@ -77,13 +82,17 @@ namespace MusicSystem {
             instance = this;
             if (!GameManager.isPaused) GameManager.PauseGame();
             mainCamera = Camera.main;
+            //mainCamera.enabled = false;
             mainCamera.gameObject.SetActive(false);
+
+            songCharacterImageObj.sprite = songCharacterSprite;
 
             isPaused = true;
         }
 
         private void OnDisable() {
             mainCamera.gameObject.SetActive(true);
+            //mainCamera.enabled = true;
             songIsPlaying = false;
             isPaused = false;
         }

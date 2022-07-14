@@ -12,35 +12,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af0ba0e9351b2cc42a161351f4ed14e2, type: 3}
   m_Name: Songs Inventory
   m_EditorClassIdentifier: 
-  songCard: {fileID: 3232061558039685, guid: d8691aafe74969c48965012a4bfb4e55, type: 3}
+  songCard: {fileID: 8508657008851313436, guid: e6db669ba73b75b44ba45b569438c318, type: 3}
   songs:
-  - name: Test 1
-    midiFileName: Test1.mid
-    songFileName: Test1.wav
-    recipe: {fileID: 0}
-    highscore: 0
-    largestCombo: 5
+  - name: Tutorial Song
+    midiFileName: TutorialSong.mid
+    songFileName: TutorialSong.wav
+    recipe: {fileID: 11400000, guid: aed5088d70a47114e802e37323d9d27b, type: 2}
+    highscore: 18357.629999999976
+    largestCombo: 91
     starRating: 0
-  - name: Guitar Song
+  - name: Poseidon Song
+    midiFileName: PoseidonSong.mid
+    songFileName: PoseidonSong.wav
+    recipe: {fileID: 11400000, guid: 5926c9d1ace88894f85810fad9dcad5c, type: 2}
+    highscore: 9961.349387755105
+    largestCombo: 74
+    starRating: 0
+  - name: Testing Midi Format
     midiFileName: GuitarSong.mid
     songFileName: GuitarSong.wav
     recipe: {fileID: 0}
     highscore: 0
     largestCombo: 0
     starRating: 0
-  - name: Tutorial Song
-    midiFileName: TutorialSong.mid
-    songFileName: TutorialSong.wav
+  - name: Testing Hold Note
+    midiFileName: Test1.mid
+    songFileName: Test1.wav
     recipe: {fileID: 0}
     highscore: 0
-    largestCombo: 47
-    starRating: 0
-  - name: Poseidon  Song
-    midiFileName: PoseidonSong.mid
-    songFileName: PoseidonSong.wav
-    recipe: {fileID: 0}
-    highscore: 0
-    largestCombo: 47
+    largestCombo: 5
     starRating: 0
   - name: Inari Song
     midiFileName: InariSong.mid
