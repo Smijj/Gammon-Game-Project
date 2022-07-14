@@ -1,91 +1,175 @@
 fileFormatVersion: 2
-guid: 2ed2707df36acb148a0de4ac05c79142
+guid: 5f241fa39acbb434e86c8c7b43854729
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7046475266670010468
-    second: Dr Milo Sprite Sheet v02 Transparent BG_0
+      213: 1452620630202310042
+    second: Dr Milo Spritesheet 1_01_0
   - first:
-      213: -4236779381394222105
-    second: Dr Milo Sprite Sheet v02 Transparent BG_1
+      213: 4030230410654935297
+    second: Dr Milo Spritesheet 1_01_1
   - first:
-      213: 2640144622970972708
-    second: Dr Milo Sprite Sheet v02 Transparent BG_2
+      213: -1548436515231911471
+    second: Dr Milo Spritesheet 1_01_2
   - first:
-      213: -2097414168670617086
-    second: Dr Milo Sprite Sheet v02 Transparent BG_3
+      213: 421191028392104312
+    second: Dr Milo Spritesheet 1_01_3
   - first:
-      213: -1560585207935819156
-    second: Dr Milo Sprite Sheet v02 Transparent BG_4
+      213: -6465368770865808701
+    second: Dr Milo Spritesheet 1_01_4
   - first:
-      213: -8828525369915428213
-    second: Dr Milo Sprite Sheet v02 Transparent BG_5
+      213: -7591480440869896861
+    second: Dr Milo Spritesheet 1_01_5
   - first:
-      213: -3247128460708651768
-    second: Dr Milo Sprite Sheet v02 Transparent BG_6
+      213: -7269615893617299555
+    second: Dr Milo Spritesheet 1_01_6
   - first:
-      213: -530712346054961528
-    second: Dr Milo Sprite Sheet v02 Transparent BG_7
+      213: 5887287967021061318
+    second: Dr Milo Spritesheet 1_01_7
   - first:
-      213: -7857877049738831224
-    second: Dr Milo Sprite Sheet v02 Transparent BG_8
+      213: -8662499453761844558
+    second: Dr Milo Spritesheet 1_01_8
   - first:
-      213: 2237275683994847511
-    second: Dr Milo Sprite Sheet v02 Transparent BG_9
+      213: -3737220245304091079
+    second: Dr Milo Spritesheet 1_01_9
   - first:
-      213: 7525919460741254911
-    second: Dr Milo Sprite Sheet v02 Transparent BG_10
+      213: 5236355630043652745
+    second: Dr Milo Spritesheet 1_01_10
   - first:
-      213: -4404085183723013990
-    second: Dr Milo Sprite Sheet v02 Transparent BG_11
+      213: 6368437967770521846
+    second: Dr Milo Spritesheet 1_01_11
   - first:
-      213: -382358980267606705
-    second: Dr Milo Sprite Sheet v02 Transparent BG_12
+      213: 8024904191483217910
+    second: Dr Milo Spritesheet 1_01_12
   - first:
-      213: -3414123066828336978
-    second: Dr Milo Sprite Sheet v02 Transparent BG_13
+      213: 3276360131767099797
+    second: Dr Milo Spritesheet 1_01_13
   - first:
-      213: 4794475314944966338
-    second: Dr Milo Sprite Sheet v02 Transparent BG_14
+      213: -2400651726666055949
+    second: Dr Milo Spritesheet 1_01_14
   - first:
-      213: -7490422314147187976
-    second: Dr Milo Sprite Sheet v02 Transparent BG_15
+      213: 4741872881453294251
+    second: Dr Milo Spritesheet 1_01_15
   - first:
-      213: 1771001685515232276
-    second: Dr Milo Sprite Sheet v02 Transparent BG_16
+      213: -4799194059151300823
+    second: Dr Milo Spritesheet 1_01_16
   - first:
-      213: -3620343626024290866
-    second: Dr Milo Sprite Sheet v02 Transparent BG_17
+      213: 8646306677383882786
+    second: Dr Milo Spritesheet 1_01_17
   - first:
-      213: 8255044268779079485
-    second: Dr Milo Sprite Sheet v02 Transparent BG_18
+      213: -1905709211601563425
+    second: Dr Milo Spritesheet 1_01_18
   - first:
-      213: -8509651650028650919
-    second: Dr Milo Sprite Sheet v02 Transparent BG_19
+      213: -1652151388295035145
+    second: Dr Milo Spritesheet 1_01_19
   - first:
-      213: 2760058373859452334
-    second: Dr Milo Sprite Sheet v02 Transparent BG_20
+      213: -4675509495278930578
+    second: Dr Milo Spritesheet 1_01_20
   - first:
-      213: -4598054020059029927
-    second: Dr Milo Sprite Sheet v02 Transparent BG_21
+      213: -8334023702794981551
+    second: Dr Milo Spritesheet 1_01_21
   - first:
-      213: -4467680043498032202
-    second: Dr Milo Sprite Sheet v02 Transparent BG_22
+      213: -8878185030862582135
+    second: Dr Milo Spritesheet 1_01_22
   - first:
-      213: 764657939257394877
-    second: Dr Milo Sprite Sheet v02 Transparent BG_23
+      213: 2207266832125028081
+    second: Dr Milo Spritesheet 1_01_23
   - first:
-      213: 2946411314868304364
-    second: Dr Milo Sprite Sheet v02 Transparent BG_24
+      213: -5217014422761175871
+    second: Dr Milo Spritesheet 1_01_24
   - first:
-      213: 7262971891515597527
-    second: Dr Milo Sprite Sheet v02 Transparent BG_25
+      213: -5584337506845821224
+    second: Dr Milo Spritesheet 1_01_25
   - first:
-      213: -6874469378487987162
-    second: Dr Milo Sprite Sheet v02 Transparent BG_26
+      213: -645205297018132404
+    second: Dr Milo Spritesheet 1_01_26
   - first:
-      213: 3908887035407672677
-    second: Dr Milo Sprite Sheet v02 Transparent BG_27
+      213: -482960807532535465
+    second: Dr Milo Spritesheet 1_01_27
+  - first:
+      213: 7221680152060956948
+    second: Dr Milo Spritesheet_0
+  - first:
+      213: 1338286359373861053
+    second: Dr Milo Spritesheet_1
+  - first:
+      213: 7586495683096182846
+    second: Dr Milo Spritesheet_2
+  - first:
+      213: 298249829208459293
+    second: Dr Milo Spritesheet_3
+  - first:
+      213: -5295936604251054830
+    second: Dr Milo Spritesheet_4
+  - first:
+      213: -8904398248972404909
+    second: Dr Milo Spritesheet_5
+  - first:
+      213: -7293279652759775718
+    second: Dr Milo Spritesheet_6
+  - first:
+      213: 2892374778343042403
+    second: Dr Milo Spritesheet_7
+  - first:
+      213: -3506393274830351491
+    second: Dr Milo Spritesheet_8
+  - first:
+      213: -4655782566161813796
+    second: Dr Milo Spritesheet_9
+  - first:
+      213: 6005114829213348793
+    second: Dr Milo Spritesheet_10
+  - first:
+      213: -5155448734663656103
+    second: Dr Milo Spritesheet_11
+  - first:
+      213: 4791339851192765603
+    second: Dr Milo Spritesheet_12
+  - first:
+      213: 3600130482175961893
+    second: Dr Milo Spritesheet_13
+  - first:
+      213: -5758668553407266593
+    second: Dr Milo Spritesheet_14
+  - first:
+      213: 7923473138111762913
+    second: Dr Milo Spritesheet_15
+  - first:
+      213: -884458080829516579
+    second: Dr Milo Spritesheet_16
+  - first:
+      213: 4083627144249348208
+    second: Dr Milo Spritesheet_17
+  - first:
+      213: -5918551458040276030
+    second: Dr Milo Spritesheet_18
+  - first:
+      213: -6166028518113367522
+    second: Dr Milo Spritesheet_19
+  - first:
+      213: -28160240176873303
+    second: Dr Milo Spritesheet_20
+  - first:
+      213: 5213967168650117499
+    second: Dr Milo Spritesheet_21
+  - first:
+      213: 8238698627531534843
+    second: Dr Milo Spritesheet_22
+  - first:
+      213: 5585921929498343524
+    second: Dr Milo Spritesheet_23
+  - first:
+      213: 1585481033865355352
+    second: Dr Milo Spritesheet_24
+  - first:
+      213: -6280886826184140595
+    second: Dr Milo Spritesheet_25
+  - first:
+      213: 6579636042142353486
+    second: Dr Milo Spritesheet_26
+  - first:
+      213: 6374786490081845696
+    second: Dr Milo Spritesheet_27
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -116,7 +200,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -152,7 +236,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -164,7 +248,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -175,13 +271,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_0
+      name: Dr Milo Spritesheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 332
-        width: 49
-        height: 64
+        x: 1
+        y: 330
+        width: 51
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,20 +285,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4602174dbeb1ac160800000000000000
-      internalID: 7046475266670010468
+      spriteID: 411151116df883460800000000000000
+      internalID: 7221680152060956948
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_1
+      name: Dr Milo Spritesheet_1
       rect:
         serializedVersion: 2
         x: 52
-        y: 332
-        width: 45
-        height: 63
+        y: 330
+        width: 51
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,125 +306,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e35c4c999fe335c0800000000000000
-      internalID: -4236779381394222105
+      spriteID: db0da327a5c829210800000000000000
+      internalID: 1338286359373861053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_2
-      rect:
-        serializedVersion: 2
-        x: 102
-        y: 336
-        width: 49
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42aa7d7eb8da3a420800000000000000
-      internalID: 2640144622970972708
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_3
-      rect:
-        serializedVersion: 2
-        x: 157
-        y: 332
-        width: 42
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20244891dec74e2e0800000000000000
-      internalID: -2097414168670617086
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_4
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 332
-        width: 39
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c62a14f8500b75ae0800000000000000
-      internalID: -1560585207935819156
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_5
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 266
-        width: 45
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b82baab93f6ca7580800000000000000
-      internalID: -8828525369915428213
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_6
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 266
-        width: 47
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80d56677ed1efe2d0800000000000000
-      internalID: -3247128460708651768
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_7
+      name: Dr Milo Spritesheet_2
       rect:
         serializedVersion: 2
         x: 103
-        y: 266
-        width: 45
-        height: 64
+        y: 330
+        width: 51
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -336,20 +327,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 886da7fdee782a8f0800000000000000
-      internalID: -530712346054961528
+      spriteID: e308bf8f0a5a84960800000000000000
+      internalID: 7586495683096182846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_8
+      name: Dr Milo Spritesheet_3
       rect:
         serializedVersion: 2
-        x: 157
-        y: 272
-        width: 43
-        height: 57
+        x: 154
+        y: 330
+        width: 51
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -357,20 +348,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88a5f91c47633f290800000000000000
-      internalID: -7857877049738831224
+      spriteID: d188a44b3a8932400800000000000000
+      internalID: 298249829208459293
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_9
+      name: Dr Milo Spritesheet_4
       rect:
         serializedVersion: 2
-        x: 204
-        y: 266
-        width: 49
-        height: 63
+        x: 205
+        y: 330
+        width: 51
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -378,20 +369,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 719c12981666c0f10800000000000000
-      internalID: 2237275683994847511
+      spriteID: 21d90aea7bd0186b0800000000000000
+      internalID: -5295936604251054830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_10
+      name: Dr Milo Spritesheet_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 201
-        width: 49
-        height: 64
+        x: 1
+        y: 264
+        width: 51
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -399,20 +390,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffe8ea120ef617860800000000000000
-      internalID: 7525919460741254911
+      spriteID: 357b36758f83d6480800000000000000
+      internalID: -8904398248972404909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_11
+      name: Dr Milo Spritesheet_6
       rect:
         serializedVersion: 2
         x: 52
-        y: 203
-        width: 45
-        height: 59
+        y: 264
+        width: 51
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -420,20 +411,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a98f0a7fbdb81e2c0800000000000000
-      internalID: -4404085183723013990
+      spriteID: a165ba91cc019ca90800000000000000
+      internalID: -7293279652759775718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_12
+      name: Dr Milo Spritesheet_7
       rect:
         serializedVersion: 2
-        x: 102
-        y: 204
-        width: 49
-        height: 60
+        x: 103
+        y: 264
+        width: 51
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -441,20 +432,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4df774888691baf0800000000000000
-      internalID: -382358980267606705
+      spriteID: 36daf645987c32820800000000000000
+      internalID: 2892374778343042403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_13
+      name: Dr Milo Spritesheet_8
       rect:
         serializedVersion: 2
-        x: 157
-        y: 204
-        width: 42
-        height: 60
+        x: 154
+        y: 264
+        width: 51
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -462,20 +453,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea0da36d8299e90d0800000000000000
-      internalID: -3414123066828336978
+      spriteID: d731beae4e9c65fc0800000000000000
+      internalID: -3506393274830351491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_14
+      name: Dr Milo Spritesheet_9
       rect:
         serializedVersion: 2
-        x: 206
-        y: 207
-        width: 39
-        height: 57
+        x: 205
+        y: 264
+        width: 51
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -483,20 +474,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ce7caf85e5698240800000000000000
-      internalID: 4794475314944966338
+      spriteID: cdee7786c66536fb0800000000000000
+      internalID: -4655782566161813796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_15
+      name: Dr Milo Spritesheet_10
       rect:
         serializedVersion: 2
-        x: 2
-        y: 134
-        width: 45
-        height: 64
+        x: 1
+        y: 198
+        width: 51
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -504,20 +495,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f2f89b579cac0890800000000000000
-      internalID: -7490422314147187976
+      spriteID: 9b331b6ee14765350800000000000000
+      internalID: 6005114829213348793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_16
+      name: Dr Milo Spritesheet_11
       rect:
         serializedVersion: 2
-        x: 51
-        y: 138
-        width: 47
-        height: 60
+        x: 52
+        y: 198
+        width: 51
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -525,20 +516,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 414e0c956acd39810800000000000000
-      internalID: 1771001685515232276
+      spriteID: 95db2a8c0ba2478b0800000000000000
+      internalID: -5155448734663656103
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_17
+      name: Dr Milo Spritesheet_12
       rect:
         serializedVersion: 2
-        x: 104
-        y: 134
-        width: 45
-        height: 64
+        x: 103
+        y: 198
+        width: 51
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -546,20 +537,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec5f8fd47a4f1cdc0800000000000000
-      internalID: -3620343626024290866
+      spriteID: 3ac848485324e7240800000000000000
+      internalID: 4791339851192765603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_18
+      name: Dr Milo Spritesheet_13
       rect:
         serializedVersion: 2
-        x: 153
-        y: 134
-        width: 49
-        height: 64
+        x: 154
+        y: 198
+        width: 51
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -567,20 +558,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3783bd760fcf8270800000000000000
-      internalID: 8255044268779079485
+      spriteID: 52b6727699b36f130800000000000000
+      internalID: 3600130482175961893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_19
+      name: Dr Milo Spritesheet_14
       rect:
         serializedVersion: 2
-        x: 204
-        y: 143
-        width: 43
-        height: 55
+        x: 205
+        y: 198
+        width: 51
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -588,20 +579,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95eb9bd09e4a7e980800000000000000
-      internalID: -8509651650028650919
+      spriteID: fd082fe16791510b0800000000000000
+      internalID: -5758668553407266593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_20
+      name: Dr Milo Spritesheet_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 68
-        width: 49
-        height: 64
+        x: 1
+        y: 132
+        width: 51
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -609,20 +600,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea52c35b772bd4620800000000000000
-      internalID: 2760058373859452334
+      spriteID: 1e15088b6d4d5fd60800000000000000
+      internalID: 7923473138111762913
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_21
+      name: Dr Milo Spritesheet_16
       rect:
         serializedVersion: 2
-        x: 53
-        y: 68
-        width: 45
-        height: 63
+        x: 52
+        y: 132
+        width: 51
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -630,20 +621,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95e1354fa3e6030c0800000000000000
-      internalID: -4598054020059029927
+      spriteID: dd4de61cf06c9b3f0800000000000000
+      internalID: -884458080829516579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_22
+      name: Dr Milo Spritesheet_17
       rect:
         serializedVersion: 2
-        x: 102
-        y: 72
-        width: 49
-        height: 60
+        x: 103
+        y: 132
+        width: 51
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -651,20 +642,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b3b235dbac9ff1c0800000000000000
-      internalID: -4467680043498032202
+      spriteID: 07010207045fba830800000000000000
+      internalID: 4083627144249348208
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_23
+      name: Dr Milo Spritesheet_18
       rect:
         serializedVersion: 2
-        x: 159
-        y: 69
-        width: 41
-        height: 63
+        x: 154
+        y: 132
+        width: 51
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -672,20 +663,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db68e1c285c9c9a00800000000000000
-      internalID: 764657939257394877
+      spriteID: 2cb93a68ec41ddda0800000000000000
+      internalID: -5918551458040276030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_24
+      name: Dr Milo Spritesheet_19
       rect:
         serializedVersion: 2
-        x: 206
-        y: 71
-        width: 40
-        height: 61
+        x: 205
+        y: 132
+        width: 51
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -693,20 +684,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce9bae8ea71c3e820800000000000000
-      internalID: 2946411314868304364
+      spriteID: e1aace65bbddd6aa0800000000000000
+      internalID: -6166028518113367522
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_25
+      name: Dr Milo Spritesheet_20
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1
-        width: 49
-        height: 64
+        x: 1
+        y: 66
+        width: 51
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -714,20 +705,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d22f6754724bc460800000000000000
-      internalID: 7262971891515597527
+      spriteID: 9a0c7772964fb9ff0800000000000000
+      internalID: -28160240176873303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_26
+      name: Dr Milo Spritesheet_21
       rect:
         serializedVersion: 2
-        x: 51
-        y: 1
-        width: 49
-        height: 64
+        x: 52
+        y: 66
+        width: 51
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -735,20 +726,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6245ce3d58af890a0800000000000000
-      internalID: -6874469378487987162
+      spriteID: b7180fdd38bbb5840800000000000000
+      internalID: 5213967168650117499
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dr Milo Sprite Sheet v02 Transparent BG_27
+      name: Dr Milo Spritesheet_22
       rect:
         serializedVersion: 2
-        x: 102
-        y: 1
-        width: 49
-        height: 64
+        x: 103
+        y: 66
+        width: 51
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -756,8 +747,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 565aa9c6c082f3630800000000000000
-      internalID: 3908887035407672677
+      spriteID: bf1f38150ccb55270800000000000000
+      internalID: 8238698627531534843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dr Milo Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 66
+        width: 51
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46830de366e258d40800000000000000
+      internalID: 5585921929498343524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dr Milo Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 66
+        width: 51
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850e9ad9992c00610800000000000000
+      internalID: 1585481033865355352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dr Milo Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 51
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc81dda85bec5d8a0800000000000000
+      internalID: -6280886826184140595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dr Milo Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 0
+        width: 51
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e488043be109f4b50800000000000000
+      internalID: 6579636042142353486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dr Milo Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 0
+        width: 51
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c1a944a98ac77850800000000000000
+      internalID: 6374786490081845696
       vertices: []
       indices: 
       edges: []

@@ -4,133 +4,133 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -89757845631596870
-    second: Cacey-SpriteSheet-30x69-PNG_0
+    second: Cacey_Walk_SW_0
   - first:
       213: 2298044457879394455
-    second: Cacey-SpriteSheet-30x69-PNG_1
+    second: Cacey_Walk_SW_1
   - first:
       213: 5954709019808319746
-    second: Cacey-SpriteSheet-30x69-PNG_2
+    second: Cacey_Walk_SW_1
   - first:
       213: -1469629192498990422
-    second: Cacey-SpriteSheet-30x69-PNG_3
+    second: Cacey_Walk_SW_0
   - first:
       213: -6508284467872414441
-    second: Cacey-SpriteSheet-30x69-PNG_4
+    second: Cacey_Walk_W_3
   - first:
       213: -8813396628909676573
-    second: Cacey-SpriteSheet-30x69-PNG_5
+    second: Cacey_Walk_W_2
   - first:
       213: -1137121701032173690
-    second: Cacey-SpriteSheet-30x69-PNG_6
+    second: Cacey_Walk_W_1
   - first:
       213: 1287468136736403869
-    second: Cacey-SpriteSheet-30x69-PNG_7
+    second: Cacey_Walk_W_0
   - first:
       213: 1913291563793485293
-    second: Cacey-SpriteSheet-30x69-PNG_8
+    second: Cacey_Walk_NW_3
   - first:
       213: -3738763835908707795
-    second: Cacey-SpriteSheet-30x69-PNG_9
+    second: Cacey_Walk_NW_2
   - first:
       213: 1235907094541909841
-    second: Cacey-SpriteSheet-30x69-PNG_10
+    second: Cacey_Walk_NW_1
   - first:
       213: 8303058814763557918
-    second: Cacey-SpriteSheet-30x69-PNG_11
+    second: Cacey_Walk_NW_0
   - first:
       213: -1858375270068345713
-    second: Cacey-SpriteSheet-30x69-PNG_12
+    second: Cacey_Walk_N_3
   - first:
       213: -2971434313666643096
-    second: Cacey-SpriteSheet-30x69-PNG_13
+    second: Cacey_Walk_N_2
   - first:
       213: 8871922319113597291
-    second: Cacey-SpriteSheet-30x69-PNG_14
+    second: Cacey_Walk_N_1
   - first:
       213: -6114511199895712659
-    second: Cacey-SpriteSheet-30x69-PNG_15
+    second: Cacey_Walk_N_0
   - first:
       213: 5482858295567457395
-    second: Cacey-SpriteSheet-30x69-PNG_16
+    second: Cacey_Walk_NE_3
   - first:
       213: 4141783903229915094
-    second: Cacey-SpriteSheet-30x69-PNG_17
+    second: Cacey_Walk_NE_2
   - first:
       213: 2213577476927339064
-    second: Cacey-SpriteSheet-30x69-PNG_18
+    second: Cacey_Walk_NE_1
   - first:
       213: 8767676507618835718
-    second: Cacey-SpriteSheet-30x69-PNG_19
+    second: Cacey_Walk_NE_0
   - first:
       213: 9107260187300956920
-    second: Cacey-SpriteSheet-30x69-PNG_20
+    second: Cacey_Walk_E_3
   - first:
       213: 5312999803733280688
-    second: Cacey-SpriteSheet-30x69-PNG_21
+    second: Cacey_Walk_E_2
   - first:
       213: -83361406499608719
-    second: Cacey-SpriteSheet-30x69-PNG_22
+    second: Cacey_Walk_E_1
   - first:
       213: 3226894864338380744
-    second: Cacey-SpriteSheet-30x69-PNG_23
+    second: Cacey_Walk_E_0
   - first:
       213: 1118848039656132536
-    second: Cacey-SpriteSheet-30x69-PNG_24
+    second: Cacey_Walk_SE_3
   - first:
       213: -383245983298395965
-    second: Cacey-SpriteSheet-30x69-PNG_25
+    second: Cacey_Walk_SE_2
   - first:
       213: -7405885561488121523
-    second: Cacey-SpriteSheet-30x69-PNG_26
+    second: Cacey_Walk_SE_1
   - first:
       213: 1679051315128206879
-    second: Cacey-SpriteSheet-30x69-PNG_27
+    second: Cacey_Walk_SE_0
   - first:
       213: 375567818633499956
-    second: Cacey-SpriteSheet-30x69-PNG_28
+    second: Cacey_Walk_S_3
   - first:
       213: -4154109960217918582
-    second: Cacey-SpriteSheet-30x69-PNG_29
+    second: Cacey_Walk_S_2
   - first:
       213: 4119615046371365129
-    second: Cacey-SpriteSheet-30x69-PNG_30
+    second: Cacey_Walk_S_1
   - first:
       213: 4416490978772063120
-    second: Cacey-SpriteSheet-30x69-PNG_31
+    second: Cacey_Walk_S_0
   - first:
       213: -5782941650031145742
-    second: Cacey-SpriteSheet-30x69-PNG_32
+    second: Cacey_Idle_SW
   - first:
       213: -7057298843366916356
-    second: Cacey-SpriteSheet-30x69-PNG_33
+    second: Cacey_Idle_W
   - first:
       213: -5078999438140066580
-    second: Cacey-SpriteSheet-30x69-PNG_34
+    second: Cacey_Idle_NW
   - first:
       213: -1434618066565704892
-    second: Cacey-SpriteSheet-30x69-PNG_35
+    second: Cacey_Idle_N
   - first:
       213: 5841671799157761463
-    second: Cacey-SpriteSheet-30x69-PNG_36
+    second: Cacey_Idle_NE
   - first:
       213: -6142107017692877380
-    second: Cacey-SpriteSheet-30x69-PNG_37
+    second: Cacey_Idle_E
   - first:
       213: 5090003562485293658
-    second: Cacey-SpriteSheet-30x69-PNG_38
+    second: Cacey_Idle_SE
   - first:
       213: 1505832299746459827
-    second: Cacey-SpriteSheet-30x69-PNG_39
+    second: Cacey_Idle_S
   - first:
       213: -482736282196320608
-    second: Cacey-SpriteSheet-30x69-PNG_40
+    second: Cacey_Emote_Sad
   - first:
       213: 3434209830830180415
-    second: Cacey-SpriteSheet-30x69-PNG_41
+    second: Cacey_Emote_Angry
   - first:
       213: 4820122482586652600
-    second: Cacey-SpriteSheet-30x69-PNG_42
+    second: Cacey_Emote_Happy
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -161,7 +161,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -197,7 +197,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -209,7 +209,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -220,7 +232,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_0
+      name: Cacey_Walk_SW_3
       rect:
         serializedVersion: 2
         x: 0
@@ -241,7 +253,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_1
+      name: Cacey_Walk_SW_2
       rect:
         serializedVersion: 2
         x: 30
@@ -262,7 +274,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_2
+      name: Cacey_Walk_SW_1
       rect:
         serializedVersion: 2
         x: 60
@@ -283,7 +295,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_3
+      name: Cacey_Walk_SW_0
       rect:
         serializedVersion: 2
         x: 90
@@ -304,7 +316,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_4
+      name: Cacey_Walk_W_3
       rect:
         serializedVersion: 2
         x: 120
@@ -325,7 +337,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_5
+      name: Cacey_Walk_W_2
       rect:
         serializedVersion: 2
         x: 150
@@ -346,7 +358,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_6
+      name: Cacey_Walk_W_1
       rect:
         serializedVersion: 2
         x: 180
@@ -367,7 +379,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_7
+      name: Cacey_Walk_W_0
       rect:
         serializedVersion: 2
         x: 210
@@ -388,7 +400,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_8
+      name: Cacey_Walk_NW_3
       rect:
         serializedVersion: 2
         x: 240
@@ -409,7 +421,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_9
+      name: Cacey_Walk_NW_2
       rect:
         serializedVersion: 2
         x: 270
@@ -430,7 +442,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_10
+      name: Cacey_Walk_NW_1
       rect:
         serializedVersion: 2
         x: 300
@@ -451,7 +463,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_11
+      name: Cacey_Walk_NW_0
       rect:
         serializedVersion: 2
         x: 330
@@ -472,7 +484,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_12
+      name: Cacey_Walk_N_3
       rect:
         serializedVersion: 2
         x: 360
@@ -493,7 +505,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_13
+      name: Cacey_Walk_N_2
       rect:
         serializedVersion: 2
         x: 390
@@ -514,7 +526,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_14
+      name: Cacey_Walk_N_1
       rect:
         serializedVersion: 2
         x: 420
@@ -535,7 +547,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_15
+      name: Cacey_Walk_N_0
       rect:
         serializedVersion: 2
         x: 450
@@ -556,7 +568,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_16
+      name: Cacey_Walk_NE_3
       rect:
         serializedVersion: 2
         x: 480
@@ -577,11 +589,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_17
+      name: Cacey_Walk_NE_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 69
+        y: 70
         width: 30
         height: 69
       alignment: 0
@@ -598,7 +610,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_18
+      name: Cacey_Walk_NE_1
       rect:
         serializedVersion: 2
         x: 30
@@ -619,7 +631,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_19
+      name: Cacey_Walk_NE_0
       rect:
         serializedVersion: 2
         x: 60
@@ -640,7 +652,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_20
+      name: Cacey_Walk_E_3
       rect:
         serializedVersion: 2
         x: 90
@@ -661,7 +673,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_21
+      name: Cacey_Walk_E_2
       rect:
         serializedVersion: 2
         x: 120
@@ -682,7 +694,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_22
+      name: Cacey_Walk_E_1
       rect:
         serializedVersion: 2
         x: 150
@@ -703,7 +715,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_23
+      name: Cacey_Walk_E_0
       rect:
         serializedVersion: 2
         x: 180
@@ -724,7 +736,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_24
+      name: Cacey_Walk_SE_3
       rect:
         serializedVersion: 2
         x: 210
@@ -745,7 +757,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_25
+      name: Cacey_Walk_SE_2
       rect:
         serializedVersion: 2
         x: 240
@@ -766,7 +778,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_26
+      name: Cacey_Walk_SE_1
       rect:
         serializedVersion: 2
         x: 270
@@ -787,7 +799,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_27
+      name: Cacey_Walk_SE_0
       rect:
         serializedVersion: 2
         x: 300
@@ -808,7 +820,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_28
+      name: Cacey_Walk_S_3
       rect:
         serializedVersion: 2
         x: 330
@@ -829,7 +841,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_29
+      name: Cacey_Walk_S_2
       rect:
         serializedVersion: 2
         x: 360
@@ -850,7 +862,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_30
+      name: Cacey_Walk_S_1
       rect:
         serializedVersion: 2
         x: 390
@@ -871,7 +883,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_31
+      name: Cacey_Walk_S_0
       rect:
         serializedVersion: 2
         x: 420
@@ -892,7 +904,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_32
+      name: Cacey_Idle_SW
       rect:
         serializedVersion: 2
         x: 450
@@ -913,11 +925,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_33
+      name: Cacey_Idle_W
       rect:
         serializedVersion: 2
         x: 480
-        y: 69
+        y: 70
         width: 30
         height: 69
       alignment: 0
@@ -934,7 +946,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_34
+      name: Cacey_Idle_NW
       rect:
         serializedVersion: 2
         x: 0
@@ -955,11 +967,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_35
+      name: Cacey_Idle_N
       rect:
         serializedVersion: 2
         x: 30
-        y: 0
+        y: 1
         width: 30
         height: 69
       alignment: 0
@@ -976,7 +988,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_36
+      name: Cacey_Idle_NE
       rect:
         serializedVersion: 2
         x: 60
@@ -997,7 +1009,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_37
+      name: Cacey_Idle_E
       rect:
         serializedVersion: 2
         x: 90
@@ -1018,7 +1030,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_38
+      name: Cacey_Idle_SE
       rect:
         serializedVersion: 2
         x: 120
@@ -1039,7 +1051,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_39
+      name: Cacey_Idle_S
       rect:
         serializedVersion: 2
         x: 150
@@ -1060,11 +1072,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_40
+      name: Cacey_Emote_Sad
       rect:
         serializedVersion: 2
         x: 180
-        y: 0
+        y: 1
         width: 30
         height: 69
       alignment: 0
@@ -1081,7 +1093,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_41
+      name: Cacey_Emote_Angry
       rect:
         serializedVersion: 2
         x: 210
@@ -1102,7 +1114,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cacey-SpriteSheet-30x69-PNG_42
+      name: Cacey_Emote_Happy
       rect:
         serializedVersion: 2
         x: 240
