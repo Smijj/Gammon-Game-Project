@@ -249,21 +249,6 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
-<<<<<<< HEAD:Gammon Game/Assets/_Project Files/Art Resouces/Art/Characters/Dr. Milo/Dr Milo Spritesheet.png.meta
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-=======
->>>>>>> 63f9e7e35648e82d6fbad8c5ace6e0b8c086b1cf:Gammon Game/Assets/_Project Files/Art Resouces/Art/Characters/Dr. Milo/Dr Milo Sprite Sheet v02 Transparent BG.png.meta
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -277,7 +262,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 330
         width: 51
         height: 66
@@ -298,7 +283,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_1
       rect:
         serializedVersion: 2
-        x: 52
+        x: 51
         y: 330
         width: 51
         height: 66
@@ -319,7 +304,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_2
       rect:
         serializedVersion: 2
-        x: 103
+        x: 102
         y: 330
         width: 51
         height: 66
@@ -340,7 +325,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_3
       rect:
         serializedVersion: 2
-        x: 154
+        x: 153
         y: 330
         width: 51
         height: 66
@@ -361,7 +346,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_4
       rect:
         serializedVersion: 2
-        x: 205
+        x: 204
         y: 330
         width: 51
         height: 66
@@ -382,7 +367,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_5
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 264
         width: 51
         height: 66
@@ -403,7 +388,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_6
       rect:
         serializedVersion: 2
-        x: 52
+        x: 51
         y: 264
         width: 51
         height: 66
@@ -424,7 +409,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_7
       rect:
         serializedVersion: 2
-        x: 103
+        x: 102
         y: 264
         width: 51
         height: 66
@@ -445,7 +430,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_8
       rect:
         serializedVersion: 2
-        x: 154
+        x: 153
         y: 264
         width: 51
         height: 66
@@ -466,7 +451,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_9
       rect:
         serializedVersion: 2
-        x: 205
+        x: 204
         y: 264
         width: 51
         height: 66
@@ -487,7 +472,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_10
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 198
         width: 51
         height: 66
@@ -508,7 +493,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_11
       rect:
         serializedVersion: 2
-        x: 52
+        x: 51
         y: 198
         width: 51
         height: 66
@@ -529,7 +514,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_12
       rect:
         serializedVersion: 2
-        x: 103
+        x: 102
         y: 198
         width: 51
         height: 66
@@ -550,7 +535,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_13
       rect:
         serializedVersion: 2
-        x: 154
+        x: 153
         y: 198
         width: 51
         height: 66
@@ -571,7 +556,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_14
       rect:
         serializedVersion: 2
-        x: 205
+        x: 204
         y: 198
         width: 51
         height: 66
@@ -592,7 +577,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_15
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 132
         width: 51
         height: 66
@@ -613,7 +598,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_16
       rect:
         serializedVersion: 2
-        x: 52
+        x: 51
         y: 132
         width: 51
         height: 66
@@ -634,7 +619,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_17
       rect:
         serializedVersion: 2
-        x: 103
+        x: 102
         y: 132
         width: 51
         height: 66
@@ -655,7 +640,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_18
       rect:
         serializedVersion: 2
-        x: 154
+        x: 153
         y: 132
         width: 51
         height: 66
@@ -676,7 +661,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_19
       rect:
         serializedVersion: 2
-        x: 205
+        x: 204
         y: 132
         width: 51
         height: 66
@@ -697,7 +682,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_20
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 66
         width: 51
         height: 66
@@ -718,7 +703,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_21
       rect:
         serializedVersion: 2
-        x: 52
+        x: 51
         y: 66
         width: 51
         height: 66
@@ -739,7 +724,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_22
       rect:
         serializedVersion: 2
-        x: 103
+        x: 102
         y: 66
         width: 51
         height: 66
@@ -760,7 +745,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_23
       rect:
         serializedVersion: 2
-        x: 154
+        x: 153
         y: 66
         width: 51
         height: 66
@@ -781,7 +766,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_24
       rect:
         serializedVersion: 2
-        x: 205
+        x: 204
         y: 66
         width: 51
         height: 66
@@ -802,7 +787,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_25
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
         width: 51
         height: 66
@@ -823,7 +808,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_26
       rect:
         serializedVersion: 2
-        x: 52
+        x: 51
         y: 0
         width: 51
         height: 66
@@ -844,7 +829,7 @@ TextureImporter:
       name: Dr Milo Spritesheet_27
       rect:
         serializedVersion: 2
-        x: 103
+        x: 102
         y: 0
         width: 51
         height: 66
@@ -864,7 +849,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: bdc0ec5003666504d88cbf035a506208
     internalID: 0
     vertices: []
     indices: 

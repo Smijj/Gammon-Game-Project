@@ -1,7 +1,166 @@
 fileFormatVersion: 2
 guid: 77c6fb89cdcc0cd4591319f31474ba10
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4830256985819957800
+    second: Zeus-Sprite-Sheet-128px-PNG_0
+  - first:
+      213: -6745184892511712054
+    second: Zeus-Sprite-Sheet-128px-PNG_1
+  - first:
+      213: -5948361907487776546
+    second: Zeus-Sprite-Sheet-128px-PNG_2
+  - first:
+      213: 8727329067128011834
+    second: Zeus-Sprite-Sheet-128px-PNG_3
+  - first:
+      213: 7299317645587363643
+    second: Zeus-Sprite-Sheet-128px-PNG_4
+  - first:
+      213: -6764866271542000938
+    second: Zeus-Sprite-Sheet-128px-PNG_5
+  - first:
+      213: 8575002139620979069
+    second: Zeus-Sprite-Sheet-128px-PNG_6
+  - first:
+      213: 6627377406653203508
+    second: Zeus-Sprite-Sheet-128px-PNG_7
+  - first:
+      213: -8941628448782465944
+    second: Zeus-Sprite-Sheet-128px-PNG_8
+  - first:
+      213: -7455458613778942673
+    second: Zeus-Sprite-Sheet-128px-PNG_9
+  - first:
+      213: 5687643240371011364
+    second: Zeus-Sprite-Sheet-128px-PNG_10
+  - first:
+      213: 6680785437570478207
+    second: Zeus-Sprite-Sheet-128px-PNG_11
+  - first:
+      213: -6897244848506971937
+    second: Zeus-Sprite-Sheet-128px-PNG_12
+  - first:
+      213: -766678414767962637
+    second: Zeus-Sprite-Sheet-128px-PNG_13
+  - first:
+      213: 4972282389530858119
+    second: Zeus-Sprite-Sheet-128px-PNG_14
+  - first:
+      213: -7568883336347752859
+    second: Zeus-Sprite-Sheet-128px-PNG_15
+  - first:
+      213: -4366465020181503891
+    second: Zeus-Sprite-Sheet-128px-PNG_16
+  - first:
+      213: -5760083250149749097
+    second: Zeus-Sprite-Sheet-128px-PNG_17
+  - first:
+      213: -1322452516492463335
+    second: Zeus-Sprite-Sheet-128px-PNG_18
+  - first:
+      213: 3450226597881841775
+    second: Zeus-Sprite-Sheet-128px-PNG_19
+  - first:
+      213: 6293393305303562462
+    second: Zeus-Sprite-Sheet-128px-PNG_20
+  - first:
+      213: -5110692654522158741
+    second: Zeus-Sprite-Sheet-128px-PNG_21
+  - first:
+      213: 1232914594536340856
+    second: Zeus-Sprite-Sheet-128px-PNG_22
+  - first:
+      213: 6151409128394532512
+    second: Zeus-Sprite-Sheet-128px-PNG_23
+  - first:
+      213: -1914937749737364245
+    second: Zeus-Sprite-Sheet-128px-PNG_24
+  - first:
+      213: -8182549230098472662
+    second: Zeus-Sprite-Sheet-128px-PNG_25
+  - first:
+      213: -315782122182852977
+    second: Zeus-Sprite-Sheet-128px-PNG_26
+  - first:
+      213: -7964478205451484439
+    second: Zeus-Sprite-Sheet-128px-PNG_27
+  - first:
+      213: 8835022886195746270
+    second: Zeus-Sprite-Sheet-128px-PNG_28
+  - first:
+      213: 2028949363657166936
+    second: Zeus-Sprite-Sheet-128px-PNG_29
+  - first:
+      213: 1712818578495776319
+    second: Zeus-Sprite-Sheet-128px-PNG_30
+  - first:
+      213: 7914052807094965761
+    second: Zeus-Sprite-Sheet-128px-PNG_31
+  - first:
+      213: -1129913669288908709
+    second: Zeus-Sprite-Sheet-128px-PNG_32
+  - first:
+      213: -7106729844334682113
+    second: Zeus-Sprite-Sheet-128px-PNG_33
+  - first:
+      213: 2849461114026212256
+    second: Zeus-Sprite-Sheet-128px-PNG_34
+  - first:
+      213: 8885535165122618107
+    second: Zeus-Sprite-Sheet-128px-PNG_35
+  - first:
+      213: -5396376613568673671
+    second: Zeus-Sprite-Sheet-128px-PNG_36
+  - first:
+      213: -7165334896534579867
+    second: Zeus-Sprite-Sheet-128px-PNG_37
+  - first:
+      213: 2868251302337256862
+    second: Zeus-Sprite-Sheet-128px-PNG_38
+  - first:
+      213: 6959519484394783990
+    second: Zeus-Sprite-Sheet-128px-PNG_39
+  - first:
+      213: 1490806038799260477
+    second: Zeus-Sprite-Sheet-128px-PNG_40
+  - first:
+      213: -5523359187021035097
+    second: Zeus-Sprite-Sheet-128px-PNG_41
+  - first:
+      213: 2437910408324212373
+    second: Zeus-Sprite-Sheet-128px-PNG_42
+  - first:
+      213: 3619183140287296590
+    second: Zeus-Sprite-Sheet-128px-PNG_43
+  - first:
+      213: 1762795517915965336
+    second: Zeus-Sprite-Sheet-128px-PNG_44
+  - first:
+      213: 4508417832704424162
+    second: Zeus-Sprite-Sheet-128px-PNG_45
+  - first:
+      213: 3923913541407646165
+    second: Zeus-Sprite-Sheet-128px-PNG_46
+  - first:
+      213: -3067371747317712379
+    second: Zeus-Sprite-Sheet-128px-PNG_47
+  - first:
+      213: 211368335318202395
+    second: Zeus-Sprite-Sheet-128px-PNG_48
+  - first:
+      213: 5240581452836990161
+    second: Zeus-Sprite-Sheet-128px-PNG_49
+  - first:
+      213: 8171731852636631238
+    second: Zeus-Sprite-Sheet-128px-PNG_50
+  - first:
+      213: 1439795376775137043
+    second: Zeus-Sprite-Sheet-128px-PNG_51
+  - first:
+      213: 5860559139210990439
+    second: Zeus-Sprite-Sheet-128px-PNG_52
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +200,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -89,7 +248,1120 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_0
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 906
+        width: 57
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ac5a50325880340800000000000000
+      internalID: 4830256985819957800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_1
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 907
+        width: 62
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc0289e31a4462a0800000000000000
+      internalID: -6745184892511712054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_2
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 903
+        width: 66
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed0e9b46c5c237da0800000000000000
+      internalID: -5948361907487776546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_3
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 908
+        width: 62
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c3b141c83bd1970800000000000000
+      internalID: 8727329067128011834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_4
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 1008
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b37b9f7a9b26c4560800000000000000
+      internalID: 7299317645587363643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_5
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 909
+        width: 38
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2c7b3c7fd5e12a0800000000000000
+      internalID: -6764866271542000938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_6
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 1000
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d71b2508307800770800000000000000
+      internalID: 8575002139620979069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_7
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 909
+        width: 49
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434830453ac29fb50800000000000000
+      internalID: 6627377406653203508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_8
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 909
+        width: 42
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8644bc4fc44f8e380800000000000000
+      internalID: -8941628448782465944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_9
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 911
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25741834e3e88890800000000000000
+      internalID: -7455458613778942673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_10
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1005
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42f377784619eee40800000000000000
+      internalID: 5687643240371011364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_11
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 776
+        width: 65
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f70bdfa85fae6bc50800000000000000
+      internalID: 6680785437570478207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_12
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 780
+        width: 61
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd859db7a501840a0800000000000000
+      internalID: -6897244848506971937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_13
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 780
+        width: 56
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f5cbc63b063c55f0800000000000000
+      internalID: -766678414767962637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_14
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 784
+        width: 61
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 782daee2d78110540800000000000000
+      internalID: 4972282389530858119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_15
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 857
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5666e9e05bce5f690800000000000000
+      internalID: -7568883336347752859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_16
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 778
+        width: 64
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d60a9ebd2333763c0800000000000000
+      internalID: -4366465020181503891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_17
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 782
+        width: 69
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e852e5dc21010b0800000000000000
+      internalID: -5760083250149749097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_18
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 778
+        width: 64
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91335226174b5ade0800000000000000
+      internalID: -1322452516492463335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_19
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 782
+        width: 69
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f680a598fcaa1ef20800000000000000
+      internalID: 3450226597881841775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_20
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 648
+        width: 65
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8b07a0edf965750800000000000000
+      internalID: 6293393305303562462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_21
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 652
+        width: 61
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61320bbb1c2319b0800000000000000
+      internalID: -5110692654522158741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_22
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 652
+        width: 56
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87dbbbd9a413c1110800000000000000
+      internalID: 1232914594536340856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_23
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 656
+        width: 61
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a62d0eb2023e5550800000000000000
+      internalID: 6151409128394532512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_24
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 744
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be42beb2346cc65e0800000000000000
+      internalID: -1914937749737364245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_25
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 653
+        width: 38
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21a5d604deb17e80800000000000000
+      internalID: -8182549230098472662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_26
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 653
+        width: 49
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8e3fdc35dd1e9bf0800000000000000
+      internalID: -315782122182852977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_27
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 653
+        width: 42
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e249be054d787190800000000000000
+      internalID: -7964478205451484439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_28
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 749
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed5d42a418e4c9a70800000000000000
+      internalID: 8835022886195746270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_29
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 655
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8505a0842b6482c10800000000000000
+      internalID: 2028949363657166936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_30
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 729
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f362ee71c6725c710800000000000000
+      internalID: 1712818578495776319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_31
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 522
+        width: 57
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106149cf81d54dd60800000000000000
+      internalID: 7914052807094965761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_32
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 523
+        width: 62
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b582d2b118db150f0800000000000000
+      internalID: -1129913669288908709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_33
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 519
+        width: 66
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff93c11cd2df5d90800000000000000
+      internalID: -7106729844334682113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_34
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 624
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab32de39c15b8720800000000000000
+      internalID: 2849461114026212256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_35
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 624
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf22064b723cf4b70800000000000000
+      internalID: 8885535165122618107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_36
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 524
+        width: 69
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 978830aaf083c15b0800000000000000
+      internalID: -5396376613568673671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_37
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 520
+        width: 64
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 565985b00ed9f8c90800000000000000
+      internalID: -7165334896534579867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_38
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 627
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9d1d52ec531ec720800000000000000
+      internalID: 2868251302337256862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_39
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 524
+        width: 62
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4c2c2191e259060800000000000000
+      internalID: 6959519484394783990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_40
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 520
+        width: 63
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b13a3913860b410800000000000000
+      internalID: 1490806038799260477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_41
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 524
+        width: 69
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a988ba55161953b0800000000000000
+      internalID: -5523359187021035097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_42
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 395
+        width: 62
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 596646a899235d120800000000000000
+      internalID: 2437910408324212373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_43
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 397
+        width: 40
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4438ed04ebe93230800000000000000
+      internalID: 3619183140287296590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_44
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 396
+        width: 61
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89728011f25b67810800000000000000
+      internalID: 1762795517915965336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_45
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 398
+        width: 69
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e83269d12e119e30800000000000000
+      internalID: 4508417832704424162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_46
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 396
+        width: 61
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1a2fc739a847630800000000000000
+      internalID: 3923913541407646165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_47
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 397
+        width: 40
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50afe0fb5a18e65d0800000000000000
+      internalID: -3067371747317712379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_48
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 395
+        width: 62
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b18386f816eeee200800000000000000
+      internalID: 211368335318202395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_49
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 396
+        width: 69
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc69d8c0194ab840800000000000000
+      internalID: 5240581452836990161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_50
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 268
+        width: 69
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c0b62403d2d76170800000000000000
+      internalID: 8171731852636631238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_51
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 268
+        width: 69
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3178eed444e2bf310800000000000000
+      internalID: 1439795376775137043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zeus-Sprite-Sheet-128px-PNG_52
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 268
+        width: 69
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76317dd8c73e45150800000000000000
+      internalID: 5860559139210990439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

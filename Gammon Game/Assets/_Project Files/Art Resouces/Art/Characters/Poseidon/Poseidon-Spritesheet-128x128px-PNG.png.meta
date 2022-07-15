@@ -1,0 +1,1140 @@
+fileFormatVersion: 2
+guid: 30fc30c79a565df4299e6f628d744658
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5355188252175165738
+    second: Poseidon-Spritesheet-128x128px-PNG_0
+  - first:
+      213: 7423634959220517340
+    second: Poseidon-Spritesheet-128x128px-PNG_1
+  - first:
+      213: -751073935906179262
+    second: Poseidon-Spritesheet-128x128px-PNG_2
+  - first:
+      213: -6249676687011272957
+    second: Poseidon-Spritesheet-128x128px-PNG_3
+  - first:
+      213: 8712680587579988411
+    second: Poseidon-Spritesheet-128x128px-PNG_4
+  - first:
+      213: -6825741803420952211
+    second: Poseidon-Spritesheet-128x128px-PNG_5
+  - first:
+      213: 182226161345021742
+    second: Poseidon-Spritesheet-128x128px-PNG_6
+  - first:
+      213: 1908461311131807039
+    second: Poseidon-Spritesheet-128x128px-PNG_7
+  - first:
+      213: 5483268481141976567
+    second: Poseidon-Spritesheet-128x128px-PNG_8
+  - first:
+      213: 1374216747908162957
+    second: Poseidon-Spritesheet-128x128px-PNG_9
+  - first:
+      213: 5648254561931654291
+    second: Poseidon-Spritesheet-128x128px-PNG_10
+  - first:
+      213: -8588469836607442284
+    second: Poseidon-Spritesheet-128x128px-PNG_11
+  - first:
+      213: -5118816876075950627
+    second: Poseidon-Spritesheet-128x128px-PNG_12
+  - first:
+      213: -2144330952480973287
+    second: Poseidon-Spritesheet-128x128px-PNG_13
+  - first:
+      213: 1127677638548632011
+    second: Poseidon-Spritesheet-128x128px-PNG_14
+  - first:
+      213: -5639084326780987241
+    second: Poseidon-Spritesheet-128x128px-PNG_15
+  - first:
+      213: -2725494667099256791
+    second: Poseidon-Spritesheet-128x128px-PNG_16
+  - first:
+      213: 3849999755004537918
+    second: Poseidon-Spritesheet-128x128px-PNG_17
+  - first:
+      213: 6107751820368513034
+    second: Poseidon-Spritesheet-128x128px-PNG_18
+  - first:
+      213: -5075062027088067670
+    second: Poseidon-Spritesheet-128x128px-PNG_19
+  - first:
+      213: 1497704152863687996
+    second: Poseidon-Spritesheet-128x128px-PNG_20
+  - first:
+      213: -6857491018002289925
+    second: Poseidon-Spritesheet-128x128px-PNG_21
+  - first:
+      213: 6877998726093176376
+    second: Poseidon-Spritesheet-128x128px-PNG_22
+  - first:
+      213: 6584375749522010478
+    second: Poseidon-Spritesheet-128x128px-PNG_23
+  - first:
+      213: -2485726726756012947
+    second: Poseidon-Spritesheet-128x128px-PNG_24
+  - first:
+      213: -6319343695797623171
+    second: Poseidon-Spritesheet-128x128px-PNG_25
+  - first:
+      213: -2626339940707402733
+    second: Poseidon-Spritesheet-128x128px-PNG_26
+  - first:
+      213: 5402897277128064973
+    second: Poseidon-Spritesheet-128x128px-PNG_27
+  - first:
+      213: 4942536570688735279
+    second: Poseidon-Spritesheet-128x128px-PNG_28
+  - first:
+      213: -4548280862256983665
+    second: Poseidon-Spritesheet-128x128px-PNG_29
+  - first:
+      213: -5718215496164750911
+    second: Poseidon-Spritesheet-128x128px-PNG_30
+  - first:
+      213: 6858557204187679402
+    second: Poseidon-Spritesheet-128x128px-PNG_31
+  - first:
+      213: 5330384262132790585
+    second: Poseidon-Spritesheet-128x128px-PNG_32
+  - first:
+      213: -1888004172480990340
+    second: Poseidon-Spritesheet-128x128px-PNG_33
+  - first:
+      213: 8911330625599721971
+    second: Poseidon-Spritesheet-128x128px-PNG_34
+  - first:
+      213: 9038742896034041276
+    second: Poseidon-Spritesheet-128x128px-PNG_35
+  - first:
+      213: 276666931649835303
+    second: Poseidon-Spritesheet-128x128px-PNG_36
+  - first:
+      213: 6058730347750810227
+    second: Poseidon-Spritesheet-128x128px-PNG_37
+  - first:
+      213: -3941567805870413684
+    second: Poseidon-Spritesheet-128x128px-PNG_38
+  - first:
+      213: 2184919943774765673
+    second: Poseidon-Spritesheet-128x128px-PNG_39
+  - first:
+      213: 1138145895413983918
+    second: Poseidon-Spritesheet-128x128px-PNG_40
+  - first:
+      213: 5545229625920015902
+    second: Poseidon-Spritesheet-128x128px-PNG_41
+  - first:
+      213: 5797307995058952625
+    second: Poseidon-Spritesheet-128x128px-PNG_42
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_0
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 907
+        width: 53
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d611cb58ac8ea5b0800000000000000
+      internalID: -5355188252175165738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_1
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 906
+        width: 54
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9a28ec9ac060760800000000000000
+      internalID: 7423634959220517340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 902
+        width: 53
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 247f1421c36a395f0800000000000000
+      internalID: -751073935906179262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_3
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 910
+        width: 49
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30727a55a20b449a0800000000000000
+      internalID: -6249676687011272957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_4
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 907
+        width: 45
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9952825d8a9e870800000000000000
+      internalID: 8712680587579988411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_5
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 907
+        width: 48
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d695f8e7ef71641a0800000000000000
+      internalID: -6825741803420952211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_6
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 907
+        width: 45
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27c0cf6ab5678200800000000000000
+      internalID: 182226161345021742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_7
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 907
+        width: 45
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d669573773c7a10800000000000000
+      internalID: 1908461311131807039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_8
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 776
+        width: 54
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd209ac1ab781c40800000000000000
+      internalID: 5483268481141976567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_9
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 780
+        width: 52
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d85657fe9d2321310800000000000000
+      internalID: 1374216747908162957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_10
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 778
+        width: 48
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3947aec2991a26e40800000000000000
+      internalID: 5648254561931654291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_11
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 782
+        width: 51
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4923bd0ff20afc880800000000000000
+      internalID: -8588469836607442284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_12
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 778
+        width: 47
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dddd73ffb2f46f8b0800000000000000
+      internalID: -5118816876075950627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_13
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 782
+        width: 49
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e1f702c5ecd32e0800000000000000
+      internalID: -2144330952480973287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_14
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 778
+        width: 47
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1b7da66d056af00800000000000000
+      internalID: 1127677638548632011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_15
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 782
+        width: 49
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7981fb39ea2fdb1b0800000000000000
+      internalID: -5639084326780987241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_16
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 648
+        width: 54
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928c3526a091d2ad0800000000000000
+      internalID: -2725494667099256791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_17
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 652
+        width: 52
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ce2660162fd6530800000000000000
+      internalID: 3849999755004537918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_18
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 650
+        width: 48
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a088f4d9be713c450800000000000000
+      internalID: 6107751820368513034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_19
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 654
+        width: 51
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa38756a9f1c199b0800000000000000
+      internalID: -5075062027088067670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_20
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 651
+        width: 45
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c35411aedf9e8c410800000000000000
+      internalID: 1497704152863687996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_21
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 651
+        width: 48
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfaaa8d604c45d0a0800000000000000
+      internalID: -6857491018002289925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_22
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 651
+        width: 45
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e7f52766f837f50800000000000000
+      internalID: 6877998726093176376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_23
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 651
+        width: 45
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e61b4f1dbd6606b50800000000000000
+      internalID: 6584375749522010478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 523
+        width: 53
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c630346bce08dd0800000000000000
+      internalID: -2485726726756012947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_25
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 522
+        width: 54
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76e066d36e2d48a0800000000000000
+      internalID: -6319343695797623171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_26
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 518
+        width: 53
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31cf6b62dbd5d8bd0800000000000000
+      internalID: -2626339940707402733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_27
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 526
+        width: 49
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcfb421a272fafa40800000000000000
+      internalID: 5402897277128064973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_28
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 521
+        width: 47
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28874903da679440800000000000000
+      internalID: 4942536570688735279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_29
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 525
+        width: 49
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f81177257a241e0c0800000000000000
+      internalID: -4548280862256983665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_30
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 521
+        width: 47
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c947f97d41d4a0b0800000000000000
+      internalID: -5718215496164750911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_31
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 525
+        width: 49
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa8d43607d7e2f50800000000000000
+      internalID: 6858557204187679402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_32
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 394
+        width: 50
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935f1ccae3459f940800000000000000
+      internalID: 5330384262132790585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_33
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 395
+        width: 42
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c73b0dc45367cc5e0800000000000000
+      internalID: -1888004172480990340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_34
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 396
+        width: 52
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f15eee5df76bab70800000000000000
+      internalID: 8911330625599721971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_35
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 398
+        width: 49
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbdc13e46c0107d70800000000000000
+      internalID: 9038742896034041276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_36
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 396
+        width: 52
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 721f516cb1be6d300800000000000000
+      internalID: 276666931649835303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_37
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 395
+        width: 42
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 372e097962fe41450800000000000000
+      internalID: 6058730347750810227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_38
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 394
+        width: 50
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c886af0c6fcbc49c0800000000000000
+      internalID: -3941567805870413684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_39
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 397
+        width: 49
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9628c57dc15625e10800000000000000
+      internalID: 2184919943774765673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_40
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 269
+        width: 49
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa28b669a18bcf00800000000000000
+      internalID: 1138145895413983918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_41
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 269
+        width: 49
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e4fe207fc94fc40800000000000000
+      internalID: 5545229625920015902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poseidon-Spritesheet-128x128px-PNG_42
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 269
+        width: 49
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b95503f7ec247050800000000000000
+      internalID: 5797307995058952625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
